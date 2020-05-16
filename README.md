@@ -1,10 +1,10 @@
 # Implicit Causality
 Project for exploring the acquisiton of pragmatic knowledge by RNN LMs. 
 
-##Quick Usage
+## Quick Usage
 
 
-##Extra Details
+## Extra Details
 
 
-##References
+## References
