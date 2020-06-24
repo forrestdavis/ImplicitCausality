@@ -1,0 +1,113 @@
+exp,item,sent,hasIC,num,isHIGH
+story,1,The man admires the agent of the rockers who was,1,sg,1
+story,1,The man admires the agents of the rocker who was,1,sg,0
+story,1,The man admires the agent of the rockers who were,1,pl,0
+story,1,The man admires the agents of the rocker who were,1,pl,1
+story,1,The man works with the agent of the rockers who was,0,sg,1
+story,1,The man works with the agents of the rocker who was,0,sg,0
+story,1,The man works with the agent of the rockers who were,0,pl,0
+story,1,The man works with the agents of the rocker who were,0,pl,1
+story,3,The man blamed the friend of the athletes who was,1,sg,1
+story,3,The man blamed the friends of the athlete who was,1,sg,0
+story,3,The man blamed the friend of the athletes who were,1,pl,0
+story,3,The man blamed the friends of the athlete who were,1,pl,1
+story,3,The man noticed the friend of the athletes who was,0,sg,1
+story,3,The man noticed the friends of the athlete who was,0,sg,0
+story,3,The man noticed the friend of the athletes who were,0,pl,0
+story,3,The man noticed the friends of the athlete who were,0,pl,1
+story,4,The man complimented the guest of the brides who was,1,sg,1
+story,4,The man complimented the guests of the bride who was,1,sg,0
+story,4,The man complimented the guest of the brides who were,1,pl,0
+story,4,The man complimented the guests of the bride who were,1,pl,1
+story,4,The man met the guest of the brides who was,0,sg,1
+story,4,The man met the guests of the bride who was,0,sg,0
+story,4,The man met the guest of the brides who were,0,pl,0
+story,4,The man met the guests of the bride who were,0,pl,1
+story,5,The man congratulated the teacher of the second graders who was,1,sg,1
+story,5,The man congratulated the teachers of the second grader who was,1,sg,0
+story,5,The man congratulated the teacher of the second graders who were,1,pl,0
+story,5,The man congratulated the teachers of the second grader who were,1,pl,1
+story,5,The man visited the teacher of the second graders who was,0,sg,1
+story,5,The man visited the teachers of the second grader who was,0,sg,0
+story,5,The man visited the teacher of the second graders who were,0,pl,0
+story,5,The man visited the teachers of the second grader who were,0,pl,1
+story,6,The woman criticized the leader of the activists who was,1,sg,1
+story,6,The woman criticized the leaders of the activists who was,1,sg,0
+story,6,The woman criticized the leader of the activists who were,1,pl,0
+story,6,The woman criticized the leaders of the activists who were,1,pl,1
+story,6,The woman talked to the leader of the activists who was,0,sg,1
+story,6,The woman talked to the leaders of the activists who was,0,sg,0
+story,6,The woman talked to the leader of the activists who were,0,pl,0
+story,6,The woman talked to the leaders of the activists who were,0,pl,1
+story,9,The woman dislikes the little girl of the neighbors who was,1,sg,1
+story,9,The woman dislikes the little girls of the neighbor who was,1,sg,0
+story,9,The woman dislikes the little girl of the neighbors who were,1,pl,0
+story,9,The woman dislikes the little girls of the neighbor who were,1,pl,1
+story,9,The woman watches the little girl of the neighbors who was,0,sg,1
+story,9,The woman watches the little girls of the neighbor who was,0,sg,0
+story,9,The woman watches the little girl of the neighbors who were,0,pl,0
+story,9,The woman watches the little girls of the neighbor who were,0,pl,1
+story,11,The man likes the captain of the old sailors who was,1,sg,1
+story,11,The man likes the captains of the old sailor who was,1,sg,0
+story,11,The man likes the captain of the old sailors who were,1,pl,0
+story,11,The man likes the captains of the old sailor who were,1,pl,1
+story,11,The man resembles the captain of the old sailors who was,0,sg,1
+story,11,The man resembles the captains of the old sailor who was,0,sg,0
+story,11,The man resembles the captain of the old sailors who were,0,pl,0
+story,11,The man resembles the captains of the old sailor who were,0,pl,1
+story,13,The man praised the assistant of the bosses who was,1,sg,1
+story,13,The man praised the assistant of the boss who was,1,sg,0
+story,13,The man praised the assistant of the bosses who were,1,pl,0
+story,13,The man praised the assistant of the boss who were,1,pl,1
+story,13,The man videotaped the assistant of the bosses who was,0,sg,1
+story,13,The man videotaped the assistant of the boss who was,0,sg,0
+story,13,The man videotaped the assistant of the bosses who were,0,pl,0
+story,13,The man videotaped the assistant of the boss who were,0,pl,1
+story,14,The man punished the accountant of the businessman who was,1,sg,1
+story,14,The man punished the accountants of the businessman who was,1,sg,0
+story,14,The man punished the accountant of the businessman who were,1,pl,0
+story,14,The man punished the accountants of the businessman who were,1,pl,1
+story,14,The man saw the accountant of the businessman who was,0,sg,1
+story,14,The man saw the accountants of the businessman who was,0,sg,0
+story,14,The man saw the accountant of the businessman who were,0,pl,0
+story,14,The man saw the accountants of the businessman who were,0,pl,1
+story,16,The man scolded the landlord of the actors who was,1,sg,1
+story,16,The man scolded the landlords of the actor who was,1,sg,0
+story,16,The man scolded the landlord of the actors who were,1,pl,0
+story,16,The man scolded the landlords of the actor who were,1,pl,1
+story,16,The man recognized the landlord of the actors who was,0,sg,1
+story,16,The man recognized the landlords of the actor who was,0,sg,0
+story,16,The man recognized the landlord of the actors who were,0,pl,0
+story,16,The man recognized the landlords of the actor who were,0,pl,1
+story,17,The man rewarded the servant of the dictator who was,1,sg,1
+story,17,The man rewarded the servants of the dictator who was,1,sg,0
+story,17,The man rewarded the servant of the dictator who were,1,pl,0
+story,17,The man rewarded the servants of the dictator who were,1,pl,1
+story,17,The man inspected the servant of the dictator who was,0,sg,1
+story,17,The man inspected the servants of the dictator who was,0,sg,0
+story,17,The man inspected the servant of the dictator who were,0,pl,0
+story,17,The man inspected the servants of the dictator who were,0,pl,1
+story,18,The man ridiculed the fan of the singers who was,1,sg,1
+story,18,The man ridiculed the fans of the singer who was,1,sg,0
+story,18,The man ridiculed the fan of the singers who were,1,pl,0
+story,18,The man ridiculed the fans of the singer who were,1,pl,1
+story,18,The man counted the fan of the singers who was,0,sg,1
+story,18,The man counted the fans of the singer who was,0,sg,0
+story,18,The man counted the fan of the singers who were,0,pl,0
+story,18,The man counted the fans of the singer who were,0,pl,1
+story,19,The man thanked the representative of the employees who was,1,sg,1
+story,19,The man thanked the representatives of the employee who was,1,sg,0
+story,19,The man thanked the representative of the employees who were,1,pl,0
+story,19,The man thanked the representatives of the employee who were,1,pl,1
+story,19,The man interviewed the representative of the employees who was,0,sg,1
+story,19,The man interviewed the representatives of the employee who was,0,sg,0
+story,19,The man interviewed the representative of the employees who were,0,pl,0
+story,19,The man interviewed the representatives of the employee who were,0,pl,1
+story,20,The woman values the surgeon of the soldiers who was,1,sg,1
+story,20,The woman values the surgeons of the soldier who was,1,sg,0
+story,20,The woman values the surgeon of the soldiers who were,1,pl,0
+story,20,The woman values the surgeons of the soldier who were,1,pl,1
+story,20,The woman lives next to the surgeon of the soldiers who was,0,sg,1
+story,20,The woman lives next to the surgeons of the soldier who was,0,sg,0
+story,20,The woman lives next to the surgeon of the soldiers who were,0,pl,0
+story,20,The woman lives next to the surgeons of the soldier who were,0,pl,1
