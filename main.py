@@ -52,28 +52,6 @@ def apply(func, apply_dimension):
     output_list = [func(m) for m in torch.unbind(apply_dimension, dim=0)]
     return torch.stack(output_list, dim=0)
 
-def get_surps(state):
-    logprobs = torch.log2(torch.nn.functional.softmax(state, dim=0))
-    return -1 * logprobs
-
-def get_IT(state, obs, tokenizer):
-
-    metrics = []
-
-    surps = apply(get_surps, state)
-
-    for sentpos, targ in enumerate(obs):
-
-        word = tokenizer.decode(int(targ)).replace(' ','')
-        #skip over EOS
-        if word == '<eos>':
-            continue
-        #print(surps)
-        surp = float(surps[sentpos][int(targ)].data)
-        metrics.append((word, surp))
-
-    return metrics
-
 def test_get_batch(source):
     ''' Creates an input/target pair for evaluation '''
     seq_len = len(source) - 1
@@ -110,12 +88,21 @@ def tfxl_IT(sents, tokenizer, model):
 
         sent_values = []
 
+        #tokenize sentence
         input_ids = torch.tensor(tokenizer.encode(sent, add_special_tokens=True)).unsqueeze(0)
 
+        #verify no unks
+        decoded = tokenizer.decode(input_ids)
+        assert decoded == sent
+
+        #Get model outputs
         outputs = tf_model(input_ids)
+        #get predictions
         predictions, mems = outputs[:2]
+        #Get surprisal
         surps = torch.log2(torch.exp(-1*torch.nn.functional.log_softmax(predictions, -1)))
 
+        #Get surprisal by target word (i.e. dog given the)
         count = 0 
         for y in range(len(input_ids[0])-1):
             target_id = input_ids[0][y+1]

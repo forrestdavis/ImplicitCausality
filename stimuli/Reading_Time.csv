@@ -1,97 +1,193 @@
-exp,item,sent,hasIC,num,isHIGH
-reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1
-reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0
-reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0
-reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1
-reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1
-reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0
-reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0
-reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1
-reading,3,The woman assisted the maid of the executives who was,1,sg,1
-reading,3,The woman assisted the maids of the executive who was,1,sg,0
-reading,3,The woman assisted the maid of the executives who were,1,pl,0
-reading,3,The woman assisted the maids of the executive who were,1,pl,1
-reading,3,The woman joked with the maid of the executives who was,0,sg,1
-reading,3,The woman joked with the maids of the executive who was,0,sg,0
-reading,3,The woman joked with the maid of the executives who were,0,pl,0
-reading,3,The woman joked with the maids of the executive who were,0,pl,1
-reading,4,The man trusted the captain of the sailors who was,1,sg,1
-reading,4,The man trusted the captains of the sailor who was,1,sg,0
-reading,4,The man trusted the captain of the sailors who were,1,pl,0
-reading,4,The man trusted the captains of the sailor who were,1,pl,1
-reading,4,The man stood near the captain of the sailors who was,0,sg,1
-reading,4,The man stood near the captains of the sailor who was,0,sg,0
-reading,4,The man stood near the captain of the sailors who were,0,pl,0
-reading,4,The man stood near the captains of the sailor who were,0,pl,1
-reading,6,The man comforted the leader of the activists who was,1,sg,1
-reading,6,The man comforted the leaders of the activist who was,1,sg,0
-reading,6,The man comforted the leader of the activists who were,1,pl,0
-reading,6,The man comforted the leaders of the activist who were,1,pl,1
-reading,6,The man greeted the leader of the activists who was,0,sg,1
-reading,6,The man greeted the leaders of the activist who was,0,sg,0
-reading,6,The man greeted the leader of the activists who were,0,pl,0
-reading,6,The man greeted the leaders of the activist who were,0,pl,1
-reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1
-reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0
-reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0
-reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1
-reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1
-reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0
-reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0
-reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1
-reading,10,The man noticed the representative of the employees who was,1,sg,1
-reading,10,The man noticed the representatives of the employee who was,1,sg,0
-reading,10,The man noticed the representative of the employees who were,1,pl,0
-reading,10,The man noticed the representatives of the employee who were,1,pl,1
-reading,10,The man resembled the representative of the employees who was,0,sg,1
-reading,10,The man resembled the representatives of the employee who was,0,sg,0
-reading,10,The man resembled the representative of the employees who were,0,pl,0
-reading,10,The man resembled the representatives of the employee who were,0,pl,1
-reading,11,The woman praised the gardener of the millionaires who was,1,sg,1
-reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0
-reading,11,The woman praised the gardener of the millionaires who were,1,pl,0
-reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1
-reading,11,The woman met the gardener of the millionaires who was,0,sg,1
-reading,11,The woman met the gardeners of the millionaire who was,0,sg,0
-reading,11,The woman met the gardener of the millionaires who were,0,pl,0
-reading,11,The woman met the gardeners of the millionaire who were,0,pl,1
-reading,13,The woman blamed the niece of the clerks who was,1,sg,1
-reading,13,The woman blamed the nieces of the clerk who was,1,sg,0
-reading,13,The woman blamed the niece of the clerks who were,1,pl,0
-reading,13,The woman blamed the nieces of the clerk who were,1,pl,1
-reading,13,The woman waited with the niece of the clerks who was,0,sg,1
-reading,13,The woman waited with the nieces of the clerk who was,0,sg,0
-reading,13,The woman waited with the niece of the clerks who were,0,pl,0
-reading,13,The woman waited with the nieces of the clerk who were,0,pl,1
-reading,14,The man helped the brother of the athletes who was,1,sg,1
-reading,14,The man helped the brothers of the athlete who was,1,sg,0
-reading,14,The man helped the brother of the athletes who were,1,pl,0
-reading,14,The man helped the brothers of the athlete who were,1,pl,1
-reading,14,The man ran into the brother of the athletes who was,0,sg,1
-reading,14,The man ran into the brothers of the athlete who was,0,sg,0
-reading,14,The man ran into the brother of the athletes who were,0,pl,0
-reading,14,The man ran into the brothers of the athlete who were,0,pl,1
-reading,16,The man pacified the associate of the businessmen who was,1,sg,1
-reading,16,The man pacified the associates of the businessman who was,1,sg,0
-reading,16,The man pacified the associate of the businessmen who were,1,pl,0
-reading,16,The man pacified the associates of the businessman who were,1,pl,1
-reading,16,The man visited the associate of the businessmen who was,0,sg,1
-reading,16,The man visited the associates of the businessman who was,0,sg,0
-reading,16,The man visited the associate of the businessmen who were,0,pl,0
-reading,16,The man visited the associates of the businessman who were,0,pl,1
-reading,18,The man thanked the servant of the dictators who was,1,sg,1
-reading,18,The man thanked the servants of the dictator who was,1,sg,0
-reading,18,The man thanked the servant of the dictators who were,1,pl,0
-reading,18,The man thanked the servants of the dictator who were,1,pl,1
-reading,18,The man talked to the servant of the dictators who was,0,sg,1
-reading,18,The man talked to the servants of the dictator who was,0,sg,0
-reading,18,The man talked to the servant of the dictators who were,0,pl,0
-reading,18,The man talked to the servants of the dictator who were,0,pl,1
-reading,20,The man mocked the fan of the singers who was,1,sg,1
-reading,20,The man mocked the fans of the singer who was,1,sg,0
-reading,20,The man mocked the fan of the singers who were,1,pl,0
-reading,20,The man mocked the fans of the singer who were,1,pl,1
-reading,20,The man counted the fan of the singers who was,0,sg,1
-reading,20,The man counted the fans of the singer who was,0,sg,0
-reading,20,The man counted the fan of the singers who were,0,pl,0
-reading,20,The man counted the fans of the singer who were,0,pl,1
+exp,item,sent,hasIC,num,isHIGH,tf_surp
+reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1,
+reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0,
+reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0,
+reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1,
+reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1,
+reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0,
+reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0,
+reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1,
+story,1,The woman scolded the aristocrat of the chefs who was,1,sg,1,
+story,1,The woman scolded the aristocrats of the chef who was,1,sg,0,
+story,1,The woman scolded the aristocrat of the chefs who were,1,pl,0,
+story,1,The woman scolded the aristocrats of the chef who were,1,pl,1,
+story,1,The woman studied with the aristocrat of the chefs who was,0,sg,1,
+story,1,The woman studied with the aristocrats of the chef who was,0,sg,0,
+story,1,The woman studied with the aristocrat of the chefs who were,0,pl,0,
+story,1,The woman studied with the aristocrats of the chef who were,0,pl,1,
+reading,3,The woman assisted the maid of the executives who was,1,sg,1,
+reading,3,The woman assisted the maids of the executive who was,1,sg,0,
+reading,3,The woman assisted the maid of the executives who were,1,pl,0,
+reading,3,The woman assisted the maids of the executive who were,1,pl,1,
+reading,3,The woman joked with the maid of the executives who was,0,sg,1,
+reading,3,The woman joked with the maids of the executive who was,0,sg,0,
+reading,3,The woman joked with the maid of the executives who were,0,pl,0,
+reading,3,The woman joked with the maids of the executive who were,0,pl,1,
+story,3,The woman assisted the executive of the maids who was,1,sg,1,
+story,3,The woman assisted the executives of the maid who was,1,sg,0,
+story,3,The woman assisted the executive of the maids who were,1,pl,0,
+story,3,The woman assisted the executives of the maid who were,1,pl,1,
+story,3,The woman joked with the executive of the maids who was,0,sg,1,
+story,3,The woman joked with the executives of the maid who was,0,sg,0,
+story,3,The woman joked with the executive of the maids who were,0,pl,0,
+story,3,The woman joked with the executives of the maid who were,0,pl,1,
+reading,4,The man trusted the captain of the sailors who was,1,sg,1,
+reading,4,The man trusted the captains of the sailor who was,1,sg,0,
+reading,4,The man trusted the captain of the sailors who were,1,pl,0,
+reading,4,The man trusted the captains of the sailor who were,1,pl,1,
+reading,4,The man stood near the captain of the sailors who was,0,sg,1,
+reading,4,The man stood near the captains of the sailor who was,0,sg,0,
+reading,4,The man stood near the captain of the sailors who were,0,pl,0,
+reading,4,The man stood near the captains of the sailor who were,0,pl,1,
+story,4,The man trusted the sailor of the captains who was,1,sg,1,
+story,4,The man trusted the sailors of the captain who was,1,sg,0,
+story,4,The man trusted the sailor of the captains who were,1,pl,0,
+story,4,The man trusted the sailors of the captain who were,1,pl,1,
+story,4,The man stood near the sailor of the captains who was,0,sg,1,
+story,4,The man stood near the sailors of the captain who was,0,sg,0,
+story,4,The man stood near the sailor of the captains who were,0,pl,0,
+story,4,The man stood near the sailors of the captain who were,0,pl,1,
+reading,6,The man comforted the leader of the activists who was,1,sg,1,
+reading,6,The man comforted the leaders of the activist who was,1,sg,0,
+reading,6,The man comforted the leader of the activists who were,1,pl,0,
+reading,6,The man comforted the leaders of the activist who were,1,pl,1,
+reading,6,The man greeted the leader of the activists who was,0,sg,1,
+reading,6,The man greeted the leaders of the activist who was,0,sg,0,
+reading,6,The man greeted the leader of the activists who were,0,pl,0,
+reading,6,The man greeted the leaders of the activist who were,0,pl,1,
+story,6,The man comforted the activist of the leaders who was,1,sg,1,
+story,6,The man comforted the activists of the leader who was,1,sg,0,
+story,6,The man comforted the activist of the leaders who were,1,pl,0,
+story,6,The man comforted the activists of the leader who were,1,pl,1,
+story,6,The man greeted the activist of the leaders who was,0,sg,1,
+story,6,The man greeted the activists of the leader who was,0,sg,0,
+story,6,The man greeted the activist of the leaders who were,0,pl,0,
+story,6,The man greeted the activists of the leader who were,0,pl,1,
+reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1,
+reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0,
+reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0,
+reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1,
+reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1,
+reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0,
+reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0,
+reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1,
+story,8,The man valued the shopkeeper of the daughters who was,1,sg,1,
+story,8,The man valued the shopkeepers of the daughter who was,1,sg,0,
+story,8,The man valued the shopkeeper of the daughters who were,1,pl,0,
+story,8,The man valued the shopkeepers of the daughter who were,1,pl,1,
+story,8,The man recognized the shopkeeper of the daughters who was,0,sg,1,
+story,8,The man recognized the shopkeepers of the daughter who was,0,sg,0,
+story,8,The man recognized the shopkeeper of the daughters who were,0,pl,0,
+story,8,The man recognized the shopkeepers of the daughter who were,0,pl,1,
+reading,10,The man noticed the representative of the employees who was,1,sg,1,
+reading,10,The man noticed the representatives of the employee who was,1,sg,0,
+reading,10,The man noticed the representative of the employees who were,1,pl,0,
+reading,10,The man noticed the representatives of the employee who were,1,pl,1,
+reading,10,The man resembled the representative of the employees who was,0,sg,1,
+reading,10,The man resembled the representatives of the employee who was,0,sg,0,
+reading,10,The man resembled the representative of the employees who were,0,pl,0,
+reading,10,The man resembled the representatives of the employee who were,0,pl,1,
+story,10,The man noticed the employee of the representatives who was,1,sg,1,
+story,10,The man noticed the employees of the representative who was,1,sg,0,
+story,10,The man noticed the employee of the representatives who were,1,pl,0,
+story,10,The man noticed the employees of the representative who were,1,pl,1,
+story,10,The man resembled the employee of the representatives who was,0,sg,1,
+story,10,The man resembled the employees of the representative who was,0,sg,0,
+story,10,The man resembled the employee of the representatives who were,0,pl,0,
+story,10,The man resembled the employees of the representative who were,0,pl,1,
+reading,11,The woman praised the gardener of the millionaires who was,1,sg,1,
+reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0,
+reading,11,The woman praised the gardener of the millionaires who were,1,pl,0,
+reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1,
+reading,11,The woman met the gardener of the millionaires who was,0,sg,1,
+reading,11,The woman met the gardeners of the millionaire who was,0,sg,0,
+reading,11,The woman met the gardener of the millionaires who were,0,pl,0,
+reading,11,The woman met the gardeners of the millionaire who were,0,pl,1,
+story,11,The woman praised the millionaire of the gardeners who was,1,sg,1,
+story,11,The woman praised the millionaires of the gardener who was,1,sg,0,
+story,11,The woman praised the millionaire of the gardeners who were,1,pl,0,
+story,11,The woman praised the millionaires of the gardener who were,1,pl,1,
+story,11,The woman met the millionaire of the gardeners who was,0,sg,1,
+story,11,The woman met the millionaires of the gardener who was,0,sg,0,
+story,11,The woman met the millionaire of the gardeners who were,0,pl,0,
+story,11,The woman met the millionaires of the gardener who were,0,pl,1,
+reading,13,The woman blamed the niece of the clerks who was,1,sg,1,
+reading,13,The woman blamed the nieces of the clerk who was,1,sg,0,
+reading,13,The woman blamed the niece of the clerks who were,1,pl,0,
+reading,13,The woman blamed the nieces of the clerk who were,1,pl,1,
+reading,13,The woman waited with the niece of the clerks who was,0,sg,1,
+reading,13,The woman waited with the nieces of the clerk who was,0,sg,0,
+reading,13,The woman waited with the niece of the clerks who were,0,pl,0,
+reading,13,The woman waited with the nieces of the clerk who were,0,pl,1,
+story,13,The woman blamed the clerk of the nieces who was,1,sg,1,
+story,13,The woman blamed the clerks of the niece who was,1,sg,0,
+story,13,The woman blamed the clerk of the nieces who were,1,pl,0,
+story,13,The woman blamed the clerks of the niece who were,1,pl,1,
+story,13,The woman waited with the clerk of the nieces who was,0,sg,1,
+story,13,The woman waited with the clerks of the niece who was,0,sg,0,
+story,13,The woman waited with the clerk of the nieces who were,0,pl,0,
+story,13,The woman waited with the clerks of the niece who were,0,pl,1,
+reading,14,The man helped the brother of the athletes who was,1,sg,1,
+reading,14,The man helped the brothers of the athlete who was,1,sg,0,
+reading,14,The man helped the brother of the athletes who were,1,pl,0,
+reading,14,The man helped the brothers of the athlete who were,1,pl,1,
+reading,14,The man ran into the brother of the athletes who was,0,sg,1,
+reading,14,The man ran into the brothers of the athlete who was,0,sg,0,
+reading,14,The man ran into the brother of the athletes who were,0,pl,0,
+reading,14,The man ran into the brothers of the athlete who were,0,pl,1,
+story,14,The man helped the athlete of the brothers who was,1,sg,1,
+story,14,The man helped the athletes of the brother who was,1,sg,0,
+story,14,The man helped the athlete of the brothers who were,1,pl,0,
+story,14,The man helped the athletes of the brother who were,1,pl,1,
+story,14,The man ran into the athlete of the brothers who was,0,sg,1,
+story,14,The man ran into the athletes of the brother who was,0,sg,0,
+story,14,The man ran into the athlete of the brothers who were,0,pl,0,
+story,14,The man ran into the athletes of the brother who were,0,pl,1,
+reading,16,The man pacified the associate of the businessmen who was,1,sg,1,
+reading,16,The man pacified the associates of the businessman who was,1,sg,0,
+reading,16,The man pacified the associate of the businessmen who were,1,pl,0,
+reading,16,The man pacified the associates of the businessman who were,1,pl,1,
+reading,16,The man visited the associate of the businessmen who was,0,sg,1,
+reading,16,The man visited the associates of the businessman who was,0,sg,0,
+reading,16,The man visited the associate of the businessmen who were,0,pl,0,
+reading,16,The man visited the associates of the businessman who were,0,pl,1,
+story,16,The man pacified the businessman of the associates who was,1,sg,1,
+story,16,The man pacified the businessmen of the associate who was,1,sg,0,
+story,16,The man pacified the businessman of the associates who were,1,pl,0,
+story,16,The man pacified the businessmen of the associate who were,1,pl,1,
+story,16,The man visited the businessman of the associates who was,0,sg,1,
+story,16,The man visited the businessmen of the associate who was,0,sg,0,
+story,16,The man visited the businessman of the associates who were,0,pl,0,
+story,16,The man visited the businessmen of the associate who were,0,pl,1,
+reading,18,The man thanked the servant of the dictators who was,1,sg,1,
+reading,18,The man thanked the servants of the dictator who was,1,sg,0,
+reading,18,The man thanked the servant of the dictators who were,1,pl,0,
+reading,18,The man thanked the servants of the dictator who were,1,pl,1,
+reading,18,The man talked to the servant of the dictators who was,0,sg,1,
+reading,18,The man talked to the servants of the dictator who was,0,sg,0,
+reading,18,The man talked to the servant of the dictators who were,0,pl,0,
+reading,18,The man talked to the servants of the dictator who were,0,pl,1,
+story,18,The man thanked the dictator of the servants who was,1,sg,1,
+story,18,The man thanked the dictators of the servant who was,1,sg,0,
+story,18,The man thanked the dictator of the servants who were,1,pl,0,
+story,18,The man thanked the dictators of the servant who were,1,pl,1,
+story,18,The man talked to the dictator of the servants who was,0,sg,1,
+story,18,The man talked to the dictators of the servant who was,0,sg,0,
+story,18,The man talked to the dictator of the servants who were,0,pl,0,
+story,18,The man talked to the dictators of the servant who were,0,pl,1,
+reading,20,The man mocked the fan of the singers who was,1,sg,1,
+reading,20,The man mocked the fans of the singer who was,1,sg,0,
+reading,20,The man mocked the fan of the singers who were,1,pl,0,
+reading,20,The man mocked the fans of the singer who were,1,pl,1,
+reading,20,The man counted the fan of the singers who was,0,sg,1,
+reading,20,The man counted the fans of the singer who was,0,sg,0,
+reading,20,The man counted the fan of the singers who were,0,pl,0,
+reading,20,The man counted the fans of the singer who were,0,pl,1,
+story,20,The man mocked the singer of the fans who was,1,sg,1,
+story,20,The man mocked the singers of the fan who was,1,sg,0,
+story,20,The man mocked the singer of the fans who were,1,pl,0,
+story,20,The man mocked the singers of the fan who were,1,pl,1,
+story,20,The man counted the singer of the fans who was,0,sg,1,
+story,20,The man counted the singers of the fan who was,0,sg,0,
+story,20,The man counted the singer of the fans who were,0,pl,0,
+story,20,The man counted the singers of the fan who were,0,pl,1,
