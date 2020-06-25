@@ -1,6 +1,8 @@
 import torch
 import numpy as np
-from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel
+from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel
+
+#device = torch.device("cuda:0")
 
 def check_unks(fname, vocabf):
 
@@ -26,6 +28,30 @@ def check_unks(fname, vocabf):
                     OOV.add(word)
         return OOV
 
+def load_data(fname):
+
+    sents = []
+
+    with open(fname, 'r') as f:
+
+        header = f.readline().split(',')
+
+        idx = 0
+        for x in range(len(header)):
+            if header[x] == 'sent':
+                idx = x
+
+        for line in f:
+            sent = line.strip().split(',')[idx].lower()
+            sents.append(sent)
+
+    return sents
+
+def apply(func, apply_dimension):
+    ''' Applies a function along a given dimension '''
+    output_list = [func(m) for m in torch.unbind(apply_dimension, dim=0)]
+    return torch.stack(output_list, dim=0)
+
 def get_surps(state):
     logprobs = torch.log2(torch.nn.functional.softmax(state, dim=0))
     return -1 * logprobs
@@ -34,12 +60,19 @@ def get_IT(state, obs, tokenizer):
 
     metrics = []
 
-    surps = get_surps(state)
+    surps = apply(get_surps, state)
 
     for sentpos, targ in enumerate(obs):
 
-        word = tokenizer.decode(int(targ))
-        print(sentpos, targ, word)
+        word = tokenizer.decode(int(targ)).replace(' ','')
+        #skip over EOS
+        if word == '<eos>':
+            continue
+        #print(surps)
+        surp = float(surps[sentpos][int(targ)].data)
+        metrics.append((word, surp))
+
+    return metrics
 
 def test_get_batch(source):
     ''' Creates an input/target pair for evaluation '''
@@ -57,40 +90,53 @@ def tfxl_tokenize(tf_tokenizer, sents):
 
     input_ids = []
     for sent in sents:
-        if "<eos>" not in sent:
-            sent = "<eos> "+sent+ " <eos>"
 
-        encoded = tf_tokenizer.encode(sent)
+        encoded = tf_tokenizer.encode(sent, add_special_tokens=True)
 
         sent_id = torch.tensor(encoded)
         decoded = tf_tokenizer.decode(encoded)
 
-        assert decoded == sent
+        #assert decoded == sent
 
         input_ids.append(sent_id)
 
     return input_ids
 
-def tfxl_IT(data_source, tokenizer, model):
+def tfxl_IT(sents, tokenizer, model):
     
     values = []
-    for i in range(len(data_source)):
-        sent_ids = data_source[i]
-        
-        data, target = test_get_batch(sent_ids)
 
-        data = data.unsqueeze(1)
+    for sent in sents:
 
-        output = model(data)
+        sent_values = []
 
-        metrics = get_IT(output, target, tokenizer)
+        input_ids = torch.tensor(tokenizer.encode(sent, add_special_tokens=True)).unsqueeze(0)
 
+        outputs = tf_model(input_ids)
+        predictions, mems = outputs[:2]
+        surps = torch.log2(torch.exp(-1*torch.nn.functional.log_softmax(predictions, -1)))
 
+        count = 0 
+        for y in range(len(input_ids[0])-1):
+            target_id = input_ids[0][y+1]
+            input_id = input_ids[0][y]
+
+            target_word = tokenizer.decode([target_id]).replace(' ','')
+            surp = float(surps[0, y, int(target_id)].data)
+            sent_values.append((target_word, surp))
+        values.append(sent_values)
+
+    return values
+
+'''
 fname = "stimuli/IC_match.csv"
 vocabf = 'wikitext103_vocab'
 check_unks(fname, vocabf)
+'''
 
-sents = ['The man admires the agent of the rockers who was']
+fname = "stimuli/IC_mismatch.csv"
+
+sents = load_data(fname)
 
 tokenizer = TransfoXLTokenizer.from_pretrained('transfo-xl-wt103')
 tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103')
@@ -98,50 +144,35 @@ tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103')
 #turn off learning
 tf_model.zero_grad()
 
-input_ids = tfxl_tokenize(tokenizer, sents)
+measures = tfxl_IT(sents, tokenizer, tf_model)
 
-tfxl_IT(input_ids, tokenizer, tf_model)
-
-
+for measure in measures:
+    target_word, surp = measure[-1]
+    assert target_word == 'was' or target_word == 'were'
+    print(surp)
 
 '''
-
-
-sg = torch.tensor([tokenizer.encode('is')])
-pl = torch.tensor([tokenizer.encode('are')])
-
-sent = "<eos> The author met the agent of the rockers who is happy"
-sent_idx = torch.tensor([tokenizer.encode(sent, add_special_tokens=True)])
-print(tokenizer.decode(tokenizer.encode(sent)))
-
-print(sent_idx)
-outputs = tf_model(sent_idx)
-prediction_scores, mems = outputs[:2]
-surps = get_surps(prediction_scores[0][-2])
-print(surps[int(sg)])
-print(surps[int(pl)])
-
-sent = "The author met the agents of the rocker who are"
-sent_idx = torch.tensor([tokenizer.encode(sent, add_special_tokens=True)])
-
-print(sent_idx)
-outputs = tf_model(sent_idx)
-prediction_scores, mems = outputs[:2]
-surps = get_surps(prediction_scores[0][-2])
-print(surps[int(sg)])
-print(surps[int(pl)])
-
-sent = "The author aldfkjadlfj food"
-sent_idx = torch.tensor([tokenizer.encode(sent, add_special_tokens=True)])
-
-print(sent_idx)
-outputs = tf_model(sent_idx)
-prediction_scores, mems = outputs[:2]
-surps = get_surps(prediction_scores[0][0])
-print(surps)
-
-sent = "The author is"
-sent_idx = torch.tensor([tokenizer.encode(sent, add_special_tokens=True)])
-
-print(sent_idx)
+sent = 'scolded the chefs of the aristocrat who were'
+sents = ['The woman scolded the chef of the aristocrats who was', 'The woman scolded the chefs of the aristocrat who was', 'The woman scolded the chef of the aristocrats who eat', 
+        'The woman scolded the chefs of the aristocrat who eat', 'The woman who the man despises eats', 'The woman who the man despises eat', 
+        'The monkey potato that these applesauce flower aristocrat banana were',
+        'The monkey potato that these applesauce flower president fruit were',
+        'Monkey potato that these appllesauce flowers were'] 
+sents = ['scolded the chefs of the aristocrat who were', 
+        'scolded the chefs of the president who were', 
+        'scolded the chefs of the banana who were', 
+        'scolded the chefs of the aristocrats who were', 
+        'scolded the chefs of the presidents who were', 
+        'scolded the chefs of the bananas who were', 
+        'scolded the chef of the aristocrat who were', 
+        'scolded the chef of the president who were', 
+        'scolded the chef of the banana who were', 
+        'scolded the chef of the aristocrats who were', 
+        'scolded the chef of the presidents who were', 
+        'scolded the chef of the bananas who were', 
+        'scolded the chefs of the devour who were', 
+        'scolded the chefs of the who were', 
+        'scolded the were',
+        'the were'
+        'blank who were']
 '''
