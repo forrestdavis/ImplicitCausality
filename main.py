@@ -1,4 +1,4 @@
-import spacy
+from scipy import stats
 import glob
 import torch
 import warnings
@@ -67,6 +67,12 @@ def test_get_batch(source):
     target = source[1:1+seq_len].view(-1)
     
     return data, target
+
+def repackage_hidden(in_state):
+    if isinstance(in_state, torch.Tensor):
+        return in_state.detach()
+    else:
+        return tuple(repackage_hidden(value) for value in in_state)
 
 def tfxl_tokenize(tf_tokenizer, sents):
     ''' Takes a list of sents, tokenizes them,
@@ -293,6 +299,75 @@ def run_lms_completion(sents, vocab_file, model_files, K=100):
 
     return completions
 
+def get_lms_hidden(sents, vocab_file, model_files):
+
+    data_path = './'
+    criterion = torch.nn.CrossEntropyLoss()
+
+    measures = {}
+    #model X layers X sents
+    hidden_reps = {}
+    for model_file in model_files:
+        hidden_reps[model_file] = {}
+        #add layers
+        for i in range(2):
+            hidden_reps[model_file][i] = []
+
+        print('testing LSTM LM:', model_file)
+
+        #Problem with diff versions of torch
+        #model = m.RNNModel('LSTM', 50002, 400, 400, 2, None, 0.2, tie_weights=True)
+        model = m.RNNModel('LSTM', 50002, 400, 400, 2, None, 0.2, tie_weights=True).to(device)
+        with open(model_file, 'rb') as f:
+            loaded_model = torch.load(f, map_location='cpu')
+        model.load_state_dict(loaded_model.state_dict())
+
+        #Cancel dropout :)
+        model.eval()
+
+        #set to single sentence reading
+        multisent_flag = False
+        for sent in sents:
+
+            #Create corpus wrapper (this is for one hoting data)
+            corpus = lm_data.TestSent(data_path, vocab_file, [sent], 
+                                        multisent_flag)
+
+            #Get one hots
+            #sent_ids = corpus.get_data()[0].to(torch.device('cpu'))
+            sent_ids = corpus.get_data()[0].to(device)
+            hidden = model.init_hidden(1)
+
+            data, targets = test_get_batch(sent_ids)
+
+            data = data.unsqueeze(1)
+
+            layer_0 = []
+            layer_1 = []
+            #Go through word by word and get activations
+            for word_index in range(data.size(0)):
+                hidden = repackage_hidden(hidden)
+                #don't learn
+                model.zero_grad()
+
+                word_input = data[word_index]
+
+                #What's going in 
+                input_word = corpus.dictionary.idx2word[int(word_input.data)]
+                output, hidden = model(torch.tensor([[word_input]]).to(device), hidden)
+                if input_word == "<eos>":
+                    continue
+
+                #hidden[0] is hidden; hidden[1] is cell state
+                h = hidden[0].data
+                layer_0.append((input_word, h[0]))
+                layer_1.append((input_word, h[1]))
+
+            hidden_reps[model_file][0].append(layer_0)
+            hidden_reps[model_file][1].append(layer_1)
+
+    return hidden_reps
+
 def parse(completions):
 
     nlp = spacy.load("en_core_web_sm")
@@ -321,6 +396,204 @@ def parse(completions):
             scores[model].append(score)
     return scores
 
+def get_RSM(hidden):
+
+    #model X layer X sents -> [(RSM_who, RSM_were)_0, ...]
+    RSMS = {}
+
+    for model in hidden:
+        RSMS[model] = {}
+        for layer in hidden[model]:
+            RSMS[model][layer] = []
+            for sent in hidden[model][layer]:
+                table = get_cossim(sent)
+                #if contains who break into two
+                if len(table) == 6:
+                    who = table[:-1, :-1]
+                    was = np.delete(np.delete(table, -2, 0), -2, 1)
+                    #extract upper triangle
+                    who = who[np.triu_indices_from(who, k=1)]
+                    was = was[np.triu_indices_from(was, k=1)]
+                    rsms = (who, was)
+                else:
+                    table = table[np.triu_indices_from(table, k=1)]
+                    rsms = (table)
+                RSMS[model][layer].append(rsms)
+    return RSMS
+
+def get_cossim(sent):
+
+    #Get targets
+    #Filter out useless stuff
+    target_idxs = [1, 2]
+    if sent[3][0] == 'the':
+        target_idxs.append(4)
+    else:
+        target_idxs.append(5)
+
+    end = len(sent)-1
+
+    target_idxs.append(end-2)
+    if sent[end-1][0] == 'who':
+        target_idxs.append(end-1)
+    target_idxs.append(end)
+
+    #initalize RSM table
+    table = np.full((len(target_idxs), len(target_idxs)), 0.)
+
+    for i in range(len(target_idxs)):
+        word_1_idx = target_idxs[i]
+        word_1, emb_1 = sent[word_1_idx]
+        for j in range(len(target_idxs)):
+            word_2_idx = target_idxs[j]
+            word_2, emb_2 = sent[word_2_idx]
+            sim = float(torch.cosine_similarity(emb_1, emb_2).data)
+            table[i, j] = sim
+
+    return table
+
+def get_dummies(fname, gradient=False):
+
+    sent_idx = 0
+    IC_idx = 0
+    #(high, low, human)_0 ...
+    dummies = []
+    with open(fname, 'r') as f:
+
+        header = f.readline().strip().split(',')
+        for x in range(len(header)):
+            head = header[x]
+            if head == 'hasIC' or head == 'bias':
+                IC_idx = x
+            if head == 'sent':
+                sent_idx = x
+
+        for line in f:
+            line = line.strip().split(',')
+            sent = line[sent_idx]
+            ic = int(line[IC_idx])
+
+            human = np.full((5, 5), 0)
+            if ic > 0:
+                if not gradient:
+                    ic = 1
+                human[2, 4] = ic
+                human[4, 2] = ic
+            else:
+                if not gradient:
+                    ic = 1
+                human[3, 4] = ic
+                human[4, 3] = ic
+
+            high = np.full((5, 5), 0)
+            high[2, 4] = 1
+            high[4, 2] = 1
+
+            low = np.full((5, 5), 0)
+            low[3, 4] = 1
+            low[4, 3] = 1
+
+            human = human[np.triu_indices_from(human, k=1)]
+            high = high[np.triu_indices_from(high, k=1)]
+            low = low[np.triu_indices_from(low, k=1)]
+            dummies.append((high, low, human))
+    return dummies
+
+def run_RSA(RSMS, dummies):
+
+    results = {}
+    for model in RSMS:
+        results[model] = {}
+        for layer in RSMS[model]:
+            results[model][layer] = []
+            for x in range(len(RSMS[model][layer])):
+                embed = RSMS[model][layer][x]
+                high, low, human = dummies[x]
+                if len(embed) == 2:
+                    high_who_rho, high_who_pval = stats.spearmanr(embed[0], high)
+                    low_who_rho, low_who_pval = stats.spearmanr(embed[0], low)
+                    human_who_rho, human_who_pval = stats.spearmanr(embed[0], human)
+
+                    high_were_rho, high_were_pval = stats.spearmanr(embed[1], high)
+                    low_were_rho, low_were_pval = stats.spearmanr(embed[1], low)
+                    human_were_rho, human_were_pval = stats.spearmanr(embed[1], human)
+
+                    result = ((high_who_rho, high_who_pval, 
+                            low_who_rho, low_who_pval,
+                            human_who_rho, human_who_pval), 
+                            (high_were_rho, high_were_pval, 
+                                low_were_rho, low_were_pval, 
+                                human_were_rho, human_were_pval))
+                else:
+                    high_rho, high_pval = stats.spearmanr(embed, high)
+                    low_rho, low_pval = stats.spearmanr(embed, low)
+                    human_rho, human_pval = stats.spearmanr(embed, human)
+                    result = ((high_rho, low_rho, human_rho),)
+                results[model][layer].append(result)
+    return results
+
+
+def save_results(outname, results, models, model_type='LSTM'):
+
+    out_str = []
+    num_layers = len(results[models[0]])
+    multi = len(results[models[0]][0][0])
+    if model_type == 'LSTM':
+        if multi == 2:
+            for word in ["who", "were"]:
+                for i in range(num_layers):
+                    for model in models:
+                        m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_RSA'
+                        out_str.append(m)
+                        m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_pvalue'
+                        out_str.append(m)
+                    out_str.append('LSTM_avg_layer_'+str(i)+'_'+word+'_RSA')
+                    
+        else:
+            for i in range(num_layers):
+                for model in models:
+                    m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_RSA'
+                    out_str.append(m)
+                    m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_pvalue'
+                    out_str.append(m)
+                out_str.append('LSTM_avg_layer_'+str(i)+'_RSA')
+    else:
+        if multi == 2:
+            for word in ["who", "were"]:
+                for i in range(len(results[models])):
+                    for model in results:
+                        m = 'tf_layer_'+str(i)+'_'+word+'_RSA' 
+                        out_str.append(m)
+                        m = 'tf_layer_'+str(i)+'_'+word+'_pvalue' 
+                        out_str.append(m)
+        else:
+            for i in range(len(results[models])):
+                for model in results:
+                    m = 'tf_layer_'+str(i)+'_RSA' 
+                    out_str.append(m)
+                    m = 'tf_layer_'+str(i)+'_'+word+'_pvalue' 
+                    out_str.append(m)
+
+
+    out_str = ','.join(out_str)+'\n'
+
+    for x in range(len(results[models[0]][0])):
+        all_out = []
+        for z in range(multi):
+            for i in range(num_layers):
+                all_rho = []
+                for model in models:
+                    measures = results[model][i][x][z]
+                    for k in range(len(measures)):
+                        if k % 2 == 0:
+                            all_rho.append(measures[k])
+                        all_out.append(str(measures[k]))
+                all_out.append(str(sum(all_rho)/len(all_rho)))
+        out_str += ','.join(all_out) + '\n'
+        break
+
+    print(out_str)
+
 ###################
 # CHECK FOR UNKs  #
 ###################
@@ -331,10 +604,10 @@ check_unks(fname, vocabf)
 '''
 
 #fname = "stimuli/IC_mismatch.csv"
-#fname = "stimuli/Reading_Time.csv"
+fname = "stimuli/Reading_Time.csv"
 #fname = "stimuli/Story_Completion.csv"
 
-#sents = load_data(fname)
+sents = load_data(fname)
 ###################
 # LSTM LMs Compl  #
 ###################
@@ -398,6 +671,21 @@ for x in range(len(measures[lm_models[0]])):
 
 print(out_str)
 '''
+
+###################
+#  LSTM LMs Surp  #
+###################
+vocabf = 'wikitext103_vocab'
+lm_models = glob.glob('models/*.pt')[:1]
+lm_models.sort()
+hidden = get_lms_hidden(sents, vocabf, lm_models)
+
+RSMS = get_RSM(hidden)
+dummies = get_dummies(fname)
+
+results = run_RSA(RSMS, dummies)
+outname = fname.split('.csv')[0]+'_results.csv'
+save_results(outname, results, lm_models)
 
 ###################
 #Transformers Compl
