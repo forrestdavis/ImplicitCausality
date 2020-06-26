@@ -129,21 +129,21 @@ for key in names:
     '''
     print(','.join(['story', str(key), sent1, '1', 'sg', '1']))
     print(','.join(['story', str(key), sent2, '1', 'sg', '0']))
-    print(','.join(['story', str(key), sent3, '1', 'pl', '0']))
-    print(','.join(['story', str(key), sent4, '1', 'pl', '1']))
+    #print(','.join(['story', str(key), sent3, '1', 'pl', '0']))
+    #print(','.join(['story', str(key), sent4, '1', 'pl', '1']))
     print(','.join(['story', str(key), sent5, '0', 'sg', '1']))
     print(','.join(['story', str(key), sent6, '0', 'sg', '0']))
-    print(','.join(['story', str(key), sent7, '0', 'pl', '0']))
-    print(','.join(['story', str(key), sent8, '0', 'pl', '1']))
+    #print(','.join(['story', str(key), sent7, '0', 'pl', '0']))
+    #print(','.join(['story', str(key), sent8, '0', 'pl', '1']))
 
     print(','.join(['story', str(key), sent9, '1', 'sg', '1']))
     print(','.join(['story', str(key), sent10, '1', 'sg', '0']))
-    print(','.join(['story', str(key), sent11, '1', 'pl', '0']))
-    print(','.join(['story', str(key), sent12, '1', 'pl', '1']))
+    #print(','.join(['story', str(key), sent11, '1', 'pl', '0']))
+    #print(','.join(['story', str(key), sent12, '1', 'pl', '1']))
     print(','.join(['story', str(key), sent13, '0', 'sg', '1']))
     print(','.join(['story', str(key), sent14, '0', 'sg', '0']))
-    print(','.join(['story', str(key), sent15, '0', 'pl', '0']))
-    print(','.join(['story', str(key), sent16, '0', 'pl', '1']))
+    #print(','.join(['story', str(key), sent15, '0', 'pl', '0']))
+    #print(','.join(['story', str(key), sent16, '0', 'pl', '1']))
     '''
 
 #Reading time
@@ -278,14 +278,14 @@ for key in names:
     print(','.join(['reading', str(key), sent7, '0', 'pl', '0']))
     print(','.join(['reading', str(key), sent8, '0', 'pl', '1']))
 
-    print(','.join(['story', str(key), sent9, '1', 'sg', '1']))
-    print(','.join(['story', str(key), sent10, '1', 'sg', '0']))
-    print(','.join(['story', str(key), sent11, '1', 'pl', '0']))
-    print(','.join(['story', str(key), sent12, '1', 'pl', '1']))
-    print(','.join(['story', str(key), sent13, '0', 'sg', '1']))
-    print(','.join(['story', str(key), sent14, '0', 'sg', '0']))
-    print(','.join(['story', str(key), sent15, '0', 'pl', '0']))
-    print(','.join(['story', str(key), sent16, '0', 'pl', '1']))
+    print(','.join(['reading', str(key), sent9, '1', 'sg', '1']))
+    print(','.join(['reading', str(key), sent10, '1', 'sg', '0']))
+    print(','.join(['reading', str(key), sent11, '1', 'pl', '0']))
+    print(','.join(['reading', str(key), sent12, '1', 'pl', '1']))
+    print(','.join(['reading', str(key), sent13, '0', 'sg', '1']))
+    print(','.join(['reading', str(key), sent14, '0', 'sg', '0']))
+    print(','.join(['reading', str(key), sent15, '0', 'pl', '0']))
+    print(','.join(['reading', str(key), sent16, '0', 'pl', '1']))
     '''
 
 verbs = open('IC_verbs', 'r')
