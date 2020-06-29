@@ -9,7 +9,7 @@ import numpy as np
 import model as m
 from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel
 
-device = torch.device("cuda:0")
+device = torch.device("cuda:1")
 
 def check_unks(fname, vocabf):
 
@@ -457,6 +457,47 @@ def get_RSM(hidden):
                 RSMS[model][layer].append(rsms)
     return RSMS
 
+def return_sims(hidden, target_type='who'):
+
+    SIMS = {}
+    for model in hidden:
+        SIMS[model] = {}
+        for layer in hidden[model]:
+            SIMS[model][layer] = []
+            for sent in hidden[model][layer]:
+                if target_type == 'he':
+                    high_word, high_emb = sent[1]
+                    low_word, low_emb = sent[-3]
+                    t_word, t_emb = sent[-1]
+                elif target_type == 'who':
+                    if sent[3][0] == 'the':
+                        high_word, high_emb = sent[4]
+                    else:
+                        high_word, high_emb == sent[5]
+                    low_word, low_emb = sent[-3]
+                    t_word, t_emb = sent[-2]
+                else:
+                    if sent[3][0] == 'the':
+                        high_word, high_emb = sent[4]
+                    else:
+                        high_word, high_emb == sent[5]
+                    low_word, low_emb = sent[-3]
+                    t_word, t_emb = sent[-1]
+
+                high_emb = high_emb.cpu().squeeze()
+                low_emb = low_emb.cpu().squeeze()
+                t_emb = t_emb.cpu().squeeze()
+                if high_emb.shape != t_emb.shape:
+                    print(high_emb)
+                    print(t_emb)
+
+                high_sim = np.corrcoef(high_emb, t_emb)[0, 1]
+                low_sim = np.corrcoef(low_emb, t_emb)[0, 1]
+
+                SIMS[model][layer].append((high_sim, low_sim))
+
+    return SIMS
+
 def get_cossim(sent):
 
 
@@ -681,6 +722,23 @@ lm_models = glob.glob('models/*.pt')#[:1]
 lm_models.sort()
 hidden = get_lms_hidden(sents, vocabf, lm_models)
 
+if 'IC' in fname:
+    SIMS = return_sims(hidden, 'he')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_SIMS_results.csv'
+    save_sims(outname, SIMS, lm_models)
+
+else:
+    who_SIMS = return_sims(hidden, 'who')
+    were_SIMS = return_sims(hidden, 'was')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_who_SIMS_results.csv'
+    save_sims(outname, who_SIMS, lm_models)
+    outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_were_SIMS_results.csv'
+    save_sims(outname, were_SIMS, lm_models)
+
+
+'''
 RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)
 
@@ -690,7 +748,6 @@ results = run_RSA(RSMS, dummies)
 outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_results.csv'
 save_results(outname, results, lm_models)
 
-'''
 #save who
 outname = fname.split('/')[-1].split('.csv')[0]+'_who_results.csv'
 save_who_results(outname, results, lm_models)
@@ -750,6 +807,21 @@ tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103',
 tf_model.zero_grad()
 
 hidden = get_tf_hidden(sents, tokenizer, tf_model)
+
+if 'IC' in fname:
+    SIMS = return_sims(hidden, 'he')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_tf_SIMS_results.csv'
+    save_sims(outname, SIMS, ['tf'], 'tf')
+
+else:
+    who_SIMS = return_sims(hidden, 'who')
+    were_SIMS = return_sims(hidden, 'was')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_tf_who_SIMS_results.csv'
+    save_sims(outname, who_SIMS, ['tf'], 'tf')
+    outname = fname.split('/')[-1].split('.csv')[0]+'_tf_were_SIMS_results.csv'
+    save_sims(outname, were_SIMS, ['tf'], 'tf')
 
 RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)

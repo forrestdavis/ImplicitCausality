@@ -1,3 +1,58 @@
+def save_sims(outname, results, models, model_type = 'LSTM'):
+
+    out_str = []
+    num_layers = len(results[models[0]])
+    #Header
+    if model_type == 'LSTM':
+        for i in range(num_layers):
+            for model in models:
+                m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_HIGH_SIM'
+                out_str.append(m)
+
+                m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_LOW_SIM'
+                out_str.append(m)
+
+            out_str.append('LSTM_avg_layer_'+str(i)+'_HIGH_SIM')
+            out_str.append('LSTM_avg_layer_'+str(i)+'_LOW_SIM')
+    else:
+        for i in range(len(results[models[0]])):
+            for model in results:
+                m = 'tf_layer_'+str(i)+'_HIGH_SIM' 
+                out_str.append(m)
+
+                m = 'tf_layer_'+str(i)+'_LOW_SIM' 
+                out_str.append(m)
+
+    out_str = ','.join(out_str)+'\n'
+
+    data = []
+
+    out = ''
+    for x in range(len(results[models[0]][0])):
+        all_out = []
+        for i in range(num_layers):
+            high_rho = []
+            low_rho = []
+            human_rho = []
+            for model in models:
+                measures = results[model][i][x]
+
+                high_r = measures[0]
+                high_rho.append(high_r)
+                all_out.append(str(high_r))
+
+                low_r = measures[1]
+                low_rho.append(low_r)
+                all_out.append(str(low_r))
+
+            if model_type == "LSTM":
+                all_out.append(str(sum(high_rho)/len(high_rho)))
+                all_out.append(str(sum(low_rho)/len(low_rho)))
+        out_str += ','.join(all_out) + '\n'
+
+    with open(outname, 'w') as f:
+        f.write(out_str)
+
 def save_results(outname, results, models, model_type ='LSTM'):
 
     out_str = []
