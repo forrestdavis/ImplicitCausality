@@ -1,4 +1,5 @@
 from scipy import stats
+from tools.utils import *
 import glob
 import torch
 import warnings
@@ -8,7 +9,7 @@ import numpy as np
 import model as m
 from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel
 
-device = torch.device("cuda:1")
+device = torch.device("cuda:0")
 
 def check_unks(fname, vocabf):
 
@@ -177,6 +178,41 @@ def tfxl_completions(sents, tokenizer, model, K=100):
 
     return completions
 
+def get_tf_hidden(sents, tokenizer, model):
+
+    #model X layers X sents
+    hidden_reps = {}
+    hidden_reps['tf'] = {}
+    for i in range(18):
+        hidden_reps['tf'][i] = []
+    
+    for sent in sents: 
+
+        encoded = tokenizer.encode(sent, add_special_tokens=True)
+        input_ids = torch.tensor(encoded).unsqueeze(0)
+
+        #verify no unks
+        decoded = tokenizer.decode(encoded)
+        assert decoded == sent
+
+        #Get model outputs
+        output = model(input_ids)
+        predictions, mems, hidden_states = output
+
+        #ignore embedding
+        hidden_states = hidden_states[1:]
+        for i in range(len(hidden_states)):
+            reps = []
+            for x in range(len(encoded)):
+                idx = encoded[x]
+                input_word = tokenizer.decode(torch.tensor([idx]))
+                h = hidden_states[i][0][x].unsqueeze(0).data
+                rep = (input_word, h)
+                reps.append(rep)
+            hidden_reps['tf'][i].append(reps)
+
+    return hidden_reps
+
 def run_lms(sents, vocab_file, model_files):
 
     data_path = './'
@@ -299,12 +335,12 @@ def run_lms_completion(sents, vocab_file, model_files, K=100):
 
     return completions
 
+
 def get_lms_hidden(sents, vocab_file, model_files):
 
     data_path = './'
     criterion = torch.nn.CrossEntropyLoss()
 
-    measures = {}
     #model X layers X sents
     hidden_reps = {}
     for model_file in model_files:
@@ -423,6 +459,7 @@ def get_RSM(hidden):
 
 def get_cossim(sent):
 
+
     #Get targets
     #Filter out useless stuff
     target_idxs = [1, 2]
@@ -433,7 +470,8 @@ def get_cossim(sent):
 
     end = len(sent)-1
 
-    target_idxs.append(end-2)
+    if end-2 not in target_idxs:
+        target_idxs.append(end-2)
     if sent[end-1][0] == 'who':
         target_idxs.append(end-1)
     target_idxs.append(end)
@@ -473,30 +511,54 @@ def get_dummies(fname, gradient=False):
             sent = line[sent_idx]
             ic = int(line[IC_idx])
 
-            human = np.full((5, 5), 0)
-            if ic > 0:
-                if not gradient:
-                    ic = 1
-                human[2, 4] = ic
-                human[4, 2] = ic
+            if line[0] == 'ic_match' or line[0] == 'ic_mismatch':
+                human = np.full((4, 4), 0)
+                if ic > 0:
+                    if not gradient:
+                        ic = 1
+                    human[1, 3] = ic
+                    human[3, 1] = ic
+                else:
+                    if not gradient:
+                        ic = 1
+                    human[2, 3] = ic
+                    human[3, 2] = ic
+
+                high = np.full((4, 4), 0)
+                high[1, 3] = 1
+                high[3, 1] = 1
+
+                low = np.full((4, 4), 0)
+                low[2, 3] = 1
+                low[3, 2] = 1
+
             else:
-                if not gradient:
-                    ic = 1
-                human[3, 4] = ic
-                human[4, 3] = ic
+                human = np.full((5, 5), 0)
 
-            high = np.full((5, 5), 0)
-            high[2, 4] = 1
-            high[4, 2] = 1
+                if ic > 0:
+                    if not gradient:
+                        ic = 1
+                    human[2, 4] = ic
+                    human[4, 2] = ic
+                else:
+                    if not gradient:
+                        ic = 1
+                    human[3, 4] = ic
+                    human[4, 3] = ic
 
-            low = np.full((5, 5), 0)
-            low[3, 4] = 1
-            low[4, 3] = 1
+                high = np.full((5, 5), 0)
+                high[2, 4] = 1
+                high[4, 2] = 1
+
+                low = np.full((5, 5), 0)
+                low[3, 4] = 1
+                low[4, 3] = 1
 
             human = human[np.triu_indices_from(human, k=1)]
             high = high[np.triu_indices_from(high, k=1)]
             low = low[np.triu_indices_from(low, k=1)]
             dummies.append((high, low, human))
+
     return dummies
 
 def run_RSA(RSMS, dummies):
@@ -528,71 +590,9 @@ def run_RSA(RSMS, dummies):
                     high_rho, high_pval = stats.spearmanr(embed, high)
                     low_rho, low_pval = stats.spearmanr(embed, low)
                     human_rho, human_pval = stats.spearmanr(embed, human)
-                    result = ((high_rho, low_rho, human_rho),)
+                    result = ((high_rho, high_pval, low_rho, low_pval, human_rho, human_pval),)
                 results[model][layer].append(result)
     return results
-
-
-def save_results(outname, results, models, model_type='LSTM'):
-
-    out_str = []
-    num_layers = len(results[models[0]])
-    multi = len(results[models[0]][0][0])
-    if model_type == 'LSTM':
-        if multi == 2:
-            for word in ["who", "were"]:
-                for i in range(num_layers):
-                    for model in models:
-                        m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_RSA'
-                        out_str.append(m)
-                        m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_pvalue'
-                        out_str.append(m)
-                    out_str.append('LSTM_avg_layer_'+str(i)+'_'+word+'_RSA')
-                    
-        else:
-            for i in range(num_layers):
-                for model in models:
-                    m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_RSA'
-                    out_str.append(m)
-                    m = 'LSTM_'+model.split('-')[1].split('_')[-1]+'_layer_'+str(i)+'_'+word+'_pvalue'
-                    out_str.append(m)
-                out_str.append('LSTM_avg_layer_'+str(i)+'_RSA')
-    else:
-        if multi == 2:
-            for word in ["who", "were"]:
-                for i in range(len(results[models])):
-                    for model in results:
-                        m = 'tf_layer_'+str(i)+'_'+word+'_RSA' 
-                        out_str.append(m)
-                        m = 'tf_layer_'+str(i)+'_'+word+'_pvalue' 
-                        out_str.append(m)
-        else:
-            for i in range(len(results[models])):
-                for model in results:
-                    m = 'tf_layer_'+str(i)+'_RSA' 
-                    out_str.append(m)
-                    m = 'tf_layer_'+str(i)+'_'+word+'_pvalue' 
-                    out_str.append(m)
-
-
-    out_str = ','.join(out_str)+'\n'
-
-    for x in range(len(results[models[0]][0])):
-        all_out = []
-        for z in range(multi):
-            for i in range(num_layers):
-                all_rho = []
-                for model in models:
-                    measures = results[model][i][x][z]
-                    for k in range(len(measures)):
-                        if k % 2 == 0:
-                            all_rho.append(measures[k])
-                        all_out.append(str(measures[k]))
-                all_out.append(str(sum(all_rho)/len(all_rho)))
-        out_str += ','.join(all_out) + '\n'
-        break
-
-    print(out_str)
 
 ###################
 # CHECK FOR UNKs  #
@@ -604,8 +604,9 @@ check_unks(fname, vocabf)
 '''
 
 #fname = "stimuli/IC_mismatch.csv"
-fname = "stimuli/Reading_Time.csv"
+#fname = "stimuli/Reading_Time.csv"
 #fname = "stimuli/Story_Completion.csv"
+fname = "stimuli/IC_match.csv"
 
 sents = load_data(fname)
 ###################
@@ -673,10 +674,10 @@ print(out_str)
 '''
 
 ###################
-#  LSTM LMs Surp  #
+#  LSTM LMs RSA   #
 ###################
 vocabf = 'wikitext103_vocab'
-lm_models = glob.glob('models/*.pt')[:1]
+lm_models = glob.glob('models/*.pt')#[:1]
 lm_models.sort()
 hidden = get_lms_hidden(sents, vocabf, lm_models)
 
@@ -684,8 +685,20 @@ RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)
 
 results = run_RSA(RSMS, dummies)
-outname = fname.split('.csv')[0]+'_results.csv'
+
+#save pronoun
+outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_results.csv'
 save_results(outname, results, lm_models)
+
+'''
+#save who
+outname = fname.split('/')[-1].split('.csv')[0]+'_who_results.csv'
+save_who_results(outname, results, lm_models)
+
+#save where
+outname = fname.split('/')[-1].split('.csv')[0]+'_were_results.csv'
+save_were_results(outname, results, lm_models)
+'''
 
 ###################
 #Transformers Compl
@@ -724,4 +737,34 @@ for measure in measures:
     target_word, surp = measure[-1]
     assert target_word == 'was' or target_word == 'were'
     print(surp)
+'''
+###################
+#Transformers RSA #
+###################
+'''
+tokenizer = TransfoXLTokenizer.from_pretrained('transfo-xl-wt103')
+tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103', 
+                                    output_hidden_states = True)
+
+#turn off learning
+tf_model.zero_grad()
+
+hidden = get_tf_hidden(sents, tokenizer, tf_model)
+
+RSMS = get_RSM(hidden)
+dummies = get_dummies(fname)
+
+results = run_RSA(RSMS, dummies)
+
+#save pronoun
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_results.csv'
+save_results(outname, results, ['tf'], 'tf')
+
+#save who
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_who_results.csv'
+save_who_results(outname, results, ['tf'], 'tf')
+
+#save where
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_were_results.csv'
+save_were_results(outname, results, ['tf'], 'tf')
 '''
