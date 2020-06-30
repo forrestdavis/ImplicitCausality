@@ -7,7 +7,7 @@ import lm_data
 warnings.filterwarnings('ignore') #spicy
 import numpy as np
 import model as m
-from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel
+from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel, GPT2LMHeadModel, GPT2Tokenizer
 
 device = torch.device("cuda:1")
 
@@ -178,12 +178,12 @@ def tfxl_completions(sents, tokenizer, model, K=100):
 
     return completions
 
-def get_tf_hidden(sents, tokenizer, model):
+def get_tf_hidden(sents, tokenizer, model, num_layers=18):
 
     #model X layers X sents
     hidden_reps = {}
     hidden_reps['tf'] = {}
-    for i in range(18):
+    for i in range(num_layers):
         hidden_reps['tf'][i] = []
     
     for sent in sents: 
@@ -645,9 +645,9 @@ check_unks(fname, vocabf)
 '''
 
 #fname = "stimuli/IC_mismatch.csv"
-#fname = "stimuli/Reading_Time.csv"
+fname = "stimuli/Reading_Time.csv"
 #fname = "stimuli/Story_Completion.csv"
-fname = "stimuli/IC_match.csv"
+#fname = "stimuli/IC_match.csv"
 
 sents = load_data(fname)
 ###################
@@ -717,6 +717,7 @@ print(out_str)
 ###################
 #  LSTM LMs RSA   #
 ###################
+'''
 vocabf = 'wikitext103_vocab'
 lm_models = glob.glob('models/*.pt')#[:1]
 lm_models.sort()
@@ -737,8 +738,6 @@ else:
     outname = fname.split('/')[-1].split('.csv')[0]+'_LSTM_were_SIMS_results.csv'
     save_sims(outname, were_SIMS, lm_models)
 
-
-'''
 RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)
 
@@ -823,6 +822,99 @@ else:
     outname = fname.split('/')[-1].split('.csv')[0]+'_tf_were_SIMS_results.csv'
     save_sims(outname, were_SIMS, ['tf'], 'tf')
 
+RSMS = get_RSM(hidden)
+dummies = get_dummies(fname)
+
+results = run_RSA(RSMS, dummies)
+
+#save pronoun
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_results.csv'
+save_results(outname, results, ['tf'], 'tf')
+
+#save who
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_who_results.csv'
+save_who_results(outname, results, ['tf'], 'tf')
+
+#save where
+outname = fname.split('/')[-1].split('.csv')[0]+'_tf_were_results.csv'
+save_were_results(outname, results, ['tf'], 'tf')
+'''
+
+###################
+#  GPT-2 XL Compl # 
+###################
+'''
+tokenizer = TransfoXLTokenizer.from_pretrained('transfo-xl-wt103')
+tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103', 
+                                    output_hidden_states = True)
+
+#turn off learning
+tf_model.zero_grad()
+
+sentences = tfxl_completions(sents, tokenizer, tf_model)
+scores = parse(sentences)
+
+for model in scores:
+    print(model)
+    for score in scores[model]:
+        print(score)
+'''
+
+###################
+#  GPT-2 XL Surps #
+###################
+'''
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
+tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
+                                    output_hidden_states = True)
+
+#turn off learning
+tf_model.zero_grad()
+
+measures = tfxl_IT(sents, tokenizer, tf_model)
+
+for measure in measures:
+    target_word, surp = measure[-1]
+    assert target_word == 'was' or target_word == 'were'
+    print(surp)
+'''
+
+###################
+#   GPT-2 XL RSA  #
+###################
+sents = sents[:1]
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
+tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
+                                    output_hidden_states = True)
+
+#turn off learning
+tf_model.zero_grad()
+
+print(sents[0])
+input_ids = tokenizer.encode(sents[0], return_tensors="pt")
+print(input_ids)
+
+#hidden = get_tf_hidden(sents, tokenizer, tf_model, 48)
+#print(hidden)
+
+'''
+if 'IC' in fname:
+    SIMS = return_sims(hidden, 'he')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_gpt_SIMS_results.csv'
+    save_sims(outname, SIMS, ['tf'], 'gpt2')
+
+else:
+    who_SIMS = return_sims(hidden, 'who')
+    were_SIMS = return_sims(hidden, 'was')
+
+    outname = fname.split('/')[-1].split('.csv')[0]+'_gpt_who_SIMS_results.csv'
+    save_sims(outname, who_SIMS, ['tf'], 'gpt2')
+    outname = fname.split('/')[-1].split('.csv')[0]+'_gpt_were_SIMS_results.csv'
+    save_sims(outname, were_SIMS, ['tf'], 'gpt2')
+'''
+
+'''
 RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)
 
