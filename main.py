@@ -213,6 +213,51 @@ def get_tf_hidden(sents, tokenizer, model, num_layers=18):
 
     return hidden_reps
 
+def get_gpt_hidden(sents, tokenizer, model, num_layers=18):
+
+    #model X layers X sents
+    hidden_reps = {}
+    hidden_reps['tf'] = {}
+    for i in range(num_layers):
+        hidden_reps['tf'][i] = []
+    
+    for sent in sents: 
+
+        encoded = tokenizer.encode(sent, add_special_tokens=True, 
+                add_prefix_space=True)
+        input_ids = torch.tensor(encoded).unsqueeze(0)
+
+        #Get model outputs
+        output = model(input_ids)
+        predictions, mems, hidden_states = output
+
+        #ignore embedding
+        hidden_states = hidden_states[1:]
+
+        sent_words = sent.split(' ')
+        for i in range(len(hidden_states)):
+            reps = []
+            idx = 0
+
+            #offset if word is broken down
+            for y in range(len(sent_words)):
+                sent_word = sent_words[y]
+                h_idx = encoded[idx]
+                input_word = tokenizer.decode(torch.tensor([h_idx])).strip()
+                if input_word != sent_word:
+                    while not(sent_word.index(input_word)+len(input_word) == len(sent_word)):
+                        idx += 1
+                        h_idx = encoded[idx]
+                        input_word = tokenizer.decode(torch.tensor([h_idx])).strip()
+                h = hidden_states[i][0][idx].unsqueeze(0).data
+                rep = (input_word, h)
+                reps.append(rep)
+                idx += 1
+
+            hidden_reps['tf'][i].append(reps)
+
+    return hidden_reps
+
 def run_lms(sents, vocab_file, model_files):
 
     data_path = './'
@@ -882,7 +927,6 @@ for measure in measures:
 ###################
 #   GPT-2 XL RSA  #
 ###################
-sents = sents[:1]
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
 tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
                                     output_hidden_states = True)
@@ -890,14 +934,8 @@ tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl',
 #turn off learning
 tf_model.zero_grad()
 
-print(sents[0])
-input_ids = tokenizer.encode(sents[0], return_tensors="pt")
-print(input_ids)
+hidden = get_gpt_hidden(sents, tokenizer, tf_model, 48)
 
-#hidden = get_tf_hidden(sents, tokenizer, tf_model, 48)
-#print(hidden)
-
-'''
 if 'IC' in fname:
     SIMS = return_sims(hidden, 'he')
 
@@ -912,7 +950,6 @@ else:
     save_sims(outname, who_SIMS, ['tf'], 'gpt2')
     outname = fname.split('/')[-1].split('.csv')[0]+'_gpt_were_SIMS_results.csv'
     save_sims(outname, were_SIMS, ['tf'], 'gpt2')
-'''
 
 '''
 RSMS = get_RSM(hidden)
