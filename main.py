@@ -1,4 +1,5 @@
 from scipy import stats
+import spacy
 from tools.utils import *
 import glob
 import torch
@@ -9,7 +10,7 @@ import numpy as np
 import model as m
 from transformers import TransfoXLTokenizer, TransfoXLLMHeadModel, TransfoXLModel, GPT2LMHeadModel, GPT2Tokenizer
 
-device = torch.device("cuda:1")
+device = torch.device("cuda:0")
 
 def check_unks(fname, vocabf):
 
@@ -689,8 +690,8 @@ vocabf = 'wikitext103_vocab'
 check_unks(fname, vocabf)
 '''
 
-#fname = "stimuli/IC_mismatch.csv"
-fname = "stimuli/Reading_Time.csv"
+fname = "stimuli/IC_mismatch.csv"
+#fname = "stimuli/Reading_Time.csv"
 #fname = "stimuli/Story_Completion.csv"
 #fname = "stimuli/IC_match.csv"
 
@@ -889,8 +890,8 @@ save_were_results(outname, results, ['tf'], 'tf')
 #  GPT-2 XL Compl # 
 ###################
 '''
-tokenizer = TransfoXLTokenizer.from_pretrained('transfo-xl-wt103')
-tf_model = TransfoXLLMHeadModel.from_pretrained('transfo-xl-wt103', 
+tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
+tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
                                     output_hidden_states = True)
 
 #turn off learning
@@ -908,7 +909,6 @@ for model in scores:
 ###################
 #  GPT-2 XL Surps #
 ###################
-'''
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
 tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
                                     output_hidden_states = True)
@@ -918,15 +918,18 @@ tf_model.zero_grad()
 
 measures = tfxl_IT(sents, tokenizer, tf_model)
 
-for measure in measures:
-    target_word, surp = measure[-1]
-    assert target_word == 'was' or target_word == 'were'
-    print(surp)
-'''
+with open('gpt_mismatch_surp', 'w') as f:
+    for measure in measures:
+        target_word, surp = measure[-1]
+        #assert target_word == 'was' or target_word == 'were'
+        assert target_word == 'he' or target_word == 'she'
+        f.write(str(surp)+'\n')
+        #print(surp)
 
 ###################
 #   GPT-2 XL RSA  #
 ###################
+'''
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
 tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
                                     output_hidden_states = True)
@@ -951,6 +954,7 @@ else:
     outname = fname.split('/')[-1].split('.csv')[0]+'_gpt_were_SIMS_results.csv'
     save_sims(outname, were_SIMS, ['tf'], 'gpt2')
 
+'''
 '''
 RSMS = get_RSM(hidden)
 dummies = get_dummies(fname)
