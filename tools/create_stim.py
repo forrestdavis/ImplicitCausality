@@ -78,7 +78,7 @@ NP2 = {
         3: ['athlete', 'athletes'],
         4: ['bride', 'brides'],
         5: ['second grader', 'second graders'],
-        6: ['activists', 'activists'],
+        6: ['activist', 'activists'],
         #7: ['jazz musician', 'jazz musicians'],
         #8: ['student', 'students'],
         9: ['neighbor', 'neighbors'],

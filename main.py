@@ -172,9 +172,9 @@ def tfxl_completions(sents, tokenizer, model, K=100):
 
         completes = []
         #Append guess words to input sent
-        for guess_id in guess_ids:
+        for x, guess_id in enumerate(guess_ids):
             guess_word = tokenizer.decode(torch.tensor([[guess_id]]))
-            completes.append(sent + ' ' + guess_word)
+            completes.append((sent + ' ' + guess_word, float(guess_probs[x].to(device).data)))
         completions['tfxl'].append(completes)
 
     return completions
@@ -374,9 +374,9 @@ def run_lms_completion(sents, vocab_file, model_files, K=100):
 
             completes = []
             #Append guess words to input sent
-            for guess_id in guess_ids:
+            for x, guess_id in enumerate(guess_ids):
                 guess_word = corpus.dictionary.idx2word[int(guess_id)]
-                completes.append(sent + ' ' + guess_word)
+                completes.append((sent + ' ' + guess_word, float(guess_probs[x].to(device).data)))
             completions[model_file].append(completes)
 
     return completions
@@ -460,20 +460,20 @@ def parse(completions):
         for sents in completions[model]:
             num_sg = 0
             total_vb = 0
-            for sent in sents:
+            for sent, prob in sents:
                 cont_word = nlp(sent)[-1]
                 pos = cont_word.tag_
                 if pos == "VBP":
-                    total_vb += 1
+                    total_vb += prob
                 if pos == "VBZ":
-                    num_sg += 1
-                    total_vb += 1
+                    num_sg += prob
+                    total_vb += prob
                 if pos == "VBD":
                     if cont_word.text == 'was' or cont_word.text == 'has':
-                        num_sg += 1
-                        total_vb += 1
+                        num_sg += prob
+                        total_vb += prob
                     if cont_word.text == 'were' or cont_word.text == 'have':
-                        total_vb += 1
+                        total_vb += prob
             score = num_sg/total_vb
             scores[model].append(score)
     return scores
@@ -690,18 +690,18 @@ vocabf = 'wikitext103_vocab'
 check_unks(fname, vocabf)
 '''
 
-fname = "stimuli/IC_mismatch.csv"
+#fname = "stimuli/IC_mismatch.csv"
 #fname = "stimuli/Reading_Time.csv"
-#fname = "stimuli/Story_Completion.csv"
+fname = "stimuli/Story_Completion.csv"
 #fname = "stimuli/IC_match.csv"
 
 sents = load_data(fname)
+
 ###################
 # LSTM LMs Compl  #
 ###################
-'''
 vocabf = 'wikitext103_vocab'
-lm_models = glob.glob('models/*.pt')#[:2]
+lm_models = glob.glob('models/*.pt')#[:1]
 lm_models.sort()
 
 sentences = run_lms_completion(sents, vocabf, lm_models)
@@ -727,7 +727,6 @@ for x in range(len(scores[lm_models[0]])):
     out_str += ','.join(all_scores) + '\n'
 
 print(out_str)
-'''
 
 ###################
 #  LSTM LMs Surp  #
@@ -909,6 +908,7 @@ for model in scores:
 ###################
 #  GPT-2 XL Surps #
 ###################
+'''
 tokenizer = GPT2Tokenizer.from_pretrained('gpt2-xl')
 tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl', 
                                     output_hidden_states = True)
@@ -925,6 +925,7 @@ with open('gpt_mismatch_surp', 'w') as f:
         assert target_word == 'he' or target_word == 'she'
         f.write(str(surp)+'\n')
         #print(surp)
+'''
 
 ###################
 #   GPT-2 XL RSA  #
