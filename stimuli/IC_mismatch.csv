@@ -1,4 +1,4 @@
-exp,verb,item,sent,bias,isHigh ,gender
+exp,verb,item,sent,bias,isHigh,gender
 ic_mismatch,abandoned,0,The man abandoned the woman because he,33,1,m
 ic_mismatch,abandoned,0,The man abandoned the woman because she,33,0,f
 ic_mismatch,abandoned,0,The woman abandoned the man because he,33,0,m
