@@ -22,9 +22,9 @@ for a more local, yet ungrammatical, attachment.
 
 Requires the following python packages (available through pip):
 * [pytorch](https://pytorch.org/) >= v1.0.0
-* [scipy] (https://www.scipy.org)
+* [scipy](https://www.scipy.org)
 * [numpy](https://numpy.org)
-* [transformers] (https://github.com/huggingface/transformers)
+* [transformers](https://github.com/huggingface/transformers)
 * [spaCy](https://spacy.io) v2.2.4
 
 From spaCy you need the pretrained English model "en_core_web_sm":
