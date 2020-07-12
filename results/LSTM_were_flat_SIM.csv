@@ -1,0 +1,769 @@
+exp,item,sent,hasIC,num,isHIGH,layer,NP,sim
+reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1,1,1,0.007086356274
+reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1,1,2,0.01983720905
+reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1,2,1,0.2098759395
+reading,1,The woman scolded the chef of the aristocrats who was,1,sg,1,2,2,0.2724737976
+reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0,1,1,0.0151761423
+reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0,1,2,0.01847285061
+reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0,2,1,0.2546544893
+reading,1,The woman scolded the chefs of the aristocrat who was,1,sg,0,2,2,0.2150571473
+reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0,1,1,0.004724723707
+reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0,1,2,0.04453355142
+reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0,2,1,0.1873402234
+reading,1,The woman scolded the chef of the aristocrats who were,1,pl,0,2,2,0.2586350532
+reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1,1,1,0.04058372375
+reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1,1,2,0.0125292358
+reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1,2,1,0.2505862774
+reading,1,The woman scolded the chefs of the aristocrat who were,1,pl,1,2,2,0.2073255928
+reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1,1,1,0.01522747509
+reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1,1,2,0.02274527832
+reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1,2,1,0.1991536539
+reading,1,The woman studied with the chef of the aristocrats who was,0,sg,1,2,2,0.256440116
+reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0,1,1,0.01518474459
+reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0,1,2,0.02235966083
+reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0,2,1,0.1980997046
+reading,1,The woman studied with the chefs of the aristocrat who was,0,sg,0,2,2,0.1861632723
+reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0,1,1,0.04015322064
+reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0,1,2,0.04656857818
+reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0,2,1,0.1963044981
+reading,1,The woman studied with the chef of the aristocrats who were,0,pl,0,2,2,0.2386180342
+reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1,1,1,0.04049499688
+reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1,1,2,0.01676051023
+reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1,2,1,0.1973230615
+reading,1,The woman studied with the chefs of the aristocrat who were,0,pl,1,2,2,0.1776582456
+reading,1,The woman scolded the aristocrat of the chefs who was,1,sg,1,1,1,0.01593335497
+reading,1,The woman scolded the aristocrat of the chefs who was,1,sg,1,1,2,0.014583049
+reading,1,The woman scolded the aristocrat of the chefs who was,1,sg,1,2,1,0.2202598028
+reading,1,The woman scolded the aristocrat of the chefs who was,1,sg,1,2,2,0.2536884918
+reading,1,The woman scolded the aristocrats of the chef who was,1,sg,0,1,1,0.02005116405
+reading,1,The woman scolded the aristocrats of the chef who was,1,sg,0,1,2,0.004785147611
+reading,1,The woman scolded the aristocrats of the chef who was,1,sg,0,2,1,0.2644737048
+reading,1,The woman scolded the aristocrats of the chef who was,1,sg,0,2,2,0.1783911327
+reading,1,The woman scolded the aristocrat of the chefs who were,1,pl,0,1,1,0.01096429156
+reading,1,The woman scolded the aristocrat of the chefs who were,1,pl,0,1,2,0.03985282243
+reading,1,The woman scolded the aristocrat of the chefs who were,1,pl,0,2,1,0.2013304174
+reading,1,The woman scolded the aristocrat of the chefs who were,1,pl,0,2,2,0.2415230029
+reading,1,The woman scolded the aristocrats of the chef who were,1,pl,1,1,1,0.04504423774
+reading,1,The woman scolded the aristocrats of the chef who were,1,pl,1,1,2,0.002860394512
+reading,1,The woman scolded the aristocrats of the chef who were,1,pl,1,2,1,0.2612458865
+reading,1,The woman scolded the aristocrats of the chef who were,1,pl,1,2,2,0.1682520514
+reading,1,The woman studied with the aristocrat of the chefs who was,0,sg,1,1,1,0.01540214618
+reading,1,The woman studied with the aristocrat of the chefs who was,0,sg,1,1,2,0.0208061763
+reading,1,The woman studied with the aristocrat of the chefs who was,0,sg,1,2,1,0.2045055474
+reading,1,The woman studied with the aristocrat of the chefs who was,0,sg,1,2,2,0.2441672255
+reading,1,The woman studied with the aristocrats of the chef who was,0,sg,0,1,1,0.0192740579
+reading,1,The woman studied with the aristocrats of the chef who was,0,sg,0,1,2,0.009495903882
+reading,1,The woman studied with the aristocrats of the chef who was,0,sg,0,2,1,0.2001676976
+reading,1,The woman studied with the aristocrats of the chef who was,0,sg,0,2,2,0.1433722466
+reading,1,The woman studied with the aristocrat of the chefs who were,0,pl,0,1,1,0.04013411935
+reading,1,The woman studied with the aristocrat of the chefs who were,0,pl,0,1,2,0.04548320502
+reading,1,The woman studied with the aristocrat of the chefs who were,0,pl,0,2,1,0.2037129967
+reading,1,The woman studied with the aristocrat of the chefs who were,0,pl,0,2,2,0.2277821137
+reading,1,The woman studied with the aristocrats of the chef who were,0,pl,1,1,1,0.0440372105
+reading,1,The woman studied with the aristocrats of the chef who were,0,pl,1,1,2,0.007194190873
+reading,1,The woman studied with the aristocrats of the chef who were,0,pl,1,2,1,0.1997937752
+reading,1,The woman studied with the aristocrats of the chef who were,0,pl,1,2,2,0.1302609334
+reading,3,The woman assisted the maid of the executives who was,1,sg,1,1,1,0.005281670824
+reading,3,The woman assisted the maid of the executives who was,1,sg,1,1,2,0.0451810461
+reading,3,The woman assisted the maid of the executives who was,1,sg,1,2,1,0.2206985383
+reading,3,The woman assisted the maid of the executives who was,1,sg,1,2,2,0.2743365459
+reading,3,The woman assisted the maids of the executive who was,1,sg,0,1,1,0.01620197824
+reading,3,The woman assisted the maids of the executive who was,1,sg,0,1,2,-0.001435153403
+reading,3,The woman assisted the maids of the executive who was,1,sg,0,2,1,0.2774041199
+reading,3,The woman assisted the maids of the executive who was,1,sg,0,2,2,0.1245755362
+reading,3,The woman assisted the maid of the executives who were,1,pl,0,1,1,0.001395947166
+reading,3,The woman assisted the maid of the executives who were,1,pl,0,1,2,0.06953224046
+reading,3,The woman assisted the maid of the executives who were,1,pl,0,2,1,0.2013647718
+reading,3,The woman assisted the maid of the executives who were,1,pl,0,2,2,0.2625721293
+reading,3,The woman assisted the maids of the executive who were,1,pl,1,1,1,0.03781328023
+reading,3,The woman assisted the maids of the executive who were,1,pl,1,1,2,0.003983468939
+reading,3,The woman assisted the maids of the executive who were,1,pl,1,2,1,0.2764990618
+reading,3,The woman assisted the maids of the executive who were,1,pl,1,2,2,0.1289753702
+reading,3,The woman joked with the maid of the executives who was,0,sg,1,1,1,0.01584085474
+reading,3,The woman joked with the maid of the executives who was,0,sg,1,1,2,0.04919775959
+reading,3,The woman joked with the maid of the executives who was,0,sg,1,2,1,0.2390702414
+reading,3,The woman joked with the maid of the executives who was,0,sg,1,2,2,0.2997156762
+reading,3,The woman joked with the maids of the executive who was,0,sg,0,1,1,0.01589719233
+reading,3,The woman joked with the maids of the executive who was,0,sg,0,1,2,-0.001727867681
+reading,3,The woman joked with the maids of the executive who was,0,sg,0,2,1,0.2377813601
+reading,3,The woman joked with the maids of the executive who was,0,sg,0,2,2,0.1242730099
+reading,3,The woman joked with the maid of the executives who were,0,pl,0,1,1,0.03684514246
+reading,3,The woman joked with the maid of the executives who were,0,pl,0,1,2,0.07308399132
+reading,3,The woman joked with the maid of the executives who were,0,pl,0,2,1,0.2395900851
+reading,3,The woman joked with the maid of the executives who were,0,pl,0,2,2,0.2843636049
+reading,3,The woman joked with the maids of the executive who were,0,pl,1,1,1,0.03706889672
+reading,3,The woman joked with the maids of the executive who were,0,pl,1,1,2,0.003637295935
+reading,3,The woman joked with the maids of the executive who were,0,pl,1,2,1,0.2385763502
+reading,3,The woman joked with the maids of the executive who were,0,pl,1,2,2,0.1273709764
+reading,3,The woman assisted the executive of the maids who was,1,sg,1,1,1,-0.002089533557
+reading,3,The woman assisted the executive of the maids who was,1,sg,1,1,2,0.01633007856
+reading,3,The woman assisted the executive of the maids who was,1,sg,1,2,1,0.1150641982
+reading,3,The woman assisted the executive of the maids who was,1,sg,1,2,2,0.2249775344
+reading,3,The woman assisted the executives of the maid who was,1,sg,0,1,1,0.04430724515
+reading,3,The woman assisted the executives of the maid who was,1,sg,0,1,2,0.0006570812034
+reading,3,The woman assisted the executives of the maid who was,1,sg,0,2,1,0.260610698
+reading,3,The woman assisted the executives of the maid who was,1,sg,0,2,2,0.1669493698
+reading,3,The woman assisted the executive of the maids who were,1,pl,0,1,1,0.003155705364
+reading,3,The woman assisted the executive of the maids who were,1,pl,0,1,2,0.03825797143
+reading,3,The woman assisted the executive of the maids who were,1,pl,0,2,1,0.1086270499
+reading,3,The woman assisted the executive of the maids who were,1,pl,0,2,2,0.2162298793
+reading,3,The woman assisted the executives of the maid who were,1,pl,1,1,1,0.06895361965
+reading,3,The woman assisted the executives of the maid who were,1,pl,1,1,2,-0.002676239265
+reading,3,The woman assisted the executives of the maid who were,1,pl,1,2,1,0.2586013069
+reading,3,The woman assisted the executives of the maid who were,1,pl,1,2,2,0.1630608629
+reading,3,The woman joked with the executive of the maids who was,0,sg,1,1,1,0.04154240731
+reading,3,The woman joked with the executive of the maids who was,0,sg,1,1,2,0.01617969725
+reading,3,The woman joked with the executive of the maids who was,0,sg,1,2,1,0.2446223705
+reading,3,The woman joked with the executive of the maids who was,0,sg,1,2,2,0.2541203386
+reading,3,The woman joked with the executives of the maid who was,0,sg,0,1,1,0.04508684409
+reading,3,The woman joked with the executives of the maid who was,0,sg,0,1,2,0.0008265350978
+reading,3,The woman joked with the executives of the maid who was,0,sg,0,2,1,0.2394955805
+reading,3,The woman joked with the executives of the maid who was,0,sg,0,2,2,0.2039919295
+reading,3,The woman joked with the executive of the maids who were,0,pl,0,1,1,0.06700676884
+reading,3,The woman joked with the executive of the maids who were,0,pl,0,1,2,0.03802715655
+reading,3,The woman joked with the executive of the maids who were,0,pl,0,2,1,0.2430209676
+reading,3,The woman joked with the executive of the maids who were,0,pl,0,2,2,0.2417784824
+reading,3,The woman joked with the executives of the maid who were,0,pl,1,1,1,0.06912235795
+reading,3,The woman joked with the executives of the maid who were,0,pl,1,1,2,-0.002550052074
+reading,3,The woman joked with the executives of the maid who were,0,pl,1,2,1,0.2383456446
+reading,3,The woman joked with the executives of the maid who were,0,pl,1,2,2,0.1933317685
+reading,4,The man trusted the captain of the sailors who was,1,sg,1,1,1,0.01555178945
+reading,4,The man trusted the captain of the sailors who was,1,sg,1,1,2,0.03047847728
+reading,4,The man trusted the captain of the sailors who was,1,sg,1,2,1,0.2246914348
+reading,4,The man trusted the captain of the sailors who was,1,sg,1,2,2,0.2937628828
+reading,4,The man trusted the captains of the sailor who was,1,sg,0,1,1,0.01880095233
+reading,4,The man trusted the captains of the sailor who was,1,sg,0,1,2,0.01047291387
+reading,4,The man trusted the captains of the sailor who was,1,sg,0,2,1,0.2596238208
+reading,4,The man trusted the captains of the sailor who was,1,sg,0,2,2,0.2332806991
+reading,4,The man trusted the captain of the sailors who were,1,pl,0,1,1,0.01119986752
+reading,4,The man trusted the captain of the sailors who were,1,pl,0,1,2,0.06342362977
+reading,4,The man trusted the captain of the sailors who were,1,pl,0,2,1,0.1960446054
+reading,4,The man trusted the captain of the sailors who were,1,pl,0,2,2,0.278482127
+reading,4,The man trusted the captains of the sailor who were,1,pl,1,1,1,0.05224501108
+reading,4,The man trusted the captains of the sailor who were,1,pl,1,1,2,0.006492526372
+reading,4,The man trusted the captains of the sailor who were,1,pl,1,2,1,0.2619452169
+reading,4,The man trusted the captains of the sailor who were,1,pl,1,2,2,0.2244274996
+reading,4,The man stood near the captain of the sailors who was,0,sg,1,1,1,0.01915656371
+reading,4,The man stood near the captain of the sailors who was,0,sg,1,1,2,0.02709373264
+reading,4,The man stood near the captain of the sailors who was,0,sg,1,2,1,0.2592280715
+reading,4,The man stood near the captain of the sailors who was,0,sg,1,2,2,0.2950425692
+reading,4,The man stood near the captains of the sailor who was,0,sg,0,1,1,0.01881300095
+reading,4,The man stood near the captains of the sailor who was,0,sg,0,1,2,0.01047434377
+reading,4,The man stood near the captains of the sailor who was,0,sg,0,2,1,0.2439983356
+reading,4,The man stood near the captains of the sailor who was,0,sg,0,2,2,0.2485103088
+reading,4,The man stood near the captain of the sailors who were,0,pl,0,1,1,0.05253059004
+reading,4,The man stood near the captain of the sailors who were,0,pl,0,1,2,0.06023901432
+reading,4,The man stood near the captain of the sailors who were,0,pl,0,2,1,0.2597885503
+reading,4,The man stood near the captain of the sailors who were,0,pl,0,2,2,0.276567563
+reading,4,The man stood near the captains of the sailor who were,0,pl,1,1,1,0.05232479973
+reading,4,The man stood near the captains of the sailor who were,0,pl,1,1,2,0.00660412557
+reading,4,The man stood near the captains of the sailor who were,0,pl,1,2,1,0.2474828435
+reading,4,The man stood near the captains of the sailor who were,0,pl,1,2,2,0.2339371806
+reading,4,The man trusted the sailor of the captains who was,1,sg,1,1,1,0.008469209488
+reading,4,The man trusted the sailor of the captains who was,1,sg,1,1,2,0.0186703407
+reading,4,The man trusted the sailor of the captains who was,1,sg,1,2,1,0.2730949119
+reading,4,The man trusted the sailor of the captains who was,1,sg,1,2,2,0.240951808
+reading,4,The man trusted the sailors of the captain who was,1,sg,0,1,1,0.02995674153
+reading,4,The man trusted the sailors of the captain who was,1,sg,0,1,2,0.01504620804
+reading,4,The man trusted the sailors of the captain who was,1,sg,0,2,1,0.3293514185
+reading,4,The man trusted the sailors of the captain who was,1,sg,0,2,2,0.1950523324
+reading,4,The man trusted the sailor of the captains who were,1,pl,0,1,1,0.005318057364
+reading,4,The man trusted the sailor of the captains who were,1,pl,0,1,2,0.05204582165
+reading,4,The man trusted the sailor of the captains who were,1,pl,0,2,1,0.2409435082
+reading,4,The man trusted the sailor of the captains who were,1,pl,0,2,2,0.2305650199
+reading,4,The man trusted the sailors of the captain who were,1,pl,1,1,1,0.06332782039
+reading,4,The man trusted the sailors of the captain who were,1,pl,1,1,2,0.01087716342
+reading,4,The man trusted the sailors of the captain who were,1,pl,1,2,1,0.3275842774
+reading,4,The man trusted the sailors of the captain who were,1,pl,1,2,2,0.1809954189
+reading,4,The man stood near the sailor of the captains who was,0,sg,1,1,1,0.02612016546
+reading,4,The man stood near the sailor of the captains who was,0,sg,1,1,2,0.0179163006
+reading,4,The man stood near the sailor of the captains who was,0,sg,1,2,1,0.3233971255
+reading,4,The man stood near the sailor of the captains who was,0,sg,1,2,2,0.2372558691
+reading,4,The man stood near the sailors of the captain who was,0,sg,0,1,1,0.02635064778
+reading,4,The man stood near the sailors of the captain who was,0,sg,0,1,2,0.01404038342
+reading,4,The man stood near the sailors of the captain who was,0,sg,0,2,1,0.3177653623
+reading,4,The man stood near the sailors of the captain who was,0,sg,0,2,2,0.1986564747
+reading,4,The man stood near the sailor of the captains who were,0,pl,0,1,1,0.05969246627
+reading,4,The man stood near the sailor of the captains who were,0,pl,0,1,2,0.05148919491
+reading,4,The man stood near the sailor of the captains who were,0,pl,0,2,1,0.318794244
+reading,4,The man stood near the sailor of the captains who were,0,pl,0,2,2,0.2240443944
+reading,4,The man stood near the sailors of the captain who were,0,pl,1,1,1,0.05987643245
+reading,4,The man stood near the sailors of the captain who were,0,pl,1,1,2,0.009868653304
+reading,4,The man stood near the sailors of the captain who were,0,pl,1,2,1,0.3184986715
+reading,4,The man stood near the sailors of the captain who were,0,pl,1,2,2,0.1784084256
+reading,6,The man comforted the leader of the activists who was,1,sg,1,1,1,0.01760211159
+reading,6,The man comforted the leader of the activists who was,1,sg,1,1,2,0.03007456395
+reading,6,The man comforted the leader of the activists who was,1,sg,1,2,1,0.2156630415
+reading,6,The man comforted the leader of the activists who was,1,sg,1,2,2,0.268051654
+reading,6,The man comforted the leaders of the activist who was,1,sg,0,1,1,0.02193045366
+reading,6,The man comforted the leaders of the activist who was,1,sg,0,1,2,0.01110349303
+reading,6,The man comforted the leaders of the activist who was,1,sg,0,2,1,0.2530807654
+reading,6,The man comforted the leaders of the activist who was,1,sg,0,2,2,0.1250803123
+reading,6,The man comforted the leader of the activists who were,1,pl,0,1,1,0.01787200386
+reading,6,The man comforted the leader of the activists who were,1,pl,0,1,2,0.05934244825
+reading,6,The man comforted the leader of the activists who were,1,pl,0,2,1,0.1894375537
+reading,6,The man comforted the leader of the activists who were,1,pl,0,2,2,0.2564491023
+reading,6,The man comforted the leaders of the activist who were,1,pl,1,1,1,0.05424589633
+reading,6,The man comforted the leaders of the activist who were,1,pl,1,1,2,0.008015208027
+reading,6,The man comforted the leaders of the activist who were,1,pl,1,2,1,0.2516040176
+reading,6,The man comforted the leaders of the activist who were,1,pl,1,2,2,0.1290697633
+reading,6,The man greeted the leader of the activists who was,0,sg,1,1,1,0.02032045789
+reading,6,The man greeted the leader of the activists who was,0,sg,1,1,2,0.02969393937
+reading,6,The man greeted the leader of the activists who was,0,sg,1,2,1,0.2165994777
+reading,6,The man greeted the leader of the activists who was,0,sg,1,2,2,0.2728254294
+reading,6,The man greeted the leaders of the activist who was,0,sg,0,1,1,0.02221842436
+reading,6,The man greeted the leaders of the activist who was,0,sg,0,1,2,0.0110942287
+reading,6,The man greeted the leaders of the activist who was,0,sg,0,2,1,0.2662781701
+reading,6,The man greeted the leaders of the activist who was,0,sg,0,2,2,0.1302407227
+reading,6,The man greeted the leader of the activists who were,0,pl,0,1,1,0.02031022686
+reading,6,The man greeted the leader of the activists who were,0,pl,0,1,2,0.05891663079
+reading,6,The man greeted the leader of the activists who were,0,pl,0,2,1,0.1918612367
+reading,6,The man greeted the leader of the activists who were,0,pl,0,2,2,0.2609970271
+reading,6,The man greeted the leaders of the activist who were,0,pl,1,1,1,0.05453895047
+reading,6,The man greeted the leaders of the activist who were,0,pl,1,1,2,0.007976131094
+reading,6,The man greeted the leaders of the activist who were,0,pl,1,2,1,0.2645246991
+reading,6,The man greeted the leaders of the activist who were,0,pl,1,2,2,0.1349880269
+reading,6,The man comforted the activist of the leaders who was,1,sg,1,1,1,0.008832654072
+reading,6,The man comforted the activist of the leaders who was,1,sg,1,1,2,0.02042811362
+reading,6,The man comforted the activist of the leaders who was,1,sg,1,2,1,0.1797658602
+reading,6,The man comforted the activist of the leaders who was,1,sg,1,2,2,0.2557894113
+reading,6,The man comforted the activists of the leader who was,1,sg,0,1,1,0.02604623941
+reading,6,The man comforted the activists of the leader who was,1,sg,0,1,2,0.01345788072
+reading,6,The man comforted the activists of the leader who was,1,sg,0,2,1,0.2782962005
+reading,6,The man comforted the activists of the leader who was,1,sg,0,2,2,0.1953815287
+reading,6,The man comforted the activist of the leaders who were,1,pl,0,1,1,0.006946464133
+reading,6,The man comforted the activist of the leaders who were,1,pl,0,1,2,0.05358820795
+reading,6,The man comforted the activist of the leaders who were,1,pl,0,2,1,0.1719826824
+reading,6,The man comforted the activist of the leaders who were,1,pl,0,2,2,0.2462976316
+reading,6,The man comforted the activists of the leader who were,1,pl,1,1,1,0.05472296676
+reading,6,The man comforted the activists of the leader who were,1,pl,1,1,2,0.01406970042
+reading,6,The man comforted the activists of the leader who were,1,pl,1,2,1,0.2733962297
+reading,6,The man comforted the activists of the leader who were,1,pl,1,2,2,0.1780321696
+reading,6,The man greeted the activist of the leaders who was,0,sg,1,1,1,0.01191175782
+reading,6,The man greeted the activist of the leaders who was,0,sg,1,1,2,0.02040228807
+reading,6,The man greeted the activist of the leaders who was,0,sg,1,2,1,0.1780545618
+reading,6,The man greeted the activist of the leaders who was,0,sg,1,2,2,0.2612172032
+reading,6,The man greeted the activists of the leader who was,0,sg,0,1,1,0.03023461132
+reading,6,The man greeted the activists of the leader who was,0,sg,0,1,2,0.01341311432
+reading,6,The man greeted the activists of the leader who was,0,sg,0,2,1,0.2867632639
+reading,6,The man greeted the activists of the leader who was,0,sg,0,2,2,0.1991447109
+reading,6,The man greeted the activist of the leaders who were,0,pl,0,1,1,0.009626481992
+reading,6,The man greeted the activist of the leaders who were,0,pl,0,1,2,0.05344703222
+reading,6,The man greeted the activist of the leaders who were,0,pl,0,2,1,0.1732850283
+reading,6,The man greeted the activist of the leaders who were,0,pl,0,2,2,0.2516145535
+reading,6,The man greeted the activists of the leader who were,0,pl,1,1,1,0.05841967859
+reading,6,The man greeted the activists of the leader who were,0,pl,1,1,2,0.0140512747
+reading,6,The man greeted the activists of the leader who were,0,pl,1,2,1,0.2817736162
+reading,6,The man greeted the activists of the leader who were,0,pl,1,2,2,0.1819279205
+reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1,1,1,6.53E-05
+reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1,1,2,0.01204765132
+reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1,2,1,0.1991928302
+reading,8,The man valued the daughter of the shopkeepers who was,1,sg,1,2,2,0.3721284735
+reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0,1,1,0.002774184089
+reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0,1,2,0.01918410972
+reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0,2,1,0.2633962978
+reading,8,The man valued the daughters of the shopkeeper who was,1,sg,0,2,2,0.3086163827
+reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0,1,1,0.001062621624
+reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0,1,2,0.03980764452
+reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0,2,1,0.1744827046
+reading,8,The man valued the daughter of the shopkeepers who were,1,pl,0,2,2,0.356773616
+reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1,1,1,0.0295738444
+reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1,1,2,0.01418404369
+reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1,2,1,0.257740458
+reading,8,The man valued the daughters of the shopkeeper who were,1,pl,1,2,2,0.2980761854
+reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1,1,1,-0.0001283366486
+reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1,1,2,0.01187159204
+reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1,2,1,0.1611646218
+reading,8,The man recognized the daughter of the shopkeepers who was,0,sg,1,2,2,0.3490884008
+reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0,1,1,0.0026866358
+reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0,1,2,0.01902361884
+reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0,2,1,0.2240040581
+reading,8,The man recognized the daughters of the shopkeeper who was,0,sg,0,2,2,0.2914704044
+reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0,1,1,0.0009756870224
+reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0,1,2,0.03976593284
+reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0,2,1,0.1273333925
+reading,8,The man recognized the daughter of the shopkeepers who were,0,pl,0,2,2,0.3325487879
+reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1,1,1,0.02969111861
+reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1,1,2,0.01406770486
+reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1,2,1,0.2209656657
+reading,8,The man recognized the daughters of the shopkeeper who were,0,pl,1,2,2,0.2786024167
+reading,8,The man valued the shopkeeper of the daughters who was,1,sg,1,1,1,0.01562362181
+reading,8,The man valued the shopkeeper of the daughters who was,1,sg,1,1,2,0.003826763688
+reading,8,The man valued the shopkeeper of the daughters who was,1,sg,1,2,1,0.2517642459
+reading,8,The man valued the shopkeeper of the daughters who was,1,sg,1,2,2,0.2735669636
+reading,8,The man valued the shopkeepers of the daughter who was,1,sg,0,1,1,0.01462171538
+reading,8,The man valued the shopkeepers of the daughter who was,1,sg,0,1,2,-0.001998577148
+reading,8,The man valued the shopkeepers of the daughter who was,1,sg,0,2,1,0.3183816331
+reading,8,The man valued the shopkeepers of the daughter who was,1,sg,0,2,2,0.2344709567
+reading,8,The man valued the shopkeeper of the daughters who were,1,pl,0,1,1,0.01133082112
+reading,8,The man valued the shopkeeper of the daughters who were,1,pl,0,1,2,0.03007611373
+reading,8,The man valued the shopkeeper of the daughters who were,1,pl,0,2,1,0.2254163584
+reading,8,The man valued the shopkeeper of the daughters who were,1,pl,0,2,2,0.2612386345
+reading,8,The man valued the shopkeepers of the daughter who were,1,pl,1,1,1,0.04217723966
+reading,8,The man valued the shopkeepers of the daughter who were,1,pl,1,1,2,-0.001250519515
+reading,8,The man valued the shopkeepers of the daughter who were,1,pl,1,2,1,0.3113794718
+reading,8,The man valued the shopkeepers of the daughter who were,1,pl,1,2,2,0.2198143933
+reading,8,The man recognized the shopkeeper of the daughters who was,0,sg,1,1,1,0.0149558566
+reading,8,The man recognized the shopkeeper of the daughters who was,0,sg,1,1,2,0.002679545019
+reading,8,The man recognized the shopkeeper of the daughters who was,0,sg,1,2,1,0.2258087463
+reading,8,The man recognized the shopkeeper of the daughters who was,0,sg,1,2,2,0.2455609516
+reading,8,The man recognized the shopkeepers of the daughter who was,0,sg,0,1,1,0.01326664535
+reading,8,The man recognized the shopkeepers of the daughter who was,0,sg,0,1,2,-0.003313724056
+reading,8,The man recognized the shopkeepers of the daughter who was,0,sg,0,2,1,0.2687445434
+reading,8,The man recognized the shopkeepers of the daughter who was,0,sg,0,2,2,0.2052582791
+reading,8,The man recognized the shopkeeper of the daughters who were,0,pl,0,1,1,0.01035730618
+reading,8,The man recognized the shopkeeper of the daughters who were,0,pl,0,1,2,0.02925690825
+reading,8,The man recognized the shopkeeper of the daughters who were,0,pl,0,2,1,0.1908510209
+reading,8,The man recognized the shopkeeper of the daughters who were,0,pl,0,2,2,0.2332239781
+reading,8,The man recognized the shopkeepers of the daughter who were,0,pl,1,1,1,0.04103027185
+reading,8,The man recognized the shopkeepers of the daughter who were,0,pl,1,1,2,-0.002474433983
+reading,8,The man recognized the shopkeepers of the daughter who were,0,pl,1,2,1,0.2623222531
+reading,8,The man recognized the shopkeepers of the daughter who were,0,pl,1,2,2,0.1897517071
+reading,10,The man noticed the representative of the employees who was,1,sg,1,1,1,0.01155504508
+reading,10,The man noticed the representative of the employees who was,1,sg,1,1,2,0.04242367477
+reading,10,The man noticed the representative of the employees who was,1,sg,1,2,1,0.1486710159
+reading,10,The man noticed the representative of the employees who was,1,sg,1,2,2,0.3125448105
+reading,10,The man noticed the representatives of the employee who was,1,sg,0,1,1,0.03661226795
+reading,10,The man noticed the representatives of the employee who was,1,sg,0,1,2,0.02680739189
+reading,10,The man noticed the representatives of the employee who was,1,sg,0,2,1,0.2655015787
+reading,10,The man noticed the representatives of the employee who was,1,sg,0,2,2,0.2241636345
+reading,10,The man noticed the representative of the employees who were,1,pl,0,1,1,0.007199302647
+reading,10,The man noticed the representative of the employees who were,1,pl,0,1,2,0.07219208397
+reading,10,The man noticed the representative of the employees who were,1,pl,0,2,1,0.1274238706
+reading,10,The man noticed the representative of the employees who were,1,pl,0,2,2,0.2986287436
+reading,10,The man noticed the representatives of the employee who were,1,pl,1,1,1,0.06348900226
+reading,10,The man noticed the representatives of the employee who were,1,pl,1,1,2,0.02275366823
+reading,10,The man noticed the representatives of the employee who were,1,pl,1,2,1,0.2649337814
+reading,10,The man noticed the representatives of the employee who were,1,pl,1,2,2,0.2256138112
+reading,10,The man resembled the representative of the employees who was,0,sg,1,1,1,0.005142082309
+reading,10,The man resembled the representative of the employees who was,0,sg,1,1,2,0.03419895122
+reading,10,The man resembled the representative of the employees who was,0,sg,1,2,1,0.2070478522
+reading,10,The man resembled the representative of the employees who was,0,sg,1,2,2,0.2873255043
+reading,10,The man resembled the representatives of the employee who was,0,sg,0,1,1,0.02669688446
+reading,10,The man resembled the representatives of the employee who was,0,sg,0,1,2,0.01559988167
+reading,10,The man resembled the representatives of the employee who was,0,sg,0,2,1,0.2764509409
+reading,10,The man resembled the representatives of the employee who was,0,sg,0,2,2,0.2040620796
+reading,10,The man resembled the representative of the employees who were,0,pl,0,1,1,0.0009814728133
+reading,10,The man resembled the representative of the employees who were,0,pl,0,1,2,0.06551638796
+reading,10,The man resembled the representative of the employees who were,0,pl,0,2,1,0.1777356974
+reading,10,The man resembled the representative of the employees who were,0,pl,0,2,2,0.2755023778
+reading,10,The man resembled the representatives of the employee who were,0,pl,1,1,1,0.0542096829
+reading,10,The man resembled the representatives of the employee who were,0,pl,1,1,2,0.01225691823
+reading,10,The man resembled the representatives of the employee who were,0,pl,1,2,1,0.2743205368
+reading,10,The man resembled the representatives of the employee who were,0,pl,1,2,2,0.2064438424
+reading,10,The man noticed the employee of the representatives who was,1,sg,1,1,1,0.02483438618
+reading,10,The man noticed the employee of the representatives who was,1,sg,1,1,2,0.03920632551
+reading,10,The man noticed the employee of the representatives who was,1,sg,1,2,1,0.2160026725
+reading,10,The man noticed the employee of the representatives who was,1,sg,1,2,2,0.2742717615
+reading,10,The man noticed the employees of the representative who was,1,sg,0,1,1,0.04040002358
+reading,10,The man noticed the employees of the representative who was,1,sg,0,1,2,0.01489521999
+reading,10,The man noticed the employees of the representative who was,1,sg,0,2,1,0.295846967
+reading,10,The man noticed the employees of the representative who was,1,sg,0,2,2,0.1507639349
+reading,10,The man noticed the employee of the representatives who were,1,pl,0,1,1,0.02083708997
+reading,10,The man noticed the employee of the representatives who were,1,pl,0,1,2,0.0662956131
+reading,10,The man noticed the employee of the representatives who were,1,pl,0,2,1,0.1878614764
+reading,10,The man noticed the employee of the representatives who were,1,pl,0,2,2,0.2664574259
+reading,10,The man noticed the employees of the representative who were,1,pl,1,1,1,0.07064972831
+reading,10,The man noticed the employees of the representative who were,1,pl,1,1,2,0.01022513733
+reading,10,The man noticed the employees of the representative who were,1,pl,1,2,1,0.2923520761
+reading,10,The man noticed the employees of the representative who were,1,pl,1,2,2,0.1527429171
+reading,10,The man resembled the employee of the representatives who was,0,sg,1,1,1,0.01614560646
+reading,10,The man resembled the employee of the representatives who was,0,sg,1,1,2,0.03000275078
+reading,10,The man resembled the employee of the representatives who was,0,sg,1,2,1,0.2560533091
+reading,10,The man resembled the employee of the representatives who was,0,sg,1,2,2,0.2519083281
+reading,10,The man resembled the employees of the representative who was,0,sg,0,1,1,0.03297785647
+reading,10,The man resembled the employees of the representative who was,0,sg,0,1,2,0.004212962199
+reading,10,The man resembled the employees of the representative who was,0,sg,0,2,1,0.3109989676
+reading,10,The man resembled the employees of the representative who was,0,sg,0,2,2,0.140574463
+reading,10,The man resembled the employee of the representatives who were,0,pl,0,1,1,0.01324183455
+reading,10,The man resembled the employee of the representatives who were,0,pl,0,1,2,0.05826355011
+reading,10,The man resembled the employee of the representatives who were,0,pl,0,2,1,0.2213103085
+reading,10,The man resembled the employee of the representatives who were,0,pl,0,2,2,0.244834508
+reading,10,The man resembled the employees of the representative who were,0,pl,1,1,1,0.06524015442
+reading,10,The man resembled the employees of the representative who were,0,pl,1,1,2,0.0003047191205
+reading,10,The man resembled the employees of the representative who were,0,pl,1,2,1,0.3056144986
+reading,10,The man resembled the employees of the representative who were,0,pl,1,2,2,0.1410261666
+reading,11,The woman praised the gardener of the millionaires who was,1,sg,1,1,1,0.01105712662
+reading,11,The woman praised the gardener of the millionaires who was,1,sg,1,1,2,0.004862857458
+reading,11,The woman praised the gardener of the millionaires who was,1,sg,1,2,1,0.1822044188
+reading,11,The woman praised the gardener of the millionaires who was,1,sg,1,2,2,0.2347653469
+reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0,1,1,0.007753366711
+reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0,1,2,0.0022407991
+reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0,2,1,0.179616493
+reading,11,The woman praised the gardeners of the millionaire who was,1,sg,0,2,2,0.1642811344
+reading,11,The woman praised the gardener of the millionaires who were,1,pl,0,1,1,0.002754600062
+reading,11,The woman praised the gardener of the millionaires who were,1,pl,0,1,2,0.02498791828
+reading,11,The woman praised the gardener of the millionaires who were,1,pl,0,2,1,0.1555566978
+reading,11,The woman praised the gardener of the millionaires who were,1,pl,0,2,2,0.22475361
+reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1,1,1,0.02723846417
+reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1,1,2,0.00142091001
+reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1,2,1,0.1791925717
+reading,11,The woman praised the gardeners of the millionaire who were,1,pl,1,2,2,0.1626744259
+reading,11,The woman met the gardener of the millionaires who was,0,sg,1,1,1,0.01129710176
+reading,11,The woman met the gardener of the millionaires who was,0,sg,1,1,2,0.004733676901
+reading,11,The woman met the gardener of the millionaires who was,0,sg,1,2,1,0.2457253016
+reading,11,The woman met the gardener of the millionaires who was,0,sg,1,2,2,0.2423336033
+reading,11,The woman met the gardeners of the millionaire who was,0,sg,0,1,1,0.007440574699
+reading,11,The woman met the gardeners of the millionaire who was,0,sg,0,1,2,0.002280507462
+reading,11,The woman met the gardeners of the millionaire who was,0,sg,0,2,1,0.2391012793
+reading,11,The woman met the gardeners of the millionaire who was,0,sg,0,2,2,0.1725638925
+reading,11,The woman met the gardener of the millionaires who were,0,pl,0,1,1,0.002919178892
+reading,11,The woman met the gardener of the millionaires who were,0,pl,0,1,2,0.02508959091
+reading,11,The woman met the gardener of the millionaires who were,0,pl,0,2,1,0.217856654
+reading,11,The woman met the gardener of the millionaires who were,0,pl,0,2,2,0.2263426162
+reading,11,The woman met the gardeners of the millionaire who were,0,pl,1,1,1,0.02764365618
+reading,11,The woman met the gardeners of the millionaire who were,0,pl,1,1,2,0.001369646914
+reading,11,The woman met the gardeners of the millionaire who were,0,pl,1,2,1,0.2384721579
+reading,11,The woman met the gardeners of the millionaire who were,0,pl,1,2,2,0.1684951015
+reading,11,The woman praised the millionaire of the gardeners who was,1,sg,1,1,1,0.0009290119057
+reading,11,The woman praised the millionaire of the gardeners who was,1,sg,1,1,2,0.006289117112
+reading,11,The woman praised the millionaire of the gardeners who was,1,sg,1,2,1,0.1601336581
+reading,11,The woman praised the millionaire of the gardeners who was,1,sg,1,2,2,0.1844824486
+reading,11,The woman praised the millionaires of the gardener who was,1,sg,0,1,1,0.005987767821
+reading,11,The woman praised the millionaires of the gardener who was,1,sg,0,1,2,0.01076774413
+reading,11,The woman praised the millionaires of the gardener who was,1,sg,0,2,1,0.2197728856
+reading,11,The woman praised the millionaires of the gardener who was,1,sg,0,2,2,0.1871496555
+reading,11,The woman praised the millionaire of the gardeners who were,1,pl,0,1,1,-7.32E-05
+reading,11,The woman praised the millionaire of the gardeners who were,1,pl,0,1,2,0.02492066704
+reading,11,The woman praised the millionaire of the gardeners who were,1,pl,0,2,1,0.1416248689
+reading,11,The woman praised the millionaire of the gardeners who were,1,pl,0,2,2,0.1848093211
+reading,11,The woman praised the millionaires of the gardener who were,1,pl,1,1,1,0.02672398653
+reading,11,The woman praised the millionaires of the gardener who were,1,pl,1,1,2,0.003079502619
+reading,11,The woman praised the millionaires of the gardener who were,1,pl,1,2,1,0.2172637481
+reading,11,The woman praised the millionaires of the gardener who were,1,pl,1,2,2,0.1760314955
+reading,11,The woman met the millionaire of the gardeners who was,0,sg,1,1,1,0.0006776527681
+reading,11,The woman met the millionaire of the gardeners who was,0,sg,1,1,2,0.00659853066
+reading,11,The woman met the millionaire of the gardeners who was,0,sg,1,2,1,0.2447080387
+reading,11,The woman met the millionaire of the gardeners who was,0,sg,1,2,2,0.1866218731
+reading,11,The woman met the millionaires of the gardener who was,0,sg,0,1,1,0.004668874891
+reading,11,The woman met the millionaires of the gardener who was,0,sg,0,1,2,0.01072466127
+reading,11,The woman met the millionaires of the gardener who was,0,sg,0,2,1,0.2833560105
+reading,11,The woman met the millionaires of the gardener who was,0,sg,0,2,2,0.1856898571
+reading,11,The woman met the millionaire of the gardeners who were,0,pl,0,1,1,-0.000379784488
+reading,11,The woman met the millionaire of the gardeners who were,0,pl,0,1,2,0.02527337422
+reading,11,The woman met the millionaire of the gardeners who were,0,pl,0,2,1,0.2253638447
+reading,11,The woman met the millionaire of the gardeners who were,0,pl,0,2,2,0.1836803119
+reading,11,The woman met the millionaires of the gardener who were,0,pl,1,1,1,0.02495169984
+reading,11,The woman met the millionaires of the gardener who were,0,pl,1,1,2,0.002957758285
+reading,11,The woman met the millionaires of the gardener who were,0,pl,1,2,1,0.2799259232
+reading,11,The woman met the millionaires of the gardener who were,0,pl,1,2,2,0.172367932
+reading,13,The woman blamed the niece of the clerks who was,1,sg,1,1,1,0.004903328227
+reading,13,The woman blamed the niece of the clerks who was,1,sg,1,1,2,0.0176733479
+reading,13,The woman blamed the niece of the clerks who was,1,sg,1,2,1,0.1761883656
+reading,13,The woman blamed the niece of the clerks who was,1,sg,1,2,2,0.3283063343
+reading,13,The woman blamed the nieces of the clerk who was,1,sg,0,1,1,0.01704228502
+reading,13,The woman blamed the nieces of the clerk who was,1,sg,0,1,2,0.006829871375
+reading,13,The woman blamed the nieces of the clerk who was,1,sg,0,2,1,0.2593670383
+reading,13,The woman blamed the nieces of the clerk who was,1,sg,0,2,2,0.2658442972
+reading,13,The woman blamed the niece of the clerks who were,1,pl,0,1,1,0.007024821062
+reading,13,The woman blamed the niece of the clerks who were,1,pl,0,1,2,0.04364318931
+reading,13,The woman blamed the niece of the clerks who were,1,pl,0,2,1,0.1569522141
+reading,13,The woman blamed the niece of the clerks who were,1,pl,0,2,2,0.315489222
+reading,13,The woman blamed the nieces of the clerk who were,1,pl,1,1,1,0.04045898921
+reading,13,The woman blamed the nieces of the clerk who were,1,pl,1,1,2,0.004858586053
+reading,13,The woman blamed the nieces of the clerk who were,1,pl,1,2,1,0.2560909173
+reading,13,The woman blamed the nieces of the clerk who were,1,pl,1,2,2,0.2595817849
+reading,13,The woman waited with the niece of the clerks who was,0,sg,1,1,1,0.01461564413
+reading,13,The woman waited with the niece of the clerks who was,0,sg,1,1,2,0.01745790454
+reading,13,The woman waited with the niece of the clerks who was,0,sg,1,2,1,0.2121929205
+reading,13,The woman waited with the niece of the clerks who was,0,sg,1,2,2,0.3446188492
+reading,13,The woman waited with the nieces of the clerk who was,0,sg,0,1,1,0.01386731278
+reading,13,The woman waited with the nieces of the clerk who was,0,sg,0,1,2,0.004250296084
+reading,13,The woman waited with the nieces of the clerk who was,0,sg,0,2,1,0.2166382618
+reading,13,The woman waited with the nieces of the clerk who was,0,sg,0,2,2,0.2750913625
+reading,13,The woman waited with the niece of the clerks who were,0,pl,0,1,1,0.03826967927
+reading,13,The woman waited with the niece of the clerks who were,0,pl,0,1,2,0.04327098655
+reading,13,The woman waited with the niece of the clerks who were,0,pl,0,2,1,0.2064233233
+reading,13,The woman waited with the niece of the clerks who were,0,pl,0,2,2,0.3284492582
+reading,13,The woman waited with the nieces of the clerk who were,0,pl,1,1,1,0.03775524893
+reading,13,The woman waited with the nieces of the clerk who were,0,pl,1,1,2,0.002325176419
+reading,13,The woman waited with the nieces of the clerk who were,0,pl,1,2,1,0.213939152
+reading,13,The woman waited with the nieces of the clerk who were,0,pl,1,2,2,0.2648114346
+reading,13,The woman blamed the clerk of the nieces who was,1,sg,1,1,1,0.008414898374
+reading,13,The woman blamed the clerk of the nieces who was,1,sg,1,1,2,0.01868114191
+reading,13,The woman blamed the clerk of the nieces who was,1,sg,1,2,1,0.2156481907
+reading,13,The woman blamed the clerk of the nieces who was,1,sg,1,2,2,0.2708092495
+reading,13,The woman blamed the clerks of the niece who was,1,sg,0,1,1,0.01687951478
+reading,13,The woman blamed the clerks of the niece who was,1,sg,0,1,2,0.008981788604
+reading,13,The woman blamed the clerks of the niece who was,1,sg,0,2,1,0.2639697343
+reading,13,The woman blamed the clerks of the niece who was,1,sg,0,2,2,0.2171376884
+reading,13,The woman blamed the clerk of the nieces who were,1,pl,0,1,1,0.006180301639
+reading,13,The woman blamed the clerk of the nieces who were,1,pl,0,1,2,0.04181131941
+reading,13,The woman blamed the clerk of the nieces who were,1,pl,0,2,1,0.1919710646
+reading,13,The woman blamed the clerk of the nieces who were,1,pl,0,2,2,0.2598216015
+reading,13,The woman blamed the clerks of the niece who were,1,pl,1,1,1,0.04267512075
+reading,13,The woman blamed the clerks of the niece who were,1,pl,1,1,2,0.01090658047
+reading,13,The woman blamed the clerks of the niece who were,1,pl,1,2,1,0.2624150341
+reading,13,The woman blamed the clerks of the niece who were,1,pl,1,2,2,0.2031508764
+reading,13,The woman waited with the clerk of the nieces who was,0,sg,1,1,1,0.01572846929
+reading,13,The woman waited with the clerk of the nieces who was,0,sg,1,1,2,0.01648783768
+reading,13,The woman waited with the clerk of the nieces who was,0,sg,1,2,1,0.2257296998
+reading,13,The woman waited with the clerk of the nieces who was,0,sg,1,2,2,0.2646206803
+reading,13,The woman waited with the clerks of the niece who was,0,sg,0,1,1,0.0151146873
+reading,13,The woman waited with the clerks of the niece who was,0,sg,0,1,2,0.00751365539
+reading,13,The woman waited with the clerks of the niece who was,0,sg,0,2,1,0.2148861568
+reading,13,The woman waited with the clerks of the niece who was,0,sg,0,2,2,0.2101257249
+reading,13,The woman waited with the clerk of the nieces who were,0,pl,0,1,1,0.04192849743
+reading,13,The woman waited with the clerk of the nieces who were,0,pl,0,1,2,0.03966172753
+reading,13,The woman waited with the clerk of the nieces who were,0,pl,0,2,1,0.2232280518
+reading,13,The woman waited with the clerk of the nieces who were,0,pl,0,2,2,0.2495331912
+reading,13,The woman waited with the clerks of the niece who were,0,pl,1,1,1,0.04128092495
+reading,13,The woman waited with the clerks of the niece who were,0,pl,1,1,2,0.009405082262
+reading,13,The woman waited with the clerks of the niece who were,0,pl,1,2,1,0.2143647547
+reading,13,The woman waited with the clerks of the niece who were,0,pl,1,2,2,0.1930324881
+reading,14,The man helped the brother of the athletes who was,1,sg,1,1,1,0.01553656387
+reading,14,The man helped the brother of the athletes who was,1,sg,1,1,2,0.04090167655
+reading,14,The man helped the brother of the athletes who was,1,sg,1,2,1,0.10804758
+reading,14,The man helped the brother of the athletes who was,1,sg,1,2,2,0.3566097594
+reading,14,The man helped the brothers of the athlete who was,1,sg,0,1,1,0.01676248184
+reading,14,The man helped the brothers of the athlete who was,1,sg,0,1,2,0.03932118452
+reading,14,The man helped the brothers of the athlete who was,1,sg,0,2,1,0.1627253244
+reading,14,The man helped the brothers of the athlete who was,1,sg,0,2,2,0.2581659648
+reading,14,The man helped the brother of the athletes who were,1,pl,0,1,1,0.01527409557
+reading,14,The man helped the brother of the athletes who were,1,pl,0,1,2,0.07374909882
+reading,14,The man helped the brother of the athletes who were,1,pl,0,2,1,0.09500084443
+reading,14,The man helped the brother of the athletes who were,1,pl,0,2,2,0.3449881906
+reading,14,The man helped the brothers of the athlete who were,1,pl,1,1,1,0.04002018588
+reading,14,The man helped the brothers of the athlete who were,1,pl,1,1,2,0.03613620221
+reading,14,The man helped the brothers of the athlete who were,1,pl,1,2,1,0.1682103654
+reading,14,The man helped the brothers of the athlete who were,1,pl,1,2,2,0.2494026292
+reading,14,The man ran into the brother of the athletes who was,0,sg,1,1,1,-0.0003760948439
+reading,14,The man ran into the brother of the athletes who was,0,sg,1,1,2,0.0324008796
+reading,14,The man ran into the brother of the athletes who was,0,sg,1,2,1,0.1554092488
+reading,14,The man ran into the brother of the athletes who was,0,sg,1,2,2,0.3731631573
+reading,14,The man ran into the brothers of the athlete who was,0,sg,0,1,1,-0.000525341775
+reading,14,The man ran into the brothers of the athlete who was,0,sg,0,1,2,0.02322948853
+reading,14,The man ran into the brothers of the athlete who was,0,sg,0,2,1,0.1381625683
+reading,14,The man ran into the brothers of the athlete who was,0,sg,0,2,2,0.2678854161
+reading,14,The man ran into the brother of the athletes who were,0,pl,0,1,1,0.02405018644
+reading,14,The man ran into the brother of the athletes who were,0,pl,0,1,2,0.06564223626
+reading,14,The man ran into the brother of the athletes who were,0,pl,0,2,1,0.1589481178
+reading,14,The man ran into the brother of the athletes who were,0,pl,0,2,2,0.3541490254
+reading,14,The man ran into the brothers of the athlete who were,0,pl,1,1,1,0.02390423013
+reading,14,The man ran into the brothers of the athlete who were,0,pl,1,1,2,0.02114802979
+reading,14,The man ran into the brothers of the athlete who were,0,pl,1,2,1,0.1468242433
+reading,14,The man ran into the brothers of the athlete who were,0,pl,1,2,2,0.2531873658
+reading,14,The man helped the athlete of the brothers who was,1,sg,1,1,1,0.04180644117
+reading,14,The man helped the athlete of the brothers who was,1,sg,1,1,2,0.01539874783
+reading,14,The man helped the athlete of the brothers who was,1,sg,1,2,1,0.166732936
+reading,14,The man helped the athlete of the brothers who was,1,sg,1,2,2,0.2151073025
+reading,14,The man helped the athletes of the brother who was,1,sg,0,1,1,0.0543804843
+reading,14,The man helped the athletes of the brother who was,1,sg,0,1,2,0.02333241485
+reading,14,The man helped the athletes of the brother who was,1,sg,0,2,1,0.2156268947
+reading,14,The man helped the athletes of the brother who was,1,sg,0,2,2,0.1504325076
+reading,14,The man helped the athlete of the brothers who were,1,pl,0,1,1,0.03803844573
+reading,14,The man helped the athlete of the brothers who were,1,pl,0,1,2,0.03917425802
+reading,14,The man helped the athlete of the brothers who were,1,pl,0,2,1,0.1538048867
+reading,14,The man helped the athlete of the brothers who were,1,pl,0,2,2,0.2069442439
+reading,14,The man helped the athletes of the brother who were,1,pl,1,1,1,0.08518501239
+reading,14,The man helped the athletes of the brother who were,1,pl,1,1,2,0.02296210357
+reading,14,The man helped the athletes of the brother who were,1,pl,1,2,1,0.2179612293
+reading,14,The man helped the athletes of the brother who were,1,pl,1,2,2,0.1432195589
+reading,14,The man ran into the athlete of the brothers who was,0,sg,1,1,1,0.03361740731
+reading,14,The man ran into the athlete of the brothers who was,0,sg,1,1,2,-0.002347133423
+reading,14,The man ran into the athlete of the brothers who was,0,sg,1,2,1,0.1950203639
+reading,14,The man ran into the athlete of the brothers who was,0,sg,1,2,2,0.2050345263
+reading,14,The man ran into the athletes of the brother who was,0,sg,0,1,1,0.03340846893
+reading,14,The man ran into the athletes of the brother who was,0,sg,0,1,2,0.003551994575
+reading,14,The man ran into the athletes of the brother who was,0,sg,0,2,1,0.1828296777
+reading,14,The man ran into the athletes of the brother who was,0,sg,0,2,2,0.1450525072
+reading,14,The man ran into the athlete of the brothers who were,0,pl,0,1,1,0.0659141531
+reading,14,The man ran into the athlete of the brothers who were,0,pl,0,1,2,0.02265081694
+reading,14,The man ran into the athlete of the brothers who were,0,pl,0,2,1,0.1964455416
+reading,14,The man ran into the athlete of the brothers who were,0,pl,0,2,2,0.1919102872
+reading,14,The man ran into the athletes of the brother who were,0,pl,1,1,1,0.06573350448
+reading,14,The man ran into the athletes of the brother who were,0,pl,1,1,2,0.004189914676
+reading,14,The man ran into the athletes of the brother who were,0,pl,1,2,1,0.1893330532
+reading,14,The man ran into the athletes of the brother who were,0,pl,1,2,2,0.1295445613
+reading,16,The man pacified the associate of the businessmen who was,1,sg,1,1,1,0.02434036908
+reading,16,The man pacified the associate of the businessmen who was,1,sg,1,1,2,0.02198144605
+reading,16,The man pacified the associate of the businessmen who was,1,sg,1,2,1,0.09712173169
+reading,16,The man pacified the associate of the businessmen who was,1,sg,1,2,2,0.2991819662
+reading,16,The man pacified the associates of the businessman who was,1,sg,0,1,1,0.01134794976
+reading,16,The man pacified the associates of the businessman who was,1,sg,0,1,2,0.01399642602
+reading,16,The man pacified the associates of the businessman who was,1,sg,0,2,1,0.1673930562
+reading,16,The man pacified the associates of the businessman who was,1,sg,0,2,2,0.2407158917
+reading,16,The man pacified the associate of the businessmen who were,1,pl,0,1,1,0.02300260841
+reading,16,The man pacified the associate of the businessmen who were,1,pl,0,1,2,0.04915154354
+reading,16,The man pacified the associate of the businessmen who were,1,pl,0,2,1,0.08011091994
+reading,16,The man pacified the associate of the businessmen who were,1,pl,0,2,2,0.2842637903
+reading,16,The man pacified the associates of the businessman who were,1,pl,1,1,1,0.02912919525
+reading,16,The man pacified the associates of the businessman who were,1,pl,1,1,2,0.009200655323
+reading,16,The man pacified the associates of the businessman who were,1,pl,1,2,1,0.1600605991
+reading,16,The man pacified the associates of the businessman who were,1,pl,1,2,2,0.2244101308
+reading,16,The man visited the associate of the businessmen who was,0,sg,1,1,1,0.02578296256
+reading,16,The man visited the associate of the businessmen who was,0,sg,1,1,2,0.02190459468
+reading,16,The man visited the associate of the businessmen who was,0,sg,1,2,1,0.08680131209
+reading,16,The man visited the associate of the businessmen who was,0,sg,1,2,2,0.3003866526
+reading,16,The man visited the associates of the businessman who was,0,sg,0,1,1,0.01050786462
+reading,16,The man visited the associates of the businessman who was,0,sg,0,1,2,0.01380410157
+reading,16,The man visited the associates of the businessman who was,0,sg,0,2,1,0.1492468701
+reading,16,The man visited the associates of the businessman who was,0,sg,0,2,2,0.240643276
+reading,16,The man visited the associate of the businessmen who were,0,pl,0,1,1,0.0244652814
+reading,16,The man visited the associate of the businessmen who were,0,pl,0,1,2,0.04923277003
+reading,16,The man visited the associate of the businessmen who were,0,pl,0,2,1,0.06939770486
+reading,16,The man visited the associate of the businessmen who were,0,pl,0,2,2,0.2855701459
+reading,16,The man visited the associates of the businessman who were,0,pl,1,1,1,0.02838856511
+reading,16,The man visited the associates of the businessman who were,0,pl,1,1,2,0.009115702408
+reading,16,The man visited the associates of the businessman who were,0,pl,1,2,1,0.1403224173
+reading,16,The man visited the associates of the businessman who were,0,pl,1,2,2,0.222178707
+reading,16,The man pacified the businessman of the associates who was,1,sg,1,1,1,0.01362350977
+reading,16,The man pacified the businessman of the associates who was,1,sg,1,1,2,0.0121073042
+reading,16,The man pacified the businessman of the associates who was,1,sg,1,2,1,0.1746635048
+reading,16,The man pacified the businessman of the associates who was,1,sg,1,2,2,0.2091861056
+reading,16,The man pacified the businessmen of the associate who was,1,sg,0,1,1,0.01739372514
+reading,16,The man pacified the businessmen of the associate who was,1,sg,0,1,2,0.02707571514
+reading,16,The man pacified the businessmen of the associate who was,1,sg,0,2,1,0.2227350149
+reading,16,The man pacified the businessmen of the associate who was,1,sg,0,2,2,0.1450749694
+reading,16,The man pacified the businessman of the associates who were,1,pl,0,1,1,0.006975400789
+reading,16,The man pacified the businessman of the associates who were,1,pl,0,1,2,0.03050258622
+reading,16,The man pacified the businessman of the associates who were,1,pl,0,2,1,0.1425606996
+reading,16,The man pacified the businessman of the associates who were,1,pl,0,2,2,0.1949546635
+reading,16,The man pacified the businessmen of the associate who were,1,pl,1,1,1,0.04434233784
+reading,16,The man pacified the businessmen of the associate who were,1,pl,1,1,2,0.02578134632
+reading,16,The man pacified the businessmen of the associate who were,1,pl,1,2,1,0.2130194816
+reading,16,The man pacified the businessmen of the associate who were,1,pl,1,2,2,0.1458978444
+reading,16,The man visited the businessman of the associates who was,0,sg,1,1,1,0.01306074476
+reading,16,The man visited the businessman of the associates who was,0,sg,1,1,2,0.01206237866
+reading,16,The man visited the businessman of the associates who was,0,sg,1,2,1,0.150723278
+reading,16,The man visited the businessman of the associates who was,0,sg,1,2,2,0.2086697352
+reading,16,The man visited the businessmen of the associate who was,0,sg,0,1,1,0.0171256121
+reading,16,The man visited the businessmen of the associate who was,0,sg,0,1,2,0.02711928618
+reading,16,The man visited the businessmen of the associate who was,0,sg,0,2,1,0.2077458357
+reading,16,The man visited the businessmen of the associate who was,0,sg,0,2,2,0.1499285701
+reading,16,The man visited the businessman of the associates who were,0,pl,0,1,1,0.006478641503
+reading,16,The man visited the businessman of the associates who were,0,pl,0,1,2,0.03042850458
+reading,16,The man visited the businessman of the associates who were,0,pl,0,2,1,0.1220702231
+reading,16,The man visited the businessman of the associates who were,0,pl,0,2,2,0.194277722
+reading,16,The man visited the businessmen of the associate who were,0,pl,1,1,1,0.04397902029
+reading,16,The man visited the businessmen of the associate who were,0,pl,1,1,2,0.02594861143
+reading,16,The man visited the businessmen of the associate who were,0,pl,1,2,1,0.1974765366
+reading,16,The man visited the businessmen of the associate who were,0,pl,1,2,2,0.1471118435
+reading,18,The man thanked the servant of the dictators who was,1,sg,1,1,1,0.01120758354
+reading,18,The man thanked the servant of the dictators who was,1,sg,1,1,2,0.01226217558
+reading,18,The man thanked the servant of the dictators who was,1,sg,1,2,1,0.2061881808
+reading,18,The man thanked the servant of the dictators who was,1,sg,1,2,2,0.3090892983
+reading,18,The man thanked the servants of the dictator who was,1,sg,0,1,1,0.02360197112
+reading,18,The man thanked the servants of the dictator who was,1,sg,0,1,2,0.003048478517
+reading,18,The man thanked the servants of the dictator who was,1,sg,0,2,1,0.2556548329
+reading,18,The man thanked the servants of the dictator who was,1,sg,0,2,2,0.1938456693
+reading,18,The man thanked the servant of the dictators who were,1,pl,0,1,1,0.009134495827
+reading,18,The man thanked the servant of the dictators who were,1,pl,0,1,2,0.03260600364
+reading,18,The man thanked the servant of the dictators who were,1,pl,0,2,1,0.1874410403
+reading,18,The man thanked the servant of the dictators who were,1,pl,0,2,2,0.3000017865
+reading,18,The man thanked the servants of the dictator who were,1,pl,1,1,1,0.0588101691
+reading,18,The man thanked the servants of the dictator who were,1,pl,1,1,2,0.004080895459
+reading,18,The man thanked the servants of the dictator who were,1,pl,1,2,1,0.2548553482
+reading,18,The man thanked the servants of the dictator who were,1,pl,1,2,2,0.1950094437
+reading,18,The man talked to the servant of the dictators who was,0,sg,1,1,1,0.02188085742
+reading,18,The man talked to the servant of the dictators who was,0,sg,1,1,2,0.0109746081
+reading,18,The man talked to the servant of the dictators who was,0,sg,1,2,1,0.2359264477
+reading,18,The man talked to the servant of the dictators who was,0,sg,1,2,2,0.314770742
+reading,18,The man talked to the servants of the dictator who was,0,sg,0,1,1,0.02190211855
+reading,18,The man talked to the servants of the dictator who was,0,sg,0,1,2,0.001458949192
+reading,18,The man talked to the servants of the dictator who was,0,sg,0,2,1,0.2322011838
+reading,18,The man talked to the servants of the dictator who was,0,sg,0,2,2,0.1946657721
+reading,18,The man talked to the servant of the dictators who were,0,pl,0,1,1,0.05729666206
+reading,18,The man talked to the servant of the dictators who were,0,pl,0,1,2,0.0314659331
+reading,18,The man talked to the servant of the dictators who were,0,pl,0,2,1,0.2353485505
+reading,18,The man talked to the servant of the dictators who were,0,pl,0,2,2,0.3036212213
+reading,18,The man talked to the servants of the dictator who were,0,pl,1,1,1,0.05734140756
+reading,18,The man talked to the servants of the dictator who were,0,pl,1,1,2,0.002575761277
+reading,18,The man talked to the servants of the dictator who were,0,pl,1,2,1,0.2325322649
+reading,18,The man talked to the servants of the dictator who were,0,pl,1,2,2,0.192418946
+reading,18,The man thanked the dictator of the servants who was,1,sg,1,1,1,0.0002913050159
+reading,18,The man thanked the dictator of the servants who was,1,sg,1,1,2,0.0247178844
+reading,18,The man thanked the dictator of the servants who was,1,sg,1,2,1,0.1900663005
+reading,18,The man thanked the dictator of the servants who was,1,sg,1,2,2,0.244529992
+reading,18,The man thanked the dictators of the servant who was,1,sg,0,1,1,0.01439205116
+reading,18,The man thanked the dictators of the servant who was,1,sg,0,1,2,0.009940873698
+reading,18,The man thanked the dictators of the servant who was,1,sg,0,2,1,0.2560491501
+reading,18,The man thanked the dictators of the servant who was,1,sg,0,2,2,0.1852531623
+reading,18,The man thanked the dictator of the servants who were,1,pl,0,1,1,0.001267777146
+reading,18,The man thanked the dictator of the servants who were,1,pl,0,1,2,0.05817150063
+reading,18,The man thanked the dictator of the servants who were,1,pl,0,2,1,0.1771585157
+reading,18,The man thanked the dictator of the servants who were,1,pl,0,2,2,0.2369692422
+reading,18,The man thanked the dictators of the servant who were,1,pl,1,1,1,0.03321440424
+reading,18,The man thanked the dictators of the servant who were,1,pl,1,1,2,0.007996268015
+reading,18,The man thanked the dictators of the servant who were,1,pl,1,2,1,0.2537671141
+reading,18,The man thanked the dictators of the servant who were,1,pl,1,2,2,0.1779668194
+reading,18,The man talked to the dictator of the servants who was,0,sg,1,1,1,0.008877540065
+reading,18,The man talked to the dictator of the servants who was,0,sg,1,1,2,0.02276417218
+reading,18,The man talked to the dictator of the servants who was,0,sg,1,2,1,0.2243925783
+reading,18,The man talked to the dictator of the servants who was,0,sg,1,2,2,0.2375394382
+reading,18,The man talked to the dictators of the servant who was,0,sg,0,1,1,0.0116148379
+reading,18,The man talked to the dictators of the servant who was,0,sg,0,1,2,0.008023961648
+reading,18,The man talked to the dictators of the servant who was,0,sg,0,2,1,0.2202837902
+reading,18,The man talked to the dictators of the servant who was,0,sg,0,2,2,0.1772680429
+reading,18,The man talked to the dictator of the servants who were,0,pl,0,1,1,0.02933419991
+reading,18,The man talked to the dictator of the servants who were,0,pl,0,1,2,0.05691533648
+reading,18,The man talked to the dictator of the servants who were,0,pl,0,2,1,0.2216243082
+reading,18,The man talked to the dictator of the servants who were,0,pl,0,2,2,0.2276084769
+reading,18,The man talked to the dictators of the servant who were,0,pl,1,1,1,0.03042482571
+reading,18,The man talked to the dictators of the servant who were,0,pl,1,1,2,0.00583187783
+reading,18,The man talked to the dictators of the servant who were,0,pl,1,2,1,0.2190838831
+reading,18,The man talked to the dictators of the servant who were,0,pl,1,2,2,0.1650930182
+reading,20,The man mocked the fan of the singers who was,1,sg,1,1,1,-0.00136941746
+reading,20,The man mocked the fan of the singers who was,1,sg,1,1,2,0.01676905279
+reading,20,The man mocked the fan of the singers who was,1,sg,1,2,1,0.0819784173
+reading,20,The man mocked the fan of the singers who was,1,sg,1,2,2,0.2755876193
+reading,20,The man mocked the fans of the singer who was,1,sg,0,1,1,0.03190651925
+reading,20,The man mocked the fans of the singer who was,1,sg,0,1,2,0.01986726573
+reading,20,The man mocked the fans of the singer who was,1,sg,0,2,1,0.263503635
+reading,20,The man mocked the fans of the singer who was,1,sg,0,2,2,0.2203301884
+reading,20,The man mocked the fan of the singers who were,1,pl,0,1,1,0.002012707372
+reading,20,The man mocked the fan of the singers who were,1,pl,0,1,2,0.04612302644
+reading,20,The man mocked the fan of the singers who were,1,pl,0,2,1,0.07575269919
+reading,20,The man mocked the fan of the singers who were,1,pl,0,2,2,0.26423184
+reading,20,The man mocked the fans of the singer who were,1,pl,1,1,1,0.06046682772
+reading,20,The man mocked the fans of the singer who were,1,pl,1,1,2,0.008291833272
+reading,20,The man mocked the fans of the singer who were,1,pl,1,2,1,0.2584161575
+reading,20,The man mocked the fans of the singer who were,1,pl,1,2,2,0.1992278038
+reading,20,The man counted the fan of the singers who was,0,sg,1,1,1,0.001777042884
+reading,20,The man counted the fan of the singers who was,0,sg,1,1,2,0.01955280826
+reading,20,The man counted the fan of the singers who was,0,sg,1,2,1,0.09571906353
+reading,20,The man counted the fan of the singers who was,0,sg,1,2,2,0.2848303067
+reading,20,The man counted the fans of the singer who was,0,sg,0,1,1,0.03312308801
+reading,20,The man counted the fans of the singer who was,0,sg,0,1,2,0.0225203876
+reading,20,The man counted the fans of the singer who was,0,sg,0,2,1,0.2956597929
+reading,20,The man counted the fans of the singer who was,0,sg,0,2,2,0.2236858845
+reading,20,The man counted the fan of the singers who were,0,pl,0,1,1,0.004175731293
+reading,20,The man counted the fan of the singers who were,0,pl,0,1,2,0.04889436841
+reading,20,The man counted the fan of the singers who were,0,pl,0,2,1,0.0836890105
+reading,20,The man counted the fan of the singers who were,0,pl,0,2,2,0.2695591539
+reading,20,The man counted the fans of the singer who were,0,pl,1,1,1,0.06232925971
+reading,20,The man counted the fans of the singer who were,0,pl,1,1,2,0.01076872286
+reading,20,The man counted the fans of the singer who were,0,pl,1,2,1,0.2857688729
+reading,20,The man counted the fans of the singer who were,0,pl,1,2,2,0.2024524171
+reading,20,The man mocked the singer of the fans who was,1,sg,1,1,1,0.01812253164
+reading,20,The man mocked the singer of the fans who was,1,sg,1,1,2,0.03200143385
+reading,20,The man mocked the singer of the fans who was,1,sg,1,2,1,0.2188028552
+reading,20,The man mocked the singer of the fans who was,1,sg,1,2,2,0.2788803804
+reading,20,The man mocked the singers of the fan who was,1,sg,0,1,1,0.0162250261
+reading,20,The man mocked the singers of the fan who was,1,sg,0,1,2,-0.001231262802
+reading,20,The man mocked the singers of the fan who was,1,sg,0,2,1,0.2855683752
+reading,20,The man mocked the singers of the fan who was,1,sg,0,2,2,0.07713335078
+reading,20,The man mocked the singer of the fans who were,1,pl,0,1,1,0.007276813053
+reading,20,The man mocked the singer of the fans who were,1,pl,0,1,2,0.05893665492
+reading,20,The man mocked the singer of the fans who were,1,pl,0,2,1,0.1873707142
+reading,20,The man mocked the singer of the fans who were,1,pl,0,2,2,0.2639800349
+reading,20,The man mocked the singers of the fan who were,1,pl,1,1,1,0.04563798781
+reading,20,The man mocked the singers of the fan who were,1,pl,1,1,2,0.002164175816
+reading,20,The man mocked the singers of the fan who were,1,pl,1,2,1,0.2785829631
+reading,20,The man mocked the singers of the fan who were,1,pl,1,2,2,0.08792012398
+reading,20,The man counted the singer of the fans who was,0,sg,1,1,1,0.02161819234
+reading,20,The man counted the singer of the fans who was,0,sg,1,1,2,0.03099703548
+reading,20,The man counted the singer of the fans who was,0,sg,1,2,1,0.2466113444
+reading,20,The man counted the singer of the fans who was,0,sg,1,2,2,0.289599161
+reading,20,The man counted the singers of the fan who was,0,sg,0,1,1,0.02177510659
+reading,20,The man counted the singers of the fan who was,0,sg,0,1,2,-0.0005875994731
+reading,20,The man counted the singers of the fan who was,0,sg,0,2,1,0.3120043019
+reading,20,The man counted the singers of the fan who was,0,sg,0,2,2,0.08774126695
+reading,20,The man counted the singer of the fans who were,0,pl,0,1,1,0.01052625085
+reading,20,The man counted the singer of the fans who were,0,pl,0,1,2,0.05838075317
+reading,20,The man counted the singer of the fans who were,0,pl,0,2,1,0.2093968088
+reading,20,The man counted the singer of the fans who were,0,pl,0,2,2,0.2704226319
+reading,20,The man counted the singers of the fan who were,0,pl,1,1,1,0.05118285038
+reading,20,The man counted the singers of the fan who were,0,pl,1,1,2,0.002803021079
+reading,20,The man counted the singers of the fan who were,0,pl,1,2,1,0.302075014
+reading,20,The man counted the singers of the fan who were,0,pl,1,2,2,0.09884524789
