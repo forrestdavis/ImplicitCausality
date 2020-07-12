@@ -11,12 +11,12 @@ at sentence completion and self-paced reading.
 The main finding is that LSTM LMs are unable to acquire IC, but 
 transformer models (TransformerXL ([Dai et al., 2019](https://doi.org/10.18653/v1/P19-1285)) and GPT-2 XL ([Radford et al., 2019](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)))
 do. For both reference and syntax, the hidden representations of these
-transformers distinguishes cases of IC. Strikingly, IC only influences the behavior (i.e., surprisal) 
-of pronouns, not syntactic attachment pointing to a disconnect between 
+transformers distinguish cases of IC. Strikingly, IC only influences model behavior (i.e., surprisal) 
+for reference, not syntactic attachment pointing to a disconnect between 
 model representations of syntax and model behavior. Moreover, we find 
-that the final layers of the transformer LMs overrides unambiguous 
+that the final layers of the transformer LMs override unambiguous 
 syntactic information (e.g., agreement), instead showing a preference 
-for a more local, ungrammatical attachment. 
+for a more local, yet ungrammatical, attachment. 
 
 ### Dependencies 
 
