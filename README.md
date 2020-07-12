@@ -46,7 +46,7 @@ The dir tools includes a script (create_stim.py) which recreates the
 stimuli used in this experiment. All stimuli are taken directly 
 from human experiments, but the stim script allows one to tweak 
 various components of the stimuli (e.g., the nouns). Also 
-include is a script used for printing out the results from main.py 
+included is a script used for printing out the results from main.py 
 (utils.py), an awk script for getting frequencies, and
 information about replaced nouns and missing 
 IC verbs. 
