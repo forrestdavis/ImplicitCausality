@@ -9,7 +9,7 @@ For syntax, we utilized the experimental stimuli from [Rohde et al. (2011)](http
 at sentence completion and self-paced reading. 
 
 The main finding is that LSTM LMs are unable to acquire IC, but 
-transformer models (TransformerXL from [Dai et al. (2019)](https://doi.org/10.18653/v1/P19-1285) and GPT-2 XL from [Radford et al. (2019)](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+transformer models (TransformerXL ([Dai et al., 2019](https://doi.org/10.18653/v1/P19-1285)) and GPT-2 XL ([Radford et al., 2019](https://d4mucfpksywv.cloudfront.net/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)))
 do. For both reference and syntax, the hidden representations of these
 transformers distinguishes cases of IC. Strikingly, IC only influences the behavior (i.e., surprisal) 
 of pronouns, not syntactic attachment pointing to a disconnect between 
