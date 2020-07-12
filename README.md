@@ -33,9 +33,25 @@ From spaCy you need the pretrained English model "en_core_web_sm":
 
 ## Usage
 
+To recreate experiments, download the LSTM models from Zenodo and
+ uncomment the relevant code block at the bottom of main.py. Pre-trained
+transformer models are downloaded via HuggingFace's interface. 
 
+Pre-generated results are included in the results dir. Figures from the 
+paper can be found in figures. R code to recreate those figures 
+as well as the statistical tests in the paper can be found 
+in stats.R. 
 
-## Extra Details
+The dir tools includes a script (create_stim.py) which recreates the 
+stimuli used in this experiment. All stimuli are taken directly 
+from human experiments, but the stim script allows one to tweak 
+various components of the stimuli (e.g., the nouns). Also 
+include is a script used for printing out the results from main.py 
+(utils.py), an awk script for getting frequencies, and
+information about replaced nouns and missing 
+IC verbs. 
 
+The vocab for the LSTM LMs is given in wikitext103_vocab (top 50K words). 
+If you have any questions feel free to email me :)
 
 ## References
