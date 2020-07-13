@@ -1,3 +1,29 @@
+with open("Story_Completion_score.csv", 'r') as f:
+
+    header = f.readline().strip().split(',')
+
+    heading = header[:6]
+
+    heading.append('model')
+    heading.append('lstm_score')
+    out_str = ','.join(heading)+'\n'
+
+    for line in f:
+        line = line.strip().split(',')
+        repeat = line[:6]
+
+        for x in range(6, len(line)):
+            label = header[x]
+            if "LSTM" in label and 'avg' not in label:
+                model = '_'.join(label.split('_')[:-1])
+                out = repeat + [model]
+                out.append(line[x])
+                out_str += ','.join(out) + '\n'
+
+    with open("LSTM_score_flat.csv", 'w') as o:
+        o.write(out_str)
+
+'''
 #RT LSTM
 with open("IC_match_gpt_SIM.csv", 'r') as f:
 
@@ -15,11 +41,9 @@ with open("IC_match_gpt_SIM.csv", 'r') as f:
         repeat = line[:7]
         simHigh=0
         for x in range(7, len(line)):
-            '''
-            if 'avg' not in header[x]:
-                continue
-            layer = str(int(header[x].split('_')[3])+1)
-            '''
+            #if 'avg' not in header[x]:
+            #    continue
+            #layer = str(int(header[x].split('_')[3])+1)
             layer = str(int(header[x].split('_')[2])+1)
             if 'HIGH' in header[x]:
                 out = repeat + [layer, '1', line[x]]
@@ -30,6 +54,7 @@ with open("IC_match_gpt_SIM.csv", 'r') as f:
             
     with open("gpt_pronoun_flat_SIM.csv", 'w') as o:
         o.write(out_str)
+'''
 '''
 #RT LSTM
 with open("Reading_Time_LSTM_were_SIM.csv", 'r') as f:

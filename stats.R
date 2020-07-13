@@ -2,25 +2,31 @@ library(ggplot2)
 library(lme4)
 library(lmerTest)
 library(cowplot)
+library(texreg)
 
-rt_surp <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/Reading_Time_surp.csv")
-story_data <-read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/Story_Completion_score.csv")
-pronoun_surp <- read.csv("/Users/forrestdavis/Projects/ImplicitCausality/results/IC_mismatch_surp.csv")
+path = "/home/forrestdavis/Projects/ImplicitCausality/"
 
-tf_who_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/tf_who_flat_SIM.csv")
-tf_were_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/tf_were_flat_SIM.csv")
+rt_surp <- read.csv(paste(path, "results/Reading_Time_surp.csv", sep=''))
+story_data <-read.csv(paste(path, "results/Story_Completion_score.csv", sep=''))
+pronoun_surp <- read.csv(paste(path, "results/IC_mismatch_surp.csv", sep=''))
 
-gpt_who_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/gpt_who_flat_SIM.csv")
-gpt_were_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/gpt_were_flat_SIM.csv")
+tf_who_sim <- read.csv(paste(path, "results/tf_who_flat_SIM.csv", sep=''))
+tf_were_sim <- read.csv(paste(path, "results/tf_were_flat_SIM.csv", sep=''))
 
-lstm_who_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/LSTM_who_flat_SIM.csv")
-lstm_were_sim <- read.csv("/Users/forrestdavis/projects/ImplicitCausality/results/LSTM_were_flat_SIM.csv")
+gpt_who_sim <- read.csv(paste(path, "results/gpt_who_flat_SIM.csv", sep=''))
+gpt_were_sim <- read.csv(paste(path, "results/gpt_were_flat_SIM.csv", sep=''))
 
-tf_pronoun_sim <- read.csv("/Users/forrestdavis/Projects/ImplicitCausality/results/tf_pronoun_flat_SIM.csv")
-lstm_pronoun_sim <- read.csv("/Users/forrestdavis/Projects/ImplicitCausality/results/LSTM_pronoun_flat_SIM.csv")
-gpt_pronoun_sim <- read.csv("/Users/forrestdavis/Projects/ImplicitCausality/results/gpt_pronoun_flat_SIM.csv")
+lstm_who_sim <- read.csv(paste(path, "results/LSTM_who_flat_SIM.csv", sep =''))
+lstm_were_sim <- read.csv(paste(path, "results/LSTM_were_flat_SIM.csv", sep = ''))
+
+tf_pronoun_sim <- read.csv(paste(path, "results/tf_pronoun_flat_SIM.csv", sep=''))
+lstm_pronoun_sim <- read.csv(paste(path, "results/LSTM_pronoun_flat_SIM.csv", sep=''))
+gpt_pronoun_sim <- read.csv(paste(path,"results/gpt_pronoun_flat_SIM.csv", sep=''))
 
 #add categorical IC variable
+pronoun_surp$hasIC <- pronoun_surp$bias>0
+pronoun_surp$hasIC <- as.numeric(pronoun_surp$hasIC)
+
 lstm_pronoun_sim$hasIC <- lstm_pronoun_sim$bias > 0
 lstm_pronoun_sim$hasIC <- as.numeric(lstm_pronoun_sim$hasIC)
 
@@ -36,14 +42,17 @@ gpt_pronoun_sim$hasIC <- as.numeric(gpt_pronoun_sim$hasIC)
 compl_lstm_model <- lmer(LSTM_avg_score ~ hasIC*isHIGH + (1|item), data=story_data)
 summary(compl_lstm_model)
 anova(compl_lstm_model)
+texreg(compl_lstm_model)
 
 compl_tf_model <- lmer(tf_score ~ hasIC*isHIGH + (1|item), data=story_data)
 summary(compl_tf_model)
 anova(compl_tf_model)
+texreg(compl_tf_model)
 
 compl_gpt_model <- lmer(gpt_score ~ hasIC*isHIGH + (1|item), data=story_data)
 summary(compl_gpt_model)
 anova(compl_gpt_model)
+texreg(compl_gpt_model)
 
 
 #########################
@@ -52,14 +61,17 @@ anova(compl_gpt_model)
 rt_lstm_model <- lmer(LSTM_avg_surp ~ hasIC*isHIGH*num + (1|item), data=rt_surp)
 summary(rt_lstm_model)
 anova(rt_lstm_model)
+texreg(rt_lstm_model)
 
 rt_tf_model <- lmer(tf_surp ~ hasIC*isHIGH*num + (1|item), data=rt_surp)
 summary(rt_tf_model)
 anova(rt_tf_model)
+texreg(rt_tf_model)
 
 rt_gpt_model <- lmer(gpt_surp ~ hasIC*isHIGH*num + (1|item), data=rt_surp)
 summary(rt_gpt_model)
 anova(rt_gpt_model)
+texreg(rt_gpt_model)
 
 #########################
 # Reading Time Surp Plots
@@ -67,7 +79,7 @@ anova(rt_gpt_model)
 
 # LSTM
 lstm_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "LSTM Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                        labels=c("non-IC", "IC")) + 
@@ -79,7 +91,7 @@ lstm_rt <- lstm_rt + theme(legend.position='none')
 
 # GPT-2 XL
 gpt_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=gpt_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "GPT-2 XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position='none') +
@@ -87,7 +99,7 @@ gpt_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=gpt_surp, fill=factor(isHIGH)))
 
 # TF-XL
 tf_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=tf_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "TF-XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position = 'none') +
@@ -128,6 +140,7 @@ rt_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
 rt_sim_lstm_model <- lmer(sim ~ hasIC*NP*layer + (1|item), data=lstm_who_sim)
 summary(rt_sim_lstm_model)
 anova(rt_sim_lstm_model)
+texreg(rt_sim_lstm_model)
 
 lstm_who_NP1_IC <- subset(lstm_who_sim, hasIC==1 & NP==1 & layer==1)
 lstm_who_NP2_IC <- subset(lstm_who_sim, hasIC==1 & NP==2 & layer==1)
@@ -141,10 +154,12 @@ t.test(lstm_who_NP2_IC$sim, lstm_who_NP2_nonIC$sim)
 rt_sim_tf_model <- lmer(sim ~ hasIC*NP*layer + (1|item), data=tf_who_sim)
 summary(rt_sim_tf_model)
 anova(rt_sim_tf_model)
+texreg(rt_sim_tf_model, digits=3)
 
 rt_sim_gpt_model <- lmer(sim ~ hasIC*NP*layer + (1|item), data=gpt_who_sim)
 summary(rt_sim_gpt_model)
 anova(rt_sim_gpt_model)
+texreg(rt_sim_gpt_model, digits=4)
 
 #########################
 # Reading Time SIM Plots
@@ -156,7 +171,7 @@ lstm_who_sim <- subset(lstm_who_sim, num=='pl')
 lstm_who_sim$NP <- factor(lstm_who_sim$NP)
 
 lstm_who <- ggplot(lstm_who_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + 
   labs(x ="Hidden Layer", y = "LSTM Similarity") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 lstm_who <- lstm_who  + theme(legend.position = c(0.05, 0.95), 
@@ -170,7 +185,7 @@ tf_who_sim <- subset(tf_who_sim, num=='pl')
 tf_who_sim$NP <- factor(tf_who_sim$NP)
 
 tf_who <- ggplot(tf_who_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity")+ scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 
@@ -181,7 +196,7 @@ gpt_who_sim$NP <- factor(gpt_who_sim$NP)
 gpt_who_sim_small <- subset(gpt_who_sim, layer > 29)
 
 gpt_who <- ggplot(gpt_who_sim_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
+  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "GPT-2 XL Similarity") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 plot_row <- plot_grid(tf_who, lstm_who, rel_widths =c(1.8, 1))
@@ -216,7 +231,7 @@ tf_were_HIGH <- subset(tf_were_sim, isHIGH==1)
 tf_were_LOW <- subset(tf_were_sim, isHIGH==0)
 
 tf_were_h <- ggplot(tf_were_HIGH, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity with High Agree") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 tf_were_h <- tf_were_h  + theme(legend.position = c(0.05, 0.95), 
@@ -226,7 +241,7 @@ tf_were_h <- tf_were_h  + theme(legend.position = c(0.05, 0.95),
 
 
 tf_were_l <- ggplot(tf_were_LOW, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + theme(legend.position = 'none') + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + theme(legend.position = 'none') + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity with Low Agree") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
   
@@ -263,7 +278,7 @@ gpt_were_HIGH_small <- subset(gpt_were_HIGH, layer>24)
 gpt_were_LOW_small <- subset(gpt_were_LOW, layer>24)
 
 gpt_were_h <- ggplot(gpt_were_HIGH_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-geom_boxplot(notch=TRUE)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + 
+geom_boxplot(notch=TRUE, outlier.size=0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + 
 labs(x ="Hidden Layer", y = "GPT-2 XL Similarity with High Agree") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 gpt_were_h <- gpt_were_h  + theme(legend.position = c(0.01, 0.01), 
@@ -273,7 +288,7 @@ gpt_were_h <- gpt_were_h  + theme(legend.position = c(0.01, 0.01),
 
 
 gpt_were_l <- ggplot(gpt_were_LOW_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-geom_boxplot(notch=TRUE)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + theme(legend.position = 'none') + 
+geom_boxplot(notch=TRUE, outlier.size=0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + theme(legend.position = 'none') + 
 labs(x ="Hidden Layer", y = "GPT-2 XL Similarity with Low Agree") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
 
@@ -309,14 +324,17 @@ rel_heights = c(0.1, 1.2)
 rt_sim_lstm_model <- lmer(sim ~ hasIC*NP*layer*isHIGH + (1|item), data=lstm_were_sim)
 summary(rt_sim_lstm_model)
 anova(rt_sim_lstm_model)
+texreg(rt_sim_lstm_model)
 
 rt_sim_tf_model <- lmer(sim ~ hasIC*NP*layer*isHIGH + (1|item), data=tf_were_sim)
 summary(rt_sim_tf_model)
 anova(rt_sim_tf_model)
+texreg(rt_sim_tf_model, digits=4)
 
 rt_sim_gpt_model <- lmer(sim ~ hasIC*NP*layer*isHIGH + (1|item), data=gpt_were_sim)
 summary(rt_sim_gpt_model)
 anova(rt_sim_gpt_model)
+texreg(rt_sim_gpt_model, digits=4)
 
 #########################
 # Pronoun Surp Stats
@@ -328,14 +346,17 @@ pronoun_surp$hasIC <- as.numeric(pronoun_surp$hasIC)
 lstm_pronoun_model <- lmer(LSTM_avg_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(lstm_pronoun_model)
 anova(lstm_pronoun_model)
+texreg(lstm_pronoun_model)
 
 tf_pronoun_model <- lmer(tf_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(tf_pronoun_model)
 anova(tf_pronoun_model)
+texreg(tf_pronoun_model)
 
 gpt_pronoun_model <- lmer(gpt_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(gpt_pronoun_model)
 anova(gpt_pronoun_model)
+texreg(gpt_pronoun_model)
 
 pronoun_HIGH <- subset(pronoun_surp, isHigh == 1)
 pronoun_LOW <- subset(pronoun_surp, isHigh == 0)
@@ -371,9 +392,10 @@ t.test(pronoun_LOW_f_IC$gpt_surp, pronoun_LOW_f_nonIC$gpt_surp)
 # Pronoun Surp Plots
 #########################
 
+
 # LSTM
 lstm_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "LSTM Surprisal (Pronoun)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
@@ -385,7 +407,7 @@ lstm_pronoun <- lstm_pronoun + theme(legend.position='none')
 
 # GPT-2 XL
 gpt_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=gpt_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "GPT-2 XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
@@ -393,7 +415,7 @@ gpt_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=gpt_surp, fill=intera
 
 # TF-XL
 tf_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=tf_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
   labs(x ="Verb Type", y = "TF-XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
@@ -436,6 +458,7 @@ lstm_pronoun_sim$hasIC <- as.numeric(lstm_pronoun_sim$hasIC)
 pronoun_sim_lstm_model <- lmer(sim ~ hasIC*NP*layer*gender + (1|item), data=lstm_pronoun_sim)
 summary(pronoun_sim_lstm_model)
 anova(pronoun_sim_lstm_model)
+texreg(pronoun_sim_lstm_model, digits=3)
 
 lstm_pronoun_HIGH_IC <- subset(lstm_pronoun_sim, hasIC==1 & layer == 2 & NP == 1)
 lstm_pronoun_HIGH_nonIC <- subset(lstm_pronoun_sim, hasIC==0 & layer == 2 & NP == 1)
@@ -453,6 +476,7 @@ tf_pronoun_sim$hasIC <- as.numeric(tf_pronoun_sim$hasIC)
 pronoun_sim_tf_model <- lmer(sim ~ hasIC*NP*layer*gender + (1|item), data=tf_pronoun_sim)
 summary(pronoun_sim_tf_model)
 anova(pronoun_sim_tf_model)
+texreg(pronoun_sim_tf_model, digits=4)
 
 tf_pronoun_HIGH_IC <- subset(tf_pronoun_sim, hasIC==1 & layer == 18 & NP == 1)
 tf_pronoun_HIGH_nonIC <- subset(tf_pronoun_sim, hasIC==0 & layer == 18 & NP == 1)
@@ -470,6 +494,8 @@ gpt_pronoun_sim$hasIC <- as.numeric(gpt_pronoun_sim$hasIC)
 pronoun_sim_gpt_model <- lmer(sim ~ hasIC*NP*layer*gender + (1|item), data=gpt_pronoun_sim)
 summary(pronoun_sim_gpt_model)
 anova(pronoun_sim_gpt_model)
+texreg(pronoun_sim_gpt_model, digits=4)
+
 
 gpt_pronoun_HIGH_IC <- subset(gpt_pronoun_sim, hasIC==1 & layer == 48 & NP == 1)
 gpt_pronoun_HIGH_nonIC <- subset(gpt_pronoun_sim, hasIC==0 & layer == 48 & NP == 1)
@@ -489,7 +515,7 @@ lstm_pronoun_sim$hasIC <- factor(lstm_pronoun_sim$hasIC)
 lstm_pronoun_sim$NP <- factor(lstm_pronoun_sim$NP)
 
 lstm_pronoun <- ggplot(lstm_pronoun_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + 
   labs(x ="Hidden Layer", y = "LSTM Similarity") + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
 
@@ -503,7 +529,7 @@ tf_pronoun_sim$hasIC <- factor(tf_pronoun_sim$hasIC)
 tf_pronoun_sim$NP <- factor(tf_pronoun_sim$NP)
 
 tf_pronoun <- ggplot(tf_pronoun_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity") + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
 
@@ -514,7 +540,7 @@ gpt_pronoun_sim$NP <- factor(gpt_pronoun_sim$NP)
 gpt_pronoun_sim_small <- subset(gpt_pronoun_sim, layer > 29)
 
 gpt_pronoun <- ggplot(gpt_pronoun_sim_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
-  geom_boxplot(notch=TRUE) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
+  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "GPT-2 XL Similarity") + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
 
