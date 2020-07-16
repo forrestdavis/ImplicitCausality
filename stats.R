@@ -79,11 +79,11 @@ texreg(rt_gpt_model)
 
 # LSTM
 lstm_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Type", y = "LSTM Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
-                       labels=c("non-IC", "IC")) + 
-  scale_fill_manual(values = c("#999999", "white"), name= "Attachment Type", labels=c("Low", "High"))
+                       labels=c("non-IC", "IC")) + theme(legend.title = element_text(size=20), legend.text = element_text(size=20))+
+  scale_fill_manual(values = c("#999999", "white"), name= "Agreement Location", labels=c("Low", "High"))
 
 legend <- get_legend(lstm_rt)
 
@@ -91,7 +91,7 @@ lstm_rt <- lstm_rt + theme(legend.position='none')
 
 # GPT-2 XL
 gpt_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=gpt_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Type", y = "GPT-2 XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position='none') +
@@ -99,7 +99,7 @@ gpt_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=gpt_surp, fill=factor(isHIGH)))
 
 # TF-XL
 tf_rt <- ggplot(rt_surp, aes(x=factor(hasIC), y=tf_surp, fill=factor(isHIGH))) +
-  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
+  geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Type", y = "TF-XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position = 'none') +
@@ -193,7 +193,7 @@ tf_who <- ggplot(tf_who_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, ha
 gpt_who_sim$hasIC <- factor(gpt_who_sim$hasIC)
 gpt_who_sim <- subset(gpt_who_sim, num=='pl')
 gpt_who_sim$NP <- factor(gpt_who_sim$NP)
-gpt_who_sim_small <- subset(gpt_who_sim, layer > 29)
+gpt_who_sim_small <- subset(gpt_who_sim, layer %%3 == 0)
 
 gpt_who <- ggplot(gpt_who_sim_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
   geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
@@ -274,8 +274,8 @@ tf_were_l <- ggplot(tf_were_LOW, aes(x=factor(layer), y=sim, fill=interaction(NP
 gpt_were_HIGH <- subset(gpt_were_sim, isHIGH==1)
 gpt_were_LOW <- subset(gpt_were_sim, isHIGH==0)
 
-gpt_were_HIGH_small <- subset(gpt_were_HIGH, layer>24)
-gpt_were_LOW_small <- subset(gpt_were_LOW, layer>24)
+gpt_were_HIGH_small <- subset(gpt_were_HIGH, layer %% 3 == 0)
+gpt_were_LOW_small <- subset(gpt_were_LOW, layer %% 3 ==0)
 
 gpt_were_h <- ggplot(gpt_were_HIGH_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
 geom_boxplot(notch=TRUE, outlier.size=0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + 
@@ -371,6 +371,7 @@ t.test(pronoun_HIGH_f_IC$LSTM_avg_surp, pronoun_HIGH_f_nonIC$LSTM_avg_surp)
 
 t.test(pronoun_HIGH_m_IC$tf_surp, pronoun_HIGH_m_nonIC$tf_surp)
 t.test(pronoun_HIGH_f_IC$tf_surp, pronoun_HIGH_f_nonIC$tf_surp)
+
 t.test(pronoun_HIGH_m_IC$gpt_surp, pronoun_HIGH_m_nonIC$gpt_surp)
 t.test(pronoun_HIGH_f_IC$gpt_surp, pronoun_HIGH_f_nonIC$gpt_surp)
 
@@ -394,29 +395,31 @@ t.test(pronoun_LOW_f_IC$gpt_surp, pronoun_LOW_f_nonIC$gpt_surp)
 
 
 # LSTM
-lstm_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
-  labs(x ="Verb Type", y = "LSTM Surprisal (Pronoun)") + 
+lstm_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=interaction(factor(isHigh), factor(gender)))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + theme(legend.text=element_text(size=20)) + 
+  theme(legend.title = element_text(size=20)) + 
+  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Type", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
 
-legend <- get_legend(lstm_pronoun)
+legend <- get_legend(lstm_pronoun) 
+
 
 lstm_pronoun <- lstm_pronoun + theme(legend.position='none')
 
 # GPT-2 XL
-gpt_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=gpt_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
-  labs(x ="Verb Type", y = "GPT-2 XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
+gpt_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=gpt_surp, fill=interaction(factor(isHigh), factor(gender)))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Type", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
 
 # TF-XL
-tf_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=tf_surp, fill=interaction(factor(gender), factor(isHigh)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=12)) + 
-  labs(x ="Verb Type", y = "TF-XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
+tf_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=tf_surp, fill=interaction(factor(isHigh), factor(gender)))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Type", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
@@ -426,6 +429,7 @@ plot_row <- plot_grid(lstm_pronoun, tf_pronoun)
 title <- ggdraw() + 
   draw_label(
     "Pronoun Reference with Implicit Causality Surprisal",
+    
     fontface = 'bold',
     x = 0,
     hjust = 0
@@ -433,7 +437,7 @@ title <- ggdraw() +
   theme(
     # add margin on the left of the drawing canvas,
     # so title is aligned with left edge of first plot
-    plot.margin = margin(0, 0, 0, 7)
+    plot.margin = margin(0, 0, 0, 7), text = element_text(size=25), 
   )
 plot_row <- plot_grid(
   title, plot_row,
@@ -517,7 +521,7 @@ lstm_pronoun_sim$NP <- factor(lstm_pronoun_sim$NP)
 lstm_pronoun <- ggplot(lstm_pronoun_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
   geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + 
   labs(x ="Hidden Layer", y = "LSTM Similarity") + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Antecedent+Verb Bias", labels=c("Subject+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
 
 lstm_pronoun <- lstm_pronoun  + theme(legend.position = c(0.0, 0.96), 
                               legend.justification = c("left", "top"), 
@@ -531,18 +535,18 @@ tf_pronoun_sim$NP <- factor(tf_pronoun_sim$NP)
 tf_pronoun <- ggplot(tf_pronoun_sim, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity") + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
 
 
 #GPT-2 XL who
 gpt_pronoun_sim$hasIC <- factor(gpt_pronoun_sim$hasIC)
 gpt_pronoun_sim$NP <- factor(gpt_pronoun_sim$NP)
-gpt_pronoun_sim_small <- subset(gpt_pronoun_sim, layer > 29)
+gpt_pronoun_sim_small <- subset(gpt_pronoun_sim, layer %%3 == 0)
 
 gpt_pronoun <- ggplot(gpt_pronoun_sim_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
   geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "GPT-2 XL Similarity") + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subjec+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
 
 
 plot_row <- plot_grid(tf_pronoun, lstm_pronoun, rel_widths =c(1.8, 1))
