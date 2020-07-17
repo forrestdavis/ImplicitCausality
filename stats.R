@@ -174,10 +174,7 @@ lstm_who <- ggplot(lstm_who_sim, aes(x=factor(layer), y=sim, fill=interaction(NP
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + 
   labs(x ="Hidden Layer", y = "LSTM Similarity") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
-lstm_who <- lstm_who  + theme(legend.position = c(0.05, 0.95), 
-                            legend.justification = c("left", "top"), 
-                            legend.box.just = "right", 
-                            legend.margin = margin(6, 6, 6, 6))
+lstm_who <- lstm_who  + theme(legend.position = 'none')
 
 #TF-XL who
 tf_who_sim$hasIC <- factor(tf_who_sim$hasIC)
@@ -199,7 +196,34 @@ gpt_who <- ggplot(gpt_who_sim_small, aes(x=factor(layer), y=sim, fill=interactio
   geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "GPT-2 XL Similarity") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
-plot_row <- plot_grid(tf_who, lstm_who, rel_widths =c(1.8, 1))
+
+set.seed(42)
+good = rnorm(40, mean=4, sd=1)
+bad = rnorm(40, mean=2, sd=1)
+HighnonIC <- data.frame("sim" = bad, "NP" = 1, 'hasIC' = 0)
+LownonIC <- data.frame("sim" = good, "NP" = 2, 'hasIC' = 0)
+HighIC <- data.frame("sim" = good, "NP" = 1, 'hasIC' = 1)
+LowIC <- data.frame("sim" = bad, "NP" = 2, 'hasIC' = 1)
+
+human <- rbind(HighnonIC, LownonIC, HighIC, LowIC)
+human$hasIC <- factor(human$hasIC)
+human$NP <- factor(human$NP)
+
+human_plot <- ggplot(human, aes(y=sim, fill=interaction(NP, hasIC))) +
+  geom_boxplot(notch=TRUE, outlier.size=0.1, outlier.shape=NA) + ylim(0, 12) + theme(text = element_text(size=12)) +
+  labs(x ="Hidden Layer", y = "Predicted Human Effect") + 
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
+
+human_plot <- human_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), 
+                                 axis.text.x=element_blank(), axis.ticks.x=element_blank())
+
+human_plot <- human_plot  + theme(legend.position = c(0.02, 0.98), 
+                                  legend.justification = c("left", "top"), 
+                                  legend.box.just = "center", 
+                                  legend.margin = margin(6, 6, 6, 6))
+
+
+plot_row <- plot_grid(lstm_who, tf_who, rel_widths =c(1, 1.8))
 
 title <- ggdraw() + 
   draw_label(
@@ -221,10 +245,14 @@ plot_row <- plot_grid(
 )
 
 rt_who_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
-  draw_plot(gpt_who, x=0, y= 0, width=1, height=0.5) + 
-  draw_plot_label(label = c("c)", "a)", "b)"), size = 15,
-                  x = c(0.03, 0.03, 0.65), y = c(0.07, 0.57, 0.57))
+  draw_plot(gpt_who, x=0, y= 0, width=0.8, height=0.5) + 
+  draw_plot(human_plot, x=0.8, y=0, width=0.2, height=0.5) + 
+  draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
+                  x = c(0.03, 0.03, 0.35, 0.79), y = c(0.07, 0.57, 0.57, 0.07))
 
+###########
+#RT were/was
+############
 
 #TF-XL were
 tf_were_HIGH <- subset(tf_were_sim, isHIGH==1)
@@ -244,11 +272,53 @@ tf_were_l <- ggplot(tf_were_LOW, aes(x=factor(layer), y=sim, fill=interaction(NP
   geom_boxplot(notch=TRUE, outlier.size = 0.1)  + ylim(-0.1, 1)+ theme(text = element_text(size=12))  + theme(legend.position = 'none') + 
   labs(x ="Hidden Layer", y = "TF-XL Similarity with Low Agree") + scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
 
+set.seed(42)
+best = rnorm(40, mean=6, sd=1)
+good = rnorm(40, mean=4, sd=1)
+ok = rnorm(40, mean=2.5, sd=1)
+bad = rnorm(40, mean=1, sd=1)
+  HighnonIC <- data.frame("sim" = good, "NP" = 1, 'hasIC' = 0)
+  LownonIC <- data.frame("sim" = ok, "NP" = 2, 'hasIC' = 0)
+  HighIC <- data.frame("sim" = best, "NP" = 1, 'hasIC' = 1)
+  LowIC <- data.frame("sim" = bad, "NP" = 2, 'hasIC' = 1)
   
-  tf_were_plots <- plot_grid(tf_were_h, tf_were_l, ncol=1, labels = c('a)', 'b)'), 
-                             label_size = 12,
-                             label_x = 0.03, label_y = 0.01,
-                             hjust = -0.5, vjust = -0.5)
+  human <- rbind(HighnonIC, LownonIC, HighIC, LowIC)
+  human$hasIC <- factor(human$hasIC)
+  human$NP <- factor(human$NP)
+  
+  human_H_plot <- ggplot(human, aes(y=sim, fill=interaction(NP, hasIC))) +
+    geom_boxplot(notch=TRUE, outlier.size=0.1, outlier.shape=NA) + ylim(0, 8) + theme(text = element_text(size=12)) +
+    labs(x ="Hidden Layer", y = "Predicted Human High Agree Effect") + 
+    scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
+  
+  human_H_plot <- human_H_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), 
+                                   axis.text.x=element_blank(), axis.ticks.x=element_blank()) + theme(legend.position='none')
+  
+  set.seed(42)
+  best = rnorm(40, mean=6, sd=1)
+  good = rnorm(40, mean=4, sd=1)
+  ok = rnorm(40, mean=2.5, sd=1)
+  bad = rnorm(40, mean=1, sd=1)
+  HighnonIC <- data.frame("sim" = bad, "NP" = 1, 'hasIC' = 0)
+  LownonIC <- data.frame("sim" = best, "NP" = 2, 'hasIC' = 0)
+  HighIC <- data.frame("sim" = ok, "NP" = 1, 'hasIC' = 1)
+  LowIC <- data.frame("sim" = good, "NP" = 2, 'hasIC' = 1)
+  
+  human <- rbind(HighnonIC, LownonIC, HighIC, LowIC)
+  human$hasIC <- factor(human$hasIC)
+  human$NP <- factor(human$NP)
+  
+  human_L_plot <- ggplot(human, aes(y=sim, fill=interaction(NP, hasIC))) +
+    geom_boxplot(notch=TRUE, outlier.size=0.1, outlier.shape=NA) + ylim(0, 8) + theme(text = element_text(size=12)) +
+    labs(x ="Hidden Layer", y = "Predicted Human Low Agree Effect") + 
+    scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb", labels=c("High+NonIC", "Low+NonIC", "High+IC", "Low+IC"))
+  
+  human_L_plot <- human_L_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), 
+                                     axis.text.x=element_blank(), axis.ticks.x=element_blank()) + theme(legend.position = 'none')
+  
+  
+  plot_row <- plot_grid(tf_were_h, human_H_plot, rel_widths =c(2.5, 0.8))
+  plot_bottom_row <- plot_grid(tf_were_l, human_L_plot, rel_widths=c(2.5, 0.8))
   
   title <- ggdraw() + 
     draw_label(
@@ -262,12 +332,17 @@ tf_were_l <- ggplot(tf_were_LOW, aes(x=factor(layer), y=sim, fill=interaction(NP
       # so title is aligned with left edge of first plot
       plot.margin = margin(0, 0, 0, 7)
     )
-  tf_were_plots <- plot_grid(
-    title, tf_were_plots,
+  plot_row <- plot_grid(
+    title, plot_row,
     ncol = 1,
     # rel_heights values control vertical title margins
     rel_heights = c(0.1, 1.2)
   )
+  
+  tf_were_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
+    draw_plot(plot_bottom_row, x=0, y= 0, width=1, height=0.5) + 
+    draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
+                    x = c(0.03, 0.03, 0.75, 0.75), y = c(0.07, 0.57, 0.57, 0.07))
 
  
 #GPT-2 XL were
@@ -393,37 +468,75 @@ t.test(pronoun_LOW_f_IC$gpt_surp, pronoun_LOW_f_nonIC$gpt_surp)
 # Pronoun Surp Plots
 #########################
 
+pronoun_surp$isHigh <- factor(pronoun_surp$isHigh)
+pronoun_surp$gender <- factor(pronoun_surp$gender)
+pronoun_surp$hasIC <- factor(pronoun_surp$hasIC)
 
 # LSTM
-lstm_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=LSTM_avg_surp, fill=interaction(factor(isHigh), factor(gender)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + theme(legend.text=element_text(size=20)) + 
-  theme(legend.title = element_text(size=20)) + 
-  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)") + 
+lstm_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=LSTM_avg_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 6)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
-legend <- get_legend(lstm_pronoun) 
-
-
+#legend <- get_legend(lstm_pronoun) 
 lstm_pronoun <- lstm_pronoun + theme(legend.position='none')
 
 # GPT-2 XL
-gpt_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=gpt_surp, fill=interaction(factor(isHigh), factor(gender)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
-  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
+gpt_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=gpt_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 6)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Type", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+gpt_pronoun <- gpt_pronoun + theme(legend.position='none')
 
 # TF-XL
-tf_pronoun <- ggplot(pronoun_surp, aes(x=factor(hasIC), y=tf_surp, fill=interaction(factor(isHigh), factor(gender)))) +
-  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 11)+ theme(text = element_text(size=18)) + 
-  labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)") + theme(legend.position = 'none') +
+tf_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=tf_surp, fill=interaction(isHigh, gender))) +
+    geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 6)+ theme(text = element_text(size=18)) + 
+    labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)") +# theme(legend.position = 'none') +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Gender+Type", labels=c("f+Obj", "m+Obj", "f+Subj", "m+Subj"))
+    scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+  
+tf_pronoun <- tf_pronoun + theme(legend.position='none') 
+  
+# Humans
+set.seed(23)
+good = rnorm(40, mean=2, sd=1)
+bad = rnorm(40, mean=4, sd=1)
+fobjIC <- data.frame("surp" = bad, "gender" = 'f', 'hasIC' = 1, "isHigh" = 0)
+fobjnonIC <- data.frame("surp" = good, "gender" = 'f', 'hasIC' = 0, "isHigh" = 0)
+mobjIC <- data.frame("surp" = bad, "gender" = 'm', 'hasIC' = 1, "isHigh" = 0)
+mobjnonIC <- data.frame("surp" = good, "gender" = 'm', 'hasIC' = 0, "isHigh" = 0)
 
+fsubjIC <- data.frame("surp" = good, "gender" = 'f', 'hasIC' = 1, "isHigh" = 1)
+fsubjnonIC <- data.frame("surp" = bad, "gender" = 'f', 'hasIC' = 0, "isHigh" = 1)
+msubjIC <- data.frame("surp" = good, "gender" = 'm', 'hasIC' = 1, "isHigh" = 1)
+msubjnonIC <- data.frame("surp" = bad, "gender" = 'm', 'hasIC' = 0, "isHigh" = 1)
+
+human <- rbind(fobjIC, mobjIC, fobjnonIC,  mobjnonIC, fsubjIC, fsubjnonIC, msubjIC, msubjnonIC)
+human$isHigh <- factor(human$isHigh)
+human$hasIC <- factor(human$hasIC)
+human$gender <- factor(human$gender)
+
+human_plot <- ggplot(human, aes(x=hasIC, y=surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1, outlier.shape = NA) + ylim(0, 12)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "Predicted Human Effect") +# theme(legend.position = 'none') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+human_plot <- human_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
+
+human_plot <- human_plot  + theme(legend.position = c(0.02, 0.98), 
+                                      legend.justification = c("left", "top"), 
+                                      legend.box.just = "center", 
+                                      legend.margin = margin(6, 6, 6, 6))
+
+#plot together
 plot_row <- plot_grid(lstm_pronoun, tf_pronoun)
 
 title <- ggdraw() + 
@@ -449,9 +562,9 @@ plot_row <- plot_grid(
 #Put them together 
 pronoun_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
   draw_plot(gpt_pronoun, x=0, y= 0, width=0.5, height=0.5) + 
-  draw_plot(legend, x=0.5, y= 0, width=0.5, height=0.5) + 
-  draw_plot_label(label = c("c)", "a)", "b)"), size = 15,
-                  x = c(0.05, 0.05, 0.55), y = c(0.07, 0.57, 0.57))
+  draw_plot(human_plot, x=0.5, y= 0, width=0.5, height=0.5) + 
+  draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
+                  x = c(0.05, 0.05, 0.55, 0.55), y = c(0.07, 0.57, 0.57, 0.07))
 
 #########################
 # Pronoun SIM Stats
@@ -523,12 +636,9 @@ lstm_pronoun <- ggplot(lstm_pronoun_sim, aes(x=factor(layer), y=sim, fill=intera
   labs(x ="Hidden Layer", y = "LSTM Similarity") + 
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Antecedent+Verb Bias", labels=c("Subject+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
 
-lstm_pronoun <- lstm_pronoun  + theme(legend.position = c(0.0, 0.96), 
-                              legend.justification = c("left", "top"), 
-                              legend.box.just = "right", 
-                              legend.margin = margin(6, 6, 6, 6))
+lstm_pronoun <- lstm_pronoun  + theme(legend.position = 'none')
 
-#TF-XL who
+#TF-XL pronoun
 tf_pronoun_sim$hasIC <- factor(tf_pronoun_sim$hasIC)
 tf_pronoun_sim$NP <- factor(tf_pronoun_sim$NP)
 
@@ -538,7 +648,7 @@ tf_pronoun <- ggplot(tf_pronoun_sim, aes(x=factor(layer), y=sim, fill=interactio
   scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Verb Bias", labels=c("Subj+Obj Bias", "Obj+Obj Bias", "Subj+Subj Bias", "Obj+Subj Bias"))
 
 
-#GPT-2 XL who
+#GPT-2 XL pronoun
 gpt_pronoun_sim$hasIC <- factor(gpt_pronoun_sim$hasIC)
 gpt_pronoun_sim$NP <- factor(gpt_pronoun_sim$NP)
 gpt_pronoun_sim_small <- subset(gpt_pronoun_sim, layer %%3 == 0)
@@ -546,10 +656,35 @@ gpt_pronoun_sim_small <- subset(gpt_pronoun_sim, layer %%3 == 0)
 gpt_pronoun <- ggplot(gpt_pronoun_sim_small, aes(x=factor(layer), y=sim, fill=interaction(NP, hasIC))) +
   geom_boxplot(notch=TRUE, outlier.size=0.1) + ylim(0, 1) + theme(text = element_text(size=12)) + theme(legend.position='none') + 
   labs(x ="Hidden Layer", y = "GPT-2 XL Similarity") + 
-  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subjec+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Noun+Bias", labels=c("Subject+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
 
+# Humans
+set.seed(42)
+good = rnorm(40, mean=4, sd=1)
+bad = rnorm(40, mean=2, sd=1)
+SubjObj <- data.frame("sim" = bad, "NP" = 1, 'hasIC' = 0)
+ObjObj <- data.frame("sim" = good, "NP" = 2, 'hasIC' = 0)
+SubjSubj <- data.frame("sim" = good, "NP" = 1, 'hasIC' = 1)
+ObjSubj <- data.frame("sim" = bad, "NP" = 2, 'hasIC' = 1)
 
-plot_row <- plot_grid(tf_pronoun, lstm_pronoun, rel_widths =c(1.8, 1))
+human <- rbind(SubjObj, ObjObj, SubjSubj, ObjSubj)
+human$hasIC <- factor(human$hasIC)
+human$NP <- factor(human$NP)
+
+human_plot <- ggplot(human, aes(y=sim, fill=interaction(NP, hasIC))) +
+  geom_boxplot(notch=TRUE, outlier.size=0.1, outlier.shape=NA) + ylim(0, 12) + theme(text = element_text(size=12)) +
+  labs(x ="Hidden Layer", y = "Predicted Human Effect") + 
+  scale_fill_manual(values = c("#9999CC", "gold3", "darkorchid3", "darkgoldenrod4"), name= "Antecedent+Verb Bias", labels=c("Subject+Obj Bias", "Object+Obj Bias", "Subject+Subj Bias", "Object+Subj Bias"))
+
+human_plot <- human_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank(), 
+                                 axis.text.x=element_blank(), axis.ticks.x=element_blank())
+
+human_plot <- human_plot  + theme(legend.position = c(0.02, 0.98), 
+                                  legend.justification = c("left", "top"), 
+                                  legend.box.just = "center", 
+                                  legend.margin = margin(6, 6, 6, 6))
+
+plot_row <- plot_grid(lstm_pronoun, tf_pronoun, rel_widths =c(1, 1.8))
 
 title <- ggdraw() + 
   draw_label(
@@ -571,7 +706,8 @@ plot_row <- plot_grid(
 )
 
 pronoun_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
-  draw_plot(gpt_pronoun, x=0, y= 0, width=1, height=0.5) + 
-  draw_plot_label(label = c("c)", "a)", "b)"), size = 15,
-                  x = c(0.03, 0.03, 0.65), y = c(0.07, 0.57, 0.57))
+  draw_plot(gpt_pronoun, x=0, y= 0, width=0.8, height=0.5) +
+  draw_plot(human_plot, x=0.8, y=0, width=0.2, height=0.5) + 
+  draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
+                  x = c(0.03, 0.03, 0.35, 0.79), y = c(0.07, 0.57, 0.57, 0.07))
 
