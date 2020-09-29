@@ -33,7 +33,7 @@ From spaCy you need the pretrained English model "en_core_web_sm":
 
 ## Usage
 
-To recreate experiments, download the LSTM models from Zenodo and
+To recreate experiments, download the [LSTM models](https://doi.org/10.5281/zenodo.4053572) from Zenodo and
  uncomment the relevant code block at the bottom of main.py. Pre-trained
 transformer models are downloaded via HuggingFace's interface. 
 
@@ -55,3 +55,4 @@ The vocab for the LSTM LMs is given in wikitext103_vocab (top 50K words).
 If you have any questions feel free to email me :)
 
 ## References
+Forrest Davis and Marten van Schijndel. "Discourse structure interacts with reference but not syntax in neural language models". In Proceedings of the 2020 Conference on Computational Natural Language Learning (CoNLL 2020). 2020.
