@@ -309,6 +309,7 @@ for line in verbs:
 verbs.close()
 bias.close()
 
+#gender mismatch
 pairs = []
 with open('gender_pairs', 'r') as f:
     for line in f:
@@ -329,6 +330,160 @@ for pair in pairs:
         print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
         print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
         '''
+    count += 1
+
+#gender match
+pairs = []
+with open('same_gender_pairs', 'r') as f:
+    for line in f:
+        line = line.strip().split()
+        pairs.append(line)
+
+count = 0
+for x in range(len(pairs)):
+    pair = pairs[x]
+    if x %2 == 0:
+        gender = 'm'
+    else:
+        gender = 'f'
+
+    for verb in data:
+        bias = data[verb]
+        if gender == 'm':
+
+            sent0 = ' '.join(['The', pair[0], verb, 'the', pair[1], 'because he'])
+            sent1 = ' '.join(['The', pair[1], verb, 'the', pair[0], 'because he'])
+        else:
+            sent0 = ' '.join(['The', pair[0], verb, 'the', pair[1], 'because she'])
+            sent1 = ' '.join(['The', pair[1], verb, 'the', pair[0], 'because she'])
+        '''
+        print(','.join(['ic_match', verb, str(count), sent0, bias, '0', gender]) )
+        print(','.join(['ic_match', verb, str(count), sent1, bias, '0', gender]) )
+        '''
+    count += 1
+
+#For BERT
+verbs = open('es_IC_verbs', 'r')
+#verbs = open('IC_verbs', 'r')
+bias = open('es_IC_bias', 'r')
+#bias = open('IC_bias', 'r')
+
+missing = set([])
+with open("missing_IC", 'r') as f:
+    for line in f:
+        line = line.strip()
+        missing.add(line)
+
+data = {}
+for line in verbs:
+    line = line.strip()
+    b = bias.readline().strip()
+    #skip over out of vocab IC
+    if line in missing or line.split(' ')[0] in missing:
+        continue
+    data[line] = b
+
+verbs.close()
+bias.close()
+
+#gender mismatch
+pairs = []
+with open('es_gender_pairs', 'r') as f:
+#with open('gender_pairs', 'r') as f:
+    for line in f:
+        line = line.strip().split()
+        pairs.append(line)
+
+count = 0
+'''
+for pair in pairs:
+    for verb in data:
+        bias = data[verb]
+
+        sent0 = ' '.join(['The', pair[0], verb, 'the', pair[1], 'because he was there.'])
+        #sent0 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque [MASK] estaba allí.'])
+        sent1 = ' '.join(['The', pair[0], verb, 'the', pair[1], 'because she was there.'])
+        sent2 = ' '.join(['The', pair[1], verb, 'the', pair[0], 'because he was there.'])
+        #sent2 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque [MASK] estaba allí.'])
+        sent3 = ' '.join(['The', pair[1], verb, 'the', pair[0], 'because she was there.'])
+
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
+    count += 1
+'''
+'''
+for pair in pairs:
+    for verb in data:
+        bias = data[verb]
+
+        if verb.split(' ')[-1] == "de":
+            sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque él estaba allí.'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque [MASK] estaba allí.'])
+            sent1 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque ella estaba allí.'])
+            verb_del = verb.replace(' de', ' del')
+            sent2 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque él estaba allí.'])
+            #sent2 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque [MASK] estaba allí.'])
+            sent3 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque ella estaba allí.'])
+
+        elif verb.split(' ')[-1] == "en" or verb.split(' ')[-1] == "por":
+
+            sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque él estaba allí.'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque [MASK] estaba allí.'])
+            sent1 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque ella estaba allí.'])
+            sent2 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque él estaba allí.'])
+            #sent2 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque [MASK] estaba allí.'])
+            sent3 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque ella estaba allí.'])
+
+        else:
+            sent0 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque él estaba allí.'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque [MASK] estaba allí.'])
+            sent1 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque ella estaba allí.'])
+            sent2 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque él estaba allí.'])
+            #sent2 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque [MASK] estaba allí.'])
+            sent3 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque ella estaba allí.'])
+
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
+    count += 1
+'''
+for pair in pairs:
+    for verb in data:
+        bias = data[verb]
+
+        if verb.split(' ')[-1] == "de":
+            sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [+male].'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [MASK].'])
+            sent1 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [+female].'])
+            verb_del = verb.replace(' de', ' del')
+            sent2 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque estaba [+male].'])
+            #sent2 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque estaba [MASK].'])
+            sent3 = ' '.join(['la', pair[1], verb_del, pair[0], 'porque estaba [+female].'])
+
+        elif verb.split(' ')[-1] == "en" or verb.split(' ')[-1] == "por":
+
+            sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [+male].'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [MASK].'])
+            sent1 = ' '.join(['el', pair[0], verb, 'la', pair[1], 'porque estaba [+female].'])
+            sent2 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque estaba [+male].'])
+            #sent2 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque estaba [MASK].'])
+            sent3 = ' '.join(['la', pair[1], verb, 'el', pair[0], 'porque estaba [+female].'])
+
+        else:
+            sent0 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque estaba [+male].'])
+            #sent0 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque estaba [MASK].'])
+            sent1 = ' '.join(['el', pair[0], verb, 'a la', pair[1], 'porque estaba [+female].'])
+            sent2 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque estaba [+male].'])
+            #sent2 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque estaba [MASK].'])
+            sent3 = ' '.join(['la', pair[1], verb, 'al', pair[0], 'porque estaba [+female].'])
+
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
     count += 1
 
 #gender match
