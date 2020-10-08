@@ -1,0 +1,1121 @@
+exp,verb,item,sent,bias,isHigh ,gender,score
+ic_mismatch,verveelde,0,De man verveelde de vrouw omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.2499053031
+ic_mismatch,verveelde,0,De vrouw verveelde de man omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.3297253549
+ic_mismatch,excuses aan,0,De man bood zijn excuses aan de vrouw aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.4903970957
+ic_mismatch,excuses aan,0,De vrouw bood zijn excuses aan de man aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.5137331486
+ic_mismatch,belde,0,De man belde de vrouw omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.4580896497
+ic_mismatch,belde,0,De vrouw belde de man Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3474239707
+ic_mismatch,ergerde,0,De man ergerde de vrouw omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4519567192
+ic_mismatch,ergerde,0,De vrouw ergerde de man omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.9339036942
+ic_mismatch,kwelde,0,De man kwelde de vrouw omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.497061938
+ic_mismatch,kwelde,0,De vrouw kwelde de man omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.8495946527
+ic_mismatch,stoorde,0,De man stoorde de vrouw omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.2584268153
+ic_mismatch,stoorde,0,De vrouw stoorde de man omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.6168419123
+ic_mismatch,verontrustte,0,De man verontrustte de vrouw omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.4343137741
+ic_mismatch,verontrustte,0,De vrouw verontrustte de man omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3592936993
+ic_mismatch,won van,0,De man won van de vrouw omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.3931393325
+ic_mismatch,won van,0,De vrouw won van de man omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.5792989731
+ic_mismatch,inspireerde,0,De man inspireerde de vrouw omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.3650776744
+ic_mismatch,inspireerde,0,De vrouw inspireerde de man omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8308279514
+ic_mismatch,intimideerde,0,De man intimideerde de vrouw omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.5476490855
+ic_mismatch,intimideerde,0,De vrouw intimideerde de man omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4886433482
+ic_mismatch,irriteerde,0,De man irriteerde de vrouw omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.4007080793
+ic_mismatch,irriteerde,0,De vrouw irriteerde de man omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6773625612
+ic_mismatch,bekende aan,0,De man bekende alles aan de vrouw omdat hij per se de waarheid wilde vertellen.,96,1,m,0.5486109853
+ic_mismatch,bekende aan,0,De vrouw bekende alles aan de man omdat hij per se de waarheid wilde horen.,96,0,m,0.3095072508
+ic_mismatch,lichtte,0,De man lichtte de vrouw op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.5683422685
+ic_mismatch,lichtte,0,De vrouw lichtte de man op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.9478946328
+ic_mismatch,loog tegen,0,De man loog tegen de vrouw omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.9593868256
+ic_mismatch,loog tegen,0,De vrouw loog tegen de man omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2110192925
+ic_mismatch,verbaasde,0,De man verbaasde de vrouw omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.3142164052
+ic_mismatch,verbaasde,0,De vrouw verbaasde de man omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.5960412025
+ic_mismatch,smeekte,0,De man smeekte de vrouw omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8863897324
+ic_mismatch,smeekte,0,De vrouw smeekte de man omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8397520185
+ic_mismatch,teleurstellen,0,De man stelde de vrouw teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.3746792376
+ic_mismatch,teleurstellen,0,De vrouw stelde de man teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.5260236263
+ic_mismatch,misleidde,0,De man misleidde de vrouw omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4043182433
+ic_mismatch,misleidde,0,De vrouw misleidde de man omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.5099263191
+ic_mismatch,hinderde,0,De man hinderde de vrouw omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.6393606663
+ic_mismatch,hinderde,0,De vrouw hinderde de man omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.4823443592
+ic_mismatch,fascineerde,0,De man fascineerde de vrouw omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.7375813127
+ic_mismatch,fascineerde,0,De vrouw fascineerde de man omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2536069155
+ic_mismatch,respecteerde,0,De man respecteerde de vrouw omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1462478489
+ic_mismatch,respecteerde,0,De vrouw respecteerde de man omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.2662670612
+ic_mismatch,bedankte,0,De man bedankte de vrouw omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1746326983
+ic_mismatch,bedankte,0,De vrouw bedankte de man omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.4131028652
+ic_mismatch,verafschuwde,0,De man verafschuwde de vrouw omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.5867845416
+ic_mismatch,verafschuwde,0,De vrouw verafschuwde de man omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.4728876948
+ic_mismatch,hield van,0,De man hield van de vrouw omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.5384112
+ic_mismatch,hield van,0,De vrouw hield van de man omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9291248322
+ic_mismatch,troostte,0,De man troostte de vrouw omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1762487888
+ic_mismatch,troostte,0,De vrouw troostte de man omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.3472103477
+ic_mismatch,strafte,0,De man strafte de vrouw omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.2870646119
+ic_mismatch,strafte,0,De vrouw strafte de man omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.9609691501
+ic_mismatch,bekritiseerde,0,De man bekritiseerde de vrouw omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.5090290904
+ic_mismatch,bekritiseerde,0,De vrouw bekritiseerde de man omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8300678134
+ic_mismatch,feliciteerde,0,De man feliciteerde de vrouw omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.04058631882
+ic_mismatch,feliciteerde,0,De vrouw feliciteerde de man omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2307890803
+ic_mismatch,minachtte,0,De man minachtte de vrouw omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.200442329
+ic_mismatch,minachtte,0,De vrouw minachtte de man omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1836168468
+ic_mismatch,benijdde,0,De man benijdde de vrouw omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.3058048487
+ic_mismatch,benijdde,0,De vrouw benijdde de man omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.3974447846
+ic_mismatch,prees,0,De man prees de vrouw omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.01146609522
+ic_mismatch,prees,0,De vrouw prees de man omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.8551762104
+ic_mismatch,complimenteerde,0,De man complimenteerde de vrouw omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.3475861251
+ic_mismatch,complimenteerde,0,De vrouw complimenteerde de man omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3541641235
+ic_mismatch,stelde verantwoordelijk,0,De man stelde de vrouw verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.2858570218
+ic_mismatch,stelde verantwoordelijk,0,De vrouw stelde de man verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.726585567
+ic_mismatch,haatte,0,De man haatte de vrouw omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.2495910078
+ic_mismatch,haatte,0,De vrouw haatte de man omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.6401286125
+ic_mismatch,ontsloeg,0,De man ontsloeg de vrouw omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2561181486
+ic_mismatch,ontsloeg,0,De vrouw ontsloeg de man omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2456027567
+ic_mismatch,bewonderde,0,De man bewonderde de vrouw omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.07737472653
+ic_mismatch,bewonderde,0,De vrouw bewonderde de man omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.8325914741
+ic_mismatch,klaagde,0,De man klaagde de vrouw aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.5443794727
+ic_mismatch,klaagde,0,De vrouw klaagde de man aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.7556202412
+ic_mismatch,vreesde,0,De man vreesde de vrouw omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.08585546911
+ic_mismatch,vreesde,0,De vrouw vreesde de man omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.162684381
+ic_mismatch,aanbad,0,De man aanbad de vrouw omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.4798527956
+ic_mismatch,aanbad,0,De vrouw aanbad de man omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8005800247
+ic_mismatch,waardeerde,0,De man waardeerde de vrouw omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.7507739067
+ic_mismatch,waardeerde,0,De vrouw waardeerde de man omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8280156851
+ic_mismatch,verveelde,1,De jongen verveelde het meisje omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1704842746
+ic_mismatch,verveelde,1,Het meisje verveelde de jongen omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.397361964
+ic_mismatch,excuses aan,1,De jongen bood zijn excuses aan het meisje aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.6951534748
+ic_mismatch,excuses aan,1,Het meisje bood zijn excuses aan de jongen aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.6893920302
+ic_mismatch,belde,1,De jongen belde het meisje omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3782353997
+ic_mismatch,belde,1,Het meisje belde de jongen Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.4330797195
+ic_mismatch,ergerde,1,De jongen ergerde het meisje omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.3612790108
+ic_mismatch,ergerde,1,Het meisje ergerde de jongen omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.8225955367
+ic_mismatch,kwelde,1,De jongen kwelde het meisje omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.3459157646
+ic_mismatch,kwelde,1,Het meisje kwelde de jongen omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.9044355154
+ic_mismatch,stoorde,1,De jongen stoorde het meisje omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.05890427157
+ic_mismatch,stoorde,1,Het meisje stoorde de jongen omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.4404355586
+ic_mismatch,verontrustte,1,De jongen verontrustte het meisje omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.5483627915
+ic_mismatch,verontrustte,1,Het meisje verontrustte de jongen omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.2047517002
+ic_mismatch,won van,1,De jongen won van het meisje omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.261518091
+ic_mismatch,won van,1,Het meisje won van de jongen omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4545570314
+ic_mismatch,inspireerde,1,De jongen inspireerde het meisje omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.4491406381
+ic_mismatch,inspireerde,1,Het meisje inspireerde de jongen omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.9064098001
+ic_mismatch,intimideerde,1,De jongen intimideerde het meisje omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.5430116057
+ic_mismatch,intimideerde,1,Het meisje intimideerde de jongen omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.6369482279
+ic_mismatch,irriteerde,1,De jongen irriteerde het meisje omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.4597783983
+ic_mismatch,irriteerde,1,Het meisje irriteerde de jongen omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.7042979002
+ic_mismatch,bekende aan,1,De jongen bekende alles aan het meisje omdat hij per se de waarheid wilde vertellen.,96,1,m,0.6592772007
+ic_mismatch,bekende aan,1,Het meisje bekende alles aan de jongen omdat hij per se de waarheid wilde horen.,96,0,m,0.2341126502
+ic_mismatch,lichtte,1,De jongen lichtte het meisje op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.4824491143
+ic_mismatch,lichtte,1,Het meisje lichtte de jongen op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.9389337897
+ic_mismatch,loog tegen,1,De jongen loog tegen het meisje omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.9127812982
+ic_mismatch,loog tegen,1,Het meisje loog tegen de jongen omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1885699481
+ic_mismatch,verbaasde,1,De jongen verbaasde het meisje omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.3440134227
+ic_mismatch,verbaasde,1,Het meisje verbaasde de jongen omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.3968865871
+ic_mismatch,smeekte,1,De jongen smeekte het meisje omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.9050135016
+ic_mismatch,smeekte,1,Het meisje smeekte de jongen omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8900271058
+ic_mismatch,teleurstellen,1,De jongen stelde het meisje teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.2655621171
+ic_mismatch,teleurstellen,1,Het meisje stelde de jongen teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.4164418578
+ic_mismatch,misleidde,1,De jongen misleidde het meisje omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.6144793034
+ic_mismatch,misleidde,1,Het meisje misleidde de jongen omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.5255417824
+ic_mismatch,hinderde,1,De jongen hinderde het meisje omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.5729361176
+ic_mismatch,hinderde,1,Het meisje hinderde de jongen omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5220285058
+ic_mismatch,fascineerde,1,De jongen fascineerde het meisje omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.5625270605
+ic_mismatch,fascineerde,1,Het meisje fascineerde de jongen omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2545784414
+ic_mismatch,respecteerde,1,De jongen respecteerde het meisje omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.09136040509
+ic_mismatch,respecteerde,1,Het meisje respecteerde de jongen omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.4005604088
+ic_mismatch,bedankte,1,De jongen bedankte het meisje omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.2496131808
+ic_mismatch,bedankte,1,Het meisje bedankte de jongen omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.5070075989
+ic_mismatch,verafschuwde,1,De jongen verafschuwde het meisje omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.6141396165
+ic_mismatch,verafschuwde,1,Het meisje verafschuwde de jongen omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.5503870249
+ic_mismatch,hield van,1,De jongen hield van het meisje omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.5209235549
+ic_mismatch,hield van,1,Het meisje hield van de jongen omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9510688782
+ic_mismatch,troostte,1,De jongen troostte het meisje omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.218934983
+ic_mismatch,troostte,1,Het meisje troostte de jongen omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.09737427533
+ic_mismatch,strafte,1,De jongen strafte het meisje omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.2629138231
+ic_mismatch,strafte,1,Het meisje strafte de jongen omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.9427664876
+ic_mismatch,bekritiseerde,1,De jongen bekritiseerde het meisje omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.626726687
+ic_mismatch,bekritiseerde,1,Het meisje bekritiseerde de jongen omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.9243042469
+ic_mismatch,feliciteerde,1,De jongen feliciteerde het meisje omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.05686728284
+ic_mismatch,feliciteerde,1,Het meisje feliciteerde de jongen omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2500658631
+ic_mismatch,minachtte,1,De jongen minachtte het meisje omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.1666189879
+ic_mismatch,minachtte,1,Het meisje minachtte de jongen omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2756404579
+ic_mismatch,benijdde,1,De jongen benijdde het meisje omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.2103934735
+ic_mismatch,benijdde,1,Het meisje benijdde de jongen omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.5826665759
+ic_mismatch,prees,1,De jongen prees het meisje omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.02518249489
+ic_mismatch,prees,1,Het meisje prees de jongen omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.8982175589
+ic_mismatch,complimenteerde,1,De jongen complimenteerde het meisje omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.2920154929
+ic_mismatch,complimenteerde,1,Het meisje complimenteerde de jongen omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3380631208
+ic_mismatch,stelde verantwoordelijk,1,De jongen stelde het meisje verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.3756599724
+ic_mismatch,stelde verantwoordelijk,1,Het meisje stelde de jongen verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.6096929312
+ic_mismatch,haatte,1,De jongen haatte het meisje omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.09752142429
+ic_mismatch,haatte,1,Het meisje haatte de jongen omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.703802228
+ic_mismatch,ontsloeg,1,De jongen ontsloeg het meisje omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2564361095
+ic_mismatch,ontsloeg,1,Het meisje ontsloeg de jongen omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.237441048
+ic_mismatch,bewonderde,1,De jongen bewonderde het meisje omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.03122675046
+ic_mismatch,bewonderde,1,Het meisje bewonderde de jongen omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.815805614
+ic_mismatch,klaagde,1,De jongen klaagde het meisje aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.4114563763
+ic_mismatch,klaagde,1,Het meisje klaagde de jongen aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.8358139992
+ic_mismatch,vreesde,1,De jongen vreesde het meisje omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.08730386943
+ic_mismatch,vreesde,1,Het meisje vreesde de jongen omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.1410381496
+ic_mismatch,aanbad,1,De jongen aanbad het meisje omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.4231029749
+ic_mismatch,aanbad,1,Het meisje aanbad de jongen omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.9231779575
+ic_mismatch,waardeerde,1,De jongen waardeerde het meisje omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.8115884066
+ic_mismatch,waardeerde,1,Het meisje waardeerde de jongen omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8648908138
+ic_mismatch,verveelde,2,De vader verveelde de moeder omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1609320045
+ic_mismatch,verveelde,2,De moeder verveelde de vader omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2130131125
+ic_mismatch,excuses aan,2,De vader bood zijn excuses aan de moeder aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.5166338086
+ic_mismatch,excuses aan,2,De moeder bood zijn excuses aan de vader aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.397562623
+ic_mismatch,belde,2,De vader belde de moeder omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.2956058979
+ic_mismatch,belde,2,De moeder belde de vader Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3073943555
+ic_mismatch,ergerde,2,De vader ergerde de moeder omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.3712268174
+ic_mismatch,ergerde,2,De moeder ergerde de vader omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.8220970035
+ic_mismatch,kwelde,2,De vader kwelde de moeder omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.346447736
+ic_mismatch,kwelde,2,De moeder kwelde de vader omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.6718646884
+ic_mismatch,stoorde,2,De vader stoorde de moeder omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1283429414
+ic_mismatch,stoorde,2,De moeder stoorde de vader omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.4243210852
+ic_mismatch,verontrustte,2,De vader verontrustte de moeder omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.3713746071
+ic_mismatch,verontrustte,2,De moeder verontrustte de vader omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.2694697976
+ic_mismatch,won van,2,De vader won van de moeder omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1685022861
+ic_mismatch,won van,2,De moeder won van de vader omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.372287631
+ic_mismatch,inspireerde,2,De vader inspireerde de moeder omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.3998514414
+ic_mismatch,inspireerde,2,De moeder inspireerde de vader omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8130940795
+ic_mismatch,intimideerde,2,De vader intimideerde de moeder omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.365896225
+ic_mismatch,intimideerde,2,De moeder intimideerde de vader omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.320655793
+ic_mismatch,irriteerde,2,De vader irriteerde de moeder omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.2477379739
+ic_mismatch,irriteerde,2,De moeder irriteerde de vader omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6282527447
+ic_mismatch,bekende aan,2,De vader bekende alles aan de moeder omdat hij per se de waarheid wilde vertellen.,96,1,m,0.4577505887
+ic_mismatch,bekende aan,2,De moeder bekende alles aan de vader omdat hij per se de waarheid wilde horen.,96,0,m,0.1394987553
+ic_mismatch,lichtte,2,De vader lichtte de moeder op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.381890595
+ic_mismatch,lichtte,2,De moeder lichtte de vader op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.7040487528
+ic_mismatch,loog tegen,2,De vader loog tegen de moeder omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.8611774445
+ic_mismatch,loog tegen,2,De moeder loog tegen de vader omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1242276132
+ic_mismatch,verbaasde,2,De vader verbaasde de moeder omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.2743078768
+ic_mismatch,verbaasde,2,De moeder verbaasde de vader omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.401981324
+ic_mismatch,smeekte,2,De vader smeekte de moeder omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.7283021212
+ic_mismatch,smeekte,2,De moeder smeekte de vader omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.7315804362
+ic_mismatch,teleurstellen,2,De vader stelde de moeder teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.1987909675
+ic_mismatch,teleurstellen,2,De moeder stelde de vader teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.3317570686
+ic_mismatch,misleidde,2,De vader misleidde de moeder omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4050367773
+ic_mismatch,misleidde,2,De moeder misleidde de vader omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.4093200266
+ic_mismatch,hinderde,2,De vader hinderde de moeder omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.5521328449
+ic_mismatch,hinderde,2,De moeder hinderde de vader omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.4589488804
+ic_mismatch,fascineerde,2,De vader fascineerde de moeder omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.5921735764
+ic_mismatch,fascineerde,2,De moeder fascineerde de vader omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2862703204
+ic_mismatch,respecteerde,2,De vader respecteerde de moeder omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1011334732
+ic_mismatch,respecteerde,2,De moeder respecteerde de vader omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.2954982221
+ic_mismatch,bedankte,2,De vader bedankte de moeder omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1393329799
+ic_mismatch,bedankte,2,De moeder bedankte de vader omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2267626524
+ic_mismatch,verafschuwde,2,De vader verafschuwde de moeder omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.3585890532
+ic_mismatch,verafschuwde,2,De moeder verafschuwde de vader omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.3598650098
+ic_mismatch,hield van,2,De vader hield van de moeder omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.3190006912
+ic_mismatch,hield van,2,De moeder hield van de vader omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8322936893
+ic_mismatch,troostte,2,De vader troostte de moeder omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1063890308
+ic_mismatch,troostte,2,De moeder troostte de vader omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.2470032871
+ic_mismatch,strafte,2,De vader strafte de moeder omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.2522289455
+ic_mismatch,strafte,2,De moeder strafte de vader omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.7862747312
+ic_mismatch,bekritiseerde,2,De vader bekritiseerde de moeder omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.137895152
+ic_mismatch,bekritiseerde,2,De moeder bekritiseerde de vader omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.7310445905
+ic_mismatch,feliciteerde,2,De vader feliciteerde de moeder omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.04982823879
+ic_mismatch,feliciteerde,2,De moeder feliciteerde de vader omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2472688109
+ic_mismatch,minachtte,2,De vader minachtte de moeder omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.15038912
+ic_mismatch,minachtte,2,De moeder minachtte de vader omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1878789365
+ic_mismatch,benijdde,2,De vader benijdde de moeder omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1686019152
+ic_mismatch,benijdde,2,De moeder benijdde de vader omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.3556157649
+ic_mismatch,prees,2,De vader prees de moeder omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.01950847171
+ic_mismatch,prees,2,De moeder prees de vader omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.7353516221
+ic_mismatch,complimenteerde,2,De vader complimenteerde de moeder omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.186418891
+ic_mismatch,complimenteerde,2,De moeder complimenteerde de vader omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3282998204
+ic_mismatch,stelde verantwoordelijk,2,De vader stelde de moeder verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.1554026157
+ic_mismatch,stelde verantwoordelijk,2,De moeder stelde de vader verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.2754270136
+ic_mismatch,haatte,2,De vader haatte de moeder omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.09557712823
+ic_mismatch,haatte,2,De moeder haatte de vader omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.438123405
+ic_mismatch,ontsloeg,2,De vader ontsloeg de moeder omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2370961905
+ic_mismatch,ontsloeg,2,De moeder ontsloeg de vader omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2160508037
+ic_mismatch,bewonderde,2,De vader bewonderde de moeder omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01065955684
+ic_mismatch,bewonderde,2,De moeder bewonderde de vader omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.6623417735
+ic_mismatch,klaagde,2,De vader klaagde de moeder aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.4868427813
+ic_mismatch,klaagde,2,De moeder klaagde de vader aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.3731118441
+ic_mismatch,vreesde,2,De vader vreesde de moeder omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.04469935596
+ic_mismatch,vreesde,2,De moeder vreesde de vader omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.06226265803
+ic_mismatch,aanbad,2,De vader aanbad de moeder omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.4758472145
+ic_mismatch,aanbad,2,De moeder aanbad de vader omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.730717957
+ic_mismatch,waardeerde,2,De vader waardeerde de moeder omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.6500871778
+ic_mismatch,waardeerde,2,De moeder waardeerde de vader omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.7479151487
+ic_mismatch,verveelde,3,De oom verveelde de tante omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1065449268
+ic_mismatch,verveelde,3,De tante verveelde de oom omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2493020296
+ic_mismatch,excuses aan,3,De oom bood zijn excuses aan de tante aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.3669564724
+ic_mismatch,excuses aan,3,De tante bood zijn excuses aan de oom aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.5206628442
+ic_mismatch,belde,3,De oom belde de tante omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3953151405
+ic_mismatch,belde,3,De tante belde de oom Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.5354204178
+ic_mismatch,ergerde,3,De oom ergerde de tante omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.2865392268
+ic_mismatch,ergerde,3,De tante ergerde de oom omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.7184658647
+ic_mismatch,kwelde,3,De oom kwelde de tante omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2325305343
+ic_mismatch,kwelde,3,De tante kwelde de oom omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.5590595007
+ic_mismatch,stoorde,3,De oom stoorde de tante omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.09128979594
+ic_mismatch,stoorde,3,De tante stoorde de oom omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.4890302718
+ic_mismatch,verontrustte,3,De oom verontrustte de tante omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.2034404278
+ic_mismatch,verontrustte,3,De tante verontrustte de oom omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.1942783594
+ic_mismatch,won van,3,De oom won van de tante omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.2680879831
+ic_mismatch,won van,3,De tante won van de oom omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4628096521
+ic_mismatch,inspireerde,3,De oom inspireerde de tante omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.1931449473
+ic_mismatch,inspireerde,3,De tante inspireerde de oom omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.7824015021
+ic_mismatch,intimideerde,3,De oom intimideerde de tante omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.3013444841
+ic_mismatch,intimideerde,3,De tante intimideerde de oom omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4409501851
+ic_mismatch,irriteerde,3,De oom irriteerde de tante omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.1722879112
+ic_mismatch,irriteerde,3,De tante irriteerde de oom omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.5384124517
+ic_mismatch,bekende aan,3,De oom bekende alles aan de tante omdat hij per se de waarheid wilde vertellen.,96,1,m,0.372107178
+ic_mismatch,bekende aan,3,De tante bekende alles aan de oom omdat hij per se de waarheid wilde horen.,96,0,m,0.1722616553
+ic_mismatch,lichtte,3,De oom lichtte de tante op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.3540822864
+ic_mismatch,lichtte,3,De tante lichtte de oom op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.8137168884
+ic_mismatch,loog tegen,3,De oom loog tegen de tante omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.7935751081
+ic_mismatch,loog tegen,3,De tante loog tegen de oom omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1627141535
+ic_mismatch,verbaasde,3,De oom verbaasde de tante omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.1808545738
+ic_mismatch,verbaasde,3,De tante verbaasde de oom omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.2895468771
+ic_mismatch,smeekte,3,De oom smeekte de tante omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.7665897012
+ic_mismatch,smeekte,3,De tante smeekte de oom omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.7785571814
+ic_mismatch,teleurstellen,3,De oom stelde de tante teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.1069013253
+ic_mismatch,teleurstellen,3,De tante stelde de oom teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.4433467388
+ic_mismatch,misleidde,3,De oom misleidde de tante omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.3723726869
+ic_mismatch,misleidde,3,De tante misleidde de oom omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.4436110556
+ic_mismatch,hinderde,3,De oom hinderde de tante omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.4948750436
+ic_mismatch,hinderde,3,De tante hinderde de oom omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5030094385
+ic_mismatch,fascineerde,3,De oom fascineerde de tante omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.4348699749
+ic_mismatch,fascineerde,3,De tante fascineerde de oom omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2776226401
+ic_mismatch,respecteerde,3,De oom respecteerde de tante omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.06574513763
+ic_mismatch,respecteerde,3,De tante respecteerde de oom omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.3250648379
+ic_mismatch,bedankte,3,De oom bedankte de tante omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1294061691
+ic_mismatch,bedankte,3,De tante bedankte de oom omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2520845532
+ic_mismatch,verafschuwde,3,De oom verafschuwde de tante omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.4987168014
+ic_mismatch,verafschuwde,3,De tante verafschuwde de oom omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.448864162
+ic_mismatch,hield van,3,De oom hield van de tante omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.2198200524
+ic_mismatch,hield van,3,De tante hield van de oom omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8817909956
+ic_mismatch,troostte,3,De oom troostte de tante omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1001729146
+ic_mismatch,troostte,3,De tante troostte de oom omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.1947014034
+ic_mismatch,strafte,3,De oom strafte de tante omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.1906912923
+ic_mismatch,strafte,3,De tante strafte de oom omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8209776878
+ic_mismatch,bekritiseerde,3,De oom bekritiseerde de tante omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.09741517156
+ic_mismatch,bekritiseerde,3,De tante bekritiseerde de oom omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.7156662345
+ic_mismatch,feliciteerde,3,De oom feliciteerde de tante omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.0278427396
+ic_mismatch,feliciteerde,3,De tante feliciteerde de oom omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2551635504
+ic_mismatch,minachtte,3,De oom minachtte de tante omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.1036336422
+ic_mismatch,minachtte,3,De tante minachtte de oom omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2123670429
+ic_mismatch,benijdde,3,De oom benijdde de tante omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1154992729
+ic_mismatch,benijdde,3,De tante benijdde de oom omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.4590198994
+ic_mismatch,prees,3,De oom prees de tante omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.01176701114
+ic_mismatch,prees,3,De tante prees de oom omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.8216727376
+ic_mismatch,complimenteerde,3,De oom complimenteerde de tante omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.1049383208
+ic_mismatch,complimenteerde,3,De tante complimenteerde de oom omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3630262613
+ic_mismatch,stelde verantwoordelijk,3,De oom stelde de tante verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.1644820422
+ic_mismatch,stelde verantwoordelijk,3,De tante stelde de oom verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.3751806915
+ic_mismatch,haatte,3,De oom haatte de tante omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.0524443239
+ic_mismatch,haatte,3,De tante haatte de oom omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.5485818982
+ic_mismatch,ontsloeg,3,De oom ontsloeg de tante omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.1470579505
+ic_mismatch,ontsloeg,3,De tante ontsloeg de oom omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2825213969
+ic_mismatch,bewonderde,3,De oom bewonderde de tante omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01107597537
+ic_mismatch,bewonderde,3,De tante bewonderde de oom omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.6629538536
+ic_mismatch,klaagde,3,De oom klaagde de tante aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.3851661384
+ic_mismatch,klaagde,3,De tante klaagde de oom aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.4577145576
+ic_mismatch,vreesde,3,De oom vreesde de tante omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.03846335784
+ic_mismatch,vreesde,3,De tante vreesde de oom omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.1122393832
+ic_mismatch,aanbad,3,De oom aanbad de tante omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2548664808
+ic_mismatch,aanbad,3,De tante aanbad de oom omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8189275265
+ic_mismatch,waardeerde,3,De oom waardeerde de tante omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.4679853916
+ic_mismatch,waardeerde,3,De tante waardeerde de oom omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.7453649044
+ic_mismatch,verveelde,4,De man verveelde de vrouw omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.2499053031
+ic_mismatch,verveelde,4,De vrouw verveelde de man omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.3297253549
+ic_mismatch,excuses aan,4,De man bood zijn excuses aan de vrouw aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.4903970957
+ic_mismatch,excuses aan,4,De vrouw bood zijn excuses aan de man aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.5137331486
+ic_mismatch,belde,4,De man belde de vrouw omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.4580896497
+ic_mismatch,belde,4,De vrouw belde de man Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3474239707
+ic_mismatch,ergerde,4,De man ergerde de vrouw omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4519567192
+ic_mismatch,ergerde,4,De vrouw ergerde de man omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.9339036942
+ic_mismatch,kwelde,4,De man kwelde de vrouw omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.497061938
+ic_mismatch,kwelde,4,De vrouw kwelde de man omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.8495946527
+ic_mismatch,stoorde,4,De man stoorde de vrouw omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.2584268153
+ic_mismatch,stoorde,4,De vrouw stoorde de man omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.6168419123
+ic_mismatch,verontrustte,4,De man verontrustte de vrouw omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.4343137741
+ic_mismatch,verontrustte,4,De vrouw verontrustte de man omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3592936993
+ic_mismatch,won van,4,De man won van de vrouw omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.3931393325
+ic_mismatch,won van,4,De vrouw won van de man omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.5792989731
+ic_mismatch,inspireerde,4,De man inspireerde de vrouw omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.3650776744
+ic_mismatch,inspireerde,4,De vrouw inspireerde de man omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8308279514
+ic_mismatch,intimideerde,4,De man intimideerde de vrouw omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.5476490855
+ic_mismatch,intimideerde,4,De vrouw intimideerde de man omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4886433482
+ic_mismatch,irriteerde,4,De man irriteerde de vrouw omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.4007080793
+ic_mismatch,irriteerde,4,De vrouw irriteerde de man omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6773625612
+ic_mismatch,bekende aan,4,De man bekende alles aan de vrouw omdat hij per se de waarheid wilde vertellen.,96,1,m,0.5486109853
+ic_mismatch,bekende aan,4,De vrouw bekende alles aan de man omdat hij per se de waarheid wilde horen.,96,0,m,0.3095072508
+ic_mismatch,lichtte,4,De man lichtte de vrouw op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.5683422685
+ic_mismatch,lichtte,4,De vrouw lichtte de man op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.9478946328
+ic_mismatch,loog tegen,4,De man loog tegen de vrouw omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.9593868256
+ic_mismatch,loog tegen,4,De vrouw loog tegen de man omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2110192925
+ic_mismatch,verbaasde,4,De man verbaasde de vrouw omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.3142164052
+ic_mismatch,verbaasde,4,De vrouw verbaasde de man omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.5960412025
+ic_mismatch,smeekte,4,De man smeekte de vrouw omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8863897324
+ic_mismatch,smeekte,4,De vrouw smeekte de man omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8397520185
+ic_mismatch,teleurstellen,4,De man stelde de vrouw teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.3746792376
+ic_mismatch,teleurstellen,4,De vrouw stelde de man teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.5260236263
+ic_mismatch,misleidde,4,De man misleidde de vrouw omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4043182433
+ic_mismatch,misleidde,4,De vrouw misleidde de man omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.5099263191
+ic_mismatch,hinderde,4,De man hinderde de vrouw omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.6393606663
+ic_mismatch,hinderde,4,De vrouw hinderde de man omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.4823443592
+ic_mismatch,fascineerde,4,De man fascineerde de vrouw omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.7375813127
+ic_mismatch,fascineerde,4,De vrouw fascineerde de man omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2536069155
+ic_mismatch,respecteerde,4,De man respecteerde de vrouw omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1462478489
+ic_mismatch,respecteerde,4,De vrouw respecteerde de man omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.2662670612
+ic_mismatch,bedankte,4,De man bedankte de vrouw omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1746326983
+ic_mismatch,bedankte,4,De vrouw bedankte de man omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.4131028652
+ic_mismatch,verafschuwde,4,De man verafschuwde de vrouw omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.5867845416
+ic_mismatch,verafschuwde,4,De vrouw verafschuwde de man omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.4728876948
+ic_mismatch,hield van,4,De man hield van de vrouw omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.5384112
+ic_mismatch,hield van,4,De vrouw hield van de man omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9291248322
+ic_mismatch,troostte,4,De man troostte de vrouw omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1762487888
+ic_mismatch,troostte,4,De vrouw troostte de man omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.3472103477
+ic_mismatch,strafte,4,De man strafte de vrouw omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.2870646119
+ic_mismatch,strafte,4,De vrouw strafte de man omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.9609691501
+ic_mismatch,bekritiseerde,4,De man bekritiseerde de vrouw omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.5090290904
+ic_mismatch,bekritiseerde,4,De vrouw bekritiseerde de man omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8300678134
+ic_mismatch,feliciteerde,4,De man feliciteerde de vrouw omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.04058631882
+ic_mismatch,feliciteerde,4,De vrouw feliciteerde de man omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2307890803
+ic_mismatch,minachtte,4,De man minachtte de vrouw omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.200442329
+ic_mismatch,minachtte,4,De vrouw minachtte de man omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1836168468
+ic_mismatch,benijdde,4,De man benijdde de vrouw omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.3058048487
+ic_mismatch,benijdde,4,De vrouw benijdde de man omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.3974447846
+ic_mismatch,prees,4,De man prees de vrouw omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.01146609522
+ic_mismatch,prees,4,De vrouw prees de man omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.8551762104
+ic_mismatch,complimenteerde,4,De man complimenteerde de vrouw omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.3475861251
+ic_mismatch,complimenteerde,4,De vrouw complimenteerde de man omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3541641235
+ic_mismatch,stelde verantwoordelijk,4,De man stelde de vrouw verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.2858570218
+ic_mismatch,stelde verantwoordelijk,4,De vrouw stelde de man verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.726585567
+ic_mismatch,haatte,4,De man haatte de vrouw omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.2495910078
+ic_mismatch,haatte,4,De vrouw haatte de man omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.6401286125
+ic_mismatch,ontsloeg,4,De man ontsloeg de vrouw omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2561181486
+ic_mismatch,ontsloeg,4,De vrouw ontsloeg de man omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2456027567
+ic_mismatch,bewonderde,4,De man bewonderde de vrouw omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.07737472653
+ic_mismatch,bewonderde,4,De vrouw bewonderde de man omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.8325914741
+ic_mismatch,klaagde,4,De man klaagde de vrouw aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.5443794727
+ic_mismatch,klaagde,4,De vrouw klaagde de man aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.7556202412
+ic_mismatch,vreesde,4,De man vreesde de vrouw omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.08585546911
+ic_mismatch,vreesde,4,De vrouw vreesde de man omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.162684381
+ic_mismatch,aanbad,4,De man aanbad de vrouw omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.4798527956
+ic_mismatch,aanbad,4,De vrouw aanbad de man omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8005800247
+ic_mismatch,waardeerde,4,De man waardeerde de vrouw omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.7507739067
+ic_mismatch,waardeerde,4,De vrouw waardeerde de man omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8280156851
+ic_mismatch,verveelde,5,De acteur verveelde de actrice omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1529399455
+ic_mismatch,verveelde,5,De actrice verveelde de acteur omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2208362818
+ic_mismatch,excuses aan,5,De acteur bood zijn excuses aan de actrice aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.450525403
+ic_mismatch,excuses aan,5,De actrice bood zijn excuses aan de acteur aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.5460163951
+ic_mismatch,belde,5,De acteur belde de actrice omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.4206561148
+ic_mismatch,belde,5,De actrice belde de acteur Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3059216142
+ic_mismatch,ergerde,5,De acteur ergerde de actrice omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.2522650957
+ic_mismatch,ergerde,5,De actrice ergerde de acteur omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.9436368346
+ic_mismatch,kwelde,5,De acteur kwelde de actrice omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2583572567
+ic_mismatch,kwelde,5,De actrice kwelde de acteur omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.9275259972
+ic_mismatch,stoorde,5,De acteur stoorde de actrice omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.0701944381
+ic_mismatch,stoorde,5,De actrice stoorde de acteur omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.6710171103
+ic_mismatch,verontrustte,5,De acteur verontrustte de actrice omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.4418823421
+ic_mismatch,verontrustte,5,De actrice verontrustte de acteur omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3132459223
+ic_mismatch,won van,5,De acteur won van de actrice omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.3861726224
+ic_mismatch,won van,5,De actrice won van de acteur omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.6217873096
+ic_mismatch,inspireerde,5,De acteur inspireerde de actrice omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.4687804282
+ic_mismatch,inspireerde,5,De actrice inspireerde de acteur omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.9399957061
+ic_mismatch,intimideerde,5,De acteur intimideerde de actrice omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.6149691343
+ic_mismatch,intimideerde,5,De actrice intimideerde de acteur omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.5985787511
+ic_mismatch,irriteerde,5,De acteur irriteerde de actrice omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.4260425866
+ic_mismatch,irriteerde,5,De actrice irriteerde de acteur omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.7945764065
+ic_mismatch,bekende aan,5,De acteur bekende alles aan de actrice omdat hij per se de waarheid wilde vertellen.,96,1,m,0.5354947448
+ic_mismatch,bekende aan,5,De actrice bekende alles aan de acteur omdat hij per se de waarheid wilde horen.,96,0,m,0.268514961
+ic_mismatch,lichtte,5,De acteur lichtte de actrice op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.4696871638
+ic_mismatch,lichtte,5,De actrice lichtte de acteur op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.9438430667
+ic_mismatch,loog tegen,5,De acteur loog tegen de actrice omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.9657345414
+ic_mismatch,loog tegen,5,De actrice loog tegen de acteur omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2576478124
+ic_mismatch,verbaasde,5,De acteur verbaasde de actrice omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.3768725395
+ic_mismatch,verbaasde,5,De actrice verbaasde de acteur omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.4851140678
+ic_mismatch,smeekte,5,De acteur smeekte de actrice omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8306548595
+ic_mismatch,smeekte,5,De actrice smeekte de acteur omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.9085965753
+ic_mismatch,teleurstellen,5,De acteur stelde de actrice teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.3426875174
+ic_mismatch,teleurstellen,5,De actrice stelde de acteur teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.4527077675
+ic_mismatch,misleidde,5,De acteur misleidde de actrice omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.5372012854
+ic_mismatch,misleidde,5,De actrice misleidde de acteur omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.468324393
+ic_mismatch,hinderde,5,De acteur hinderde de actrice omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.6463027
+ic_mismatch,hinderde,5,De actrice hinderde de acteur omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.6202347279
+ic_mismatch,fascineerde,5,De acteur fascineerde de actrice omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.7149112821
+ic_mismatch,fascineerde,5,De actrice fascineerde de acteur omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2968707383
+ic_mismatch,respecteerde,5,De acteur respecteerde de actrice omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1147601381
+ic_mismatch,respecteerde,5,De actrice respecteerde de acteur omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.4186258912
+ic_mismatch,bedankte,5,De acteur bedankte de actrice omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.2171206623
+ic_mismatch,bedankte,5,De actrice bedankte de acteur omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.5100098848
+ic_mismatch,verafschuwde,5,De acteur verafschuwde de actrice omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.6886847019
+ic_mismatch,verafschuwde,5,De actrice verafschuwde de acteur omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.5021529794
+ic_mismatch,hield van,5,De acteur hield van de actrice omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.427117914
+ic_mismatch,hield van,5,De actrice hield van de acteur omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9666973352
+ic_mismatch,troostte,5,De acteur troostte de actrice omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1124830469
+ic_mismatch,troostte,5,De actrice troostte de acteur omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.2926081419
+ic_mismatch,strafte,5,De acteur strafte de actrice omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.1683601588
+ic_mismatch,strafte,5,De actrice strafte de acteur omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8384687304
+ic_mismatch,bekritiseerde,5,De acteur bekritiseerde de actrice omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.8033792377
+ic_mismatch,bekritiseerde,5,De actrice bekritiseerde de acteur omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8494413495
+ic_mismatch,feliciteerde,5,De acteur feliciteerde de actrice omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.03761661798
+ic_mismatch,feliciteerde,5,De actrice feliciteerde de acteur omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.1998361796
+ic_mismatch,minachtte,5,De acteur minachtte de actrice omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.2394039184
+ic_mismatch,minachtte,5,De actrice minachtte de acteur omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2172388583
+ic_mismatch,benijdde,5,De acteur benijdde de actrice omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.3099080622
+ic_mismatch,benijdde,5,De actrice benijdde de acteur omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.4320600331
+ic_mismatch,prees,5,De acteur prees de actrice omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.03354180604
+ic_mismatch,prees,5,De actrice prees de acteur omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.9134688377
+ic_mismatch,complimenteerde,5,De acteur complimenteerde de actrice omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.1434461921
+ic_mismatch,complimenteerde,5,De actrice complimenteerde de acteur omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3182085752
+ic_mismatch,stelde verantwoordelijk,5,De acteur stelde de actrice verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.2877194881
+ic_mismatch,stelde verantwoordelijk,5,De actrice stelde de acteur verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.5276032686
+ic_mismatch,haatte,5,De acteur haatte de actrice omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.08327838778
+ic_mismatch,haatte,5,De actrice haatte de acteur omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.5723004937
+ic_mismatch,ontsloeg,5,De acteur ontsloeg de actrice omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2880193293
+ic_mismatch,ontsloeg,5,De actrice ontsloeg de acteur omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.4944664836
+ic_mismatch,bewonderde,5,De acteur bewonderde de actrice omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01955581829
+ic_mismatch,bewonderde,5,De actrice bewonderde de acteur omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.7435539961
+ic_mismatch,klaagde,5,De acteur klaagde de actrice aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.2881242335
+ic_mismatch,klaagde,5,De actrice klaagde de acteur aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.597912848
+ic_mismatch,vreesde,5,De acteur vreesde de actrice omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.05000208691
+ic_mismatch,vreesde,5,De actrice vreesde de acteur omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.08727198839
+ic_mismatch,aanbad,5,De acteur aanbad de actrice omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2995789945
+ic_mismatch,aanbad,5,De actrice aanbad de acteur omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8709721565
+ic_mismatch,waardeerde,5,De acteur waardeerde de actrice omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.8476482034
+ic_mismatch,waardeerde,5,De actrice waardeerde de acteur omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.9318480492
+ic_mismatch,verveelde,6,De prins verveelde de prinses omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.07379489392
+ic_mismatch,verveelde,6,De prinses verveelde de prins omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2407999039
+ic_mismatch,excuses aan,6,De prins bood zijn excuses aan de prinses aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.5185413361
+ic_mismatch,excuses aan,6,De prinses bood zijn excuses aan de prins aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.801142931
+ic_mismatch,belde,6,De prins belde de prinses omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.2978337109
+ic_mismatch,belde,6,De prinses belde de prins Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3781327009
+ic_mismatch,ergerde,6,De prins ergerde de prinses omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.2823377252
+ic_mismatch,ergerde,6,De prinses ergerde de prins omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.9670869708
+ic_mismatch,kwelde,6,De prins kwelde de prinses omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2288667858
+ic_mismatch,kwelde,6,De prinses kwelde de prins omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.901932776
+ic_mismatch,stoorde,6,De prins stoorde de prinses omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.08268176019
+ic_mismatch,stoorde,6,De prinses stoorde de prins omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.7876046896
+ic_mismatch,verontrustte,6,De prins verontrustte de prinses omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.386556983
+ic_mismatch,verontrustte,6,De prinses verontrustte de prins omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.4830928147
+ic_mismatch,won van,6,De prins won van de prinses omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1699128151
+ic_mismatch,won van,6,De prinses won van de prins omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4521926641
+ic_mismatch,inspireerde,6,De prins inspireerde de prinses omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.2929805219
+ic_mismatch,inspireerde,6,De prinses inspireerde de prins omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.9168886542
+ic_mismatch,intimideerde,6,De prins intimideerde de prinses omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.3675124645
+ic_mismatch,intimideerde,6,De prinses intimideerde de prins omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.6832767725
+ic_mismatch,irriteerde,6,De prins irriteerde de prinses omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.3109916747
+ic_mismatch,irriteerde,6,De prinses irriteerde de prins omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.7350293398
+ic_mismatch,bekende aan,6,De prins bekende alles aan de prinses omdat hij per se de waarheid wilde vertellen.,96,1,m,0.4032829106
+ic_mismatch,bekende aan,6,De prinses bekende alles aan de prins omdat hij per se de waarheid wilde horen.,96,0,m,0.2892325819
+ic_mismatch,lichtte,6,De prins lichtte de prinses op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.5193049908
+ic_mismatch,lichtte,6,De prinses lichtte de prins op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.9241091013
+ic_mismatch,loog tegen,6,De prins loog tegen de prinses omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.9287180901
+ic_mismatch,loog tegen,6,De prinses loog tegen de prins omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2434008867
+ic_mismatch,verbaasde,6,De prins verbaasde de prinses omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.4028933346
+ic_mismatch,verbaasde,6,De prinses verbaasde de prins omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.4192845523
+ic_mismatch,smeekte,6,De prins smeekte de prinses omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.833756268
+ic_mismatch,smeekte,6,De prinses smeekte de prins omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.9246954918
+ic_mismatch,teleurstellen,6,De prins stelde de prinses teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.08877129108
+ic_mismatch,teleurstellen,6,De prinses stelde de prins teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.7151156664
+ic_mismatch,misleidde,6,De prins misleidde de prinses omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4895624816
+ic_mismatch,misleidde,6,De prinses misleidde de prins omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.3934000134
+ic_mismatch,hinderde,6,De prins hinderde de prinses omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.492865324
+ic_mismatch,hinderde,6,De prinses hinderde de prins omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5623663068
+ic_mismatch,fascineerde,6,De prins fascineerde de prinses omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.4159016013
+ic_mismatch,fascineerde,6,De prinses fascineerde de prins omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2805612087
+ic_mismatch,respecteerde,6,De prins respecteerde de prinses omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.0279781539
+ic_mismatch,respecteerde,6,De prinses respecteerde de prins omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.5447106957
+ic_mismatch,bedankte,6,De prins bedankte de prinses omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1676235497
+ic_mismatch,bedankte,6,De prinses bedankte de prins omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.5544058084
+ic_mismatch,verafschuwde,6,De prins verafschuwde de prinses omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.6866182089
+ic_mismatch,verafschuwde,6,De prinses verafschuwde de prins omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.6309925914
+ic_mismatch,hield van,6,De prins hield van de prinses omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.2439943552
+ic_mismatch,hield van,6,De prinses hield van de prins omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9804970026
+ic_mismatch,troostte,6,De prins troostte de prinses omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.06994017959
+ic_mismatch,troostte,6,De prinses troostte de prins omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.2529200017
+ic_mismatch,strafte,6,De prins strafte de prinses omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.3189193308
+ic_mismatch,strafte,6,De prinses strafte de prins omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.9526776671
+ic_mismatch,bekritiseerde,6,De prins bekritiseerde de prinses omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.2146740854
+ic_mismatch,bekritiseerde,6,De prinses bekritiseerde de prins omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.9486324787
+ic_mismatch,feliciteerde,6,De prins feliciteerde de prinses omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.009390765801
+ic_mismatch,feliciteerde,6,De prinses feliciteerde de prins omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.3208987713
+ic_mismatch,minachtte,6,De prins minachtte de prinses omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.02762273699
+ic_mismatch,minachtte,6,De prinses minachtte de prins omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.3317441642
+ic_mismatch,benijdde,6,De prins benijdde de prinses omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1598170549
+ic_mismatch,benijdde,6,De prinses benijdde de prins omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.4392125905
+ic_mismatch,prees,6,De prins prees de prinses omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.002784766722
+ic_mismatch,prees,6,De prinses prees de prins omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.9552081227
+ic_mismatch,complimenteerde,6,De prins complimenteerde de prinses omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.1247281134
+ic_mismatch,complimenteerde,6,De prinses complimenteerde de prins omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3966501653
+ic_mismatch,stelde verantwoordelijk,6,De prins stelde de prinses verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.1477760226
+ic_mismatch,stelde verantwoordelijk,6,De prinses stelde de prins verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.6919875741
+ic_mismatch,haatte,6,De prins haatte de prinses omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.03125116602
+ic_mismatch,haatte,6,De prinses haatte de prins omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.7098986506
+ic_mismatch,ontsloeg,6,De prins ontsloeg de prinses omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2346770763
+ic_mismatch,ontsloeg,6,De prinses ontsloeg de prins omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.3054795861
+ic_mismatch,bewonderde,6,De prins bewonderde de prinses omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.008405298926
+ic_mismatch,bewonderde,6,De prinses bewonderde de prins omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.8369390965
+ic_mismatch,klaagde,6,De prins klaagde de prinses aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.1758945584
+ic_mismatch,klaagde,6,De prinses klaagde de prins aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.7004243731
+ic_mismatch,vreesde,6,De prins vreesde de prinses omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.005128747784
+ic_mismatch,vreesde,6,De prinses vreesde de prins omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.2265837342
+ic_mismatch,aanbad,6,De prins aanbad de prinses omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.3949045241
+ic_mismatch,aanbad,6,De prinses aanbad de prins omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.9168812633
+ic_mismatch,waardeerde,6,De prins waardeerde de prinses omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.6990593672
+ic_mismatch,waardeerde,6,De prinses waardeerde de prins omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8941043019
+ic_mismatch,verveelde,7,De ober verveelde de serveerster omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1835514456
+ic_mismatch,verveelde,7,De serveerster verveelde de ober omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.07346806675
+ic_mismatch,excuses aan,7,De ober bood zijn excuses aan de serveerster aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.5895217657
+ic_mismatch,excuses aan,7,De serveerster bood zijn excuses aan de ober aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.5629709363
+ic_mismatch,belde,7,De ober belde de serveerster omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.4344108999
+ic_mismatch,belde,7,De serveerster belde de ober Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.6101824045
+ic_mismatch,ergerde,7,De ober ergerde de serveerster omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4519616961
+ic_mismatch,ergerde,7,De serveerster ergerde de ober omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.7859417796
+ic_mismatch,kwelde,7,De ober kwelde de serveerster omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.3683012426
+ic_mismatch,kwelde,7,De serveerster kwelde de ober omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.629103899
+ic_mismatch,stoorde,7,De ober stoorde de serveerster omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.2277633846
+ic_mismatch,stoorde,7,De serveerster stoorde de ober omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.2492721677
+ic_mismatch,verontrustte,7,De ober verontrustte de serveerster omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.3907143474
+ic_mismatch,verontrustte,7,De serveerster verontrustte de ober omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.1719839126
+ic_mismatch,won van,7,De ober won van de serveerster omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1954199374
+ic_mismatch,won van,7,De serveerster won van de ober omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.289296329
+ic_mismatch,inspireerde,7,De ober inspireerde de serveerster omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.4678387642
+ic_mismatch,inspireerde,7,De serveerster inspireerde de ober omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.7693091035
+ic_mismatch,intimideerde,7,De ober intimideerde de serveerster omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.6081132293
+ic_mismatch,intimideerde,7,De serveerster intimideerde de ober omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4103653133
+ic_mismatch,irriteerde,7,De ober irriteerde de serveerster omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.283834815
+ic_mismatch,irriteerde,7,De serveerster irriteerde de ober omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.2794651985
+ic_mismatch,bekende aan,7,De ober bekende alles aan de serveerster omdat hij per se de waarheid wilde vertellen.,96,1,m,0.6438414454
+ic_mismatch,bekende aan,7,De serveerster bekende alles aan de ober omdat hij per se de waarheid wilde horen.,96,0,m,0.04973149672
+ic_mismatch,lichtte,7,De ober lichtte de serveerster op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.3161999881
+ic_mismatch,lichtte,7,De serveerster lichtte de ober op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.781159997
+ic_mismatch,loog tegen,7,De ober loog tegen de serveerster omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.8929740191
+ic_mismatch,loog tegen,7,De serveerster loog tegen de ober omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.06027024239
+ic_mismatch,verbaasde,7,De ober verbaasde de serveerster omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.4043661356
+ic_mismatch,verbaasde,7,De serveerster verbaasde de ober omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.2371100038
+ic_mismatch,smeekte,7,De ober smeekte de serveerster omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8692380786
+ic_mismatch,smeekte,7,De serveerster smeekte de ober omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.6314067245
+ic_mismatch,teleurstellen,7,De ober stelde de serveerster teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.1417759359
+ic_mismatch,teleurstellen,7,De serveerster stelde de ober teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.2143914402
+ic_mismatch,misleidde,7,De ober misleidde de serveerster omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4673957825
+ic_mismatch,misleidde,7,De serveerster misleidde de ober omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.2160336524
+ic_mismatch,hinderde,7,De ober hinderde de serveerster omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.681052804
+ic_mismatch,hinderde,7,De serveerster hinderde de ober omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5577785373
+ic_mismatch,fascineerde,7,De ober fascineerde de serveerster omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.3202985823
+ic_mismatch,fascineerde,7,De serveerster fascineerde de ober omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.243917644
+ic_mismatch,respecteerde,7,De ober respecteerde de serveerster omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.2911101878
+ic_mismatch,respecteerde,7,De serveerster respecteerde de ober omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.20827277
+ic_mismatch,bedankte,7,De ober bedankte de serveerster omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.3580005169
+ic_mismatch,bedankte,7,De serveerster bedankte de ober omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.02152757719
+ic_mismatch,verafschuwde,7,De ober verafschuwde de serveerster omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.4558652937
+ic_mismatch,verafschuwde,7,De serveerster verafschuwde de ober omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.2240353227
+ic_mismatch,hield van,7,De ober hield van de serveerster omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.2073777616
+ic_mismatch,hield van,7,De serveerster hield van de ober omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8283824325
+ic_mismatch,troostte,7,De ober troostte de serveerster omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.2039409727
+ic_mismatch,troostte,7,De serveerster troostte de ober omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.07888802886
+ic_mismatch,strafte,7,De ober strafte de serveerster omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.3909672797
+ic_mismatch,strafte,7,De serveerster strafte de ober omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.4788668752
+ic_mismatch,bekritiseerde,7,De ober bekritiseerde de serveerster omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.5365948081
+ic_mismatch,bekritiseerde,7,De serveerster bekritiseerde de ober omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.4040422142
+ic_mismatch,feliciteerde,7,De ober feliciteerde de serveerster omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.1430429071
+ic_mismatch,feliciteerde,7,De serveerster feliciteerde de ober omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.1184361726
+ic_mismatch,minachtte,7,De ober minachtte de serveerster omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.3502365947
+ic_mismatch,minachtte,7,De serveerster minachtte de ober omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1360711455
+ic_mismatch,benijdde,7,De ober benijdde de serveerster omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.217765972
+ic_mismatch,benijdde,7,De serveerster benijdde de ober omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.2594593465
+ic_mismatch,prees,7,De ober prees de serveerster omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.04816280678
+ic_mismatch,prees,7,De serveerster prees de ober omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.5797429681
+ic_mismatch,complimenteerde,7,De ober complimenteerde de serveerster omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.321310252
+ic_mismatch,complimenteerde,7,De serveerster complimenteerde de ober omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.2287973911
+ic_mismatch,stelde verantwoordelijk,7,De ober stelde de serveerster verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.3222203851
+ic_mismatch,stelde verantwoordelijk,7,De serveerster stelde de ober verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.4064711928
+ic_mismatch,haatte,7,De ober haatte de serveerster omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.1422986686
+ic_mismatch,haatte,7,De serveerster haatte de ober omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.3664387763
+ic_mismatch,ontsloeg,7,De ober ontsloeg de serveerster omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2303493619
+ic_mismatch,ontsloeg,7,De serveerster ontsloeg de ober omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.1782279313
+ic_mismatch,bewonderde,7,De ober bewonderde de serveerster omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.1758215874
+ic_mismatch,bewonderde,7,De serveerster bewonderde de ober omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.605922997
+ic_mismatch,klaagde,7,De ober klaagde de serveerster aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.4280421436
+ic_mismatch,klaagde,7,De serveerster klaagde de ober aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.2469947934
+ic_mismatch,vreesde,7,De ober vreesde de serveerster omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.1905595809
+ic_mismatch,vreesde,7,De serveerster vreesde de ober omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.01846485399
+ic_mismatch,aanbad,7,De ober aanbad de serveerster omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2898960114
+ic_mismatch,aanbad,7,De serveerster aanbad de ober omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8017975688
+ic_mismatch,waardeerde,7,De ober waardeerde de serveerster omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.7409682274
+ic_mismatch,waardeerde,7,De serveerster waardeerde de ober omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.4455839992
+ic_mismatch,verveelde,8,De heer verveelde de dame omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1476991624
+ic_mismatch,verveelde,8,De dame verveelde de heer omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2868361473
+ic_mismatch,excuses aan,8,De heer bood zijn excuses aan de dame aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.3572709858
+ic_mismatch,excuses aan,8,De dame bood zijn excuses aan de heer aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.3592829406
+ic_mismatch,belde,8,De heer belde de dame omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.2558044791
+ic_mismatch,belde,8,De dame belde de heer Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.1824431121
+ic_mismatch,ergerde,8,De heer ergerde de dame omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.3148622811
+ic_mismatch,ergerde,8,De dame ergerde de heer omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.8885929585
+ic_mismatch,kwelde,8,De heer kwelde de dame omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2245291173
+ic_mismatch,kwelde,8,De dame kwelde de heer omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.5830267668
+ic_mismatch,stoorde,8,De heer stoorde de dame omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.07062711567
+ic_mismatch,stoorde,8,De dame stoorde de heer omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.5237729549
+ic_mismatch,verontrustte,8,De heer verontrustte de dame omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.43266204
+ic_mismatch,verontrustte,8,De dame verontrustte de heer omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.1930312514
+ic_mismatch,won van,8,De heer won van de dame omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.05939264968
+ic_mismatch,won van,8,De dame won van de heer omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.2495400161
+ic_mismatch,inspireerde,8,De heer inspireerde de dame omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.4400671721
+ic_mismatch,inspireerde,8,De dame inspireerde de heer omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.7516863942
+ic_mismatch,intimideerde,8,De heer intimideerde de dame omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.3291483819
+ic_mismatch,intimideerde,8,De dame intimideerde de heer omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.3075402975
+ic_mismatch,irriteerde,8,De heer irriteerde de dame omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.276584059
+ic_mismatch,irriteerde,8,De dame irriteerde de heer omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.5511351228
+ic_mismatch,bekende aan,8,De heer bekende alles aan de dame omdat hij per se de waarheid wilde vertellen.,96,1,m,0.3106526434
+ic_mismatch,bekende aan,8,De dame bekende alles aan de heer omdat hij per se de waarheid wilde horen.,96,0,m,0.09265810251
+ic_mismatch,lichtte,8,De heer lichtte de dame op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.5609386563
+ic_mismatch,lichtte,8,De dame lichtte de heer op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.8298817277
+ic_mismatch,loog tegen,8,De heer loog tegen de dame omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.8045722842
+ic_mismatch,loog tegen,8,De dame loog tegen de heer omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1232676879
+ic_mismatch,verbaasde,8,De heer verbaasde de dame omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.2369986326
+ic_mismatch,verbaasde,8,De dame verbaasde de heer omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.3197603226
+ic_mismatch,smeekte,8,De heer smeekte de dame omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8308487535
+ic_mismatch,smeekte,8,De dame smeekte de heer omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.7263602018
+ic_mismatch,teleurstellen,8,De heer stelde de dame teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.2507617474
+ic_mismatch,teleurstellen,8,De dame stelde de heer teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.4159985483
+ic_mismatch,misleidde,8,De heer misleidde de dame omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4062896073
+ic_mismatch,misleidde,8,De dame misleidde de heer omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.2656120956
+ic_mismatch,hinderde,8,De heer hinderde de dame omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.501355648
+ic_mismatch,hinderde,8,De dame hinderde de heer omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.2553060353
+ic_mismatch,fascineerde,8,De heer fascineerde de dame omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.4616602063
+ic_mismatch,fascineerde,8,De dame fascineerde de heer omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.2363389134
+ic_mismatch,respecteerde,8,De heer respecteerde de dame omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.01869568601
+ic_mismatch,respecteerde,8,De dame respecteerde de heer omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.4769954383
+ic_mismatch,bedankte,8,De heer bedankte de dame omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1906874627
+ic_mismatch,bedankte,8,De dame bedankte de heer omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2152033299
+ic_mismatch,verafschuwde,8,De heer verafschuwde de dame omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.6693925858
+ic_mismatch,verafschuwde,8,De dame verafschuwde de heer omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.4617830515
+ic_mismatch,hield van,8,De heer hield van de dame omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.3102895319
+ic_mismatch,hield van,8,De dame hield van de heer omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8590993881
+ic_mismatch,troostte,8,De heer troostte de dame omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.06349886954
+ic_mismatch,troostte,8,De dame troostte de heer omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.3384035826
+ic_mismatch,strafte,8,De heer strafte de dame omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.1906529367
+ic_mismatch,strafte,8,De dame strafte de heer omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8097736239
+ic_mismatch,bekritiseerde,8,De heer bekritiseerde de dame omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.3976703882
+ic_mismatch,bekritiseerde,8,De dame bekritiseerde de heer omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8294658661
+ic_mismatch,feliciteerde,8,De heer feliciteerde de dame omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.03419873863
+ic_mismatch,feliciteerde,8,De dame feliciteerde de heer omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.1167307198
+ic_mismatch,minachtte,8,De heer minachtte de dame omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.1188295558
+ic_mismatch,minachtte,8,De dame minachtte de heer omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1844544709
+ic_mismatch,benijdde,8,De heer benijdde de dame omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.2475640476
+ic_mismatch,benijdde,8,De dame benijdde de heer omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.5096934438
+ic_mismatch,prees,8,De heer prees de dame omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.007976777852
+ic_mismatch,prees,8,De dame prees de heer omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.7286108732
+ic_mismatch,complimenteerde,8,De heer complimenteerde de dame omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.3149106205
+ic_mismatch,complimenteerde,8,De dame complimenteerde de heer omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.2800059915
+ic_mismatch,stelde verantwoordelijk,8,De heer stelde de dame verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.05269118771
+ic_mismatch,stelde verantwoordelijk,8,De dame stelde de heer verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.3387154639
+ic_mismatch,haatte,8,De heer haatte de dame omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.08279773593
+ic_mismatch,haatte,8,De dame haatte de heer omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.5851925015
+ic_mismatch,ontsloeg,8,De heer ontsloeg de dame omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2366235703
+ic_mismatch,ontsloeg,8,De dame ontsloeg de heer omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2912075818
+ic_mismatch,bewonderde,8,De heer bewonderde de dame omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01134262979
+ic_mismatch,bewonderde,8,De dame bewonderde de heer omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.7548124194
+ic_mismatch,klaagde,8,De heer klaagde de dame aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.2507514358
+ic_mismatch,klaagde,8,De dame klaagde de heer aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.2814356685
+ic_mismatch,vreesde,8,De heer vreesde de dame omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.01457148977
+ic_mismatch,vreesde,8,De dame vreesde de heer omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.04120377824
+ic_mismatch,aanbad,8,De heer aanbad de dame omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2760234773
+ic_mismatch,aanbad,8,De dame aanbad de heer omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.82398206
+ic_mismatch,waardeerde,8,De heer waardeerde de dame omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.6396715045
+ic_mismatch,waardeerde,8,De dame waardeerde de heer omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.7069619894
+ic_mismatch,verveelde,9,De koning verveelde de koningin omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.0691966787
+ic_mismatch,verveelde,9,De koningin verveelde de koning omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.287963599
+ic_mismatch,excuses aan,9,De koning bood zijn excuses aan de koningin aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.4345426261
+ic_mismatch,excuses aan,9,De koningin bood zijn excuses aan de koning aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.3818707764
+ic_mismatch,belde,9,De koning belde de koningin omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3134546578
+ic_mismatch,belde,9,De koningin belde de koning Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3249844611
+ic_mismatch,ergerde,9,De koning ergerde de koningin omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.355335474
+ic_mismatch,ergerde,9,De koningin ergerde de koning omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.8628356457
+ic_mismatch,kwelde,9,De koning kwelde de koningin omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2309403121
+ic_mismatch,kwelde,9,De koningin kwelde de koning omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.6099919677
+ic_mismatch,stoorde,9,De koning stoorde de koningin omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1117204949
+ic_mismatch,stoorde,9,De koningin stoorde de koning omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.4121766388
+ic_mismatch,verontrustte,9,De koning verontrustte de koningin omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.2888784409
+ic_mismatch,verontrustte,9,De koningin verontrustte de koning omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3024333119
+ic_mismatch,won van,9,De koning won van de koningin omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1734037697
+ic_mismatch,won van,9,De koningin won van de koning omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.2601275742
+ic_mismatch,inspireerde,9,De koning inspireerde de koningin omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.3601251245
+ic_mismatch,inspireerde,9,De koningin inspireerde de koning omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8000212908
+ic_mismatch,intimideerde,9,De koning intimideerde de koningin omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.3077068329
+ic_mismatch,intimideerde,9,De koningin intimideerde de koning omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.2750632167
+ic_mismatch,irriteerde,9,De koning irriteerde de koningin omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.3015818
+ic_mismatch,irriteerde,9,De koningin irriteerde de koning omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.4802266061
+ic_mismatch,bekende aan,9,De koning bekende alles aan de koningin omdat hij per se de waarheid wilde vertellen.,96,1,m,0.2588877976
+ic_mismatch,bekende aan,9,De koningin bekende alles aan de koning omdat hij per se de waarheid wilde horen.,96,0,m,0.08017379791
+ic_mismatch,lichtte,9,De koning lichtte de koningin op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.2948797345
+ic_mismatch,lichtte,9,De koningin lichtte de koning op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.7874641418
+ic_mismatch,loog tegen,9,De koning loog tegen de koningin omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.8845559955
+ic_mismatch,loog tegen,9,De koningin loog tegen de koning omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1326051205
+ic_mismatch,verbaasde,9,De koning verbaasde de koningin omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.2303027958
+ic_mismatch,verbaasde,9,De koningin verbaasde de koning omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.2879568636
+ic_mismatch,smeekte,9,De koning smeekte de koningin omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.7761881948
+ic_mismatch,smeekte,9,De koningin smeekte de koning omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.759555757
+ic_mismatch,teleurstellen,9,De koning stelde de koningin teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.3097532392
+ic_mismatch,teleurstellen,9,De koningin stelde de koning teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.3005217016
+ic_mismatch,misleidde,9,De koning misleidde de koningin omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.3603455722
+ic_mismatch,misleidde,9,De koningin misleidde de koning omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.2849806249
+ic_mismatch,hinderde,9,De koning hinderde de koningin omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.4218564928
+ic_mismatch,hinderde,9,De koningin hinderde de koning omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.3514530063
+ic_mismatch,fascineerde,9,De koning fascineerde de koningin omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.4231543243
+ic_mismatch,fascineerde,9,De koningin fascineerde de koning omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.1331394613
+ic_mismatch,respecteerde,9,De koning respecteerde de koningin omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.02068203129
+ic_mismatch,respecteerde,9,De koningin respecteerde de koning omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.2029300034
+ic_mismatch,bedankte,9,De koning bedankte de koningin omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.07831060886
+ic_mismatch,bedankte,9,De koningin bedankte de koning omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2126827389
+ic_mismatch,verafschuwde,9,De koning verafschuwde de koningin omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.6035440564
+ic_mismatch,verafschuwde,9,De koningin verafschuwde de koning omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.361389935
+ic_mismatch,hield van,9,De koning hield van de koningin omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.3088131547
+ic_mismatch,hield van,9,De koningin hield van de koning omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9018173814
+ic_mismatch,troostte,9,De koning troostte de koningin omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.02256469987
+ic_mismatch,troostte,9,De koningin troostte de koning omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.1831178814
+ic_mismatch,strafte,9,De koning strafte de koningin omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.09820446372
+ic_mismatch,strafte,9,De koningin strafte de koning omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8454529643
+ic_mismatch,bekritiseerde,9,De koning bekritiseerde de koningin omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.09756661952
+ic_mismatch,bekritiseerde,9,De koningin bekritiseerde de koning omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8447495699
+ic_mismatch,feliciteerde,9,De koning feliciteerde de koningin omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.01881255396
+ic_mismatch,feliciteerde,9,De koningin feliciteerde de koning omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.1011187285
+ic_mismatch,minachtte,9,De koning minachtte de koningin omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.03834851459
+ic_mismatch,minachtte,9,De koningin minachtte de koning omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.1434194893
+ic_mismatch,benijdde,9,De koning benijdde de koningin omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1091196239
+ic_mismatch,benijdde,9,De koningin benijdde de koning omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.4091992378
+ic_mismatch,prees,9,De koning prees de koningin omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.001289824839
+ic_mismatch,prees,9,De koningin prees de koning omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.6831843853
+ic_mismatch,complimenteerde,9,De koning complimenteerde de koningin omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.1206268519
+ic_mismatch,complimenteerde,9,De koningin complimenteerde de koning omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.2116693556
+ic_mismatch,stelde verantwoordelijk,9,De koning stelde de koningin verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.2287951708
+ic_mismatch,stelde verantwoordelijk,9,De koningin stelde de koning verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.2999625206
+ic_mismatch,haatte,9,De koning haatte de koningin omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.02781699225
+ic_mismatch,haatte,9,De koningin haatte de koning omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.3737112284
+ic_mismatch,ontsloeg,9,De koning ontsloeg de koningin omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.2501738369
+ic_mismatch,ontsloeg,9,De koningin ontsloeg de koning omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.1754286736
+ic_mismatch,bewonderde,9,De koning bewonderde de koningin omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01020076871
+ic_mismatch,bewonderde,9,De koningin bewonderde de koning omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.6744112372
+ic_mismatch,klaagde,9,De koning klaagde de koningin aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.1343139559
+ic_mismatch,klaagde,9,De koningin klaagde de koning aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.1973444968
+ic_mismatch,vreesde,9,De koning vreesde de koningin omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.01449047308
+ic_mismatch,vreesde,9,De koningin vreesde de koning omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.05095665902
+ic_mismatch,aanbad,9,De koning aanbad de koningin omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.3722680807
+ic_mismatch,aanbad,9,De koningin aanbad de koning omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.7458547354
+ic_mismatch,waardeerde,9,De koning waardeerde de koningin omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.5436367393
+ic_mismatch,waardeerde,9,De koningin waardeerde de koning omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.6494141221
+ic_mismatch,verveelde,10,De zoon verveelde de dochter omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.2046606839
+ic_mismatch,verveelde,10,De dochter verveelde de zoon omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2569058239
+ic_mismatch,excuses aan,10,De zoon bood zijn excuses aan de dochter aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.460239321
+ic_mismatch,excuses aan,10,De dochter bood zijn excuses aan de zoon aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.4171527922
+ic_mismatch,belde,10,De zoon belde de dochter omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3044881821
+ic_mismatch,belde,10,De dochter belde de zoon Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3065729737
+ic_mismatch,ergerde,10,De zoon ergerde de dochter omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4739845991
+ic_mismatch,ergerde,10,De dochter ergerde de zoon omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.8710511327
+ic_mismatch,kwelde,10,De zoon kwelde de dochter omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.3718839884
+ic_mismatch,kwelde,10,De dochter kwelde de zoon omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.810844481
+ic_mismatch,stoorde,10,De zoon stoorde de dochter omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1482007354
+ic_mismatch,stoorde,10,De dochter stoorde de zoon omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.6268556714
+ic_mismatch,verontrustte,10,De zoon verontrustte de dochter omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.3828424513
+ic_mismatch,verontrustte,10,De dochter verontrustte de zoon omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3727856576
+ic_mismatch,won van,10,De zoon won van de dochter omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.2278541625
+ic_mismatch,won van,10,De dochter won van de zoon omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4448311627
+ic_mismatch,inspireerde,10,De zoon inspireerde de dochter omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.3351486027
+ic_mismatch,inspireerde,10,De dochter inspireerde de zoon omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8679295778
+ic_mismatch,intimideerde,10,De zoon intimideerde de dochter omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.5273215175
+ic_mismatch,intimideerde,10,De dochter intimideerde de zoon omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4196845889
+ic_mismatch,irriteerde,10,De zoon irriteerde de dochter omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.3614763319
+ic_mismatch,irriteerde,10,De dochter irriteerde de zoon omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.8227609396
+ic_mismatch,bekende aan,10,De zoon bekende alles aan de dochter omdat hij per se de waarheid wilde vertellen.,96,1,m,0.4311582148
+ic_mismatch,bekende aan,10,De dochter bekende alles aan de zoon omdat hij per se de waarheid wilde horen.,96,0,m,0.2088723183
+ic_mismatch,lichtte,10,De zoon lichtte de dochter op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.4469799995
+ic_mismatch,lichtte,10,De dochter lichtte de zoon op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.803858459
+ic_mismatch,loog tegen,10,De zoon loog tegen de dochter omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.7795763612
+ic_mismatch,loog tegen,10,De dochter loog tegen de zoon omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2123867869
+ic_mismatch,verbaasde,10,De zoon verbaasde de dochter omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.2420644909
+ic_mismatch,verbaasde,10,De dochter verbaasde de zoon omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.5442618132
+ic_mismatch,smeekte,10,De zoon smeekte de dochter omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8635059595
+ic_mismatch,smeekte,10,De dochter smeekte de zoon omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8058412075
+ic_mismatch,teleurstellen,10,De zoon stelde de dochter teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.1983741969
+ic_mismatch,teleurstellen,10,De dochter stelde de zoon teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.5808199048
+ic_mismatch,misleidde,10,De zoon misleidde de dochter omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4273243546
+ic_mismatch,misleidde,10,De dochter misleidde de zoon omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.3972599208
+ic_mismatch,hinderde,10,De zoon hinderde de dochter omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.5028663874
+ic_mismatch,hinderde,10,De dochter hinderde de zoon omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5611740351
+ic_mismatch,fascineerde,10,De zoon fascineerde de dochter omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.7092884779
+ic_mismatch,fascineerde,10,De dochter fascineerde de zoon omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.4040943384
+ic_mismatch,respecteerde,10,De zoon respecteerde de dochter omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1113609225
+ic_mismatch,respecteerde,10,De dochter respecteerde de zoon omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.4659880698
+ic_mismatch,bedankte,10,De zoon bedankte de dochter omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1676871032
+ic_mismatch,bedankte,10,De dochter bedankte de zoon omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.4045389295
+ic_mismatch,verafschuwde,10,De zoon verafschuwde de dochter omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.5400334001
+ic_mismatch,verafschuwde,10,De dochter verafschuwde de zoon omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.392246604
+ic_mismatch,hield van,10,De zoon hield van de dochter omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.4466063976
+ic_mismatch,hield van,10,De dochter hield van de zoon omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.9133562446
+ic_mismatch,troostte,10,De zoon troostte de dochter omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.2070015818
+ic_mismatch,troostte,10,De dochter troostte de zoon omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.3250002861
+ic_mismatch,strafte,10,De zoon strafte de dochter omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.3567335904
+ic_mismatch,strafte,10,De dochter strafte de zoon omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8581397533
+ic_mismatch,bekritiseerde,10,De zoon bekritiseerde de dochter omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.350889653
+ic_mismatch,bekritiseerde,10,De dochter bekritiseerde de zoon omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8358175755
+ic_mismatch,feliciteerde,10,De zoon feliciteerde de dochter omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.08651668578
+ic_mismatch,feliciteerde,10,De dochter feliciteerde de zoon omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.4132133126
+ic_mismatch,minachtte,10,De zoon minachtte de dochter omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.2543144822
+ic_mismatch,minachtte,10,De dochter minachtte de zoon omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2524728775
+ic_mismatch,benijdde,10,De zoon benijdde de dochter omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.2525358796
+ic_mismatch,benijdde,10,De dochter benijdde de zoon omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.5980758071
+ic_mismatch,prees,10,De zoon prees de dochter omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.03328220919
+ic_mismatch,prees,10,De dochter prees de zoon omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.8013344407
+ic_mismatch,complimenteerde,10,De zoon complimenteerde de dochter omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.226358518
+ic_mismatch,complimenteerde,10,De dochter complimenteerde de zoon omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3424053788
+ic_mismatch,stelde verantwoordelijk,10,De zoon stelde de dochter verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.1745799482
+ic_mismatch,stelde verantwoordelijk,10,De dochter stelde de zoon verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.3808253407
+ic_mismatch,haatte,10,De zoon haatte de dochter omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.170185864
+ic_mismatch,haatte,10,De dochter haatte de zoon omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.6049324274
+ic_mismatch,ontsloeg,10,De zoon ontsloeg de dochter omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.3088653386
+ic_mismatch,ontsloeg,10,De dochter ontsloeg de zoon omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.3561515212
+ic_mismatch,bewonderde,10,De zoon bewonderde de dochter omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.05225737765
+ic_mismatch,bewonderde,10,De dochter bewonderde de zoon omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.7194961309
+ic_mismatch,klaagde,10,De zoon klaagde de dochter aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.4234961271
+ic_mismatch,klaagde,10,De dochter klaagde de zoon aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.5234388113
+ic_mismatch,vreesde,10,De zoon vreesde de dochter omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.1198450401
+ic_mismatch,vreesde,10,De dochter vreesde de zoon omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.2809309065
+ic_mismatch,aanbad,10,De zoon aanbad de dochter omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.5155770779
+ic_mismatch,aanbad,10,De dochter aanbad de zoon omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8156971335
+ic_mismatch,waardeerde,10,De zoon waardeerde de dochter omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.6834508181
+ic_mismatch,waardeerde,10,De dochter waardeerde de zoon omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8242847323
+ic_mismatch,verveelde,11,De neef verveelde de nicht omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.174359858
+ic_mismatch,verveelde,11,De nicht verveelde de neef omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2934926748
+ic_mismatch,excuses aan,11,De neef bood zijn excuses aan de nicht aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.2982579768
+ic_mismatch,excuses aan,11,De nicht bood zijn excuses aan de neef aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.3209189177
+ic_mismatch,belde,11,De neef belde de nicht omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.2834755778
+ic_mismatch,belde,11,De nicht belde de neef Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.432780683
+ic_mismatch,ergerde,11,De neef ergerde de nicht omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.3753780127
+ic_mismatch,ergerde,11,De nicht ergerde de neef omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.754222095
+ic_mismatch,kwelde,11,De neef kwelde de nicht omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.2071310133
+ic_mismatch,kwelde,11,De nicht kwelde de neef omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.6152524948
+ic_mismatch,stoorde,11,De neef stoorde de nicht omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1434495449
+ic_mismatch,stoorde,11,De nicht stoorde de neef omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.4870697856
+ic_mismatch,verontrustte,11,De neef verontrustte de nicht omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.2042378038
+ic_mismatch,verontrustte,11,De nicht verontrustte de neef omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.2949585021
+ic_mismatch,won van,11,De neef won van de nicht omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1962723136
+ic_mismatch,won van,11,De nicht won van de neef omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4050908387
+ic_mismatch,inspireerde,11,De neef inspireerde de nicht omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.1613592356
+ic_mismatch,inspireerde,11,De nicht inspireerde de neef omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.7552518249
+ic_mismatch,intimideerde,11,De neef intimideerde de nicht omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.4945677519
+ic_mismatch,intimideerde,11,De nicht intimideerde de neef omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.4483407438
+ic_mismatch,irriteerde,11,De neef irriteerde de nicht omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.1266507357
+ic_mismatch,irriteerde,11,De nicht irriteerde de neef omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6045289636
+ic_mismatch,bekende aan,11,De neef bekende alles aan de nicht omdat hij per se de waarheid wilde vertellen.,96,1,m,0.3004276752
+ic_mismatch,bekende aan,11,De nicht bekende alles aan de neef omdat hij per se de waarheid wilde horen.,96,0,m,0.1733494103
+ic_mismatch,lichtte,11,De neef lichtte de nicht op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.3311317563
+ic_mismatch,lichtte,11,De nicht lichtte de neef op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.711166203
+ic_mismatch,loog tegen,11,De neef loog tegen de nicht omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.788675189
+ic_mismatch,loog tegen,11,De nicht loog tegen de neef omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.191128999
+ic_mismatch,verbaasde,11,De neef verbaasde de nicht omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.1266955286
+ic_mismatch,verbaasde,11,De nicht verbaasde de neef omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.3579365611
+ic_mismatch,smeekte,11,De neef smeekte de nicht omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.7247940898
+ic_mismatch,smeekte,11,De nicht smeekte de neef omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8165392876
+ic_mismatch,teleurstellen,11,De neef stelde de nicht teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.08988852054
+ic_mismatch,teleurstellen,11,De nicht stelde de neef teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.2980144918
+ic_mismatch,misleidde,11,De neef misleidde de nicht omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.3812764883
+ic_mismatch,misleidde,11,De nicht misleidde de neef omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.3500321507
+ic_mismatch,hinderde,11,De neef hinderde de nicht omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.4935221374
+ic_mismatch,hinderde,11,De nicht hinderde de neef omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.4292503297
+ic_mismatch,fascineerde,11,De neef fascineerde de nicht omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.2832495868
+ic_mismatch,fascineerde,11,De nicht fascineerde de neef omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.3279992938
+ic_mismatch,respecteerde,11,De neef respecteerde de nicht omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1524012387
+ic_mismatch,respecteerde,11,De nicht respecteerde de neef omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.2759376466
+ic_mismatch,bedankte,11,De neef bedankte de nicht omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.1348618865
+ic_mismatch,bedankte,11,De nicht bedankte de neef omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2549684644
+ic_mismatch,verafschuwde,11,De neef verafschuwde de nicht omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.4761333466
+ic_mismatch,verafschuwde,11,De nicht verafschuwde de neef omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.4924143255
+ic_mismatch,hield van,11,De neef hield van de nicht omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.3202216327
+ic_mismatch,hield van,11,De nicht hield van de neef omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8425993323
+ic_mismatch,troostte,11,De neef troostte de nicht omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.07486950606
+ic_mismatch,troostte,11,De nicht troostte de neef omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.2559514642
+ic_mismatch,strafte,11,De neef strafte de nicht omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.1898190528
+ic_mismatch,strafte,11,De nicht strafte de neef omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.7624761462
+ic_mismatch,bekritiseerde,11,De neef bekritiseerde de nicht omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.141974926
+ic_mismatch,bekritiseerde,11,De nicht bekritiseerde de neef omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.675786972
+ic_mismatch,feliciteerde,11,De neef feliciteerde de nicht omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.04394372925
+ic_mismatch,feliciteerde,11,De nicht feliciteerde de neef omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.2443465143
+ic_mismatch,minachtte,11,De neef minachtte de nicht omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.1812534481
+ic_mismatch,minachtte,11,De nicht minachtte de neef omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2598736882
+ic_mismatch,benijdde,11,De neef benijdde de nicht omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1706746817
+ic_mismatch,benijdde,11,De nicht benijdde de neef omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.5500710607
+ic_mismatch,prees,11,De neef prees de nicht omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.02339439467
+ic_mismatch,prees,11,De nicht prees de neef omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.6820102334
+ic_mismatch,complimenteerde,11,De neef complimenteerde de nicht omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.129461199
+ic_mismatch,complimenteerde,11,De nicht complimenteerde de neef omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.2588218451
+ic_mismatch,stelde verantwoordelijk,11,De neef stelde de nicht verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.07993590087
+ic_mismatch,stelde verantwoordelijk,11,De nicht stelde de neef verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.1695163995
+ic_mismatch,haatte,11,De neef haatte de nicht omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.07403714955
+ic_mismatch,haatte,11,De nicht haatte de neef omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.5547653437
+ic_mismatch,ontsloeg,11,De neef ontsloeg de nicht omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.1761434972
+ic_mismatch,ontsloeg,11,De nicht ontsloeg de neef omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2991464734
+ic_mismatch,bewonderde,11,De neef bewonderde de nicht omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.07918079942
+ic_mismatch,bewonderde,11,De nicht bewonderde de neef omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.5822935104
+ic_mismatch,klaagde,11,De neef klaagde de nicht aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.187159732
+ic_mismatch,klaagde,11,De nicht klaagde de neef aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.3169531822
+ic_mismatch,vreesde,11,De neef vreesde de nicht omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.1153544337
+ic_mismatch,vreesde,11,De nicht vreesde de neef omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.08146886528
+ic_mismatch,aanbad,11,De neef aanbad de nicht omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2965257168
+ic_mismatch,aanbad,11,De nicht aanbad de neef omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.5577790141
+ic_mismatch,waardeerde,11,De neef waardeerde de nicht omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.4888999462
+ic_mismatch,waardeerde,11,De nicht waardeerde de neef omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.736097455
+ic_mismatch,verveelde,12,De broer verveelde de zus omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1468704343
+ic_mismatch,verveelde,12,De zus verveelde de broer omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2463225424
+ic_mismatch,excuses aan,12,De broer bood zijn excuses aan de zus aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.4653509557
+ic_mismatch,excuses aan,12,De zus bood zijn excuses aan de broer aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.4356560707
+ic_mismatch,belde,12,De broer belde de zus omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3048669398
+ic_mismatch,belde,12,De zus belde de broer Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.3839602172
+ic_mismatch,ergerde,12,De broer ergerde de zus omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4360533059
+ic_mismatch,ergerde,12,De zus ergerde de broer omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.7480990291
+ic_mismatch,kwelde,12,De broer kwelde de zus omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.369654268
+ic_mismatch,kwelde,12,De zus kwelde de broer omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.7960680127
+ic_mismatch,stoorde,12,De broer stoorde de zus omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1444699764
+ic_mismatch,stoorde,12,De zus stoorde de broer omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.5622354746
+ic_mismatch,verontrustte,12,De broer verontrustte de zus omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.4919438064
+ic_mismatch,verontrustte,12,De zus verontrustte de broer omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.2573750913
+ic_mismatch,won van,12,De broer won van de zus omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.1740758121
+ic_mismatch,won van,12,De zus won van de broer omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4988685846
+ic_mismatch,inspireerde,12,De broer inspireerde de zus omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.5121028423
+ic_mismatch,inspireerde,12,De zus inspireerde de broer omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8581987023
+ic_mismatch,intimideerde,12,De broer intimideerde de zus omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.7237986326
+ic_mismatch,intimideerde,12,De zus intimideerde de broer omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.5207891464
+ic_mismatch,irriteerde,12,De broer irriteerde de zus omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.1624322534
+ic_mismatch,irriteerde,12,De zus irriteerde de broer omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6323832273
+ic_mismatch,bekende aan,12,De broer bekende alles aan de zus omdat hij per se de waarheid wilde vertellen.,96,1,m,0.5548611283
+ic_mismatch,bekende aan,12,De zus bekende alles aan de broer omdat hij per se de waarheid wilde horen.,96,0,m,0.1964864135
+ic_mismatch,lichtte,12,De broer lichtte de zus op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.3558689058
+ic_mismatch,lichtte,12,De zus lichtte de broer op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.8426250815
+ic_mismatch,loog tegen,12,De broer loog tegen de zus omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.8060766459
+ic_mismatch,loog tegen,12,De zus loog tegen de broer omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.1825585961
+ic_mismatch,verbaasde,12,De broer verbaasde de zus omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.2612270415
+ic_mismatch,verbaasde,12,De zus verbaasde de broer omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.5021798611
+ic_mismatch,smeekte,12,De broer smeekte de zus omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.8357881904
+ic_mismatch,smeekte,12,De zus smeekte de broer omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.8551763892
+ic_mismatch,teleurstellen,12,De broer stelde de zus teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.2332525998
+ic_mismatch,teleurstellen,12,De zus stelde de broer teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.5053395033
+ic_mismatch,misleidde,12,De broer misleidde de zus omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.4390240312
+ic_mismatch,misleidde,12,De zus misleidde de broer omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.3608289659
+ic_mismatch,hinderde,12,De broer hinderde de zus omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.6423855424
+ic_mismatch,hinderde,12,De zus hinderde de broer omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5421324968
+ic_mismatch,fascineerde,12,De broer fascineerde de zus omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.4559186101
+ic_mismatch,fascineerde,12,De zus fascineerde de broer omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.3407943249
+ic_mismatch,respecteerde,12,De broer respecteerde de zus omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.1812869906
+ic_mismatch,respecteerde,12,De zus respecteerde de broer omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.316444248
+ic_mismatch,bedankte,12,De broer bedankte de zus omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.2209859937
+ic_mismatch,bedankte,12,De zus bedankte de broer omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.4397208393
+ic_mismatch,verafschuwde,12,De broer verafschuwde de zus omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.3987847567
+ic_mismatch,verafschuwde,12,De zus verafschuwde de broer omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.3647669852
+ic_mismatch,hield van,12,De broer hield van de zus omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.4001585543
+ic_mismatch,hield van,12,De zus hield van de broer omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8692962527
+ic_mismatch,troostte,12,De broer troostte de zus omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.1672078818
+ic_mismatch,troostte,12,De zus troostte de broer omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.264123708
+ic_mismatch,strafte,12,De broer strafte de zus omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.4436398745
+ic_mismatch,strafte,12,De zus strafte de broer omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8820890784
+ic_mismatch,bekritiseerde,12,De broer bekritiseerde de zus omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.286924541
+ic_mismatch,bekritiseerde,12,De zus bekritiseerde de broer omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.8002205491
+ic_mismatch,feliciteerde,12,De broer feliciteerde de zus omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.07556730509
+ic_mismatch,feliciteerde,12,De zus feliciteerde de broer omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.3741346598
+ic_mismatch,minachtte,12,De broer minachtte de zus omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.241384387
+ic_mismatch,minachtte,12,De zus minachtte de broer omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.2543491125
+ic_mismatch,benijdde,12,De broer benijdde de zus omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.2210878432
+ic_mismatch,benijdde,12,De zus benijdde de broer omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.526014924
+ic_mismatch,prees,12,De broer prees de zus omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.06382739544
+ic_mismatch,prees,12,De zus prees de broer omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.772752583
+ic_mismatch,complimenteerde,12,De broer complimenteerde de zus omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.2463062555
+ic_mismatch,complimenteerde,12,De zus complimenteerde de broer omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3539571464
+ic_mismatch,stelde verantwoordelijk,12,De broer stelde de zus verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.1911222637
+ic_mismatch,stelde verantwoordelijk,12,De zus stelde de broer verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.4960308075
+ic_mismatch,haatte,12,De broer haatte de zus omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.1445364505
+ic_mismatch,haatte,12,De zus haatte de broer omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.581756711
+ic_mismatch,ontsloeg,12,De broer ontsloeg de zus omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.3505157828
+ic_mismatch,ontsloeg,12,De zus ontsloeg de broer omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.3579968214
+ic_mismatch,bewonderde,12,De broer bewonderde de zus omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.06810831279
+ic_mismatch,bewonderde,12,De zus bewonderde de broer omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.5819544196
+ic_mismatch,klaagde,12,De broer klaagde de zus aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.4025634825
+ic_mismatch,klaagde,12,De zus klaagde de broer aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.5416955352
+ic_mismatch,vreesde,12,De broer vreesde de zus omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.1015331894
+ic_mismatch,vreesde,12,De zus vreesde de broer omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.1921682209
+ic_mismatch,aanbad,12,De broer aanbad de zus omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.5052855015
+ic_mismatch,aanbad,12,De zus aanbad de broer omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.7465819716
+ic_mismatch,waardeerde,12,De broer waardeerde de zus omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.6039990187
+ic_mismatch,waardeerde,12,De zus waardeerde de broer omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.7744588256
+ic_mismatch,verveelde,13,De grootvader verveelde de grootmoeder omdat hij al vanaf het begin van de dag ontzettend liep te zeuren.,95,1,m,0.1475116014
+ic_mismatch,verveelde,13,De grootmoeder verveelde de grootvader omdat hij al vanaf het begin van e dag eigenlijk geen zin had.,95,0,m,0.2940001786
+ic_mismatch,excuses aan,13,De grootvader bood zijn excuses aan de grootmoeder aan omdat hij volgens de getuigen van het ongeluk alle schuld had.,100,1,m,0.3857065141
+ic_mismatch,excuses aan,13,De grootmoeder bood zijn excuses aan de grootvader aan omdat hij volgens de getuigen van het ongeluk geen schuld had.,100,0,m,0.4456268549
+ic_mismatch,belde,13,De grootvader belde de grootmoeder omdat hij nu toch eindelijk wel eens duidelijkheid wilde hebben.,82,1,m,0.3213843405
+ic_mismatch,belde,13,De grootmoeder belde de grootvader Chantal belde Niels omdat hij nu toch eindelijk wel eens duidelijkheid mocht geven.,82,0,m,0.4150205851
+ic_mismatch,ergerde,13,De grootvader ergerde de grootmoeder omdat hij bij elk plantje of beestje zo lang bleef kijken.,82,1,m,0.4011950791
+ic_mismatch,ergerde,13,De grootmoeder ergerde de grootvader omdat hij bij elk plantje of beestje op haar moest wachten.,82,0,m,0.7785051465
+ic_mismatch,kwelde,13,De grootvader kwelde de grootmoeder omdat hij na de vele avontuurtjes nog steeds met andere vrouwen sliep.,86,1,m,0.279982686
+ic_mismatch,kwelde,13,De grootmoeder kwelde de grootvader omdat hij na de vele avontuurtjes nog steeds door haar bedrogen werd.,86,0,m,0.733556807
+ic_mismatch,stoorde,13,De grootvader stoorde de grootmoeder omdat hij tijdens het leren de hele tijd zeer irritant kuchte.,86,1,m,0.1833502501
+ic_mismatch,stoorde,13,De grootmoeder stoorde de grootvader omdat hij tijdens het leren de hele tijd haar gekuch hoorde.,86,0,m,0.5621086955
+ic_mismatch,verontrustte,13,De grootvader verontrustte de grootmoeder omdat hij niet eerder zulke discriminerende opmerkingen had gemaakt.,82,1,m,0.23160097
+ic_mismatch,verontrustte,13,De grootmoeder verontrustte de grootvader omdat hij niet eerder zulke discriminerende opmerkingen had gehoord.,82,0,m,0.3588689268
+ic_mismatch,won van,13,De grootvader won van de grootmoeder omdat hij na enkele tientallen potjes schaak haar spel goed kende.,82,1,m,0.2138396055
+ic_mismatch,won van,13,De grootmoeder won van de grootvader omdat hij na enkele tientallen potjes schaak haar niet kon verassen.,82,0,m,0.4317831099
+ic_mismatch,inspireerde,13,De grootvader inspireerde de grootmoeder omdat hij bij het zien van onrecht altijd direct actie wilde ondernemen.,77,1,m,0.1700104326
+ic_mismatch,inspireerde,13,De grootmoeder inspireerde de grootvader omdat hij bij het zien van onrecht altijd op haar kon rekenen.,77,0,m,0.8483628631
+ic_mismatch,intimideerde,13,De grootvader intimideerde de grootmoeder omdat hij in de meeste gevallen dan zijn zin krijgt.,77,1,m,0.360871762
+ic_mismatch,intimideerde,13,De grootmoeder intimideerde de grootvader omdat hij in de meeste gevallen dan toch snel toegeeft.,77,0,m,0.5343899131
+ic_mismatch,irriteerde,13,De grootvader irriteerde de grootmoeder omdat hij op elke bespreking weer andere ideeën opperde.,78,1,m,0.1922706664
+ic_mismatch,irriteerde,13,De grootmoeder irriteerde de grootvader omdat hij op elke bespreking weer andere ideeën moest aanhoren.,78,0,m,0.6372155547
+ic_mismatch,bekende aan,13,De grootvader bekende alles aan de grootmoeder omdat hij per se de waarheid wilde vertellen.,96,1,m,0.4125758708
+ic_mismatch,bekende aan,13,De grootmoeder bekende alles aan de grootvader omdat hij per se de waarheid wilde horen.,96,0,m,0.1720596552
+ic_mismatch,lichtte,13,De grootvader lichtte de grootmoeder op omdat hij de vorige keer een flinke som geld door haar was misgelopen.,87,1,m,0.2862468362
+ic_mismatch,lichtte,13,De grootmoeder lichtte de grootvader op omdat hij de vorige keer een flinke som geld van haar had gestolen.,87,0,m,0.7340359688
+ic_mismatch,loog tegen,13,De grootvader loog tegen de grootmoeder omdat hij de werkelijke reden achter hun problemen te pijnlijk voor haar vond.,78,1,m,0.7519853711
+ic_mismatch,loog tegen,13,De grootmoeder loog tegen de grootvader omdat hij de werkelijke reden achter hun problemen te pijnlijk zou vinden.,78,0,m,0.2093132585
+ic_mismatch,verbaasde,13,De grootvader verbaasde de grootmoeder omdat hij zo een negatieve reactie had gegeven.,82,1,m,0.1418869346
+ic_mismatch,verbaasde,13,De grootmoeder verbaasde de grootvader omdat hij zo een negatieve reactie had gehoord.,82,0,m,0.344641
+ic_mismatch,smeekte,13,De grootvader smeekte de grootmoeder omdat hij ondanks de vele problemen toch veel van haar hield.,83,1,m,0.6821088791
+ic_mismatch,smeekte,13,De grootmoeder smeekte de grootvader omdat hij ondanks de vele problemen toch haar grote liefde was.,83,0,m,0.7444723248
+ic_mismatch,teleurstellen,13,De grootvader stelde de grootmoeder teleur omdat hij toch wel wat meer inzet had kunnen tonen.,96,1,m,0.1111647412
+ic_mismatch,teleurstellen,13,De grootmoeder stelde de grootvader teleur omdat hij toch wel wat meer inzet had willen zien.,96,0,m,0.4107606113
+ic_mismatch,misleidde,13,De grootvader misleidde de grootmoeder omdat hij anders de potentiële nieuwe opdrachtgever zou kwijtraken.,78,1,m,0.3051790893
+ic_mismatch,misleidde,13,De grootmoeder misleidde de grootvader omdat hij anders de potentiële nieuwe opdrachtgever zou wegkapen.,78,0,m,0.457575351
+ic_mismatch,hinderde,13,De grootvader hinderde de grootmoeder omdat hij voor zijn ochtendritueel alle ruimte gebruikte.,91,1,m,0.4135836363
+ic_mismatch,hinderde,13,De grootmoeder hinderde de grootvader omdat hij voor zijn ochtendritueel alle ruimte nodig had.,91,0,m,0.5283736587
+ic_mismatch,fascineerde,13,De grootvader fascineerde de grootmoeder omdat hij een persoon met een sterk karakter bleek te zijn.,100,1,m,0.118900463
+ic_mismatch,fascineerde,13,De grootmoeder fascineerde de grootvader omdat hij een persoon met een sterk karakter altijd interessant vond.,100,0,m,0.6455865502
+ic_mismatch,respecteerde,13,De grootvader respecteerde de grootmoeder omdat hij zowel theoretische als praktische vaardigheden in ruime mate bezat.,5,1,m,0.04559892416
+ic_mismatch,respecteerde,13,De grootmoeder respecteerde de grootvader omdat hij zowel theoretische als praktische vaardigheden in een persoon waardeerde.,5,0,m,0.3991785645
+ic_mismatch,bedankte,13,De grootvader bedankte de grootmoeder omdat hij de afgelopen weken bij de verhuizing zeer vaak onmisbaar was gebleken.,18,1,m,0.108641386
+ic_mismatch,bedankte,13,De grootmoeder bedankte de grootvader omdat hij de afgelopen weken bij de verhuizing haar hulp zeer gewaardeerd had.,18,0,m,0.2452031076
+ic_mismatch,verafschuwde,13,De grootvader verafschuwde de grootmoeder omdat hij werkelijk altijd domme en botte opmerkingen tegen haar maakte.,14,1,m,0.3573138416
+ic_mismatch,verafschuwde,13,De grootmoeder verafschuwde de grootvader omdat hij werkelijk altijd domme en botte opmerkingen ruzie van haar hoorde.,14,0,m,0.4319188595
+ic_mismatch,hield van,13,De grootvader hield van de grootmoeder omdat hij altijd zichzelf en ontzettend vrolijk was in haar aanwezigheid.,14,1,m,0.217504859
+ic_mismatch,hield van,13,De grootmoeder hield van de grootvader omdat hij altijd zichzelf en ontzettend vrolijk bij haar kon zijn.,14,0,m,0.8943133354
+ic_mismatch,troostte,13,De grootvader troostte de grootmoeder omdat hij na het horen van de uitslag toch wel erg teleurgesteld had gereageerd.,9,1,m,0.07513405383
+ic_mismatch,troostte,13,De grootmoeder troostte de grootvader omdat hij na het horen van de uitslag zag hoe moeilijk ze het had.,9,0,m,0.2999080122
+ic_mismatch,strafte,13,De grootvader strafte de grootmoeder omdat hij deze week een zeer vervelende schooljongen was.,5,1,m,0.273459971
+ic_mismatch,strafte,13,De grootmoeder strafte de grootvader omdat hij deze week een zeer vervelende schoolmeester was.,5,0,m,0.8024029136
+ic_mismatch,bekritiseerde,13,De grootvader bekritiseerde de grootmoeder omdat hij de hele tijd alle moeilijke beslissingen aan haar over liet.,0,1,m,0.0667527318
+ic_mismatch,bekritiseerde,13,De grootmoeder bekritiseerde de grootvader omdat hij de hele tijd alle moeilijke beslissingen helemaal alleen moest nemen.,0,0,m,0.7793346047
+ic_mismatch,feliciteerde,13,De grootvader feliciteerde de grootmoeder omdat hij na zo’n goed gespeelde finale een schouderklopje zeker wel verdiende.,5,1,m,0.05352581665
+ic_mismatch,feliciteerde,13,De grootmoeder feliciteerde de grootvader omdat hij na zo’n goed gespeelde finale een schouderklopje wel terecht vond.,5,0,m,0.3971045017
+ic_mismatch,minachtte,13,De grootvader minachtte de grootmoeder omdat hij na al die jaren les nog steeds geen vooruitgang boekte.,0,1,m,0.1023873836
+ic_mismatch,minachtte,13,De grootmoeder minachtte de grootvader omdat hij na al die jaren les nog steeds geen vooruitgang zag.,0,0,m,0.3710509241
+ic_mismatch,benijdde,13,De grootvader benijdde de grootmoeder omdat hij de zo fel begeerde mountainbike wel had gekregen.,0,1,m,0.1677407175
+ic_mismatch,benijdde,13,De grootmoeder benijdde de grootvader omdat hij de zo fel begeerde mountainbike niet had gekregen.,0,0,m,0.5663770437
+ic_mismatch,prees,13,De grootvader prees de grootmoeder omdat hij weer een zeer goede prestatie voor de camera had neergezet.,4,1,m,0.006668669637
+ic_mismatch,prees,13,De grootmoeder prees de grootvader omdat hij weer een zeer goede prestatie van haar had gezien.,4,0,m,0.7825796008
+ic_mismatch,complimenteerde,13,De grootvader complimenteerde de grootmoeder omdat hij alles zo efficient en snel geregeld had.,4,1,m,0.1166667417
+ic_mismatch,complimenteerde,13,De grootmoeder complimenteerde de grootvader omdat hij alles zo efficiënt en snel geregeld vond.,4,0,m,0.3717020452
+ic_mismatch,stelde verantwoordelijk,13,De grootvader stelde de grootmoeder verantwoordelijk omdat hij het financieel beleid van begin af aan had tegengewerkt.,9,1,m,0.07452346385
+ic_mismatch,stelde verantwoordelijk,13,De grootmoeder stelde de grootvader verantwoordelijk omdat hij het financieel beleid van begin af aan had afgekeurd.,9,0,m,0.3297355175
+ic_mismatch,haatte,13,De grootvader haatte de grootmoeder omdat hij zo veel achterbakse en vuile streken had uitgehaald.,4,1,m,0.06171169132
+ic_mismatch,haatte,13,De grootmoeder haatte de grootvader omdat hij zo veel achterbakse en vuile streken had moeten incasseren.,4,0,m,0.6848057508
+ic_mismatch,ontsloeg,13,De grootvader ontsloeg de grootmoeder omdat hij nu eenmaal niet genoeg vertrouwen van de leiding had.,4,1,m,0.1872846782
+ic_mismatch,ontsloeg,13,De grootmoeder ontsloeg de grootvader omdat hij nu eenmaal niet genoeg vertrouwen in haar capaciteiten had.,4,0,m,0.2597853839
+ic_mismatch,bewonderde,13,De grootvader bewonderde de grootmoeder omdat hij een groot talent voor beeldhouwen had laten zien.,0,1,m,0.01038030721
+ic_mismatch,bewonderde,13,De grootmoeder bewonderde de grootvader omdat hij een groot talent voor beeldhouwen in haar had herkend.,0,0,m,0.7155697942
+ic_mismatch,klaagde,13,De grootvader klaagde de grootmoeder aan omdat hij een grote som geld van het bedrijf verduisterd bleek te hebben.,9,1,m,0.2207422704
+ic_mismatch,klaagde,13,De grootmoeder klaagde de grootvader aan omdat hij een grote som geld van het bedrijf tegoed bleek te hebben.,9,0,m,0.4539870322
+ic_mismatch,vreesde,13,De grootvader vreesde de grootmoeder omdat hij door vele jaren van ervaring meer kans had.,0,1,m,0.01953963563
+ic_mismatch,vreesde,13,De grootmoeder vreesde de grootvader omdat hij door vele jaren van ervaring haar klasse zag.,0,0,m,0.1964086592
+ic_mismatch,aanbad,13,De grootvader aanbad de grootmoeder omdat hij als een echte Griekse god zo vaak al haar wensen had vervuld.,14,1,m,0.2907771468
+ic_mismatch,aanbad,13,De grootmoeder aanbad de grootvader omdat hij als een echte Griekse god zo vaak viel voor de dochters van Zeus.,14,0,m,0.8615214825
+ic_mismatch,waardeerde,13,De grootvader waardeerde de grootmoeder omdat hij als wetenschapper altijd goede feedback aan haar gaf.,0,1,m,0.4890096188
+ic_mismatch,waardeerde,13,De grootmoeder waardeerde de grootvader omdat hij als wetenschapper altijd goede feedback van haar kreeg.,0,0,m,0.8056153059

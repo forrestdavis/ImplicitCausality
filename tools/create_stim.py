@@ -692,9 +692,78 @@ for pair in pairs:
             sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
             sent3 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
                 
-        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
         #print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
-        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
         #print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
 
+    count += 1
+
+#For BERT Dutch
+verbs = open('nl_IC_verbs', 'r')
+bias = open('nl_IC_bias', 'r')
+
+data = {}
+for line in verbs:
+    line = line.strip()
+    b = bias.readline().strip()
+    #skip over out of vocab IC
+    data[line] = b
+
+verbs.close()
+bias.close()
+
+#gender mismatch
+pairs = []
+with open('nl_gender_pairs', 'r') as f:
+#with open('gender_pairs', 'r') as f:
+    for line in f:
+        line = line.strip().split()
+        pairs.append(line)
+
+frames = []
+with open('nl-stim.csv', 'r') as f:
+    f.readline()
+    for line in f:
+        line = line.strip().split(',')
+        frames.append(line)
+
+count = 0
+for pair in pairs:
+    for index, verb in enumerate(data):
+        bias = data[verb]
+
+        det_one = pair[0]
+        noun_one = pair[1]
+        det_two = pair[2]
+        noun_two = pair[3]
+
+        frame = frames[index]
+        assert 'SUBJ' in frame[0]
+        assert 'OBJ' in frame[0]
+        sent0 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[1]])
+        #sent0 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[1].replace(' hij ', ' [MASK] ')])
+
+        sent1 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[2]])
+        #sent1 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[2].replace(' hij ', ' [MASK] ')])
+
+        '''
+        if int(bias) > 50:
+            #sent0 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[1]])
+            sent0 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[1].replace(' hij ', ' [MASK] ')])
+
+            #sent1 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[2]])
+            sent1 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[2].replace(' hij ', ' [MASK] ')])
+        else:
+            #sent0 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[1]])
+            sent0 = ' '.join([det_two.capitalize(), frame[0].replace('SUBJ', noun_two).replace('OBJ', det_one + ' '+noun_one), frame[1].replace(' hij ', ' [MASK] ')])
+
+            #sent1 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[2]])
+            sent1 = ' '.join([det_one.capitalize(), frame[0].replace('SUBJ', noun_one).replace('OBJ', det_two + ' '+noun_two), frame[2].replace(' hij ', ' [MASK] ')])
+        '''
+
+                
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'm']) )
+        
     count += 1

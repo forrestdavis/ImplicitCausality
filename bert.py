@@ -74,11 +74,12 @@ def get_genders(results, nlp, lang='es'):
     #m_prob = m_prob/t_prob
     return m_prob, f_prob
 
-def get_BERT_scores(sents, model, he, she, topk=10):
+def get_BERT_scores(sents, model, he, she=None, topk=10):
 
     tokenizer = AutoTokenizer.from_pretrained(model)
     he_token = tokenizer.encode(he)[-2]
-    she_token = tokenizer.encode(she)[-2]
+    if she:
+        she_token = tokenizer.encode(she)[-2]
 
     unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
     scores = []
@@ -91,12 +92,13 @@ def get_BERT_scores(sents, model, he, she, topk=10):
             he_result = list(filter(lambda x: x['token'] == he_token, result))[0]['score']
         except:
             he_result = 0
-        try:
-            she_result = list(filter(lambda x: x['token'] == she_token, result))[0]['score']
-        except:
-            she_result = 0
         scores.append(he_result)
-        scores.append(she_result)
+        if she:
+            try:
+                she_result = list(filter(lambda x: x['token'] == she_token, result))[0]['score']
+            except:
+                she_result = 0
+            scores.append(she_result)
 
     return scores
 
