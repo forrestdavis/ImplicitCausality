@@ -449,7 +449,6 @@ for pair in pairs:
         print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
         print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
     count += 1
-'''
 for pair in pairs:
     for verb in data:
         bias = data[verb]
@@ -485,7 +484,9 @@ for pair in pairs:
         print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
         print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
     count += 1
+'''
 
+'''
 #gender match
 pairs = []
 with open('same_gender_pairs', 'r') as f:
@@ -510,8 +511,190 @@ for x in range(len(pairs)):
         else:
             sent0 = ' '.join(['The', pair[0], verb, 'the', pair[1], 'because she'])
             sent1 = ' '.join(['The', pair[1], verb, 'the', pair[0], 'because she'])
-        '''
         print(','.join(['ic_match', verb, str(count), sent0, bias, '0', gender]) )
         print(','.join(['ic_match', verb, str(count), sent1, bias, '0', gender]) )
-        '''
+    count += 1
+'''
+
+#For BERT Italian
+verbs = open('it_IC_verbs', 'r')
+bias = open('it_IC_bias', 'r')
+
+data = {}
+for line in verbs:
+    line = line.strip()
+    b = bias.readline().strip()
+    #skip over out of vocab IC
+    data[line] = b
+
+verbs.close()
+bias.close()
+
+#gender mismatch
+pairs = []
+with open('it_gender_pairs', 'r') as f:
+#with open('gender_pairs', 'r') as f:
+    for line in f:
+        line = line.strip().split()
+        pairs.append(line)
+
+count = 0
+for pair in pairs:
+    for verb in data:
+        bias = data[verb]
+
+        det_one = pair[0]
+        noun_one = pair[1]
+        det_two = pair[2]
+        noun_two = pair[3]
+        #context_l = 'a causa del tipo di persona che'
+        #context_r = 'è.'
+        context_l = 'perché è'
+        context_r = '.'
+
+        if verb.split(' ')[-1] == 'di':
+            verb = ' '.join(verb.split(' ')[:-1])
+
+            if "'" in det_one:
+                subj = ''.join([det_one, noun_one])
+            else:
+                subj = ' '.join([det_one, noun_one])
+
+            if det_two == 'la':
+                prep = 'della'
+            if det_two == "l'":
+                prep = "dell'"
+
+            if "'" in prep:
+                obj = ''.join([prep, noun_two])
+            else:
+                obj = ' '.join([prep, noun_two])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent1 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent1 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+
+            if "'" in det_two:
+                subj = ''.join([det_two, noun_two])
+            else:
+                subj = ' '.join([det_two, noun_two])
+
+            if det_one == 'il':
+                prep = 'del'
+            if det_one == "l'":
+                prep = "dell'"
+            if det_one == 'lo':
+                prep = "dello"
+
+            if "'" in prep:
+                obj = ''.join([prep, noun_one])
+            else:
+                obj = ' '.join([prep, noun_one])
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent3 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent3 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+                
+        elif verb.split(' ')[-1] == 'a':
+            verb = ' '.join(verb.split(' ')[:-1])
+
+            if "'" in det_one:
+                subj = ''.join([det_one, noun_one])
+            else:
+                subj = ' '.join([det_one, noun_one])
+
+            if det_two == 'la':
+                prep = 'alla'
+            if det_two == "l'":
+                prep = "all''"
+
+            if "'" in prep:
+                obj = ''.join([prep, noun_two])
+            else:
+                obj = ' '.join([prep, noun_two])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent1 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent1 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+
+            if "'" in det_two:
+                subj = ''.join([det_two, noun_two])
+            else:
+                subj = ' '.join([det_two, noun_two])
+
+            if det_one == 'il':
+                prep = 'al'
+            if det_one == "l'":
+                prep = "all'"
+            if det_one == 'lo':
+                prep = "allo"
+
+            if "'" in prep:
+                obj = ''.join([prep, noun_one])
+            else:
+                obj = ' '.join([prep, noun_one])
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent3 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent3 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+
+        else:
+            if "'" in det_one:
+                subj = ''.join([det_one, noun_one])
+            else:
+                subj = ' '.join([det_one, noun_one])
+
+            if "'" in det_two:
+                obj = ''.join([det_two, noun_two])
+            else:
+                obj = ' '.join([det_two, noun_two])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent1 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent0 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent0 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent1 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+
+            if "'" in det_two:
+                subj = ''.join([det_two, noun_two])
+            else:
+                subj = ' '.join([det_two, noun_two])
+
+            if "'" in det_one:
+                obj = ''.join([det_one, noun_one])
+            else:
+                obj = ' '.join([det_one, noun_one])
+
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, 'egli', context_r])
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]', context_r])
+            #sent3 = ' '.join([subj, verb, obj, context_l, 'ella', context_r])
+
+            #sent2 = ' '.join([subj, verb, obj, context_l, '[+male]'+context_r])
+            sent2 = ' '.join([subj, verb, obj, context_l, '[MASK]'+context_r])
+            sent3 = ' '.join([subj, verb, obj, context_l, '[+female]'+context_r])
+                
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
+
     count += 1

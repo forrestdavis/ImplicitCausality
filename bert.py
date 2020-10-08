@@ -5,13 +5,13 @@ warnings.filterwarnings("ignore")
 import torch
 import torch.nn as nn
 import numpy as np
-from transformers import BertTokenizer, BertModel
+from transformers import AutoTokenizer, BertTokenizer, BertModel
 from transformers import pipeline
 import spacy 
 
 device = torch.device("cuda:1")
 
-def load_data(fname):
+def load_data(fname, mask=None, lower=True):
 
     sents = []
 
@@ -25,32 +25,44 @@ def load_data(fname):
                 idx = x
 
         for line in f:
-            sent = line.strip().split(',')[idx].lower()
-            sent = sent.replace('[mask]', '[MASK]')
+            sent = line.strip().split(',')[idx]
+            if lower:
+                sent = sent.lower()
+
+            if mask:
+                sent = sent.replace('[mask]', mask)
+            else:
+                sent = sent.replace('[mask]', '[MASK]')
             #sent = sent.replace('there', "outside")
             sents.append(sent)
 
     return sents
 
-def get_BERT_cont(sents, model, topk=1000):
-    tokenizer = BertTokenizer.from_pretrained(model)
-    unmasker = pipeline('fill-mask', model=model, tokenizer=tokenizer, framework='pt', topk=topk)
+def get_BERT_cont(sents, model, lang='es', topk=100):
+    tokenizer = AutoTokenizer.from_pretrained(model)
+    unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
     scores = []
-    nlp = spacy.load('es_core_news_lg')
+    if lang == 'es':
+        nlp = spacy.load('es_core_news_lg')
+    else:
+        nlp = spacy.load('it_core_news_sm')
     for sent in sents:
         result = unmasker(sent)
-        male_score, female_score = get_genders(result, nlp)
+        male_score, female_score = get_genders(result, nlp, lang)
         scores.append(male_score)
         scores.append(female_score)
     return scores
 
-def get_genders(results, nlp):
+def get_genders(results, nlp, lang='es'):
 
     f_prob = 0
     m_prob = 0
     for result in results:
         score = result['score']
-        sent = ' '.join(result['sequence'].split(' ')[1:-1])
+        if lang == 'es':
+            sent = ' '.join(result['sequence'].split(' ')[1:-1])
+        else:
+            sent = ' '.join(result['sequence'].replace('.', '. ').split(' ')[1:-1])
         parsed = nlp(sent)
         if "Gender=Fem" in parsed[-2].tag_:
             f_prob += score
@@ -64,11 +76,11 @@ def get_genders(results, nlp):
 
 def get_BERT_scores(sents, model, he, she, topk=10):
 
-    tokenizer = BertTokenizer.from_pretrained(model)
+    tokenizer = AutoTokenizer.from_pretrained(model)
     he_token = tokenizer.encode(he)[-2]
     she_token = tokenizer.encode(she)[-2]
 
-    unmasker = pipeline('fill-mask', model=model, tokenizer=tokenizer, framework='pt', topk=topk)
+    unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
     scores = []
     for sent in sents:
         result = unmasker(sent)
@@ -209,8 +221,14 @@ if __name__ == "__main__":
     stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
     sents = load_data(stim_file)
     #print(sents[:2])
+    #English
     #model = 'bert-base-uncased'
-    model = "dccuchile/bert-base-spanish-wwm-uncased"
+    #Italian
+    #model="Musixmatch/umberto-wikipedia-uncased-v1",
+    #Spanish
+    #model = "dccuchile/bert-base-spanish-wwm-uncased"
+    #Dutch
+    #model = "wietsedv/bert-base-dutch-cased"
 
     #scores = get_BERT_scores(sents, model, 'he', 'she')
     #scores = get_BERT_scores(sents, model, 'él', 'ella')
