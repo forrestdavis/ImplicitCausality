@@ -3,7 +3,7 @@
 Project for exploring the acquisiton of discourse structure by RNN LMs and Transformers. The code centers on an exploration of the well studied 
 phenomenon of implicit causality (IC) in verbs ([Catherine Garvey & Alfonso Caramazza, 1974](www.jstor.org/stable/4177835)). 
 We explored the influence of IC on reference and syntax. For reference, 
-we utilized the experimental stimuli from [Ferstl et al. (2010)](https://link.springer.com/article/10.3758/s13428-010-0023-2), 
+we utilized the experimental stimuli from [Ferstl et al. (2011)](https://link.springer.com/article/10.3758/s13428-010-0023-2), 
 which scored 305 verbs on IC bias for pronimal continuations. 
 For syntax, we utilized the experimental stimuli from [Rohde et al. (2011)](https://www.sciencedirect.com/science/article/abs/pii/S0010027710002532?via%3Dihub), which looked 
 at sentence completion and self-paced reading. 
