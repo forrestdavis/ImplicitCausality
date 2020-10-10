@@ -547,6 +547,9 @@ pronoun_surp$hasIC <- as.numeric(pronoun_surp$hasIC)
 bert_en_score$hasIC <- bert_en_score$bias > 0
 bert_en_score$hasIC <- as.numeric(bert_en_score$hasIC)
 
+bert_it_score$item <- as.factor(bert_it_score$item)
+bert_es_score$item <- as.factor(bert_es_score$item)
+
 bert_es_score$hasIC <- as.numeric(bert_es_score$bias>50)
 bert_it_score$hasIC <- as.numeric(bert_it_score$bias>50)
 bert_nl_score$hasIC <- as.numeric(bert_nl_score$bias>50)
@@ -572,10 +575,17 @@ summary(bert_pronoun_model)
 anova(bert_pronoun_model)
 
 bert_es_pronoun_model <- lmer(score ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
-summary(bert_pronoun_model)
-anova(bert_pronoun_model)
+summary(bert_es_pronoun_model)
+anova(bert_es_pronoun_model)
 
-bert_it_pronoun_model <- lmer(score ~ hasIC*isHigh*gender + (1|item), data=bert_it_score)
+es_obj <- subset(bert_it_score, isHigh!='0' &gender=='m')
+es_obj_IC <- subset(es_obj, bias <= 50)
+es_obj_nonIC <- subset(es_obj, bias > 50)
+
+
+t.test(es_obj_IC$score_raw, es_obj_nonIC$score_raw)
+
+bert_it_pronoun_model <- lmer(score_gil ~ hasIC*isHigh*gender + (1|item), data=bert_it_score)
 summary(bert_it_pronoun_model)
 anova(bert_it_pronoun_model)
 
@@ -704,6 +714,20 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=interaction(
 bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_raw, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "UmBERTo-Italian Probability (Adjective)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GilBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GilBERTo-Italian Probability (Adjective)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
