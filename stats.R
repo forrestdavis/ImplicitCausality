@@ -10,6 +10,7 @@ rt_surp <- read.csv(paste(path, "results/Reading_Time_surp.csv", sep=''))
 story_data <-read.csv(paste(path, "results/Story_Completion_score.csv", sep=''))
 pronoun_surp <- read.csv(paste(path, "results/IC_mismatch_surp.csv", sep=''))
 
+
 tf_who_sim <- read.csv(paste(path, "results/tf_who_flat_SIM.csv", sep=''))
 tf_were_sim <- read.csv(paste(path, "results/tf_were_flat_SIM.csv", sep=''))
 
@@ -23,6 +24,10 @@ tf_pronoun_sim <- read.csv(paste(path, "results/tf_pronoun_flat_SIM.csv", sep=''
 lstm_pronoun_sim <- read.csv(paste(path, "results/LSTM_pronoun_flat_SIM.csv", sep=''))
 gpt_pronoun_sim <- read.csv(paste(path,"results/gpt_pronoun_flat_SIM.csv", sep=''))
 
+bert_en_score <- read.csv(paste(path, "results/IC_mismatch_BERT.csv", sep=''))
+bert_es_score <- read.csv(paste(path, "results/IC_mismatch_ES.csv", sep=''))
+bert_es_score <- read.csv(paste(path, "results/IC_mismatch_ES_cont.csv", sep=''))
+
 #add categorical IC variable
 pronoun_surp$hasIC <- pronoun_surp$bias>0
 pronoun_surp$hasIC <- as.numeric(pronoun_surp$hasIC)
@@ -35,6 +40,8 @@ tf_pronoun_sim$hasIC <- as.numeric(tf_pronoun_sim$hasIC)
 
 gpt_pronoun_sim$hasIC <- gpt_pronoun_sim$bias > 0
 gpt_pronoun_sim$hasIC <- as.numeric(gpt_pronoun_sim$hasIC)
+
+bert_en_score$hasIC <- bert_en_score$bias>0
 
 #########################
 # Completion Surp Stats
@@ -86,7 +93,7 @@ lstm_rt <- ggplot(rt_surp, aes(x=hasIC, y=LSTM_avg_surp, fill=isHIGH)) +
   labs(x ="Verb Type", y = "LSTM Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                        labels=c("non-IC", "IC")) + theme(legend.title = element_text(size=20), legend.text = element_text(size=20))+
-  scale_fill_manual(values = c("#999999", "white"), name= "Agreement Location", labels=c("Low", "High"))
+  scale_fill_manual(values = c("gold3", "#9999CC"), name= "Agreement Location", labels=c("Low", "High"))
 
 legend <- get_legend(lstm_rt)
 
@@ -98,7 +105,7 @@ gpt_rt <- ggplot(rt_surp, aes(x=hasIC, y=gpt_surp, fill=isHIGH)) +
   labs(x ="Verb Type", y = "GPT-2 XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position='none') +
-  scale_fill_manual(values = c("#999999", "white"), name= "Type", labels=c("Low", "High"))
+  scale_fill_manual(values = c("gold3", "#9999CC"), name= "Type", labels=c("Low", "High"))
 
 # TF-XL
 tf_rt <- ggplot(rt_surp, aes(x=hasIC, y=tf_surp, fill=isHIGH)) +
@@ -106,7 +113,7 @@ tf_rt <- ggplot(rt_surp, aes(x=hasIC, y=tf_surp, fill=isHIGH)) +
   labs(x ="Verb Type", y = "TF-XL Surprisal (RC verb)") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + theme(legend.position = 'none') +
-  scale_fill_manual(values = c("#999999", "white"), name= "Type", labels=c("Low", "High"))
+  scale_fill_manual(values = c("gold3", "#9999CC"), name= "Type", labels=c("Low", "High"))
 
 # Humans
 set.seed(23)
@@ -126,7 +133,7 @@ human_plot <- ggplot(human, aes(x=hasIC, y=surp, fill=isHigh)) +
   labs(x ="Verb Type", y = "Predicted Human Effect") + 
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("non-IC", "IC")) + 
-  scale_fill_manual(values = c("#999999", "white"), name= "Type", labels=c("Low", "High"))
+  scale_fill_manual(values = c("gold3", "#9999CC"), name= "Type", labels=c("Low", "High"))
 
 human_plot <- human_plot + theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
 
@@ -143,6 +150,7 @@ title <- ggdraw() +
     "Relative Clause Attachment with Implicit Causality RC Verb Surprisal",
     fontface = 'bold',
     x = 0,
+    size=20,
     hjust = 0
   ) +
   theme(
@@ -527,6 +535,11 @@ texreg(rt_sim_gpt_model, digits=4)
 pronoun_surp$hasIC <- pronoun_surp$bias > 0
 pronoun_surp$hasIC <- as.numeric(pronoun_surp$hasIC)
 
+bert_en_score$hasIC <- bert_en_score$bias > 0
+bert_en_score$hasIC <- as.numeric(bert_en_score$hasIC)
+
+bert_es_score$hasIC <- as.numeric(bert_es_score$bias>50)
+
 lstm_pronoun_model <- lmer(LSTM_avg_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(lstm_pronoun_model)
 anova(lstm_pronoun_model)
@@ -540,6 +553,16 @@ texreg(tf_pronoun_model, digits=4)
 gpt_pronoun_model <- lmer(gpt_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(gpt_pronoun_model)
 anova(gpt_pronoun_model)
+texreg(gpt_pronoun_model, digits=4)
+
+bert_pronoun_model <- lmer(score_negative ~ hasIC*isHigh*gender + (1|item), data=bert_en_score)
+summary(bert_pronoun_model)
+anova(bert_pronoun_model)
+texreg(gpt_pronoun_model, digits=4)
+
+bert_es_pronoun_model <- lmer(score ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
+summary(bert_pronoun_model)
+anova(bert_pronoun_model)
 texreg(gpt_pronoun_model, digits=4)
 
 pronoun_HIGH <- subset(pronoun_surp, isHigh == 1)
@@ -579,7 +602,17 @@ t.test(pronoun_LOW_f_IC$gpt_surp, pronoun_LOW_f_nonIC$gpt_surp)
 
 pronoun_surp$isHigh <- factor(pronoun_surp$isHigh)
 pronoun_surp$gender <- factor(pronoun_surp$gender)
+pronoun_surp$hasIC <- as.numeric(pronoun_surp$bias > 0)
 pronoun_surp$hasIC <- factor(pronoun_surp$hasIC)
+
+bert_en_score$isHigh <- factor(bert_en_score$isHigh)
+bert_en_score$gender <- factor(bert_en_score$gender)
+bert_en_score$hasIC <- factor(bert_en_score$hasIC)
+
+bert_es_score$hasIC <- as.numeric(bert_es_score$bias>50)
+bert_es_score$isHigh <- factor(bert_es_score$isHigh)
+bert_es_score$gender <- factor(bert_es_score$gender)
+bert_es_score$hasIC <- factor(bert_es_score$hasIC)
 
 # LSTM
 lstm_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=LSTM_avg_surp, fill=interaction(isHigh, gender))) +
@@ -611,6 +644,29 @@ tf_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=tf_surp, fill=interaction(isHi
     scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
   
 tf_pronoun <- tf_pronoun + theme(legend.position='none') 
+
+# BERT
+bert_pronoun <- ggplot(bert_en_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BETO-Spanish Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_1000, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BETO-Spanish Probability (Adjective)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
   
 # Humans
 set.seed(23)
