@@ -3,7 +3,7 @@
 Project for exploring the acquisiton of discourse structure by RNN LMs and Transformers. The code centers on an exploration of the well studied 
 phenomenon of implicit causality (IC) in verbs ([Catherine Garvey & Alfonso Caramazza, 1974](www.jstor.org/stable/4177835)). 
 We explored the influence of IC on reference and syntax. For reference, 
-we utilized the experimental stimuli from [Ferstl et al. (2010)](https://link.springer.com/article/10.3758/s13428-010-0023-2), 
+we utilized the experimental stimuli from [Ferstl et al. (2011)](https://link.springer.com/article/10.3758/s13428-010-0023-2), 
 which scored 305 verbs on IC bias for pronimal continuations. 
 For syntax, we utilized the experimental stimuli from [Rohde et al. (2011)](https://www.sciencedirect.com/science/article/abs/pii/S0010027710002532?via%3Dihub), which looked 
 at sentence completion and self-paced reading. 
@@ -24,7 +24,7 @@ Requires the following python packages (available through pip):
 * [pytorch](https://pytorch.org/) >= v1.0.0
 * [scipy](https://www.scipy.org)
 * [numpy](https://numpy.org)
-* [transformers](https://github.com/huggingface/transformers)
+* [transformers](https://github.com/huggingface/transformers) = 2.11.0
 * [spaCy](https://spacy.io) v2.2.4
 
 From spaCy you need the pretrained English model "en_core_web_sm":
@@ -33,7 +33,7 @@ From spaCy you need the pretrained English model "en_core_web_sm":
 
 ## Usage
 
-To recreate experiments, download the LSTM models from Zenodo and
+To recreate experiments, download the [LSTM models](https://doi.org/10.5281/zenodo.4053572) from Zenodo and
  uncomment the relevant code block at the bottom of main.py. Pre-trained
 transformer models are downloaded via HuggingFace's interface. 
 
@@ -55,3 +55,4 @@ The vocab for the LSTM LMs is given in wikitext103_vocab (top 50K words).
 If you have any questions feel free to email me :)
 
 ## References
+Forrest Davis and Marten van Schijndel. "Discourse structure interacts with reference but not syntax in neural language models". In Proceedings of the 2020 Conference on Computational Natural Language Learning (CoNLL 2020). 2020.
