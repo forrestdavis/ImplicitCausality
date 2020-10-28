@@ -36,6 +36,8 @@ bert_it_score <- read.csv(paste(path, "results/IC_mismatch_IT_cont.csv", sep='')
 
 bert_nl_score <- read.csv(paste(path, "results/IC_mismatch_NL.csv", sep=''))
 
+bert_zh_score <- read.csv(paste(path, "results/IC_mismatch_ZH.csv", sep=''))
+
 
 #add categorical IC variable
 pronoun_surp$hasIC <- pronoun_surp$bias>0
@@ -549,11 +551,12 @@ bert_en_score$hasIC <- as.numeric(bert_en_score$hasIC)
 
 bert_it_score$item <- as.factor(bert_it_score$item)
 bert_es_score$item <- as.factor(bert_es_score$item)
+bert_zh_score$item <- as.factor(bert_zh_score$item)
 
 bert_es_score$hasIC <- as.numeric(bert_es_score$bias>50)
 bert_it_score$hasIC <- as.numeric(bert_it_score$bias>50)
 bert_nl_score$hasIC <- as.numeric(bert_nl_score$bias>50)
-
+bert_zh_score$hasIC <- as.numeric(bert_zh_score$bias>50)
 
 lstm_pronoun_model <- lmer(LSTM_avg_surp ~ hasIC*isHigh*gender + (1|item), data=pronoun_surp)
 summary(lstm_pronoun_model)
@@ -574,24 +577,36 @@ bert_pronoun_model <- lmer(score_negative ~ hasIC*isHigh*gender + (1|item), data
 summary(bert_pronoun_model)
 anova(bert_pronoun_model)
 
-bert_es_pronoun_model <- lmer(score ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
+bert_es_pronoun_model <- lmer(score_mbert ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
 summary(bert_es_pronoun_model)
 anova(bert_es_pronoun_model)
 
-es_obj <- subset(bert_it_score, isHigh!='0' &gender=='m')
+es_obj <- subset(bert_it_score, isHigh!='0')# &gender=='m')
 es_obj_IC <- subset(es_obj, bias <= 50)
 es_obj_nonIC <- subset(es_obj, bias > 50)
 
 
 t.test(es_obj_IC$score_raw, es_obj_nonIC$score_raw)
 
-bert_it_pronoun_model <- lmer(score_gil ~ hasIC*isHigh*gender + (1|item), data=bert_it_score)
+bert_it_pronoun_model <- lmer(score_mbert ~ hasIC*isHigh*gender + (1|item), data=bert_it_score)
 summary(bert_it_pronoun_model)
 anova(bert_it_pronoun_model)
 
 bert_nl_pronoun_model <- lmer(score ~ hasIC*isHigh + (1|item), data=bert_nl_score)
 summary(bert_nl_pronoun_model)
 anova(bert_nl_pronoun_model)
+
+bert_zh_pronoun_model <- lmer(score ~ hasIC*isHigh*gender + (1|item), data=bert_zh_score)
+summary(bert_zh_pronoun_model)
+anova(bert_zh_pronoun_model)
+
+zh_obj <- subset(bert_zh_score, isHigh!='1' &gender=='m')
+zh_obj_IC <- subset(zh_obj, bias <= 50)
+zh_obj_nonIC <- subset(zh_obj, bias > 50)
+
+
+t.test(zh_obj_IC$score, zh_obj_nonIC$score)
+
 
 pronoun_HIGH <- subset(pronoun_surp, isHigh == 1)
 pronoun_LOW <- subset(pronoun_surp, isHigh == 0)
@@ -651,6 +666,12 @@ bert_nl_score$isHigh <- factor(bert_nl_score$isHigh)
 bert_nl_score$gender <- factor(bert_nl_score$gender)
 bert_nl_score$hasIC <- factor(bert_nl_score$hasIC)
 
+bert_zh_score$hasIC <- as.numeric(bert_zh_score$bias>50)
+bert_zh_score$isHigh <- factor(bert_zh_score$isHigh)
+bert_zh_score$gender <- factor(bert_zh_score$gender)
+bert_zh_score$hasIC <- factor(bert_zh_score$hasIC)
+
+
 # LSTM
 lstm_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=LSTM_avg_surp, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 6)+ theme(text = element_text(size=18)) + 
@@ -704,6 +725,14 @@ bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_1000, fill=interac
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_mbert, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "mBERT-Spanish Probability (Adjective)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+
 bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "UmBERTo-Italian Probability (Pronoun)") +
@@ -732,6 +761,13 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=interact
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_mbert, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "mBERT-Italian Probability (Adjective)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
 
 bert_nl_pronoun <- ggplot(bert_nl_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
@@ -739,6 +775,13 @@ bert_nl_pronoun <- ggplot(bert_nl_score, aes(x=hasIC, y=score, fill=interaction(
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("m+Obj", "m+Subj"))
+
+bert_zh_pronoun <- ggplot(bert_zh_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT-Chinese Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
 
 

@@ -49,7 +49,6 @@ def get_BERT_cont(sents, model, lang='es', topk=100, feat='gender'):
     for sent in sents:
         result = unmasker(sent)
         if feat == 'gender':
-            print('gender')
             male_score, female_score = get_genders(result, nlp, lang)
             scores.append(male_score)
             scores.append(female_score)
@@ -248,21 +247,37 @@ if __name__ == "__main__":
     #stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
     #sents = load_data(stim_file)
 
+    #multilingual
+    model = 'bert-base-multilingual-uncased'
+
     #English
     #model = 'bert-base-uncased'
     #Italian
     #model="Musixmatch/umberto-wikipedia-uncased-v1",
+    stim_file = 'stimuli/IC_mismatch_IT_cont.csv'
+    sents = load_data(stim_file)
+
     #Spanish
     #model = "dccuchile/bert-base-spanish-wwm-uncased"
+    #stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
+    #sents = load_data(stim_file)
+
     #Dutch
     #model = "wietsedv/bert-base-dutch-cased"
     #Chinese
+    '''
     stim_file = 'stimuli/IC_mismatch_ZH.csv'
     model = "bert-base-chinese"
     sents = load_data(stim_file)
     he = '他'
     she = '她'
+    '''
 
+    '''
     scores = get_BERT_scores(sents, model, he, she)
+    for score in scores:
+        print(score)
+    '''
+    scores = get_BERT_cont(sents, model, 'it')
     for score in scores:
         print(score)
