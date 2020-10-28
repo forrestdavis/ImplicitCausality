@@ -38,7 +38,7 @@ def load_data(fname, mask=None, lower=True):
 
     return sents
 
-def get_BERT_cont(sents, model, lang='es', topk=100):
+def get_BERT_cont(sents, model, lang='es', topk=100, feat='gender'):
     tokenizer = AutoTokenizer.from_pretrained(model)
     unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
     scores = []
@@ -48,9 +48,15 @@ def get_BERT_cont(sents, model, lang='es', topk=100):
         nlp = spacy.load('it_core_news_sm')
     for sent in sents:
         result = unmasker(sent)
-        male_score, female_score = get_genders(result, nlp, lang)
-        scores.append(male_score)
-        scores.append(female_score)
+        if feat == 'gender':
+            print('gender')
+            male_score, female_score = get_genders(result, nlp, lang)
+            scores.append(male_score)
+            scores.append(female_score)
+        elif feat == 'num':
+            sg_score, pl_score = get_numbers(result, nlp, lang)
+            scores.append(sg_score)
+            scores.append(pl_score)
     return scores
 
 def get_genders(results, nlp, lang='es'):
@@ -73,6 +79,25 @@ def get_genders(results, nlp, lang='es'):
     #f_prob = f_prob/t_prob
     #m_prob = m_prob/t_prob
     return m_prob, f_prob
+
+def get_numbers(results, nlp, lang='es'):
+
+    sg_prob = 0
+    pl_prob = 0
+
+    for result in results:
+        score = result['score']
+        if lang == 'es':
+            sent = ' '.join(result['sequence'].split(' ')[1:-1])
+        else:
+            sent = ' '.join(result['sequence'].replace('.', '. ').split(' ')[1:-1])
+        parsed = nlp(sent)
+        if 'Number=Sing' in parsed[-3].tag_:
+            sg_prob += score
+        elif 'Number=Plur' in parsed[-3].tag_:
+            pl_prob += score
+
+    return sg_prob, pl_prob
 
 def get_BERT_scores(sents, model, he, she=None, topk=10):
 
@@ -220,9 +245,9 @@ if __name__ == "__main__":
     #sents = ["el hombre alcanzó a la mujer porque estaba [MASK].", "la mujer alcanzó al hombre porque estaba [MASK]."]
     #stim_file = 'stimuli/IC_mismatch_BERT.csv'
     #stim_file = 'stimuli/IC_mismatch_ES.csv'
-    stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
-    sents = load_data(stim_file)
-    #print(sents[:2])
+    #stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
+    #sents = load_data(stim_file)
+
     #English
     #model = 'bert-base-uncased'
     #Italian
@@ -231,11 +256,13 @@ if __name__ == "__main__":
     #model = "dccuchile/bert-base-spanish-wwm-uncased"
     #Dutch
     #model = "wietsedv/bert-base-dutch-cased"
+    #Chinese
+    stim_file = 'stimuli/IC_mismatch_ZH.csv'
+    model = "bert-base-chinese"
+    sents = load_data(stim_file)
+    he = '他'
+    she = '她'
 
-    #scores = get_BERT_scores(sents, model, 'he', 'she')
-    #scores = get_BERT_scores(sents, model, 'él', 'ella')
-    #for score in scores:
-    #    print(score)
-    scores = get_BERT_cont(sents, model)
+    scores = get_BERT_scores(sents, model, he, she)
     for score in scores:
         print(score)

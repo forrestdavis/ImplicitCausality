@@ -763,7 +763,50 @@ for pair in pairs:
         '''
 
                 
-        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
-        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'm']) )
         
+    count += 1
+
+#For BERT Chinese
+verbs = open('zh_IC_verbs', 'r')
+bias = open('zh_IC_bias', 'r')
+
+data = {}
+for line in verbs:
+    line = line.strip()
+    b = bias.readline().strip()
+    #skip over out of vocab IC
+    data[line] = b
+
+verbs.close()
+bias.close()
+
+#gender mismatch
+pairs = []
+with open('zh_gender_pairs', 'r') as f:
+#with open('gender_pairs', 'r') as f:
+    for line in f:
+        if '#' in line:
+            continue
+        line = line.strip().split()
+        pairs.append(line)
+
+count = 0
+for pair in pairs:
+    for index, verb in enumerate(data):
+        bias = data[verb]
+
+        #sent0 = ''.join([pair[0], verb, pair[1],'因为他在那里。'])
+        sent0 = ''.join([pair[0], verb, pair[1],'因为[MASK]在那里。'])
+        #sent1 = ''.join([pair[0], verb, pair[1],'因为她在那里。'])
+        #sent2 = ''.join([pair[1], verb, pair[0],'因为他在那里。'])
+        sent2 = ''.join([pair[1], verb, pair[0],'因为[MASK]在那里。'])
+        #sent3 = ''.join([pair[1], verb, pair[0],'因为她在那里。'])
+
+        print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
+
     count += 1
