@@ -690,9 +690,9 @@ vocabf = 'wikitext103_vocab'
 check_unks(fname, vocabf)
 '''
 
-#fname = "stimuli/IC_mismatch.csv"
+fname = "stimuli/IC_mismatch.csv"
 #fname = "stimuli/Reading_Time.csv"
-fname = "stimuli/Story_Completion.csv"
+#fname = "stimuli/Story_Completion.csv"
 #fname = "stimuli/IC_match.csv"
 
 sents = load_data(fname)
@@ -700,6 +700,7 @@ sents = load_data(fname)
 ###################
 # LSTM LMs Compl  #
 ###################
+'''
 vocabf = 'wikitext103_vocab'
 lm_models = glob.glob('models/*.pt')#[:1]
 lm_models.sort()
@@ -727,6 +728,7 @@ for x in range(len(scores[lm_models[0]])):
     out_str += ','.join(all_scores) + '\n'
 
 print(out_str)
+'''
 
 ###################
 #  LSTM LMs Surp  #
