@@ -55,4 +55,4 @@ The vocab for the LSTM LMs is given in wikitext103_vocab (top 50K words).
 If you have any questions feel free to email me :)
 
 ## References
-Forrest Davis and Marten van Schijndel. "Discourse structure interacts with reference but not syntax in neural language models". In Proceedings of the 2020 Conference on Computational Natural Language Learning (CoNLL 2020). 2020.
+Forrest Davis and Marten van Schijndel. ["Discourse structure interacts with reference but not syntax in neural language models".](https://www.aclweb.org/anthology/2020.conll-1.32/) In Proceedings of the 2020 Conference on Computational Natural Language Learning (CoNLL 2020). 2020.
