@@ -733,7 +733,7 @@ print(out_str)
 ###################
 '''
 vocabf = 'wikitext103_vocab'
-lm_models = glob.glob('models/*.pt')[:2]
+lm_models = glob.glob('models/*.pt')
 lm_models.sort()
 measures = run_lms(sents, vocabf, lm_models)
 
