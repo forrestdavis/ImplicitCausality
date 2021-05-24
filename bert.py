@@ -9,7 +9,7 @@ from transformers import AutoTokenizer, BertTokenizer, BertModel
 from transformers import pipeline
 import spacy 
 
-device = torch.device("cuda:1")
+device = torch.device("cuda:0")
 
 def load_data(fname, mask=None, lower=True):
 
@@ -33,14 +33,15 @@ def load_data(fname, mask=None, lower=True):
                 sent = sent.replace('[mask]', mask)
             else:
                 sent = sent.replace('[mask]', '[MASK]')
-            #sent = sent.replace('there', "outside")
             sents.append(sent)
 
     return sents
 
-def get_BERT_cont(sents, model, lang='es', topk=100, feat='gender'):
-    tokenizer = AutoTokenizer.from_pretrained(model)
+def get_BERT_cont(sents, model, tokenizer_file, lang='es', topk=100, feat='gender'):
+
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_file)
     unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
+    #unmasker = pipeline('fill-mask', model='./finetuning/ProBETO', tokenizer = "dccuchile/bert-base-spanish-wwm-uncased", topk=100)
     scores = []
     if lang == 'es':
         nlp = spacy.load('es_core_news_lg')
@@ -98,14 +99,14 @@ def get_numbers(results, nlp, lang='es'):
 
     return sg_prob, pl_prob
 
-def get_BERT_scores(sents, model, he, she=None, topk=10):
+def get_BERT_scores(sents, model, tokenizer_file, he, she=None, topk=10):
 
-    tokenizer = AutoTokenizer.from_pretrained(model)
+    tokenizer = AutoTokenizer.from_pretrained(tokenizer_file)
     he_token = tokenizer.encode(he)[-2]
     if she:
         she_token = tokenizer.encode(she)[-2]
 
-    unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
+    unmasker = pipeline('fill-mask', model=model, tokenizer=tokenizer_file, framework='pt', topk=topk)
     scores = []
     for sent in sents:
         result = unmasker(sent)
@@ -248,36 +249,74 @@ if __name__ == "__main__":
     #sents = load_data(stim_file)
 
     #multilingual
-    model = 'bert-base-multilingual-uncased'
+    #model = 'bert-base-multilingual-uncased'
+    #tokenizer = 'bert-base-multilingual-uncased'
 
     #English
     #model = 'bert-base-uncased'
+    #model = './finetuning/ProBERT_BASE'
+    #tokenizer = 'bert-base-uncased'
+    #model = './finetuning/ProRoBERTa_BASE'
+    #tokenizer = 'roberta-base'
+    #stim_file = 'stimuli/IC_mismatch_BERT.csv'
+    #sents = load_data(stim_file, '<mask>')
+    #sents = load_data(stim_file)
+    #he = 'he'
+    #she = 'she'
+
     #Italian
-    #model="Musixmatch/umberto-wikipedia-uncased-v1",
-    stim_file = 'stimuli/IC_mismatch_IT_cont.csv'
-    sents = load_data(stim_file)
+    #tokenizer = 'dbmdz/bert-base-italian-uncased'
+    #model = "./finetuning/ProITALIAN"
+    #model = "./finetuning/ProITALIAN_BASE"
+    #model = "./finetuning/ProUmBERTo"
+    #model = "./finetuning/ProUmBERTo_BASE"
+    #tokenizer="Musixmatch/umberto-wikipedia-uncased-v1"
+    #model = "./finetuning/ProGilBERTo"
+    #model = "./finetuning/ProGilBERTo_BASE"
+    #tokenizer = "idb-ita/gilberto-uncased-from-camembert"
+    #stim_file = 'stimuli/IC_mismatch_IT_cont.csv'
+    #stim_file = 'stimuli/IC_mismatch_IT.csv'
+    #sents = load_data(stim_file, '<mask>')
+    #sents = load_data(stim_file)
+    #he = 'lui'
+    #she = 'lei'
 
     #Spanish
-    #model = "dccuchile/bert-base-spanish-wwm-uncased"
+    #model = "./finetuning/ProBETO_BASE"
+    #model = "./finetuning/ProBETO"
+    #tokenizer = "dccuchile/bert-base-spanish-wwm-uncased"
+    tokenizer = "mrm8488/RuPERTa-base"
+    #model = "./finetuning/ProRuPERTa_BASE"
+    model = "./finetuning/ProRuPERTa"
     #stim_file = 'stimuli/IC_mismatch_ES_cont.csv'
+    stim_file = 'stimuli/IC_mismatch_ES.csv'
+    sents = load_data(stim_file, '<mask>')
     #sents = load_data(stim_file)
+    he = 'él'
+    she = 'ella'
 
     #Dutch
     #model = "wietsedv/bert-base-dutch-cased"
+
     #Chinese
-    '''
-    stim_file = 'stimuli/IC_mismatch_ZH.csv'
-    model = "bert-base-chinese"
-    sents = load_data(stim_file)
-    he = '他'
-    she = '她'
-    '''
+    #stim_file = 'stimuli/IC_mismatch_ZH.csv'
+    #model = "bert-base-chinese"
+    #tokenizer = 'hfl/chinese-roberta-wwm-ext'
+    #tokenizer = 'hfl/chinese-bert-wwm-ext'
+    #model = './finetuning/ProCHINESE_BASE'
+    #model = './finetuning/ProROCHINESE_BASE'
+    #tokenizer = "bert-base-chinese"
+    #sents = load_data(stim_file)
+    #he = '他'
+    #she = '她'
+
+    scores = get_BERT_scores(sents, model, tokenizer, he, she)
+    #scores = get_BERT_scores(sents, tokenizer, tokenizer, he, she)
+    for score in scores:
+        print(score)
 
     '''
-    scores = get_BERT_scores(sents, model, he, she)
+    scores = get_BERT_cont(sents, model, tokenizer, 'es')
     for score in scores:
         print(score)
     '''
-    scores = get_BERT_cont(sents, model, 'it')
-    for score in scores:
-        print(score)

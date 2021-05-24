@@ -1,4 +1,5 @@
 from scipy import stats
+import sys
 import spacy
 from tools.utils import *
 import glob
@@ -36,7 +37,7 @@ def check_unks(fname, vocabf):
                     OOV.add(word)
         return OOV
 
-def load_data(fname):
+def load_data(fname, connective=None):
 
     sents = []
 
@@ -51,6 +52,11 @@ def load_data(fname):
 
         for line in f:
             sent = line.strip().split(',')[idx].lower()
+
+            # Replace because with discourse connective
+            if connective:
+                sent = sent.replace('because', connective)
+
             sents.append(sent)
 
     return sents
@@ -108,7 +114,13 @@ def tfxl_IT(sents, tokenizer, model):
 
         #verify no unks
         decoded = tokenizer.decode(encoded)
-        assert decoded == sent
+        try:
+            assert decoded == sent
+        except:
+            try:
+                assert decoded.replace(',', ' ,') == sent
+            except:
+                assert decoded.replace('.', ' .') == sent
 
         #Get model outputs
         outputs = model(input_ids)
@@ -267,14 +279,16 @@ def run_lms(sents, vocab_file, model_files):
     measures = {}
     for model_file in model_files:
         measures[model_file] = []
-        print('testing LSTM LM:', model_file)
+        print('testing LSTM LM:', model_file, file=sys.stderr)
 
         #Problem with diff versions of torch
         #model = m.RNNModel('LSTM', 50002, 400, 400, 2, None, 0.2, tie_weights=True)
-        model = m.RNNModel('LSTM', 50002, 400, 400, 2, None, 0.2, tie_weights=True).to(device)
+        #model = m.RNNModel('LSTM', 50002, 400, 400, 2, None, 0.2, tie_weights=True).to(device)
+        #model = m.RNNModel('LSTM', 50001, 650, 650, 2, None, 0.2, tie_weights=True).to(device)
         with open(model_file, 'rb') as f:
-            loaded_model = torch.load(f, map_location='cpu')
-        model.load_state_dict(loaded_model.state_dict())
+            #loaded_model = torch.load(f, map_location='cpu')
+            model = torch.load(f).to(device)
+        #model.load_state_dict(loaded_model.state_dict())
 
         #Cancel dropout :)
         model.eval()
@@ -286,7 +300,6 @@ def run_lms(sents, vocab_file, model_files):
             #Create corpus wrapper (this is for one hoting data)
             corpus = lm_data.TestSent(data_path, vocab_file, [sent], 
                                         multisent_flag)
-
             #Get one hots
             #sent_ids = corpus.get_data()[0].to(torch.device('cpu'))
             sent_ids = corpus.get_data()[0].to(device)
@@ -311,6 +324,7 @@ def run_lms(sents, vocab_file, model_files):
 
                 surp = float(surps[idx][int(target)].data)
                 metric = (target_word, surp)
+                print(metric)
             measures[model_file].append(metric)
 
     return measures
@@ -695,7 +709,8 @@ fname = "stimuli/IC_mismatch.csv"
 #fname = "stimuli/Story_Completion.csv"
 #fname = "stimuli/IC_match.csv"
 
-sents = load_data(fname)
+#sents = load_data(fname, ', and as a result')
+#sents = load_data(fname, '. <eos>')
 
 ###################
 # LSTM LMs Compl  #
@@ -735,7 +750,8 @@ print(out_str)
 ###################
 '''
 vocabf = 'wikitext103_vocab'
-lm_models = glob.glob('models/*.pt')[:2]
+
+lm_models = glob.glob('models/*.pt')
 lm_models.sort()
 measures = run_lms(sents, vocabf, lm_models)
 
@@ -838,8 +854,10 @@ measures = tfxl_IT(sents, tokenizer, tf_model)
 
 for measure in measures:
     target_word, surp = measure[-1]
-    assert target_word == 'was' or target_word == 'were'
+    assert target_word == 'he' or target_word == 'she'
+    #assert target_word == 'was' or target_word == 'were'
     print(surp)
+
 '''
 ###################
 #Transformers RSA #
@@ -918,8 +936,40 @@ tf_model = GPT2LMHeadModel.from_pretrained('gpt2-xl',
 #turn off learning
 tf_model.zero_grad()
 
-measures = tfxl_IT(sents, tokenizer, tf_model)
+#sents = ['The chef has a yellow onion and a red onion. He chopped the yellow onion. Then, he chopped the banana']
+sents = ['The chef has a red onion and a yellow onion. He chopped the red onion. Then, he chopped the red', 
+            'The chef has a red onion and a yellow onion. He chopped the red onion. Then, he chopped the yellow', 
+            'The chef has a red onion and a yellow onion. He chopped the red onion. Then, he chopped the banana']
 
+sents = ['The chef has a yellow onion and a red onion. He chopped the red and yellow onions. Then, he chopped the red', 
+            'The chef has a yellow onion and a red onion. He chopped the red and yellow onions. Then, he chopped the yellow', 
+            'The chef has a yellow onion and a red onion. He chopped the red and yellow onions. Then, he chopped the banana']
+'''
+'''
+sents = ['The chef has a potato and an onion. He chopped the onion. Then, he chopped the potato', 'the chef has a potato and an onion. he chopped the onion. then, he chopped the onion', 
+        'The chef has a potato and an onion. He chopped the onion. Then, he chopped the banana']
+'''
+
+'''
+sents = [
+        'the chef has a small onion and a big onion. he chopped the small onion. Then, he chopped the big', 
+        'the chef has a small onion and a big onion. he chopped the small onion. Then, he chopped the small', 
+        'the chef has a small onion and a big onion. he chopped the small onion. Then, he chopped the banana', 
+        'the chef has a small onion and a big onion. he chopped the small orange. Then, he chopped the big', 
+        'the chef has a small onion and a big onion. he chopped the small orange. Then, he chopped the small', 
+        'the chef has a small onion and a big onion. he chopped the small orange. Then, he chopped the banana']
+measures = tfxl_IT(sents, tokenizer, tf_model)
+for x, sent in enumerate(sents):
+    print(sent, measures[x])
+
+'''
+'''
+for measure in measures:
+    _, surp = measure[-1]
+    print(surp)
+'''
+
+'''
 with open('gpt_mismatch_surp', 'w') as f:
     for measure in measures:
         target_word, surp = measure[-1]

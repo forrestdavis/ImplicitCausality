@@ -797,16 +797,16 @@ for pair in pairs:
     for index, verb in enumerate(data):
         bias = data[verb]
 
-        sent0 = ''.join([pair[0], verb, pair[1],'因为他在那里。'])
-        #sent0 = ''.join([pair[0], verb, pair[1],'因为[MASK]在那里。'])
+        #sent0 = ''.join([pair[0], verb, pair[1],'因为他在那里。'])
+        sent0 = ''.join([pair[0], verb, pair[1],'因为[MASK]在那里。'])
         sent1 = ''.join([pair[0], verb, pair[1],'因为她在那里。'])
-        sent2 = ''.join([pair[1], verb, pair[0],'因为他在那里。'])
-        #sent2 = ''.join([pair[1], verb, pair[0],'因为[MASK]在那里。'])
+        #sent2 = ''.join([pair[1], verb, pair[0],'因为他在那里。'])
+        sent2 = ''.join([pair[1], verb, pair[0],'因为[MASK]在那里。'])
         sent3 = ''.join([pair[1], verb, pair[0],'因为她在那里。'])
 
         print(','.join(['ic_mismatch', verb, str(count), sent0, bias, '1', 'm']) )
-        print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent1, bias, '0', 'f']) )
         print(','.join(['ic_mismatch', verb, str(count), sent2, bias, '0', 'm']) )
-        print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
+        #print(','.join(['ic_mismatch', verb, str(count), sent3, bias, '1', 'f']) )
 
     count += 1

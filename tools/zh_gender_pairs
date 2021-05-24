@@ -4,9 +4,9 @@
 男孩 女孩
 #father mother
 父亲 母亲
-#uncle #aunt
+#uncle aunt
 叔叔 姨
-#husband #wife
+#husband wife
 丈夫 妻子
 #prince princess
 王子 公主
@@ -18,3 +18,11 @@
 哥哥 姐姐
 #youngbrother youngsister
 弟弟 妹妹
+#grandson granddaughter
+孫兒 孫女
+#nephew niece
+姪兒 姪女
+#uncle aunt
+叔父 姑母
+#cousin cousin
+堂弟 堂妹

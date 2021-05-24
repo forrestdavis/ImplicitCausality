@@ -1,4 +1,5 @@
 library(ggplot2)
+library(ggpubr)
 library(lme4)
 library(lmerTest)
 library(cowplot)
@@ -30,7 +31,7 @@ bert_es_score <- read.csv(paste(path, "results/IC_mismatch_ES.csv", sep=''))
 bert_es_score <- read.csv(paste(path, "results/IC_mismatch_ES_cont.csv", sep=''))
 
 bert_it_score <- read.csv(paste(path, "results/IC_mismatch_IT.csv", sep=''))
-bert_it_score$score_full <- bert_it_score$score + bert_it_score$score_obj
+#bert_it_score$score_full <- bert_it_score$score + bert_it_score$score_obj
 
 bert_it_score <- read.csv(paste(path, "results/IC_mismatch_IT_cont.csv", sep=''))
 
@@ -38,6 +39,15 @@ bert_nl_score <- read.csv(paste(path, "results/IC_mismatch_NL.csv", sep=''))
 
 bert_zh_score <- read.csv(paste(path, "results/IC_mismatch_ZH.csv", sep=''))
 
+connective_scores <- read.csv(paste(path, "results/IC_mismatch_connectives_surp.csv", sep=''))
+
+bias_probs <- read.csv(paste(path, "corr.csv", sep=''))
+
+#Plot correlation
+ggscatter(bias_probs, x="bias", y="gpt_score", 
+          add="reg.line", conf.int=TRUE,
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "Human Bias", ylab="GPT-2 XL Subject Next-Mention Bias") + ylim(0, 1)
 
 #add categorical IC variable
 pronoun_surp$hasIC <- pronoun_surp$bias>0
@@ -577,16 +587,16 @@ bert_pronoun_model <- lmer(score_negative ~ hasIC*isHigh*gender + (1|item), data
 summary(bert_pronoun_model)
 anova(bert_pronoun_model)
 
-bert_es_pronoun_model <- lmer(score_mbert ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
+bert_es_pronoun_model <- lmer(score_pro ~ hasIC*isHigh*gender + (1|item), data=bert_es_score)
 summary(bert_es_pronoun_model)
 anova(bert_es_pronoun_model)
 
-es_obj <- subset(bert_it_score, isHigh!='0')# &gender=='m')
+es_obj <- subset(bert_es_score, isHigh!='1')# &gender=='m')
 es_obj_IC <- subset(es_obj, bias <= 50)
 es_obj_nonIC <- subset(es_obj, bias > 50)
 
 
-t.test(es_obj_IC$score_raw, es_obj_nonIC$score_raw)
+t.test(es_obj_IC$score_pro, es_obj_nonIC$score_pro)
 
 bert_it_pronoun_model <- lmer(score_mbert ~ hasIC*isHigh*gender + (1|item), data=bert_it_score)
 summary(bert_it_pronoun_model)
@@ -647,6 +657,7 @@ pronoun_surp$isHigh <- factor(pronoun_surp$isHigh)
 pronoun_surp$gender <- factor(pronoun_surp$gender)
 pronoun_surp$hasIC <- factor(pronoun_surp$hasIC)
 
+bert_en_score$hasIC <- as.numeric(bert_en_score$bias>0)
 bert_en_score$isHigh <- factor(bert_en_score$isHigh)
 bert_en_score$gender <- factor(bert_en_score$gender)
 bert_en_score$hasIC <- factor(bert_en_score$hasIC)
@@ -671,6 +682,19 @@ bert_zh_score$isHigh <- factor(bert_zh_score$isHigh)
 bert_zh_score$gender <- factor(bert_zh_score$gender)
 bert_zh_score$hasIC <- factor(bert_zh_score$hasIC)
 
+connective_scores$isHigh <- factor(connective_scores$isHigh)
+connective_scores$gender <- factor(connective_scores$gender)
+connective_scores$hasIC <- as.numeric(connective_scores$bias>50)
+connective_scores$hasIC <- factor(connective_scores$hasIC)
+
+OBJ_IC <- subset(bert_en_score, isHigh == 0 & hasIC == 1)
+OBJ_nonIC <- subset(bert_en_score, isHigh == 0 & hasIC == 0)
+
+SUBJ_IC <- subset(bert_en_score, isHigh == 1 & hasIC == 1)
+SUBJ_nonIC <- subset(bert_en_score, isHigh == 1 & hasIC == 0)
+
+t.test(OBJ_IC$score_base, OBJ_nonIC$score_base)
+t.test(SUBJ_IC$score_pro, SUBJ_nonIC$score_pro)
 
 # LSTM
 lstm_pronoun <- ggplot(pronoun_surp, aes(x=hasIC, y=LSTM_avg_surp, fill=interaction(isHigh, gender))) +
@@ -711,6 +735,14 @@ bert_pronoun <- ggplot(bert_en_score, aes(x=hasIC, y=score, fill=interaction(isH
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
+bert_pronoun <- ggplot(bert_en_score, aes(x=hasIC, y=score_roberta, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "Adapted BERT Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+
+
 bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "BETO-Spanish Probability (Pronoun)") +
@@ -718,14 +750,30 @@ bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score, fill=interaction(
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
-bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_1000, fill=interaction(isHigh, gender))) +
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_new, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "BETO-Spanish Probability (Adjective)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
-bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_mbert, fill=interaction(isHigh, gender))) +
+#ACL ADAPTATION
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_base, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BETO-Spanish Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_2, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "Adapted BETO-Spanish Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+####
+
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_roberta_pro, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "mBERT-Spanish Probability (Adjective)") +
   scale_x_discrete(breaks=c("0","1"),
@@ -733,12 +781,35 @@ bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_mbert, fill=intera
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
 
-bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_um, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "UmBERTo-Italian Probability (Pronoun)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+##ACL 
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "UmBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_pro, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "UmBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+#####
+
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_pro_um, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "Adapted UmBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
 
 bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_raw, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
@@ -753,6 +824,23 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=interact
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+
+##ACL
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_base_gil, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GilBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_pro_gil, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "Adapted GilBERTo-Italian Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
+###
 
 bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
@@ -776,13 +864,19 @@ bert_nl_pronoun <- ggplot(bert_nl_score, aes(x=hasIC, y=score, fill=interaction(
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("m+Obj", "m+Subj"))
 
-bert_zh_pronoun <- ggplot(bert_zh_score, aes(x=hasIC, y=score, fill=interaction(isHigh, gender))) +
+bert_zh_pronoun <- ggplot(bert_zh_score, aes(x=hasIC, y=score_mbert, fill=interaction(isHigh, gender))) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
   labs(x ="Verb Bias", y = "BERT-Chinese Probability (Pronoun)") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
 
+bert_zh_pronoun <- ggplot(bert_zh_score, aes(x=hasIC, y=score_roberta, fill=isHigh)) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT-Chinese Probability (Pronoun)") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Obj", "Subj"))
 
 
 # Humans
@@ -847,6 +941,100 @@ pronoun_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5
   draw_plot(human_plot, x=0.5, y= 0, width=0.5, height=0.5) + 
   draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
                   x = c(0.05, 0.05, 0.55, 0.55), y = c(0.07, 0.57, 0.57, 0.07))
+
+#### Connectives
+
+# LSTM
+lstm_because_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=LSTM_avg_because_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 10)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)", title="Because") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+lstm_result_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=LSTM_avg_result_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 10)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)", title="And as a result") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+lstm_period_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=LSTM_avg_period_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 10)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "LSTM Surprisal (Pronoun)", title="Period") +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+
+# TF-XL
+tf_because_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=tf_because_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 12)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)", title='Because') +# theme(legend.position = 'none') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+tf_result_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=tf_result_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 12)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)", title='And as a result') +# theme(legend.position = 'none') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+tf_period_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=tf_period_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 12)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "TF-XL Surprisal (Pronoun)", title='Period') +# theme(legend.position = 'none') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+#GPT-2 XL
+gpt_because_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=gpt_because_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 8)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)", title='Because') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+gpt_result_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=gpt_result_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 8)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)", title='And as a result') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+gpt_period_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=gpt_period_surp, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 8)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "GPT-2 XL Surprisal (Pronoun)", title='Period') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+
+# BERT
+bert_because_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=bert_because_score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT Probability (Pronoun)", title='Because') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_result_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=bert_result_score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT Probability (Pronoun)", title='And as a result') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+bert_period_pronoun <- ggplot(connective_scores, aes(x=hasIC, y=bert_period_score, fill=interaction(isHigh, gender))) +
+  geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=18)) + 
+  labs(x ="Verb Bias", y = "BERT Probability (Pronoun)", title='Period') +
+  scale_x_discrete(breaks=c("0","1"),
+                   labels=c("Object-Bias", "Subject-Bias")) + 
+  scale_fill_manual(values = c("#9999CC", "darkorchid3", "gold3", "darkgoldenrod4"), name= "Gender+Antecedent", labels=c("f+Obj", "f+Subj", "m+Obj", "m+Subj"))
+
+
 
 #########################
 # Pronoun SIM Stats
