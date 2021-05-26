@@ -2,3 +2,5 @@ __pycache__
 .DS_Store
 wikitext-103
 models
+finetuning/models
+finetuning/models.zip

@@ -1,5 +1,10 @@
 # ImplicitCausality
 
+## For BERT and RoBERTa Models (ACL 2021)
+
+
+## For Auto-Regressive Models (CoNLL 2020)
+
 Project for exploring the acquisiton of discourse structure by RNN LMs and Transformers. The code centers on an exploration of the well studied 
 phenomenon of implicit causality (IC) in verbs ([Catherine Garvey & Alfonso Caramazza, 1974](www.jstor.org/stable/4177835)). 
 We explored the influence of IC on reference and syntax. For reference, 
@@ -21,7 +26,7 @@ for a more local, yet ungrammatical, attachment.
 ### Dependencies 
 
 Requires the following python packages (available through pip):
-* [pytorch](https://pytorch.org/) >= v1.0.0
+* [pytorch](https://pytorch.org/) <= v1.2.0
 * [scipy](https://www.scipy.org)
 * [numpy](https://numpy.org)
 * [transformers](https://github.com/huggingface/transformers) = 2.11.0

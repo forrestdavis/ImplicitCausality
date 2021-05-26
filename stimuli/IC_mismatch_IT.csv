@@ -1,0 +1,1121 @@
+exp,verb,item,sent,bias,isHigh ,gender
+ic_mismatch,accompagna in macchina,0,l'uomo accompagna in macchina la donna a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,0,la donna accompagna in macchina l'uomo a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,0,l'uomo da spintone alla donna a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,0,la donna da spintone all'uomo a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,0,l'uomo pettina la donna a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,0,la donna pettina l'uomo a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,0,l'uomo abbraccia la donna a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,0,la donna abbraccia l'uomo a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,0,l'uomo schiaffeggia la donna a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,0,la donna schiaffeggia l'uomo a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,0,l'uomo balla con la donna a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,0,la donna balla con l'uomo a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,0,l'uomo bacia la donna a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,0,la donna bacia l'uomo a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,0,l'uomo trattiene la donna a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,0,la donna trattiene l'uomo a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,0,l'uomo telefona alla donna a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,0,la donna telefona all'uomo a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,0,l'uomo fa solletico alla donna a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,0,la donna fa solletico all'uomo a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,0,l'uomo lusinga la donna a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,0,la donna lusinga l'uomo a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,0,l'uomo disobbedisce alla donna a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,0,la donna disobbedisce all'uomo a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,0,l'uomo aiuta la donna a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,0,la donna aiuta l'uomo a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,0,l'uomo imbroglia la donna a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,0,la donna imbroglia l'uomo a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,0,l'uomo inganna la donna a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,0,la donna inganna l'uomo a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,0,l'uomo tradisce la donna a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,0,la donna tradisce l'uomo a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,0,l'uomo sorprende la donna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,0,la donna sorprende l'uomo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,0,l'uomo salva la donna a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,0,la donna salva l'uomo a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,0,l'uomo incoraggia la donna a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,0,la donna incoraggia l'uomo a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,0,l'uomo fa male alla donna a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,0,la donna fa male all'uomo a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,0,l'uomo affescina la donna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,0,la donna affescina l'uomo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,0,l'uomo piace alla donna a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,0,la donna piace all'uomo a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,0,l'uomo diverte la donna a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,0,la donna diverte l'uomo a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,0,l'uomo crea problemi alla donna a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,0,la donna crea problemi all'uomo a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,0,l'uomo delude la donna a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,0,la donna delude l'uomo a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,0,l'uomo spaventa la donna a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,0,la donna spaventa l'uomo a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,0,l'uomo stupisce la donna a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,0,la donna stupisce l'uomo a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,0,l'uomo infastidisce la donna a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,0,la donna infastidisce l'uomo a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,0,l'uomo annoia la donna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,0,la donna annoia l'uomo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,0,l'uomo mette in guardia la donna a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,0,la donna mette in guardia l'uomo a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,0,l'uomo odia la donna a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,0,la donna odia l'uomo a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,0,l'uomo si fida della donna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,0,la donna si fida dell'uomo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,0,l'uomo compatisce la donna a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,0,la donna compatisce l'uomo a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,0,l'uomo teme la donna a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,0,la donna teme l'uomo a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,0,l'uomo nota la donna a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,0,la donna nota l'uomo a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,0,l'uomo stima la donna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,0,la donna stima l'uomo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,0,l'uomo rispetta la donna a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,0,la donna rispetta l'uomo a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,0,l'uomo ricorda la donna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,0,la donna ricorda l'uomo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,0,l'uomo detesta la donna a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,0,la donna detesta l'uomo a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,0,l'uomo invidia la donna a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,0,la donna invidia l'uomo a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,1,il ragazzo accompagna in macchina la ragazza a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,1,la ragazza accompagna in macchina il ragazzo a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,1,il ragazzo da spintone alla ragazza a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,1,la ragazza da spintone al ragazzo a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,1,il ragazzo pettina la ragazza a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,1,la ragazza pettina il ragazzo a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,1,il ragazzo abbraccia la ragazza a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,1,la ragazza abbraccia il ragazzo a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,1,il ragazzo schiaffeggia la ragazza a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,1,la ragazza schiaffeggia il ragazzo a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,1,il ragazzo balla con la ragazza a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,1,la ragazza balla con il ragazzo a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,1,il ragazzo bacia la ragazza a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,1,la ragazza bacia il ragazzo a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,1,il ragazzo trattiene la ragazza a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,1,la ragazza trattiene il ragazzo a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,1,il ragazzo telefona alla ragazza a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,1,la ragazza telefona al ragazzo a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,1,il ragazzo fa solletico alla ragazza a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,1,la ragazza fa solletico al ragazzo a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,1,il ragazzo lusinga la ragazza a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,1,la ragazza lusinga il ragazzo a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,1,il ragazzo disobbedisce alla ragazza a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,1,la ragazza disobbedisce al ragazzo a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,1,il ragazzo aiuta la ragazza a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,1,la ragazza aiuta il ragazzo a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,1,il ragazzo imbroglia la ragazza a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,1,la ragazza imbroglia il ragazzo a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,1,il ragazzo inganna la ragazza a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,1,la ragazza inganna il ragazzo a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,1,il ragazzo tradisce la ragazza a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,1,la ragazza tradisce il ragazzo a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,1,il ragazzo sorprende la ragazza a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,1,la ragazza sorprende il ragazzo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,1,il ragazzo salva la ragazza a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,1,la ragazza salva il ragazzo a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,1,il ragazzo incoraggia la ragazza a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,1,la ragazza incoraggia il ragazzo a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,1,il ragazzo fa male alla ragazza a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,1,la ragazza fa male al ragazzo a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,1,il ragazzo affescina la ragazza a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,1,la ragazza affescina il ragazzo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,1,il ragazzo piace alla ragazza a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,1,la ragazza piace al ragazzo a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,1,il ragazzo diverte la ragazza a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,1,la ragazza diverte il ragazzo a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,1,il ragazzo crea problemi alla ragazza a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,1,la ragazza crea problemi al ragazzo a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,1,il ragazzo delude la ragazza a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,1,la ragazza delude il ragazzo a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,1,il ragazzo spaventa la ragazza a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,1,la ragazza spaventa il ragazzo a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,1,il ragazzo stupisce la ragazza a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,1,la ragazza stupisce il ragazzo a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,1,il ragazzo infastidisce la ragazza a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,1,la ragazza infastidisce il ragazzo a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,1,il ragazzo annoia la ragazza a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,1,la ragazza annoia il ragazzo a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,1,il ragazzo mette in guardia la ragazza a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,1,la ragazza mette in guardia il ragazzo a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,1,il ragazzo odia la ragazza a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,1,la ragazza odia il ragazzo a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,1,il ragazzo si fida della ragazza a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,1,la ragazza si fida del ragazzo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,1,il ragazzo compatisce la ragazza a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,1,la ragazza compatisce il ragazzo a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,1,il ragazzo teme la ragazza a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,1,la ragazza teme il ragazzo a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,1,il ragazzo nota la ragazza a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,1,la ragazza nota il ragazzo a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,1,il ragazzo stima la ragazza a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,1,la ragazza stima il ragazzo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,1,il ragazzo rispetta la ragazza a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,1,la ragazza rispetta il ragazzo a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,1,il ragazzo ricorda la ragazza a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,1,la ragazza ricorda il ragazzo a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,1,il ragazzo detesta la ragazza a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,1,la ragazza detesta il ragazzo a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,1,il ragazzo invidia la ragazza a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,1,la ragazza invidia il ragazzo a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,2,il padre accompagna in macchina la madre a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,2,la madre accompagna in macchina il padre a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,2,il padre da spintone alla madre a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,2,la madre da spintone al padre a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,2,il padre pettina la madre a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,2,la madre pettina il padre a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,2,il padre abbraccia la madre a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,2,la madre abbraccia il padre a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,2,il padre schiaffeggia la madre a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,2,la madre schiaffeggia il padre a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,2,il padre balla con la madre a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,2,la madre balla con il padre a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,2,il padre bacia la madre a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,2,la madre bacia il padre a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,2,il padre trattiene la madre a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,2,la madre trattiene il padre a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,2,il padre telefona alla madre a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,2,la madre telefona al padre a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,2,il padre fa solletico alla madre a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,2,la madre fa solletico al padre a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,2,il padre lusinga la madre a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,2,la madre lusinga il padre a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,2,il padre disobbedisce alla madre a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,2,la madre disobbedisce al padre a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,2,il padre aiuta la madre a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,2,la madre aiuta il padre a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,2,il padre imbroglia la madre a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,2,la madre imbroglia il padre a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,2,il padre inganna la madre a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,2,la madre inganna il padre a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,2,il padre tradisce la madre a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,2,la madre tradisce il padre a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,2,il padre sorprende la madre a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,2,la madre sorprende il padre a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,2,il padre salva la madre a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,2,la madre salva il padre a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,2,il padre incoraggia la madre a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,2,la madre incoraggia il padre a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,2,il padre fa male alla madre a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,2,la madre fa male al padre a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,2,il padre affescina la madre a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,2,la madre affescina il padre a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,2,il padre piace alla madre a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,2,la madre piace al padre a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,2,il padre diverte la madre a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,2,la madre diverte il padre a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,2,il padre crea problemi alla madre a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,2,la madre crea problemi al padre a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,2,il padre delude la madre a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,2,la madre delude il padre a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,2,il padre spaventa la madre a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,2,la madre spaventa il padre a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,2,il padre stupisce la madre a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,2,la madre stupisce il padre a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,2,il padre infastidisce la madre a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,2,la madre infastidisce il padre a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,2,il padre annoia la madre a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,2,la madre annoia il padre a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,2,il padre mette in guardia la madre a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,2,la madre mette in guardia il padre a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,2,il padre odia la madre a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,2,la madre odia il padre a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,2,il padre si fida della madre a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,2,la madre si fida del padre a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,2,il padre compatisce la madre a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,2,la madre compatisce il padre a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,2,il padre teme la madre a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,2,la madre teme il padre a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,2,il padre nota la madre a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,2,la madre nota il padre a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,2,il padre stima la madre a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,2,la madre stima il padre a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,2,il padre rispetta la madre a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,2,la madre rispetta il padre a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,2,il padre ricorda la madre a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,2,la madre ricorda il padre a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,2,il padre detesta la madre a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,2,la madre detesta il padre a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,2,il padre invidia la madre a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,2,la madre invidia il padre a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,3,lo zio accompagna in macchina la zia a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,3,la zia accompagna in macchina lo zio a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,3,lo zio da spintone alla zia a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,3,la zia da spintone allo zio a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,3,lo zio pettina la zia a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,3,la zia pettina lo zio a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,3,lo zio abbraccia la zia a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,3,la zia abbraccia lo zio a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,3,lo zio schiaffeggia la zia a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,3,la zia schiaffeggia lo zio a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,3,lo zio balla con la zia a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,3,la zia balla con lo zio a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,3,lo zio bacia la zia a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,3,la zia bacia lo zio a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,3,lo zio trattiene la zia a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,3,la zia trattiene lo zio a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,3,lo zio telefona alla zia a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,3,la zia telefona allo zio a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,3,lo zio fa solletico alla zia a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,3,la zia fa solletico allo zio a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,3,lo zio lusinga la zia a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,3,la zia lusinga lo zio a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,3,lo zio disobbedisce alla zia a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,3,la zia disobbedisce allo zio a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,3,lo zio aiuta la zia a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,3,la zia aiuta lo zio a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,3,lo zio imbroglia la zia a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,3,la zia imbroglia lo zio a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,3,lo zio inganna la zia a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,3,la zia inganna lo zio a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,3,lo zio tradisce la zia a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,3,la zia tradisce lo zio a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,3,lo zio sorprende la zia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,3,la zia sorprende lo zio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,3,lo zio salva la zia a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,3,la zia salva lo zio a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,3,lo zio incoraggia la zia a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,3,la zia incoraggia lo zio a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,3,lo zio fa male alla zia a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,3,la zia fa male allo zio a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,3,lo zio affescina la zia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,3,la zia affescina lo zio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,3,lo zio piace alla zia a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,3,la zia piace allo zio a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,3,lo zio diverte la zia a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,3,la zia diverte lo zio a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,3,lo zio crea problemi alla zia a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,3,la zia crea problemi allo zio a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,3,lo zio delude la zia a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,3,la zia delude lo zio a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,3,lo zio spaventa la zia a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,3,la zia spaventa lo zio a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,3,lo zio stupisce la zia a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,3,la zia stupisce lo zio a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,3,lo zio infastidisce la zia a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,3,la zia infastidisce lo zio a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,3,lo zio annoia la zia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,3,la zia annoia lo zio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,3,lo zio mette in guardia la zia a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,3,la zia mette in guardia lo zio a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,3,lo zio odia la zia a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,3,la zia odia lo zio a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,3,lo zio si fida della zia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,3,la zia si fida dello zio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,3,lo zio compatisce la zia a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,3,la zia compatisce lo zio a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,3,lo zio teme la zia a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,3,la zia teme lo zio a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,3,lo zio nota la zia a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,3,la zia nota lo zio a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,3,lo zio stima la zia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,3,la zia stima lo zio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,3,lo zio rispetta la zia a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,3,la zia rispetta lo zio a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,3,lo zio ricorda la zia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,3,la zia ricorda lo zio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,3,lo zio detesta la zia a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,3,la zia detesta lo zio a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,3,lo zio invidia la zia a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,3,la zia invidia lo zio a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,4,il marito accompagna in macchina la moglie a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,4,la moglie accompagna in macchina il marito a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,4,il marito da spintone alla moglie a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,4,la moglie da spintone al marito a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,4,il marito pettina la moglie a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,4,la moglie pettina il marito a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,4,il marito abbraccia la moglie a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,4,la moglie abbraccia il marito a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,4,il marito schiaffeggia la moglie a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,4,la moglie schiaffeggia il marito a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,4,il marito balla con la moglie a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,4,la moglie balla con il marito a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,4,il marito bacia la moglie a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,4,la moglie bacia il marito a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,4,il marito trattiene la moglie a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,4,la moglie trattiene il marito a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,4,il marito telefona alla moglie a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,4,la moglie telefona al marito a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,4,il marito fa solletico alla moglie a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,4,la moglie fa solletico al marito a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,4,il marito lusinga la moglie a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,4,la moglie lusinga il marito a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,4,il marito disobbedisce alla moglie a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,4,la moglie disobbedisce al marito a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,4,il marito aiuta la moglie a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,4,la moglie aiuta il marito a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,4,il marito imbroglia la moglie a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,4,la moglie imbroglia il marito a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,4,il marito inganna la moglie a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,4,la moglie inganna il marito a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,4,il marito tradisce la moglie a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,4,la moglie tradisce il marito a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,4,il marito sorprende la moglie a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,4,la moglie sorprende il marito a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,4,il marito salva la moglie a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,4,la moglie salva il marito a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,4,il marito incoraggia la moglie a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,4,la moglie incoraggia il marito a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,4,il marito fa male alla moglie a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,4,la moglie fa male al marito a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,4,il marito affescina la moglie a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,4,la moglie affescina il marito a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,4,il marito piace alla moglie a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,4,la moglie piace al marito a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,4,il marito diverte la moglie a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,4,la moglie diverte il marito a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,4,il marito crea problemi alla moglie a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,4,la moglie crea problemi al marito a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,4,il marito delude la moglie a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,4,la moglie delude il marito a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,4,il marito spaventa la moglie a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,4,la moglie spaventa il marito a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,4,il marito stupisce la moglie a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,4,la moglie stupisce il marito a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,4,il marito infastidisce la moglie a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,4,la moglie infastidisce il marito a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,4,il marito annoia la moglie a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,4,la moglie annoia il marito a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,4,il marito mette in guardia la moglie a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,4,la moglie mette in guardia il marito a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,4,il marito odia la moglie a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,4,la moglie odia il marito a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,4,il marito si fida della moglie a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,4,la moglie si fida del marito a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,4,il marito compatisce la moglie a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,4,la moglie compatisce il marito a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,4,il marito teme la moglie a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,4,la moglie teme il marito a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,4,il marito nota la moglie a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,4,la moglie nota il marito a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,4,il marito stima la moglie a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,4,la moglie stima il marito a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,4,il marito rispetta la moglie a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,4,la moglie rispetta il marito a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,4,il marito ricorda la moglie a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,4,la moglie ricorda il marito a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,4,il marito detesta la moglie a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,4,la moglie detesta il marito a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,4,il marito invidia la moglie a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,4,la moglie invidia il marito a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,5,l'attore accompagna in macchina l'attrice a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,5,l'attrice accompagna in macchina l'attore a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,5,l'attore da spintone all''attrice a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,5,l'attrice da spintone all'attore a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,5,l'attore pettina l'attrice a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,5,l'attrice pettina l'attore a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,5,l'attore abbraccia l'attrice a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,5,l'attrice abbraccia l'attore a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,5,l'attore schiaffeggia l'attrice a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,5,l'attrice schiaffeggia l'attore a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,5,l'attore balla con l'attrice a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,5,l'attrice balla con l'attore a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,5,l'attore bacia l'attrice a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,5,l'attrice bacia l'attore a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,5,l'attore trattiene l'attrice a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,5,l'attrice trattiene l'attore a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,5,l'attore telefona all''attrice a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,5,l'attrice telefona all'attore a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,5,l'attore fa solletico all''attrice a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,5,l'attrice fa solletico all'attore a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,5,l'attore lusinga l'attrice a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,5,l'attrice lusinga l'attore a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,5,l'attore disobbedisce all''attrice a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,5,l'attrice disobbedisce all'attore a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,5,l'attore aiuta l'attrice a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,5,l'attrice aiuta l'attore a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,5,l'attore imbroglia l'attrice a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,5,l'attrice imbroglia l'attore a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,5,l'attore inganna l'attrice a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,5,l'attrice inganna l'attore a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,5,l'attore tradisce l'attrice a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,5,l'attrice tradisce l'attore a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,5,l'attore sorprende l'attrice a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,5,l'attrice sorprende l'attore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,5,l'attore salva l'attrice a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,5,l'attrice salva l'attore a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,5,l'attore incoraggia l'attrice a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,5,l'attrice incoraggia l'attore a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,5,l'attore fa male all''attrice a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,5,l'attrice fa male all'attore a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,5,l'attore affescina l'attrice a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,5,l'attrice affescina l'attore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,5,l'attore piace all''attrice a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,5,l'attrice piace all'attore a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,5,l'attore diverte l'attrice a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,5,l'attrice diverte l'attore a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,5,l'attore crea problemi all''attrice a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,5,l'attrice crea problemi all'attore a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,5,l'attore delude l'attrice a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,5,l'attrice delude l'attore a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,5,l'attore spaventa l'attrice a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,5,l'attrice spaventa l'attore a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,5,l'attore stupisce l'attrice a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,5,l'attrice stupisce l'attore a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,5,l'attore infastidisce l'attrice a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,5,l'attrice infastidisce l'attore a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,5,l'attore annoia l'attrice a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,5,l'attrice annoia l'attore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,5,l'attore mette in guardia l'attrice a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,5,l'attrice mette in guardia l'attore a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,5,l'attore odia l'attrice a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,5,l'attrice odia l'attore a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,5,l'attore si fida dell'attrice a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,5,l'attrice si fida dell'attore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,5,l'attore compatisce l'attrice a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,5,l'attrice compatisce l'attore a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,5,l'attore teme l'attrice a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,5,l'attrice teme l'attore a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,5,l'attore nota l'attrice a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,5,l'attrice nota l'attore a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,5,l'attore stima l'attrice a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,5,l'attrice stima l'attore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,5,l'attore rispetta l'attrice a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,5,l'attrice rispetta l'attore a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,5,l'attore ricorda l'attrice a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,5,l'attrice ricorda l'attore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,5,l'attore detesta l'attrice a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,5,l'attrice detesta l'attore a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,5,l'attore invidia l'attrice a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,5,l'attrice invidia l'attore a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,6,il principe accompagna in macchina la principessa a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,6,la principessa accompagna in macchina il principe a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,6,il principe da spintone alla principessa a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,6,la principessa da spintone al principe a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,6,il principe pettina la principessa a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,6,la principessa pettina il principe a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,6,il principe abbraccia la principessa a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,6,la principessa abbraccia il principe a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,6,il principe schiaffeggia la principessa a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,6,la principessa schiaffeggia il principe a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,6,il principe balla con la principessa a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,6,la principessa balla con il principe a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,6,il principe bacia la principessa a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,6,la principessa bacia il principe a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,6,il principe trattiene la principessa a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,6,la principessa trattiene il principe a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,6,il principe telefona alla principessa a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,6,la principessa telefona al principe a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,6,il principe fa solletico alla principessa a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,6,la principessa fa solletico al principe a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,6,il principe lusinga la principessa a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,6,la principessa lusinga il principe a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,6,il principe disobbedisce alla principessa a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,6,la principessa disobbedisce al principe a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,6,il principe aiuta la principessa a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,6,la principessa aiuta il principe a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,6,il principe imbroglia la principessa a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,6,la principessa imbroglia il principe a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,6,il principe inganna la principessa a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,6,la principessa inganna il principe a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,6,il principe tradisce la principessa a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,6,la principessa tradisce il principe a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,6,il principe sorprende la principessa a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,6,la principessa sorprende il principe a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,6,il principe salva la principessa a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,6,la principessa salva il principe a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,6,il principe incoraggia la principessa a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,6,la principessa incoraggia il principe a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,6,il principe fa male alla principessa a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,6,la principessa fa male al principe a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,6,il principe affescina la principessa a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,6,la principessa affescina il principe a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,6,il principe piace alla principessa a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,6,la principessa piace al principe a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,6,il principe diverte la principessa a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,6,la principessa diverte il principe a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,6,il principe crea problemi alla principessa a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,6,la principessa crea problemi al principe a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,6,il principe delude la principessa a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,6,la principessa delude il principe a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,6,il principe spaventa la principessa a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,6,la principessa spaventa il principe a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,6,il principe stupisce la principessa a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,6,la principessa stupisce il principe a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,6,il principe infastidisce la principessa a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,6,la principessa infastidisce il principe a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,6,il principe annoia la principessa a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,6,la principessa annoia il principe a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,6,il principe mette in guardia la principessa a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,6,la principessa mette in guardia il principe a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,6,il principe odia la principessa a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,6,la principessa odia il principe a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,6,il principe si fida della principessa a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,6,la principessa si fida del principe a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,6,il principe compatisce la principessa a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,6,la principessa compatisce il principe a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,6,il principe teme la principessa a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,6,la principessa teme il principe a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,6,il principe nota la principessa a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,6,la principessa nota il principe a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,6,il principe stima la principessa a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,6,la principessa stima il principe a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,6,il principe rispetta la principessa a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,6,la principessa rispetta il principe a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,6,il principe ricorda la principessa a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,6,la principessa ricorda il principe a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,6,il principe detesta la principessa a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,6,la principessa detesta il principe a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,6,il principe invidia la principessa a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,6,la principessa invidia il principe a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,7,il cameriere accompagna in macchina la cameriera a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,7,la cameriera accompagna in macchina il cameriere a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,7,il cameriere da spintone alla cameriera a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,7,la cameriera da spintone al cameriere a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,7,il cameriere pettina la cameriera a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,7,la cameriera pettina il cameriere a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,7,il cameriere abbraccia la cameriera a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,7,la cameriera abbraccia il cameriere a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,7,il cameriere schiaffeggia la cameriera a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,7,la cameriera schiaffeggia il cameriere a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,7,il cameriere balla con la cameriera a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,7,la cameriera balla con il cameriere a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,7,il cameriere bacia la cameriera a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,7,la cameriera bacia il cameriere a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,7,il cameriere trattiene la cameriera a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,7,la cameriera trattiene il cameriere a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,7,il cameriere telefona alla cameriera a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,7,la cameriera telefona al cameriere a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,7,il cameriere fa solletico alla cameriera a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,7,la cameriera fa solletico al cameriere a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,7,il cameriere lusinga la cameriera a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,7,la cameriera lusinga il cameriere a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,7,il cameriere disobbedisce alla cameriera a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,7,la cameriera disobbedisce al cameriere a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,7,il cameriere aiuta la cameriera a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,7,la cameriera aiuta il cameriere a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,7,il cameriere imbroglia la cameriera a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,7,la cameriera imbroglia il cameriere a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,7,il cameriere inganna la cameriera a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,7,la cameriera inganna il cameriere a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,7,il cameriere tradisce la cameriera a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,7,la cameriera tradisce il cameriere a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,7,il cameriere sorprende la cameriera a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,7,la cameriera sorprende il cameriere a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,7,il cameriere salva la cameriera a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,7,la cameriera salva il cameriere a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,7,il cameriere incoraggia la cameriera a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,7,la cameriera incoraggia il cameriere a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,7,il cameriere fa male alla cameriera a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,7,la cameriera fa male al cameriere a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,7,il cameriere affescina la cameriera a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,7,la cameriera affescina il cameriere a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,7,il cameriere piace alla cameriera a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,7,la cameriera piace al cameriere a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,7,il cameriere diverte la cameriera a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,7,la cameriera diverte il cameriere a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,7,il cameriere crea problemi alla cameriera a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,7,la cameriera crea problemi al cameriere a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,7,il cameriere delude la cameriera a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,7,la cameriera delude il cameriere a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,7,il cameriere spaventa la cameriera a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,7,la cameriera spaventa il cameriere a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,7,il cameriere stupisce la cameriera a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,7,la cameriera stupisce il cameriere a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,7,il cameriere infastidisce la cameriera a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,7,la cameriera infastidisce il cameriere a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,7,il cameriere annoia la cameriera a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,7,la cameriera annoia il cameriere a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,7,il cameriere mette in guardia la cameriera a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,7,la cameriera mette in guardia il cameriere a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,7,il cameriere odia la cameriera a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,7,la cameriera odia il cameriere a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,7,il cameriere si fida della cameriera a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,7,la cameriera si fida del cameriere a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,7,il cameriere compatisce la cameriera a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,7,la cameriera compatisce il cameriere a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,7,il cameriere teme la cameriera a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,7,la cameriera teme il cameriere a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,7,il cameriere nota la cameriera a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,7,la cameriera nota il cameriere a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,7,il cameriere stima la cameriera a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,7,la cameriera stima il cameriere a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,7,il cameriere rispetta la cameriera a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,7,la cameriera rispetta il cameriere a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,7,il cameriere ricorda la cameriera a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,7,la cameriera ricorda il cameriere a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,7,il cameriere detesta la cameriera a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,7,la cameriera detesta il cameriere a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,7,il cameriere invidia la cameriera a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,7,la cameriera invidia il cameriere a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,8,il signore accompagna in macchina la signora a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,8,la signora accompagna in macchina il signore a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,8,il signore da spintone alla signora a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,8,la signora da spintone al signore a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,8,il signore pettina la signora a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,8,la signora pettina il signore a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,8,il signore abbraccia la signora a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,8,la signora abbraccia il signore a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,8,il signore schiaffeggia la signora a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,8,la signora schiaffeggia il signore a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,8,il signore balla con la signora a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,8,la signora balla con il signore a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,8,il signore bacia la signora a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,8,la signora bacia il signore a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,8,il signore trattiene la signora a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,8,la signora trattiene il signore a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,8,il signore telefona alla signora a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,8,la signora telefona al signore a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,8,il signore fa solletico alla signora a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,8,la signora fa solletico al signore a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,8,il signore lusinga la signora a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,8,la signora lusinga il signore a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,8,il signore disobbedisce alla signora a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,8,la signora disobbedisce al signore a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,8,il signore aiuta la signora a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,8,la signora aiuta il signore a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,8,il signore imbroglia la signora a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,8,la signora imbroglia il signore a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,8,il signore inganna la signora a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,8,la signora inganna il signore a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,8,il signore tradisce la signora a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,8,la signora tradisce il signore a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,8,il signore sorprende la signora a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,8,la signora sorprende il signore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,8,il signore salva la signora a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,8,la signora salva il signore a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,8,il signore incoraggia la signora a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,8,la signora incoraggia il signore a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,8,il signore fa male alla signora a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,8,la signora fa male al signore a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,8,il signore affescina la signora a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,8,la signora affescina il signore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,8,il signore piace alla signora a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,8,la signora piace al signore a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,8,il signore diverte la signora a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,8,la signora diverte il signore a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,8,il signore crea problemi alla signora a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,8,la signora crea problemi al signore a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,8,il signore delude la signora a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,8,la signora delude il signore a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,8,il signore spaventa la signora a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,8,la signora spaventa il signore a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,8,il signore stupisce la signora a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,8,la signora stupisce il signore a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,8,il signore infastidisce la signora a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,8,la signora infastidisce il signore a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,8,il signore annoia la signora a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,8,la signora annoia il signore a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,8,il signore mette in guardia la signora a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,8,la signora mette in guardia il signore a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,8,il signore odia la signora a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,8,la signora odia il signore a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,8,il signore si fida della signora a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,8,la signora si fida del signore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,8,il signore compatisce la signora a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,8,la signora compatisce il signore a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,8,il signore teme la signora a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,8,la signora teme il signore a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,8,il signore nota la signora a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,8,la signora nota il signore a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,8,il signore stima la signora a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,8,la signora stima il signore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,8,il signore rispetta la signora a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,8,la signora rispetta il signore a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,8,il signore ricorda la signora a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,8,la signora ricorda il signore a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,8,il signore detesta la signora a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,8,la signora detesta il signore a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,8,il signore invidia la signora a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,8,la signora invidia il signore a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,9,il re accompagna in macchina la regina a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,9,la regina accompagna in macchina il re a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,9,il re da spintone alla regina a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,9,la regina da spintone al re a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,9,il re pettina la regina a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,9,la regina pettina il re a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,9,il re abbraccia la regina a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,9,la regina abbraccia il re a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,9,il re schiaffeggia la regina a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,9,la regina schiaffeggia il re a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,9,il re balla con la regina a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,9,la regina balla con il re a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,9,il re bacia la regina a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,9,la regina bacia il re a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,9,il re trattiene la regina a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,9,la regina trattiene il re a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,9,il re telefona alla regina a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,9,la regina telefona al re a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,9,il re fa solletico alla regina a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,9,la regina fa solletico al re a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,9,il re lusinga la regina a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,9,la regina lusinga il re a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,9,il re disobbedisce alla regina a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,9,la regina disobbedisce al re a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,9,il re aiuta la regina a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,9,la regina aiuta il re a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,9,il re imbroglia la regina a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,9,la regina imbroglia il re a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,9,il re inganna la regina a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,9,la regina inganna il re a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,9,il re tradisce la regina a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,9,la regina tradisce il re a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,9,il re sorprende la regina a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,9,la regina sorprende il re a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,9,il re salva la regina a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,9,la regina salva il re a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,9,il re incoraggia la regina a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,9,la regina incoraggia il re a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,9,il re fa male alla regina a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,9,la regina fa male al re a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,9,il re affescina la regina a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,9,la regina affescina il re a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,9,il re piace alla regina a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,9,la regina piace al re a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,9,il re diverte la regina a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,9,la regina diverte il re a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,9,il re crea problemi alla regina a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,9,la regina crea problemi al re a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,9,il re delude la regina a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,9,la regina delude il re a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,9,il re spaventa la regina a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,9,la regina spaventa il re a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,9,il re stupisce la regina a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,9,la regina stupisce il re a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,9,il re infastidisce la regina a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,9,la regina infastidisce il re a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,9,il re annoia la regina a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,9,la regina annoia il re a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,9,il re mette in guardia la regina a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,9,la regina mette in guardia il re a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,9,il re odia la regina a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,9,la regina odia il re a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,9,il re si fida della regina a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,9,la regina si fida del re a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,9,il re compatisce la regina a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,9,la regina compatisce il re a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,9,il re teme la regina a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,9,la regina teme il re a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,9,il re nota la regina a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,9,la regina nota il re a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,9,il re stima la regina a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,9,la regina stima il re a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,9,il re rispetta la regina a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,9,la regina rispetta il re a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,9,il re ricorda la regina a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,9,la regina ricorda il re a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,9,il re detesta la regina a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,9,la regina detesta il re a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,9,il re invidia la regina a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,9,la regina invidia il re a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,10,il figlio accompagna in macchina la figlia a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,10,la figlia accompagna in macchina il figlio a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,10,il figlio da spintone alla figlia a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,10,la figlia da spintone al figlio a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,10,il figlio pettina la figlia a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,10,la figlia pettina il figlio a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,10,il figlio abbraccia la figlia a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,10,la figlia abbraccia il figlio a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,10,il figlio schiaffeggia la figlia a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,10,la figlia schiaffeggia il figlio a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,10,il figlio balla con la figlia a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,10,la figlia balla con il figlio a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,10,il figlio bacia la figlia a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,10,la figlia bacia il figlio a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,10,il figlio trattiene la figlia a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,10,la figlia trattiene il figlio a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,10,il figlio telefona alla figlia a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,10,la figlia telefona al figlio a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,10,il figlio fa solletico alla figlia a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,10,la figlia fa solletico al figlio a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,10,il figlio lusinga la figlia a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,10,la figlia lusinga il figlio a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,10,il figlio disobbedisce alla figlia a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,10,la figlia disobbedisce al figlio a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,10,il figlio aiuta la figlia a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,10,la figlia aiuta il figlio a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,10,il figlio imbroglia la figlia a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,10,la figlia imbroglia il figlio a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,10,il figlio inganna la figlia a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,10,la figlia inganna il figlio a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,10,il figlio tradisce la figlia a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,10,la figlia tradisce il figlio a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,10,il figlio sorprende la figlia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,10,la figlia sorprende il figlio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,10,il figlio salva la figlia a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,10,la figlia salva il figlio a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,10,il figlio incoraggia la figlia a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,10,la figlia incoraggia il figlio a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,10,il figlio fa male alla figlia a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,10,la figlia fa male al figlio a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,10,il figlio affescina la figlia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,10,la figlia affescina il figlio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,10,il figlio piace alla figlia a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,10,la figlia piace al figlio a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,10,il figlio diverte la figlia a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,10,la figlia diverte il figlio a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,10,il figlio crea problemi alla figlia a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,10,la figlia crea problemi al figlio a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,10,il figlio delude la figlia a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,10,la figlia delude il figlio a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,10,il figlio spaventa la figlia a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,10,la figlia spaventa il figlio a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,10,il figlio stupisce la figlia a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,10,la figlia stupisce il figlio a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,10,il figlio infastidisce la figlia a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,10,la figlia infastidisce il figlio a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,10,il figlio annoia la figlia a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,10,la figlia annoia il figlio a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,10,il figlio mette in guardia la figlia a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,10,la figlia mette in guardia il figlio a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,10,il figlio odia la figlia a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,10,la figlia odia il figlio a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,10,il figlio si fida della figlia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,10,la figlia si fida del figlio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,10,il figlio compatisce la figlia a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,10,la figlia compatisce il figlio a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,10,il figlio teme la figlia a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,10,la figlia teme il figlio a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,10,il figlio nota la figlia a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,10,la figlia nota il figlio a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,10,il figlio stima la figlia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,10,la figlia stima il figlio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,10,il figlio rispetta la figlia a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,10,la figlia rispetta il figlio a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,10,il figlio ricorda la figlia a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,10,la figlia ricorda il figlio a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,10,il figlio detesta la figlia a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,10,la figlia detesta il figlio a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,10,il figlio invidia la figlia a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,10,la figlia invidia il figlio a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,11,il nipote accompagna in macchina la nipote a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,11,la nipote accompagna in macchina il nipote a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,11,il nipote da spintone alla nipote a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,11,la nipote da spintone al nipote a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,11,il nipote pettina la nipote a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,11,la nipote pettina il nipote a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,11,il nipote abbraccia la nipote a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,11,la nipote abbraccia il nipote a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,11,il nipote schiaffeggia la nipote a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,11,la nipote schiaffeggia il nipote a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,11,il nipote balla con la nipote a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,11,la nipote balla con il nipote a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,11,il nipote bacia la nipote a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,11,la nipote bacia il nipote a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,11,il nipote trattiene la nipote a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,11,la nipote trattiene il nipote a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,11,il nipote telefona alla nipote a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,11,la nipote telefona al nipote a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,11,il nipote fa solletico alla nipote a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,11,la nipote fa solletico al nipote a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,11,il nipote lusinga la nipote a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,11,la nipote lusinga il nipote a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,11,il nipote disobbedisce alla nipote a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,11,la nipote disobbedisce al nipote a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,11,il nipote aiuta la nipote a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,11,la nipote aiuta il nipote a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,11,il nipote imbroglia la nipote a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,11,la nipote imbroglia il nipote a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,11,il nipote inganna la nipote a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,11,la nipote inganna il nipote a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,11,il nipote tradisce la nipote a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,11,la nipote tradisce il nipote a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,11,il nipote sorprende la nipote a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,11,la nipote sorprende il nipote a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,11,il nipote salva la nipote a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,11,la nipote salva il nipote a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,11,il nipote incoraggia la nipote a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,11,la nipote incoraggia il nipote a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,11,il nipote fa male alla nipote a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,11,la nipote fa male al nipote a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,11,il nipote affescina la nipote a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,11,la nipote affescina il nipote a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,11,il nipote piace alla nipote a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,11,la nipote piace al nipote a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,11,il nipote diverte la nipote a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,11,la nipote diverte il nipote a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,11,il nipote crea problemi alla nipote a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,11,la nipote crea problemi al nipote a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,11,il nipote delude la nipote a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,11,la nipote delude il nipote a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,11,il nipote spaventa la nipote a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,11,la nipote spaventa il nipote a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,11,il nipote stupisce la nipote a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,11,la nipote stupisce il nipote a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,11,il nipote infastidisce la nipote a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,11,la nipote infastidisce il nipote a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,11,il nipote annoia la nipote a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,11,la nipote annoia il nipote a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,11,il nipote mette in guardia la nipote a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,11,la nipote mette in guardia il nipote a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,11,il nipote odia la nipote a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,11,la nipote odia il nipote a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,11,il nipote si fida della nipote a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,11,la nipote si fida del nipote a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,11,il nipote compatisce la nipote a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,11,la nipote compatisce il nipote a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,11,il nipote teme la nipote a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,11,la nipote teme il nipote a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,11,il nipote nota la nipote a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,11,la nipote nota il nipote a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,11,il nipote stima la nipote a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,11,la nipote stima il nipote a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,11,il nipote rispetta la nipote a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,11,la nipote rispetta il nipote a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,11,il nipote ricorda la nipote a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,11,la nipote ricorda il nipote a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,11,il nipote detesta la nipote a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,11,la nipote detesta il nipote a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,11,il nipote invidia la nipote a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,11,la nipote invidia il nipote a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,12,il fratello accompagna in macchina la sorella a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,12,la sorella accompagna in macchina il fratello a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,12,il fratello da spintone alla sorella a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,12,la sorella da spintone al fratello a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,12,il fratello pettina la sorella a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,12,la sorella pettina il fratello a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,12,il fratello abbraccia la sorella a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,12,la sorella abbraccia il fratello a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,12,il fratello schiaffeggia la sorella a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,12,la sorella schiaffeggia il fratello a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,12,il fratello balla con la sorella a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,12,la sorella balla con il fratello a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,12,il fratello bacia la sorella a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,12,la sorella bacia il fratello a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,12,il fratello trattiene la sorella a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,12,la sorella trattiene il fratello a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,12,il fratello telefona alla sorella a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,12,la sorella telefona al fratello a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,12,il fratello fa solletico alla sorella a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,12,la sorella fa solletico al fratello a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,12,il fratello lusinga la sorella a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,12,la sorella lusinga il fratello a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,12,il fratello disobbedisce alla sorella a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,12,la sorella disobbedisce al fratello a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,12,il fratello aiuta la sorella a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,12,la sorella aiuta il fratello a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,12,il fratello imbroglia la sorella a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,12,la sorella imbroglia il fratello a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,12,il fratello inganna la sorella a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,12,la sorella inganna il fratello a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,12,il fratello tradisce la sorella a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,12,la sorella tradisce il fratello a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,12,il fratello sorprende la sorella a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,12,la sorella sorprende il fratello a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,12,il fratello salva la sorella a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,12,la sorella salva il fratello a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,12,il fratello incoraggia la sorella a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,12,la sorella incoraggia il fratello a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,12,il fratello fa male alla sorella a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,12,la sorella fa male al fratello a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,12,il fratello affescina la sorella a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,12,la sorella affescina il fratello a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,12,il fratello piace alla sorella a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,12,la sorella piace al fratello a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,12,il fratello diverte la sorella a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,12,la sorella diverte il fratello a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,12,il fratello crea problemi alla sorella a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,12,la sorella crea problemi al fratello a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,12,il fratello delude la sorella a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,12,la sorella delude il fratello a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,12,il fratello spaventa la sorella a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,12,la sorella spaventa il fratello a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,12,il fratello stupisce la sorella a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,12,la sorella stupisce il fratello a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,12,il fratello infastidisce la sorella a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,12,la sorella infastidisce il fratello a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,12,il fratello annoia la sorella a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,12,la sorella annoia il fratello a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,12,il fratello mette in guardia la sorella a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,12,la sorella mette in guardia il fratello a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,12,il fratello odia la sorella a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,12,la sorella odia il fratello a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,12,il fratello si fida della sorella a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,12,la sorella si fida del fratello a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,12,il fratello compatisce la sorella a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,12,la sorella compatisce il fratello a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,12,il fratello teme la sorella a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,12,la sorella teme il fratello a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,12,il fratello nota la sorella a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,12,la sorella nota il fratello a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,12,il fratello stima la sorella a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,12,la sorella stima il fratello a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,12,il fratello rispetta la sorella a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,12,la sorella rispetta il fratello a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,12,il fratello ricorda la sorella a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,12,la sorella ricorda il fratello a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,12,il fratello detesta la sorella a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,12,la sorella detesta il fratello a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,12,il fratello invidia la sorella a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,12,la sorella invidia il fratello a causa del tipo di persona che [MASK] è.,25,0,m
+ic_mismatch,accompagna in macchina,13,il nonno accompagna in macchina la nonna a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,accompagna in macchina,13,la nonna accompagna in macchina il nonno a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,da spintone,13,il nonno da spintone alla nonna a causa del tipo di persona che [MASK] è.,64,1,m
+ic_mismatch,da spintone,13,la nonna da spintone al nonno a causa del tipo di persona che [MASK] è.,64,0,m
+ic_mismatch,pettina,13,il nonno pettina la nonna a causa del tipo di persona che [MASK] è.,43.75,1,m
+ic_mismatch,pettina,13,la nonna pettina il nonno a causa del tipo di persona che [MASK] è.,43.75,0,m
+ic_mismatch,abbraccia,13,il nonno abbraccia la nonna a causa del tipo di persona che [MASK] è.,44,1,m
+ic_mismatch,abbraccia,13,la nonna abbraccia il nonno a causa del tipo di persona che [MASK] è.,44,0,m
+ic_mismatch,schiaffeggia,13,il nonno schiaffeggia la nonna a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,schiaffeggia,13,la nonna schiaffeggia il nonno a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,balla con,13,il nonno balla con la nonna a causa del tipo di persona che [MASK] è.,41.25,1,m
+ic_mismatch,balla con,13,la nonna balla con il nonno a causa del tipo di persona che [MASK] è.,41.25,0,m
+ic_mismatch,bacia,13,il nonno bacia la nonna a causa del tipo di persona che [MASK] è.,35,1,m
+ic_mismatch,bacia,13,la nonna bacia il nonno a causa del tipo di persona che [MASK] è.,35,0,m
+ic_mismatch,trattiene,13,il nonno trattiene la nonna a causa del tipo di persona che [MASK] è.,37.5,1,m
+ic_mismatch,trattiene,13,la nonna trattiene il nonno a causa del tipo di persona che [MASK] è.,37.5,0,m
+ic_mismatch,telefona,13,il nonno telefona alla nonna a causa del tipo di persona che [MASK] è.,20,1,m
+ic_mismatch,telefona,13,la nonna telefona al nonno a causa del tipo di persona che [MASK] è.,20,0,m
+ic_mismatch,fa solletico,13,il nonno fa solletico alla nonna a causa del tipo di persona che [MASK] è.,73.75,1,m
+ic_mismatch,fa solletico,13,la nonna fa solletico al nonno a causa del tipo di persona che [MASK] è.,73.75,0,m
+ic_mismatch,lusinga,13,il nonno lusinga la nonna a causa del tipo di persona che [MASK] è.,40,1,m
+ic_mismatch,lusinga,13,la nonna lusinga il nonno a causa del tipo di persona che [MASK] è.,40,0,m
+ic_mismatch,disobbedisce,13,il nonno disobbedisce alla nonna a causa del tipo di persona che [MASK] è.,72,1,m
+ic_mismatch,disobbedisce,13,la nonna disobbedisce al nonno a causa del tipo di persona che [MASK] è.,72,0,m
+ic_mismatch,aiuta,13,il nonno aiuta la nonna a causa del tipo di persona che [MASK] è.,52,1,m
+ic_mismatch,aiuta,13,la nonna aiuta il nonno a causa del tipo di persona che [MASK] è.,52,0,m
+ic_mismatch,imbroglia,13,il nonno imbroglia la nonna a causa del tipo di persona che [MASK] è.,80,1,m
+ic_mismatch,imbroglia,13,la nonna imbroglia il nonno a causa del tipo di persona che [MASK] è.,80,0,m
+ic_mismatch,inganna,13,il nonno inganna la nonna a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,inganna,13,la nonna inganna il nonno a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,tradisce,13,il nonno tradisce la nonna a causa del tipo di persona che [MASK] è.,79,1,m
+ic_mismatch,tradisce,13,la nonna tradisce il nonno a causa del tipo di persona che [MASK] è.,79,0,m
+ic_mismatch,sorprende,13,il nonno sorprende la nonna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,sorprende,13,la nonna sorprende il nonno a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,salva,13,il nonno salva la nonna a causa del tipo di persona che [MASK] è.,66,1,m
+ic_mismatch,salva,13,la nonna salva il nonno a causa del tipo di persona che [MASK] è.,66,0,m
+ic_mismatch,incoraggia,13,il nonno incoraggia la nonna a causa del tipo di persona che [MASK] è.,45,1,m
+ic_mismatch,incoraggia,13,la nonna incoraggia il nonno a causa del tipo di persona che [MASK] è.,45,0,m
+ic_mismatch,fa male,13,il nonno fa male alla nonna a causa del tipo di persona che [MASK] è.,88,1,m
+ic_mismatch,fa male,13,la nonna fa male al nonno a causa del tipo di persona che [MASK] è.,88,0,m
+ic_mismatch,affescina,13,il nonno affescina la nonna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,affescina,13,la nonna affescina il nonno a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,piace,13,il nonno piace alla nonna a causa del tipo di persona che [MASK] è.,92,1,m
+ic_mismatch,piace,13,la nonna piace al nonno a causa del tipo di persona che [MASK] è.,92,0,m
+ic_mismatch,diverte,13,il nonno diverte la nonna a causa del tipo di persona che [MASK] è.,89,1,m
+ic_mismatch,diverte,13,la nonna diverte il nonno a causa del tipo di persona che [MASK] è.,89,0,m
+ic_mismatch,crea problemi,13,il nonno crea problemi alla nonna a causa del tipo di persona che [MASK] è.,81,1,m
+ic_mismatch,crea problemi,13,la nonna crea problemi al nonno a causa del tipo di persona che [MASK] è.,81,0,m
+ic_mismatch,delude,13,il nonno delude la nonna a causa del tipo di persona che [MASK] è.,71,1,m
+ic_mismatch,delude,13,la nonna delude il nonno a causa del tipo di persona che [MASK] è.,71,0,m
+ic_mismatch,spaventa,13,il nonno spaventa la nonna a causa del tipo di persona che [MASK] è.,84,1,m
+ic_mismatch,spaventa,13,la nonna spaventa il nonno a causa del tipo di persona che [MASK] è.,84,0,m
+ic_mismatch,stupisce,13,il nonno stupisce la nonna a causa del tipo di persona che [MASK] è.,96,1,m
+ic_mismatch,stupisce,13,la nonna stupisce il nonno a causa del tipo di persona che [MASK] è.,96,0,m
+ic_mismatch,infastidisce,13,il nonno infastidisce la nonna a causa del tipo di persona che [MASK] è.,76,1,m
+ic_mismatch,infastidisce,13,la nonna infastidisce il nonno a causa del tipo di persona che [MASK] è.,76,0,m
+ic_mismatch,annoia,13,il nonno annoia la nonna a causa del tipo di persona che [MASK] è.,86,1,m
+ic_mismatch,annoia,13,la nonna annoia il nonno a causa del tipo di persona che [MASK] è.,86,0,m
+ic_mismatch,mette in guardia,13,il nonno mette in guardia la nonna a causa del tipo di persona che [MASK] è.,42,1,m
+ic_mismatch,mette in guardia,13,la nonna mette in guardia il nonno a causa del tipo di persona che [MASK] è.,42,0,m
+ic_mismatch,odia,13,il nonno odia la nonna a causa del tipo di persona che [MASK] è.,29,1,m
+ic_mismatch,odia,13,la nonna odia il nonno a causa del tipo di persona che [MASK] è.,29,0,m
+ic_mismatch,si fida,13,il nonno si fida della nonna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,si fida,13,la nonna si fida del nonno a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,compatisce,13,il nonno compatisce la nonna a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,compatisce,13,la nonna compatisce il nonno a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,teme,13,il nonno teme la nonna a causa del tipo di persona che [MASK] è.,14,1,m
+ic_mismatch,teme,13,la nonna teme il nonno a causa del tipo di persona che [MASK] è.,14,0,m
+ic_mismatch,nota,13,il nonno nota la nonna a causa del tipo di persona che [MASK] è.,7,1,m
+ic_mismatch,nota,13,la nonna nota il nonno a causa del tipo di persona che [MASK] è.,7,0,m
+ic_mismatch,stima,13,il nonno stima la nonna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,stima,13,la nonna stima il nonno a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,rispetta,13,il nonno rispetta la nonna a causa del tipo di persona che [MASK] è.,13,1,m
+ic_mismatch,rispetta,13,la nonna rispetta il nonno a causa del tipo di persona che [MASK] è.,13,0,m
+ic_mismatch,ricorda,13,il nonno ricorda la nonna a causa del tipo di persona che [MASK] è.,8,1,m
+ic_mismatch,ricorda,13,la nonna ricorda il nonno a causa del tipo di persona che [MASK] è.,8,0,m
+ic_mismatch,detesta,13,il nonno detesta la nonna a causa del tipo di persona che [MASK] è.,11,1,m
+ic_mismatch,detesta,13,la nonna detesta il nonno a causa del tipo di persona che [MASK] è.,11,0,m
+ic_mismatch,invidia,13,il nonno invidia la nonna a causa del tipo di persona che [MASK] è.,25,1,m
+ic_mismatch,invidia,13,la nonna invidia il nonno a causa del tipo di persona che [MASK] è.,25,0,m
