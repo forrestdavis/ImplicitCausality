@@ -5,8 +5,8 @@ library(ggplot2)
 path = "/home/forrestdavis/Projects/ImplicitCausality/"
 
 bert_en_score <- read.csv(paste(path, "results/IC_mismatch_EN.csv", sep=''))
-bert_es_score <- read.csv(paste(path, "results/../IC_mismatch_ES.csv", sep=''))
-bert_it_score <- read.csv(paste(path, "results/../IC_mismatch_IT.csv", sep=''))
+bert_es_score <- read.csv(paste(path, "results/IC_mismatch_ES.csv", sep=''))
+bert_it_score <- read.csv(paste(path, "results/IC_mismatch_IT.csv", sep=''))
 bert_zh_score <- read.csv(paste(path, "results/IC_mismatch_ZH.csv", sep=''))
 
 bert_en_score$hasIC <- as.numeric(bert_en_score$bias>0)
@@ -260,18 +260,16 @@ pro_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
 ######  PLOT ES/IT   ######
 ###########################
 
-bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=sad, fill=isHigh)) +
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_bert, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Spanish BERT Probability") +
   scale_x_discrete(breaks=c("0","1"),
                    labels=c("Object-Bias", "Subject-Bias")) + 
   scale_fill_manual(values = c("#9999CC", "darkorchid3"), name= "Antecedent", labels=c("Object", "Subject"))
 
-bert_es_pronoun
-
 bert_es_pronoun <- bert_es_pronoun + theme(legend.position='none')
 
-bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=isHigh)) +
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_bert, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian BERT Probability") +
   scale_x_discrete(breaks=c("0","1"),
@@ -280,7 +278,7 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score, fill=isHigh)) +
 
 bert_it_pronoun <- bert_it_pronoun + theme(legend.position='none')
 
-umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_add, fill=isHigh)) +
+umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_umberto, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian UmBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -289,7 +287,7 @@ umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_add, fill=isHig
 
 umberto_it_pronoun <- umberto_it_pronoun + theme(legend.position='none')
 
-gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil, fill=isHigh)) +
+gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gilberto, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian GilBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -338,7 +336,7 @@ og_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
 #### PLOT ES/IT BASE ######
 ###########################
 
-bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_base, fill=isHigh)) +
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_bert_base, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Spanish BERT Probability", title='Fine-tuned on unmodified sentences') +
   scale_x_discrete(breaks=c("0","1"),
@@ -347,7 +345,7 @@ bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_base, fill=isHigh)
 
 bert_es_pronoun <- bert_es_pronoun + theme(legend.position='none')
 
-bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_base, fill=isHigh)) +
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_bert_base, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian BERT Probability", title='Fine-tuned on unmodified sentences') +
   scale_x_discrete(breaks=c("0","1"),
@@ -356,7 +354,7 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_base, fill=isHigh)
 
 bert_it_pronoun <- bert_it_pronoun + theme(legend.position='none')
 
-umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_um_base, fill=isHigh)) +
+umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_umberto_base, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian UmBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -365,7 +363,7 @@ umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_um_base, fill=i
 
 umberto_it_pronoun <- umberto_it_pronoun + theme(legend.position='none')
 
-gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil_base, fill=isHigh)) +
+gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gilberto_base, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian GilBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -402,7 +400,7 @@ plot_row <- plot_grid(
 )
 
 #Put them together 
-og_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
+base_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
   draw_plot(umberto_it_pronoun, x=0, y= 0, width=0.5, height=0.5) + 
   draw_plot(gilberto_it_pronoun, x=0.5, y= 0, width=0.5, height=0.5) + 
   draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
@@ -414,7 +412,7 @@ og_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
 #### PLOT ES/IT Pro  ######
 ###########################
 
-bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_pro, fill=isHigh)) +
+bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_bert_pro, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Spanish BERT Probability", title = "Fine-tuned without ProDrop") +
   scale_x_discrete(breaks=c("0","1"),
@@ -423,7 +421,7 @@ bert_es_pronoun <- ggplot(bert_es_score, aes(x=hasIC, y=score_pro, fill=isHigh))
 
 bert_es_pronoun <- bert_es_pronoun + theme(legend.position='none')
 
-bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_pro, fill=isHigh)) +
+bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_bert_pro, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian BERT Probability", title="Fine-tuned without ProDrop") +
   scale_x_discrete(breaks=c("0","1"),
@@ -432,7 +430,7 @@ bert_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_pro, fill=isHigh))
 
 bert_it_pronoun <- bert_it_pronoun + theme(legend.position='none')
 
-umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_um_pro, fill=isHigh)) +
+umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_umberto_pro, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian UmBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -441,7 +439,7 @@ umberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_um_pro, fill=is
 
 umberto_it_pronoun <- umberto_it_pronoun + theme(legend.position='none')
 
-gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gil_pro, fill=isHigh)) +
+gilberto_it_pronoun <- ggplot(bert_it_score, aes(x=hasIC, y=score_gilberto_pro, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "Italian GilBERTo Score") +
   scale_x_discrete(breaks=c("0","1"),
@@ -478,14 +476,14 @@ plot_row <- plot_grid(
 )
 
 #Put them together 
-og_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
+pro_plots <- ggdraw() + draw_plot(plot_row, x=0, y= 0.5, width=1, height=0.5) +
   draw_plot(umberto_it_pronoun, x=0, y= 0, width=0.5, height=0.5) + 
   draw_plot(gilberto_it_pronoun, x=0.5, y= 0, width=0.5, height=0.5) + 
   draw_plot_label(label = c("c)", "a)", "b)", "d)"), size = 15,
                   x = c(0.05, 0.05, 0.55, 0.55), y = c(0.07, 0.57, 0.57, 0.07))
 
 
-
+###Multilingual
 mbert_pronoun <- ggplot(bert_en_score, aes(x=hasIC, y=score_mbert, fill=isHigh)) +
   geom_boxplot(notch=TRUE, outlier.size = 0.1) + ylim(0, 1)+ theme(text = element_text(size=22)) + 
   labs(x ="Verb Bias", y = "mBERT Probability (English)") +
