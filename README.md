@@ -1,7 +1,53 @@
 # ImplicitCausality
 
+There are two projects that draw from this repo: BERT/RoBERTa Models for Implicit Causality and Auto-Regressive Models for Implicit Causality. They were created some time apart so they make use of different versions of huggingface. 
+The first refers to my work at ACL 2021: "Uncovering Constraint-Based Behavior in Neural Models via Targeted Fine-Tuning". The second refers to my work at CoNLL 2020: ["Discourse structure interacts with reference but not syntax in neural language models".](https://www.aclweb.org/anthology/2020.conll-1.32/). Both projects center on an exploration of the well studied 
+phenomenon of implicit causality (IC) in verbs ([Catherine Garvey & Alfonso Caramazza, 1974](www.jstor.org/stable/4177835)). 
+
 ## For BERT and RoBERTa Models (ACL 2021)
 
+Project for exploring whether BERT and RoBERTa models learn the same discourse structure, Implicit Causality, across 4 languages: English, Chinese, Italian, and Spanish. We find that another process, namely pro-drop, can compete with Implicit Causality (IC)
+in a given language to obscure underlying knowledge of IC. Targeted finetuning that demotes this pro-drop process (ie evidence that pro-drop doesn't apply) can uncover this knowledge. 
+
+### Dependencies 
+Requires the following python packages (available through pip):
+* [pytorch](https://pytorch.org/) == 1.8.1
+* [transformers](https://github.com/huggingface/transformers) == 4.6.1
+* [pandas](https://pandas.pydata.org/)
+
+## Usage
+To recreate the experiments use bert.py:
+
+    usage: bert.py [-h] [--lang LANG] [--model MODEL] [--exp EXP]
+
+    Implicit Causality Experiments for (Ro)BERT(a) Models
+
+    optional arguments:
+      -h, --help     show this help message and exit
+      --lang LANG    language to evaluate [en|zh|it|es]
+      --model MODEL  model to run [bert|roberta|gilberto|umberto|mbert|all]
+      --exp EXP      Experiment to run [og|base|pro|all]
+
+You will need to download the pretrained models from here and put the extracted directory, models, in the 
+directory finetuning. 
+There are three main experiment groups under --exp. og refers to the base BERT/RoBERTa models, base to the baseline
+fine-tuned models reported in the paper, pro to the models fine-tuned with/without pro-drop, all runs all the 
+experiments. To recreate the figures open bert\_figures.R in R and run the relevant blocks. Precompiled results 
+for all the experiments are given, per language, in the results directory. Stimuli are given in the stimuli directory, 
+per language. 
+
+Say you want to recreate Figure 4 from the paper. First run
+
+        bert.py --lang it --model all --exp pro && bert.py --lang es --model all --exp pro
+
+This may take a bit of time, depending on your compute resources, but it runs fine on my not so great laptop. The
+output of the above code will be two files in the results directory: IC\_mismatch\_IT.csv and IC\_mismatch\_ES.csv
+Open bert\_figures.R in R. Run the first 30 lines and then the block starting at line 411 will make the relevant 
+figure. 
+
+If you want to recreate the finetuned models, add the finetuning directory to your Google Drive and run the collab
+script (finetune.ipynb). The fine-tuning data can be recreated from add\_pro.py. The source conllu files are included
+for ease of use, see the paper for more details about the data. 
 
 ## For Auto-Regressive Models (CoNLL 2020)
 

@@ -49,7 +49,7 @@ def get_BERT_scores(sents, model, he, she=None, topk=10):
     if she:
         she_token = tokenizer.encode(she)[-2]
 
-    unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', topk=topk)
+    unmasker = pipeline('fill-mask', model=model, tokenizer=model, framework='pt', top_k=topk)
     scores = []
     for sent in sents:
         result = unmasker(sent)
