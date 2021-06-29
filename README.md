@@ -28,7 +28,7 @@ To recreate the experiments use bert.py:
       --model MODEL  model to run [bert|roberta|gilberto|umberto|mbert|all]
       --exp EXP      Experiment to run [og|base|pro|all]
 
-You will need to download the pretrained models from here and put the extracted directory, models, in the 
+You will need to download the pretrained models from [here](http://doi.org/10.5281/zenodo.4798711) and put the extracted directory, models, in the 
 directory finetuning. 
 There are three main experiment groups under --exp. og refers to the base BERT/RoBERTa models, base to the baseline
 fine-tuned models reported in the paper, pro to the models fine-tuned with/without pro-drop, all runs all the 
