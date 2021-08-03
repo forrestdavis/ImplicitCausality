@@ -1,7 +1,7 @@
 # ImplicitCausality
 
 There are two projects that draw from this repo: BERT/RoBERTa Models for Implicit Causality and Auto-Regressive Models for Implicit Causality. They were created some time apart so they make use of different versions of huggingface. 
-The first refers to my work at ACL 2021: "Uncovering Constraint-Based Behavior in Neural Models via Targeted Fine-Tuning". The second refers to my work at CoNLL 2020: ["Discourse structure interacts with reference but not syntax in neural language models".](https://www.aclweb.org/anthology/2020.conll-1.32/). Both projects center on an exploration of the well studied 
+The first refers to my work at ACL 2021: ["Uncovering Constraint-Based Behavior in Neural Models via Targeted Fine-Tuning"](https://aclanthology.org/2021.acl-long.93/). The second refers to my work at CoNLL 2020: ["Discourse structure interacts with reference but not syntax in neural language models"](https://www.aclweb.org/anthology/2020.conll-1.32/). Both projects center on an exploration of the well studied 
 phenomenon of implicit causality (IC) in verbs ([Catherine Garvey & Alfonso Caramazza, 1974](www.jstor.org/stable/4177835)). 
 
 ## For BERT and RoBERTa Models (ACL 2021)
@@ -106,4 +106,7 @@ The vocab for the LSTM LMs is given in wikitext103_vocab (top 50K words).
 If you have any questions feel free to email me :)
 
 ## References
+
+Forrest Davis and Marten van Schijndel. ["Uncovering Constraint-Based Behavior in Neural Models via Targeted Fine-Tuning".](https://aclanthology.org/2021.acl-long.93/) In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (ACL 2021). 2021.
+
 Forrest Davis and Marten van Schijndel. ["Discourse structure interacts with reference but not syntax in neural language models".](https://www.aclweb.org/anthology/2020.conll-1.32/) In Proceedings of the 2020 Conference on Computational Natural Language Learning (CoNLL 2020). 2020.
